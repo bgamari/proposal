@@ -1,6 +1,78 @@
+#
+
 # Ionic strength dependent persistence lengths of single-stranded RNA and DNA [@chen2012]
 
-Examined ssDNA (dT40) and ssRNA (rU40) using smFRET and SAXS
-Changes in $l_p$ due to valence and ionic strength
-Notes anomalous screen by $Mg^{+2}$ above D-H theory as seen in previous studies [@McIntosh2011]
-smFRET: Cy3/Cy5, quantum yield lower on rU10 than dT10. Measured $R_0$
+ * Examined ssDNA (dT40) and ssRNA (rU40) using smFRET and SAXS
+ * Changes in $l_p$ due to valence and ionic strength
+ * Notes anomalous screen by $Mg^{+2}$ above D-H theory as seen in previous studies [@McIntosh2011]
+ * smFRET: Cy3/Cy5, Cy3 quantum yield lower on rU10 than dT10. Measured $R_0$
+ * Salt conditions:
+   * For FRET: 0 - 800mM NaCl
+   * For SAXS: 100mA NaCl
+ * Results:
+   * dT40: $l_p(I=\infnty) = 7.5 \AA$, $l_p(I=0) = 20.9 \AA$
+   * rU40: $l_p(I=\infnty) = 10.1 \AA$, $l_p(I=0) = 25.2 \AA$
+ * Persistence length scaling:
+   $l_p(I) = l_p(\infnty) + \frac{l_p(0) - l_p(\infnty)}{b I)^{n/2} + 1$
+ * Found Odijk-Skonick-Fixman (OSF)[@Odijk1977; @Skolnick1977] theory held for $I > 50mM$
+
+# Polyelectrolytes near the rod limit [@Odijk1977]
+
+# Electrostatic persistence length of a polyelectrolyte chain [@Ha1995]
+
+
+# Single-Molecule Measurements of the Persistence Length of Double-Stranded RNA [@Abels2005]
+
+ * Force extension with magnetic tweezers:
+   * 0.4kbases, 4.2kb, 8.3kb, heterogeneous
+   * $l_p = 63.8 \pm 0.7 nm$
+ * Imaging with AFM: $l_p = 62 \pm 2 nm$
+   * 0.9kbases
+
+# DNA bending stiffness on small length scales [@Yuan2008]
+
+ * Examined 15-90bp dsDNA using FRET and SAXS
+ * Introduction drew attention to significance of short DNA in
+   understanding nucleosome organization
+ * Points out cyclization experiments [@Cloutier2004; @Cloutier2005] that
+   indicate enhanced flexibility in small DNAs
+ * Point to [@Yan2004; @Wiggins2005] as theoretical work treating non-continuum
+   treatment of flexibility
+ * FRET analysis:
+   * Using fluorescence lifetimes
+   * Measured 15bp, 16, 17, 19, 20, 21, 66, 89 bp sequences
+   * Took care to avoid base-dye interaction effects by choosing same
+     terminal bases on all sequences
+   * $l_p = 11 \pm 2 nm$
+   * Used high (500mM) NaCl to eliminate double-stranded,
+     observed increase in FRET variance as salt went below 50mM
+   * Dyes: 6-fluorescein, tetramethyl rhodamine, $R_0 = 5nm$
+   * Refer to [@Yuan2006; @Williams2006] for FRET analysis
+ * SAXS:
+   * Go down to $q=0.01 \AA^{-1}$
+   * Compare against atomistic model of [@Qui2006]
+ * Note enhanced flexibility of A repeats
+ * Explaining enhanced flexiblity:
+   * non-continuum bending energy $E(\theta) = \alpha |\theta| k_B T$
+     proposed by Wiggins [@Wiggins2006; @Wiggins2006a]
+   * Propose that this factor might originate from base flipout or
+     base-pair breathing
+   * Examine Monte Carlo model of these dynamics
+   * In previous FRET study [@Yuan2006] the authors found that a
+     single unpaired base proposes a 30 degree kind in the backbone
+
+# Spontaneous sharp bending of Double-Stranded DNA [@Cloutier2004]
+
+ * 94bp dsDNA cyclize $10^2$ to $10^4$ times more readily than theory would predict
+ * Potentially flawed, see [@Du2005]
+
+# Cyclization of short DNA fragments and bending fluctuations of the double helix [@Du2005]
+
+ * In reference to [@Cloutier2004], $L=100 bp$
+ * Investiated how changing theory's distribution of adjacent base-pair angles
+   affects cyclization efficiency
+ * "Incorporation of sharp kinks in the angle distribution provides
+   the desired increase of the cyclization efficiency"
+ * Their own follow-up experiments disagree with [@Cloutier2004], agree with WLC
+ * Blame discrepancy on Cloutier's high ligase concentration
+ * Used $l_p = 48 nm$, helical repeat $\gamma = 10.54nm$
