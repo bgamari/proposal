@@ -1,0 +1,6 @@
+# Ionic strength dependent persistence lengths of single-stranded RNA and DNA [@chen2012]
+
+Examined ssDNA (dT40) and ssRNA (rU40) using smFRET and SAXS
+Changes in $l_p$ due to valence and ionic strength
+Notes anomalous screen by $Mg^{+2}$ above D-H theory as seen in previous studies [@McIntosh2011]
+smFRET: Cy3/Cy5, quantum yield lower on rU10 than dT10. Measured $R_0$
