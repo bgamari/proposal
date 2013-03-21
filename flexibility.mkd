@@ -1,16 +1,22 @@
 # Thesis
 
 While it seems that the geometry of the bulge has been well
-characterized by [@Wozniak2008], there may still be room viewing the
+characterized by @Wozniak2008, there may still be room viewing the
 bulge as a way to probe the local flexibility properties of
-ssDNA. Salt type and concetration depedence may be the most relevant
-and accessible parameters to characterize. Given that we lack Seidel's
-setup, an approach along the lines of [@chen2012] might be most
-feasible.
+ssDNA (somewhat as done by @Forties2009). Salt type and concetration
+depedence may be the most relevant and accessible parameters to
+characterize. Given that we lack Seidel's setup, an approach along the
+lines of @chen2012 might be most feasible, using FRET in conjunction
+with SAXS.
 
-## Related work
+An approach for examining gap flexibility would be to look at
+rotational anisotropy of a well fixed terminal fluorophore. This is
+similar to the measurement done by @Mills1999 with transient electric
+birefringence (TEB).
 
-## Ionic strength dependent persistence lengths of single-stranded RNA and DNA [@chen2012]
+# Related work
+
+## Ionic strength dependent persistence lengths of single-stranded RNA and DNA [@Chen2012]
 
  * Examined ssDNA (dT40) and ssRNA (rU40) using smFRET and SAXS
  * Changes in $l_p$ due to valence and ionic strength
@@ -41,7 +47,7 @@ feasible.
    understanding nucleosome organization
  * Points out cyclization experiments [@Cloutier2004; @Cloutier2005] that
    indicate enhanced flexibility in small DNAs
- * Point to [@Yan2004; @Wiggins2005] as theoretical work treating non-continuum
+ * Point to @Yan2004 and @Wiggins2005 as theoretical work treating non-continuum
    treatment of flexibility
  * FRET analysis:
      * Using fluorescence lifetimes
@@ -52,10 +58,10 @@ feasible.
      * Used high (500mM) NaCl to eliminate double-stranded,
        observed increase in FRET variance as salt went below 50mM
      * Dyes: 6-fluorescein, tetramethyl rhodamine, $R_0 = 5nm$
-     * Refer to [@Yuan2006; @Williams2006] for FRET analysis
+     * Refer to @Yuan2006 and @Williams2006 for FRET analysis
  * SAXS:
      * Go down to $q=0.01 \AA^{-1}$
-     * Compare against atomistic model of [@Qui2006]
+     * Compare against atomistic model of @Qui2006
  * Note enhanced flexibility of A repeats
  * Explaining enhanced flexiblity:
      * non-continuum bending energy $E(\theta) = \alpha |\theta| k_B T$
@@ -69,42 +75,52 @@ feasible.
 ## Spontaneous sharp bending of Double-Stranded DNA [@Cloutier2004]
 
  * 94bp dsDNA cyclize $10^2$ to $10^4$ times more readily than theory would predict
- * Potentially flawed, see [@Du2005]
+ * Potentially flawed, see @Du2005
 
 ## Cyclization of short DNA fragments and bending fluctuations of the double helix [@Du2005]
 
- * In reference to [@Cloutier2004], $L=100 bp$
+ * In reference to @Cloutier2004, $L=100 bp$
  * Investiated how changing theory's distribution of adjacent base-pair angles
    affects cyclization efficiency
  * "Incorporation of sharp kinks in the angle distribution provides
    the desired increase of the cyclization efficiency"
- * Their own follow-up experiments disagree with [@Cloutier2004], agree with WLC
+ * Their own follow-up experiments disagree with @Cloutier2004, agree with WLC
  * Blame discrepancy on Cloutier's high ligase concentration
- * Used $l_p = 48 nm$, helical repeat $\gamma = 10.54nm$
-
-## Measuring distances within unfolded biopolymers using FRET [@Makarov2009]
-
- * Examine effects of dynamics of a polymer on FRET observations
- * Relate mechanical relaxation timescale $\tau_R$ and intrinsic donor lifetime to $E$
- * Even when $\tau_R$ is five times the intrinsic donor lifetime, the errors
-   in $\langle R^2 \rangle^{1/2}$ due to the steady-state assumption can be 10-25%
+    * For $j$ factor to be realistic, "the rate of ligation of joined
+      cohesive ends must be much slower than the rate of their
+      dissociation"
+    * While Cloutier satisfies this during cyclization of short DNA
+      fragments, they failed to show this "for the same cohesive ends
+      during fragment dimerization"
+ * Found $l_p = 48 nm$, helical repeat $\gamma = 10.54nm$
 
 ## The flexibility of locally melted DNA [@Forties2009]
 
- * Cyclization experiments and modelling of dsDNA
+ * Cyclization experiments and modelling of dsDNA bubbles, temperature dependence
  * Small melted bubbles are significantly more flexible than dsDNA but
-   not enough to explain sharp bends seen(?) by Cloutier [@Cloutier2004]
+   not enough to explain sharp bends seen by Cloutier [@Cloutier2004]
    and perhaps others
+ * Points out that while Cloutier's sharp bend measurements have been
+   challenged (by [@Du2005]), the sequence dependence still stands
+ * Using 200-bp $\lambda$ dsDNA used by @Cloutier2004 and Vologodskaia2002
+   as well as two 116-bp synthetic sequences
+ * Fitted against model proposed by the Yan-Marko model [@Yan2005] at $T=294K$,
+     * 3bp bubble: $l_p = 8nm$
+     * 4bp bubble: $l_p = 4nm$
 
-## Using fluorescence resonance energy transfer to measure distances along individual DNA molecules: Corrections due to nonideal transfer [@Sabanayagam2005]
 
-## Location of Cyanine-3 on Double-Stranded DNA: Importance for Fluorescence Resonance Energy Transfer Studies [@Normal2000]
 
 ## Polyelectrolytes near the rod limit [@Odijk1977]
 
 ## Electrostatic persistence length of a polyelectrolyte chain [@Ha1995]
 
-## Probing the Conformational Distributions of Subpersistence Length DNA
+## Probing the Conformational Distributions of Subpersistence Length DNA [@Mastroianni2009]
+
+## Statistics of loop formation along double-helix DNAs [@Yan2005]
+
+ * Theory of statistics of pairwise point encounters
+ * Discuss in particular "how local flexible defects" facilitate
+   cyclization of short dsDNA molecules
 
 # Nicks, gaps, and bulges
 
@@ -116,6 +132,15 @@ feasible.
 ## Conformations of Nicked and Gapped DNA Structures by NMR and Molecular Dynamic Simulations in Water [@Roll1998]
 
 ## Flexibility of single-stranded DNA: Use of gapped duplex helices to determine the persistence lengths of poly(dT) and poly(dA) [@Mills1998]
+
+ * Examine flexiblity of single-stranded poly-A and T but observing
+   rotational coherence times of gapped and duplex dsDNA
+ * Ratio $\alpha = \tau_{\mathrm{gap}} / \tau_{\mathrm{duplex}} \rightarrow 1$ rigid single-stranded region
+ * $\alpha < 1$ means more flexible single-stranded region
+ * Observed plateau in $\alpha$ at magnesium concentrations above 1 to 2mM
+ * Used 80-100 nt sequences
+ * In the case of dT: $l_p = 31 \AA$, internucleotide spacing $h = 5.2 \AA$
+ * In the case of dA: $l_p = 78 \AA$, $h = 3.2 \AA$
 
 ## Single-molecule FRET measures bends and kinks in DNA [@Wozniak2008]
 
@@ -130,3 +155,30 @@ feasible.
 
  * Claim slow positional, fast orientational fluctuations
  * Use Seidel's Multiparameter Fluorescence Detection (MFD)
+
+## FRET on DNA
+## Using fluorescence resonance energy transfer to measure distances along individual DNA molecules: Corrections due to nonideal transfer [@Sabanayagam2005]
+
+## Location of Cyanine-3 on Double-Stranded DNA: Importance for Fluorescence Resonance Energy Transfer Studies [@Norman2000]
+
+## Measuring distances within unfolded biopolymers using FRET [@Makarov2009]
+
+ * Examine effects of dynamics of a polymer on FRET observations
+ * Relate mechanical relaxation timescale $\tau_R$ and intrinsic donor lifetime to $E$
+ * Even when $\tau_R$ is five times the intrinsic donor lifetime, the errors
+   in $\langle R^2 \rangle^{1/2}$ due to the steady-state assumption can be 10-25%
+
+## Orientation dependence in fluorescent energy transfer between Cy3 and Cy5 terminally attached to double-stranged nucleic acids [@Iqbal2008]
+
+ * Note orientation dependence of FRET on dsDNA
+     * Cy3, Cy5 labelled 10-24 bp dsDNA
+     * $E$ modulation period of 5 bp
+ * Examine change in FRET between A- and B-form helicies
+ * Observed modulation is less than that expected from rigid attachment
+ * Propose lateral mobility of dyes (HWHM = $42^\circ$)
+ * Lifetime measurements suggest unstacked Cy3 population
+     * 16 and 22 bp Cy3 labelled dsDNA
+     * Not seen in NMR data, although expected to be a small effect
+     * Supported by time resolved fluorescence data from @Sanborn2007
+     * Quantum yield = 0.35
+ * Also noted altered periodicity in DNA-RNA hybrid
