@@ -135,9 +135,13 @@ birefringence (TEB).
 
  * Examine flexiblity of single-stranded poly-A and T but observing
    rotational coherence times of gapped and duplex dsDNA
- * Ratio $\alpha = \tau_{\mathrm{gap}} / \tau_{\mathrm{duplex}} \rightarrow 1$ rigid single-stranded region
- * $\alpha < 1$ means more flexible single-stranded region
- * Observed plateau in $\alpha$ at magnesium concentrations above 1 to 2mM
+ * Observed reduced electrophoretic mobility in gapped case
+    * No change above 10-20mM Na or 0.5mM Mg, suggests that this
+      motility effect is then due to intrinsic stiffness
+ * Transient electric birefringence (TEB) measurements
+    * Ratio $\alpha = \tau_{\mathrm{gap}} / \tau_{\mathrm{duplex}} \rightarrow 1$ rigid single-stranded region
+    * $\alpha < 1$ means more flexible single-stranded region
+    * Observed plateau in $\alpha$ at magnesium concentrations above 1 to 2mM
  * Used 80-100 nt sequences
  * In the case of dT: $l_p = 31 \AA$, internucleotide spacing $h = 5.2 \AA$
  * In the case of dA: $l_p = 78 \AA$, $h = 3.2 \AA$
