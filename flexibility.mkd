@@ -14,6 +14,28 @@ rotational anisotropy of a well fixed terminal fluorophore. This is
 similar to the measurement done by @Mills1999 with transient electric
 birefringence (TEB).
 
+# Summary
+
+## Flexibility on long length scales
+
+The flexibility characteristics of long DNA (kilobases) have been
+characterized largely using force extension experiments using optical
+and magnetic tweezers[@Bustamante2000, @Bustamante2003]
+
+## Enhanced flexibility of dsDNA at short length scales
+
+Cloutier's 2004 cyclization experiments[@Cloutier2004] first proposed
+that short (~100 bp) dsDNA would cyclize between $10^2$ and $10^4$
+times more readily than the wormlike chain model would
+predict. Moreover, they reported an interesting base sequence
+dependence.
+
+This finding spurred a number of experimental and theoretical efforts,
+with @Du2005 eventually reporting that their own cyclization
+experiments disagreed with Cloutier's findings, showing that even
+these small systems were well described by the WLC.
+
+
 # Related work
 
 ## Ionic strength dependent persistence lengths of single-stranded RNA and DNA [@Chen2012]
