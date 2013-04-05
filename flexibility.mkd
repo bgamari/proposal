@@ -94,6 +94,8 @@ these small systems were well described by the WLC.
      * In previous FRET study [@Yuan2006] the authors found that a
        single unpaired base proposes a 30 degree kind in the backbone
 
+## High flexibility of DNA on short length scales probed by atomic force microscopy [@Wiggins2006]
+
 ## Spontaneous sharp bending of Double-Stranded DNA [@Cloutier2004]
 
  * 94bp dsDNA cyclize $10^2$ to $10^4$ times more readily than theory would predict
@@ -130,13 +132,24 @@ these small systems were well described by the WLC.
      * 3bp bubble: $l_p = 8nm$
      * 4bp bubble: $l_p = 4nm$
 
-
-
 ## Polyelectrolytes near the rod limit [@Odijk1977]
 
 ## Electrostatic persistence length of a polyelectrolyte chain [@Ha1995]
 
 ## Probing the Conformational Distributions of Subpersistence Length DNA [@Mastroianni2009]
+
+ * SAXS on solution of gold nanoparticle dimers on opposite ends of
+   dsDNA connected with an alkane linker
+ * Probing bending elasticity by looking at inter-end distances with
+   scattering of nanoparticles
+ * Compare with Monte Carlo simulations
+ * Could measure scattering angle of down to $2\theta = 3^\circ$
+ * 42 to 94 bp dsDNA are consistent with WLC ($l_p = 40nm$)
+ * Cite @Garcia2007 for example of important of tight bending
+ * Cite @Bustamante2000 and @Bustamanta2003 as examples of long stand pulling experiments
+ * Cite @Crothers1992 as example of cyclization experiment with dsDNA
+   of hundreds of basepairs
+ *
 
 ## Statistics of loop formation along double-helix DNAs [@Yan2005]
 
@@ -185,7 +198,21 @@ these small systems were well described by the WLC.
 ## FRET on DNA
 ## Using fluorescence resonance energy transfer to measure distances along individual DNA molecules: Corrections due to nonideal transfer [@Sabanayagam2005]
 
+ * Probe quantum yield of Cy3, TMR on B-DNA
+ * Variation in Cy3 quantum yield 5 times larges than TMR
+ * Surface immobilization
+ * Mention isomerization of Cy5 [@Widengren2000]
+ * Some interesting notes about Cy3, TMR lifetimes; multiple states
+ * $R_{da}$ from $15\AA$ to $60\AA$
+
 ## Location of Cyanine-3 on Double-Stranded DNA: Importance for Fluorescence Resonance Energy Transfer Studies [@Norman2000]
+
+ * NMR and bulk FRET
+ * "In previous FRET experiments on DNA and RNA, we have found that
+   when the fluoro- phores are attached to a 5′-CC sequence they are
+   spectrally well-behaved"
+ * Computed $J$ from fluorescein
+ * f
 
 ## Measuring distances within unfolded biopolymers using FRET [@Makarov2009]
 
