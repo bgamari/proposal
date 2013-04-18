@@ -153,8 +153,14 @@ these small systems were well described by the WLC.
 
 ## Remeasuring the double helix [@MathewFenn2008]
 
+ * Measure SAXS on two gold nanoparticles connected with 10 to 35-bp dsDNA
+ * Appear to buy into cyclization results of @Cloutier2004 despite @Du2005
+ * Claim that "In the absence of applied tension, DNA is at least one
+   order of magnitude softer than measured by single-molecule stretching
+   experiments"
  * Assertion that this paper's claims are supported by other data
    is questioned in @Mazur2009
+ * Interesting structure in scattering profile down to $q=0.01 \AA^{-1}$
 
 ## Statistics of loop formation along double-helix DNAs [@Yan2005]
 
