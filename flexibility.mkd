@@ -196,7 +196,7 @@ these small systems were well described by the WLC.
  * Use Seidel's Multiparameter Fluorescence Detection (MFD)
 
 ## FRET on DNA
-## Using fluorescence resonance energy transfer to measure distances along individual DNA molecules: Corrections due to nonideal transfer [@Sabanayagam2005]
+### Using fluorescence resonance energy transfer to measure distances along individual DNA molecules: Corrections due to nonideal transfer [@Sabanayagam2005]
 
  * Probe quantum yield of Cy3, TMR on B-DNA
  * Variation in Cy3 quantum yield 5 times larges than TMR
@@ -205,7 +205,7 @@ these small systems were well described by the WLC.
  * Some interesting notes about Cy3, TMR lifetimes; multiple states
  * $R_{da}$ from $15\AA$ to $60\AA$
 
-## Location of Cyanine-3 on Double-Stranded DNA: Importance for Fluorescence Resonance Energy Transfer Studies [@Norman2000]
+### Location of Cyanine-3 on Double-Stranded DNA: Importance for Fluorescence Resonance Energy Transfer Studies [@Norman2000]
 
  * NMR and bulk FRET
  * "In previous FRET experiments on DNA and RNA, we have found that
@@ -214,14 +214,14 @@ these small systems were well described by the WLC.
  * Computed $J$ from fluorescein
  * f
 
-## Measuring distances within unfolded biopolymers using FRET [@Makarov2009]
+### Measuring distances within unfolded biopolymers using FRET [@Makarov2009]
 
  * Examine effects of dynamics of a polymer on FRET observations
  * Relate mechanical relaxation timescale $\tau_R$ and intrinsic donor lifetime to $E$
  * Even when $\tau_R$ is five times the intrinsic donor lifetime, the errors
    in $\langle R^2 \rangle^{1/2}$ due to the steady-state assumption can be 10-25%
 
-## Orientation dependence in fluorescent energy transfer between Cy3 and Cy5 terminally attached to double-stranged nucleic acids [@Iqbal2008]
+### Orientation dependence in fluorescent energy transfer between Cy3 and Cy5 terminally attached to double-stranged nucleic acids [@Iqbal2008]
 
  * Note orientation dependence of FRET on dsDNA
      * Cy3, Cy5 labelled 10-24 bp dsDNA
