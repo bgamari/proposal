@@ -149,13 +149,21 @@ these small systems were well described by the WLC.
  * Cite @Bustamante2000 and @Bustamanta2003 as examples of long stand pulling experiments
  * Cite @Crothers1992 as example of cyclization experiment with dsDNA
    of hundreds of basepairs
- *
+ * Similiar to @MathewFenn2008
+
+## Remeasuring the double helix [@MathewFenn2008]
+
+ * Assertion that this paper's claims are supported by other data
+   is questioned in @Mazur2009
 
 ## Statistics of loop formation along double-helix DNAs [@Yan2005]
 
  * Theory of statistics of pairwise point encounters
  * Discuss in particular "how local flexible defects" facilitate
    cyclization of short dsDNA molecules
+
+## Extreme Bendability of DNA Less than 100 Base Pairs Long Revealed by Single-Molecule Cyclization [@Ha2012]
+
 
 # Nicks, gaps, and bulges
 
