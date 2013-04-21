@@ -155,6 +155,7 @@ these small systems were well described by the WLC.
 
  * Measure SAXS on two gold nanoparticles connected with 10 to 35-bp dsDNA
  * Appear to buy into cyclization results of @Cloutier2004 despite @Du2005
+ * Examine variance of nanoparticle separation as a function of duplex length $L$
  * Claim that "In the absence of applied tension, DNA is at least one
    order of magnitude softer than measured by single-molecule stretching
    experiments"
@@ -167,6 +168,9 @@ these small systems were well described by the WLC.
  * Appears to be a submitted but rejected technical note on
    @MathewFenn2008, circumstances described at end
  * Argues that Mathew-Fenn ignores excluded volume of nanoparticles
+ * Effect noted by Mathew-Fenn in other experiments can be attributed
+   to experimental artifacts:
+   * AFM
 
 ## Statistics of loop formation along double-helix DNAs [@Yan2005]
 
@@ -176,6 +180,10 @@ these small systems were well described by the WLC.
 
 ## Extreme Bendability of DNA Less than 100 Base Pairs Long Revealed by Single-Molecule Cyclization [@Ha2012]
 
+## Stretching and bending fluctuations of short DNA molecules [@Padinhateeri2013]
+
+ * Examine discrete generalization of WLC model, compare to data from @MathewFenn2009
+ *
 
 # Nicks, gaps, and bulges
 
