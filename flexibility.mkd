@@ -96,6 +96,9 @@ these small systems were well described by the WLC.
 
 ## High flexibility of DNA on short length scales probed by atomic force microscopy [@Wiggins2006]
 
+ * Examines conformations of dsDNA adsorbed on surface with AFM
+ * Notes frequent large-angle bends
+
 ## Spontaneous sharp bending of Double-Stranded DNA [@Cloutier2004]
 
  * 94bp dsDNA cyclize $10^2$ to $10^4$ times more readily than theory would predict
@@ -145,8 +148,8 @@ these small systems were well described by the WLC.
  * Compare with Monte Carlo simulations
  * Could measure scattering angle of down to $2\theta = 3^\circ$
  * 42 to 94 bp dsDNA are consistent with WLC ($l_p = 40nm$)
- * Cite @Garcia2007 for example of important of tight bending
- * Cite @Bustamante2000 and @Bustamanta2003 as examples of long stand pulling experiments
+ * Cite @Garcia2007 for example of importance of tight bending
+ * Cite @Bustamante2000 and @Bustamante2003 as examples of long strand pulling experiments
  * Cite @Crothers1992 as example of cyclization experiment with dsDNA
    of hundreds of basepairs
  * Similiar to @MathewFenn2008
@@ -155,13 +158,25 @@ these small systems were well described by the WLC.
 
  * Measure SAXS on two gold nanoparticles connected with 10 to 35-bp dsDNA
  * Appear to buy into cyclization results of @Cloutier2004 despite @Du2005
- * Examine variance of nanoparticle separation as a function of duplex length $L$
+ * Examine variance of nanoparticle separation as a function of duplex length $n$
+ * Increase in variance of $42.5 \AA^2$ from $n=10$ to $n=35$ bp,
+   theory would predict no more than $10 \AA^2$
  * Claim that "In the absence of applied tension, DNA is at least one
    order of magnitude softer than measured by single-molecule stretching
    experiments"
  * Assertion that this paper's claims are supported by other data
    is questioned in @Mazur2009
  * Interesting structure in scattering profile down to $q=0.01 \AA^{-1}$
+
+## Comment on "Remeasuring the double helix" [@Becker2009]
+
+ * Monte Carlo simulations of Mathew-Fenn's constructs using rigid base-pair model of DNA
+ * Parameters set from @Olson1998 and @Lankas2003
+ * TODO
+
+## Response to Comment on "Remeasuring the doube helix" [@MathewFenn2009]
+
+ * TODO
 
 ## Comments on "Remeasuring the double helix" [@Mazur2009]
 
@@ -178,12 +193,17 @@ these small systems were well described by the WLC.
  * Discuss in particular "how local flexible defects" facilitate
    cyclization of short dsDNA molecules
 
-## Extreme Bendability of DNA Less than 100 Base Pairs Long Revealed by Single-Molecule Cyclization [@Ha2012]
+## Extreme Bendability of DNA Less than 100 Base Pairs Long Revealed by Single-Molecule Cyclization [@Vafabakhsh2012]
+
+ * Used FRET pair to measure cyclized fraction over time
+
+ > The looping rate has a weak length dependence between 67 and 106 bp
+ > that cannot be described by the worm-like chain model.
 
 ## Stretching and bending fluctuations of short DNA molecules [@Padinhateeri2013]
 
  * Examine discrete generalization of WLC model, compare to data from @MathewFenn2009
- *
+ * Theory
 
 # Nicks, gaps, and bulges
 
@@ -194,7 +214,7 @@ these small systems were well described by the WLC.
 
 ## Conformations of Nicked and Gapped DNA Structures by NMR and Molecular Dynamic Simulations in Water [@Roll1998]
 
-## Flexibility of single-stranded DNA: Use of gapped duplex helices to determine the persistence lengths of poly(dT) and poly(dA) [@Mills1998]
+## Flexibility of single-stranded DNA: Use of gapped duplex helices to determine the persistence lengths of poly(dT) and poly(dA) [@Mills1999]
 
  * Examine flexiblity of single-stranded poly-A and T but observing
    rotational coherence times of gapped and duplex dsDNA
