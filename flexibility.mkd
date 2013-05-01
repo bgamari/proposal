@@ -206,6 +206,8 @@ these small systems were well described by the WLC.
  * Examine discrete generalization of WLC model, compare to data from @MathewFenn2009
  * Theory
 
+## Positively charged surfaces increase the flexibility of DNA [@Podesta2005]
+
 # Nicks, gaps, and bulges
 
 ## DNA bending by the bulge defect [@Rice1989]
@@ -284,3 +286,17 @@ these small systems were well described by the WLC.
      * Supported by time resolved fluorescence data from @Sanborn2007
      * Quantum yield = 0.35
  * Also noted altered periodicity in DNA-RNA hybrid
+
+## Osmotic stress
+
+### Watching molecules crowd: DNA double helices under osmotic stress [@Podgornik1995]
+
+### Osmotic stress, crowding, preferential hydration, and binding: A comparison of perspectives [@Parsegian2000]
+
+### Protein solvation in allosteric regulation: a water effect on hemoglobin [@Colombo1992]
+
+### Hydration changes upon DNA folding studied by osmotic stress experiments [@Nakano2012]
+
+## Other
+
+### Distance parameters derived from time-resolved FÃ¶rster resonance energy transfer measurements and their use in structural interpretations of thermodynamic quantities associated with protein-DNA interactions [@Parkhurst2004]
