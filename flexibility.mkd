@@ -314,8 +314,20 @@ these small systems were well described by the WLC.
 
  * Gels run on several hundred bp polymers in the presence of
    2-methyl-2,4-pantandiol (MPD, a dehydrating agent)
+ * MPD straightens DNA that would be curved in aqueous environment
+ * Sequence specific effect: A tracts are curved
  * Seems to be an attempt at explaining discrepancies between
    crystallographic results and models
+
+### A structural transition in duplex DNA induced by ethylene glycol [@Brewood2008]
+
+### Effect of Polyethylene Glycol on the Supercoiling Free Energy of DNA [@Naimushin2000]
+
+### Effects of Ethylene Glycol on the torsion elastic constant and hydrodynamic radius of p30δ DNA [@Rangel2006]
+
+### Stabilization of a DNA duplex under molecular crowding conditions of PEG [@Karimata2004]
+
+ * Eight-mer duplex stability improved with addition of PEG
 
 ## Other
 
