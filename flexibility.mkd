@@ -293,9 +293,29 @@ these small systems were well described by the WLC.
 
 ### Osmotic stress, crowding, preferential hydration, and binding: A comparison of perspectives [@Parsegian2000]
 
+ * A good review of these the connection between these three frameworks
+
 ### Protein solvation in allosteric regulation: a water effect on hemoglobin [@Colombo1992]
 
 ### Hydration changes upon DNA folding studied by osmotic stress experiments [@Nakano2012]
+
+### Macromolecular crowding: qualitative and semiquantitative successes, quantitative challenges [@Hall2003]
+
+### Macromolecular crowding increases structural content of folded proteins
+
+ * Look at circular dichroism of two proteins in presence of crowders:
+   * Ficoll 70
+   * Dextran 70
+   * PEG 1450
+   * Glycerol
+ * Note increase in fraction folded as function of osmolyte concentration
+
+### Dehydrating agents sharply reduce curvature in DNAs containing A tracts [@Spous1995]
+
+ * Gels run on several hundred bp polymers in the presence of
+   2-methyl-2,4-pantandiol (MPD, a dehydrating agent)
+ * Seems to be an attempt at explaining discrepancies between
+   crystallographic results and models
 
 ## Other
 
