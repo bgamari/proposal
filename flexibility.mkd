@@ -247,6 +247,11 @@ these small systems were well described by the WLC.
  * Use Seidel's Multiparameter Fluorescence Detection (MFD)
 
 ## FRET on DNA
+
+### Fluorescence resonance energy transfer FRET and competing processes in donor-acceptor substituted DNA strands [@Dietrich2002]
+
+ * Single-valued Cy3 lifetime on 5' A in 1M NaCl
+
 ### Using fluorescence resonance energy transfer to measure distances along individual DNA molecules: Corrections due to nonideal transfer [@Sabanayagam2005]
 
  * Probe quantum yield of Cy3, TMR on B-DNA
