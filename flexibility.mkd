@@ -330,6 +330,14 @@ these small systems were well described by the WLC.
 
 ### Effects of Ethylene Glycol on the torsion elastic constant and hydrodynamic radius of p30δ DNA [@Rangel2006]
 
+ * looking at PEG's effect on,
+    a) torsion elastic constant $α$
+    b) hydrodynamic radius
+    c) lifetimes of intercalated and non-intercalated dyees
+    d) dye wobble
+    e) binding constant of dye intercaalation
+    f) circular dichroism spectrum
+
 ### Stabilization of a DNA duplex under molecular crowding conditions of PEG [@Karimata2004]
 
  * Eight-mer duplex stability improved with addition of PEG
