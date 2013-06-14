@@ -102,6 +102,7 @@ these small systems were well described by the WLC.
 ## Spontaneous sharp bending of Double-Stranded DNA [@Cloutier2004]
 
  * 94bp dsDNA cyclize $10^2$ to $10^4$ times more readily than theory would predict
+ * @Vologodskii2013 claims that they propose @Crick1975 as potential explanation
  * Potentially flawed, see @Du2005
 
 ## Cyclization of short DNA fragments and bending fluctuations of the double helix [@Du2005]
@@ -206,6 +207,25 @@ these small systems were well described by the WLC.
  * Examine discrete generalization of WLC model, compare to data from @MathewFenn2009
  * Theory
 
+## Kinky Helix [@Crick1975]
+
+ * Propose non-smooth bending (kinking) to explain folding of chromatin
+
+## Bending of short DNA helices [@Vologodskii2013]
+
+ * Critical comment on @Ha2012
+ * Good explanation of flaw of @Cloutier2004
+ * Explain contradiction between @Vafabakhsh2012 and @Du2005, @Demurtas2009, @Du2008
+ * Cite flexibility of single-stranded DNA, longer contour length compared to duplex
+ * Accounting for these factors reduces $j$, but not enough to match theory
+ * To account for remaining discrepancy, cite sequence errors from oligo synthesis
+ * Point out that PCR mitigates these errors; labelling achievable;
+   perhaps a good droplet experiment
+
+
+## Strong bending of the DNA double helix [@Vologodskii2013a]
+
+
 ## Positively charged surfaces increase the flexibility of DNA [@Podesta2005]
 
 # Nicks, gaps, and bulges
@@ -268,7 +288,6 @@ these small systems were well described by the WLC.
    when the fluoro- phores are attached to a 5′-CC sequence they are
    spectrally well-behaved"
  * Computed $J$ from fluorescein
- * f
 
 ### Measuring distances within unfolded biopolymers using FRET [@Makarov2009]
 
@@ -292,6 +311,10 @@ these small systems were well described by the WLC.
      * Quantum yield = 0.35
  * Also noted altered periodicity in DNA-RNA hybrid
 
+### Forster Resonance Energy Transfer and Laser Fluorescent Analysis of Defects in DNA Double Helix [@Bregadze2013]
+
+ * TODO
+ 
 ## Osmotic stress
 
 ### Watching molecules crowd: DNA double helices under osmotic stress [@Podgornik1995]
