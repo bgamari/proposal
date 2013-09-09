@@ -264,7 +264,42 @@ these small systems were well described by the WLC.
    | 5     | $73^\circ \pm 2^\circ$  |
 
  * Claim slow positional, fast orientational fluctuations
- * Use Seidel's Multiparameter Fluorescence Detection (MFD)
+ * MFD Measurements (figure 1)
+    * Use Seidel's Multiparameter Fluorescence Detection (MFD)
+    * Examined interfluorophore distances of 5, 11, and 19 bp, identified in Figure 1a
+    * Show rotational freedom by anisotropy, assume $κ² = 2/3$, $R₀ = 51.8Å$
+    * Claim data falls on line indicating changes only in FRET efficiency, not clear
+      how true this is (e.g. systematic shift right in lower FRET populations)
+ * MD simulation of fluorophore-linker system on a straight DNA model
+    * straight DNA + freedom from linkers
+    * Use high temperature (2000K) MD simulation for examine possible dye positions
+    * Cite values in $κ²$ ranging from 0.69 to 0.67; not sure intention here: clearly
+      things are roughly free at 2000K.
+ * Comparing the experiment with simple models:
+    * Compare experimental results against two models:
+      * linear distance increate with number of separating base pairs
+      * mean position observed in MD simulation
+    * Note excess FRET around 17 bp
+    * helicity not enough to explain features of curve
+ * Correct averaging procedure
+    * Take several averages shown in Fig. 2
+       * dynamic average: rotational and translational diffusion fast compared to FRET
+       * static average: both slow compared to FRET
+       * isotropic: fast rotation
+ * Comparison of experimental FRET data with the MD simulation
+    * Claim strong dye rotational mobility by anisotropy
+    * Claim 2D diffusion within sterically allowed area (±4bp) by dye-dye quenching
+ * FRET detects sequence dependent bending of DNA
+    * Fit empirical polynomial to map $〈E〉_{iso}$ to $E_{mp}$
+    * Use DIAMOD to generate structures of sequence including bending
+    * Compute $E_{mp}$ of previously sampled dye positions
+    * Claim excellent fit, deviations at 5 and 7 bp due to quenching
+ * Kinked DNA:
+    * Measure a variety of DNAs featuring Adenosine bulges
+    * Construct geometric model of kinking
+    * Fit data against model
+    * In agreement with previous measurements (other than $A₅$ bulge)
+
 
 ## FRET on DNA
 
