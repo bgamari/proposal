@@ -400,6 +400,8 @@ these small systems were well described by the WLC.
 
  * Eight-mer duplex stability improved with addition of PEG
 
+### A new peculiar DNA structure: NMR solution structure of a DNA kissing complex [@Barbaulta]
+
 ## Other
 
 ### Distance parameters derived from time-resolved FÃ¶rster resonance energy transfer measurements and their use in structural interpretations of thermodynamic quantities associated with protein-DNA interactions [@Parkhurst2004]
