@@ -1,0 +1,75 @@
+# Characterization of droplet encapsulation for fluorescence spectroscopy
+
+Fluorescence spectroscopic methods facilitate experiments which probe
+molecular structure, conformation, and dynamics with single-molecule
+sensitivity. While study of molecules diffusing in solution is easily
+performed[@Deniz1999], these techniques offer only a fleeting glimpse
+of each species. Consequently, these experiments are restrictive in
+the range of timescales and interactions they can probe.
+
+Immobilization of molecular species provides a way around this
+limitation, enabling single molecule sensitive studies without
+temporal or ensemble averaging. The most readily implemented means of
+immobilization is surface attachment. Here a surface is functionalized
+and the molecule of interest chemically attached. Unfortunately this
+poses a variety of challenges. Direct interaction between the surface
+and the molecule under study can substantially perturb system
+behavior[@Yasuda2003]. Further, the chemistry required for
+immobilization poses a substantial practical barrier.
+
+An alternative to surface immobilization is encapsulation. Vesicles offer a 
+relatively convenient means[@Boukobza2001,@Okumus2004] to encapsulate
+single molecules. Once formed, these vesicles can either be studied in
+solution, affording longer dwell times in the observation volume, or
+chemically tethered to a surface. Unfortunately, these vesicles are
+prone to interactions with the system under study[@citeneeded] and
+pose difficulties for sample preparation[@citeneeded]. Moreover, large
+quantities of sample are required as most molecules will end up
+outside of a vesicle.
+
+Our group has developed a technique for the encapsulation of
+single-molecules in water-in-oil emulsion droplets. The protocol
+requires little sample preparation and results in emulsions which are
+stable for hours. Furthermore, as all sample solution will end up in a
+droplet, the technique is extremely efficient in its sample
+useage. Initial indications[@Goldner2009] suggest that the presence of
+the droplet interface leaves the system of interest largely
+unperturbed. Like vesicles, these emulsions can be either probed in
+solution or used for immobilization.
+
+Furthermore, we have developed a system for tracking droplet motion
+through solution. This enables study of single-molecules over
+time-scales previously only accessible through surface immobilization.
+The ability to study isolated single-molecules for long durations makes
+droplet encapsulation a promising tool.
+
+Unfortunately, droplet encapsulation poses substantial challenges for
+control over experimental environment[@Milas2013]. The droplets
+produced by the technique are typically hundreds of nanometers in
+diameter. It is well-documented that these droplets exhibit an equilibrium
+surface potential. Consequently, ion concentrations are known to be
+inconsistent throughout the droplet volume. These two factors greatly
+complicate interpretation of experiments performed under droplet
+confinement.
+
+In order to explore the effects of droplet confinement in a typical
+biomolecular system, I propose a series experiments on a set of model
+systems. These will probe the environment local to the specimen
+through the behavior of both the molecule itself and its attached
+dyes.
+
+The systems will consist of a variety of DNA oligos. These systems are
+an interesting choice as they are easily synthesized and labelled,
+robust, and exhibit interesting mechnical behavior. Moreover, FRET's
+ability to probe intra-molecular distances makes it an excellent tool
+for studying short DNA system. Finally, a rich experimental
+literature, numerous questions surrounding the flexibility of short
+dsDNA remain open.
+
+## Experimental work
+
+ * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
+ * Measure same in droplet, identify effective concentrations in droplet environment
+ * Correction: Non-uniform radial position distribution due to electrostatics? Quenching against interface?
+ * Rotational anisotropy of acceptor and donor
+ * 

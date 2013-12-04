@@ -1,1 +1,175 @@
-# Proposal
+# This is the title of a proposal
+
+It will involve FRET, biological polymers, single-molecule
+confinement, and some interesting data analysis
+
+## Background
+
+ * early biophysical measurements were largely bulk measurements
+ * utility of single molecule view
+   * 
+ * fluorescence techniques have enabled 
+
+TODO: say we are focusing on B-DNA
+
+The flexibility of DNA and RNA play a pivotal role in their
+function. It is well-known that these polymers are bent on wide range of
+length-scales during their many functions within the cell.
+Kornberg demonstrated that chromatin is consists of DNA organized
+around histone cores, forcing the polymer into curvatures on the order
+of nanometers[@Kornberg1974]. When unpacked from chromatin,
+transcription enzymes are known to force DNA into tight
+loops[@Nelson2012]. Finally, virii are known to pack an
+enormous a quantity of DNA into capsids as small as tens of nanometers
+in diameter.
+
+The freely-jointed chain model views the polymer as $n$ stiff
+links each of length $l$[@Benham2005] with no directional
+correlation. As the end-to-end distance $R$ of the molecule is given
+by a sum of independent variates, we find that,
+$$\mean{R^2} = \mathscr{N}\{0, n l\}$$
+
+Taking $l \longrightarrow 0$ we find the worm-like chain
+model[@Kratky1949], a distinct model which describes a continuous
+polymer. Here we find that
+
+$$F_\mathrm{bend} = \frac{1}{2} a \theta^2$$
+
+TODO: [@Landau1973, §127]
+TODO: Introduce $l_p$
+
+Various extensions have been built around this structure ranging from
+the ad-hoc addition of empirical terms[@Wiggins2006] to the 
+reintroduction of discrete links[@Padinhateeri2013].
+
+In addition, there are number
+
+TODO: Discuss early measurements of $l_p$
+
+Models of polymer flexibility
+
+Early experiments on long DNA
+ * @Shore1981
+
+Temperature dependence
+ * @Geggier2011
+
+While the continuum models above hold well in the case of moderate
+bending of long polymers, there is reason to suspect they might fail
+in shorter polymers. Here the contour length of the polymer is
+approaches the length of its individual monomers. In this regime it is
+reasonable to expect that model consisting of jointed chain links of
+finite length would be more appropriate than, e.g., the worm-like chain.
+
+## The flexibility of short DNA
+
+Despite a number of studies, numerous questions surrounding the
+flexibility characteristics of short dsDNA oligos remain open. In
+particular, several experiments have suggested that these short
+polymers are substantially more flexible than predicted by the
+worm-like chain model.
+
+This is perhaps most directly seen in a experiment by Wiggins *et al.*
+which imaged with atomic force microscopy dsDNA adsorbed on a
+surface[@Wiggins2006]. Here large-angle bends were seen several times
+more often than predicted by the worm-like chain model.
+
+A common tool for the characterization of polymer flexibility is the
+cyclization experiment[@Shore1981].
+In this experiment, a double-stranded DNA with
+complementary single-stranded ends is placed in solution at finite
+temperature. These molecules are in dynamic equilibrium: thermal
+fluctuations will drive the ends of some molecules to find one another
+and bind, temporarily holding the molecule in a ring-like (cyclized)
+conformation.
+
+With the addition of a ligase enzyme one can permanantly freeze the
+cyclized subpopulation in their state, in effect capturing a snapshot
+of the state of the population. The cyclized subpopulation can then be
+isolated through electrophoresis and counted to yield a cyclization
+efficiency $j$, a quantity[@Jacobson1950] which can be computed for a
+variety of models of flexibility.
+
+<!-- Cloutier -->
+Excess flexibility of short DNA was first noted in 2004 by Cloutier *et
+al*[@Cloutier2004]. Cloutier measured cyclization of dsDNA around
+100bp in length and observed that these polymers cyclized between two
+and five orders of magnitude more often than expected.
+
+<!-- Du -->
+This claim was quickly refuted by similar a cyclization experiment
+which found dsDNA of similar length to be in remarkable agreement with
+the worm-like chain theory[@Du2005]. Further attempts to reproduce
+Cloutier's result lead the authors to conclude that the high
+cyclization rates observed in his experiment were due to the unusually
+high ligase concentration used; a precondition to the applicability of
+the theory backing the cyclization technique is that the rate of
+ligation be much slower than the rate of dissociation.
+
+<!-- Mathew-Fenn -->
+It did not take long, however, for claims of enhanced flexiblity to
+resurface. In 2008, Mathew-Fenn *et al.* reported that small-angle X-ray
+diffraction studies of shorter dsDNA saw a end-to-end distance
+variance 13 times higher larger than predicted. In this experiment a
+roughly dsDNA oligos from 10 to 35 bp long were labelled on both ends
+with gold nanoparticles. Scattering due to the nanoparticles served as
+a probe for the end-to-end distance of the polymer.
+
+<!-- Mathewe-Fenn refutations -->
+While the authors pointed to a cooperative stretching process as the
+cause for this enhanced variance, follow-up papers point to the
+excluded volume of the nanoparticles themselves[@Becker2009] or
+bending fluctuations[@Mazur2009] as the cause for the inconsistency.
+Furthermore, similar X-ray measurements on longer DNA oligos found no
+appreciable deviation from worm-like chain behavior, noting that the
+excluded volume of the probe is responsible for any
+excess[@Mastroianni2009].
+
+<!-- Mathewe-Fenn response -->
+A follow-up from Mathew-Fenn extended the experiment with more oligo
+lengths and an additional linker configuration, modulating oligo
+rigidity through ionic strength[@MathewFenn2009]. In light of this
+data, they argue that that the original cooperative stretching
+hypothesis is the simplest explanation commensurate with
+observation. They still note that none of the models under
+consideration are in agreement within experimental error, a point
+which they blame on an unaccounted for dependence on base sequence.
+
+<!-- Vafabakhsh -->
+Further support for enhanced flexibility has come from a recent
+experiment by Vafabakhsh using single-pair FRET to directly measure
+cyclization binding/unbinding events[@Vafabakhsh2012]. By measuring
+energy transfer between two terminal fluorescent dyes, the authors 
+infer binding and unbinding rates allowing nearly direct measurement
+of $j$. With this technique, they measured cyclization of oligos
+between 67 and 106 bp in length to find a length dependence
+unexplained by the worm-like chain model.
+
+<!-- Vologodskii -->
+Finally, Vologodskii
+[@Vologodskii2013]
+
+<!-- Mazur -->
+TODO: @Mazur2013
+
+TODO: Mention @Podgornik2006
+TODO: @Czapla2006
+TODO: @Mills1999
+TODO: @Yuan2008
+
+### Explaining large angle bends
+
+TODO: @Crick1975
+TODO: @Wiggins2006
+TODO: @Wiggins2006a
+TODO: @Spiriti2012
+TODO: @Padinheerti2013
+TODO: @Demurtas2009?
+TODO: @Mazur2007
+
+## Perturbed short DNA
+
+### Related Work
+
+ * @Wozniak2008
+
