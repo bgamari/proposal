@@ -29,11 +29,23 @@ correlation. As the end-to-end distance $R$ of the molecule is given
 by a sum of independent variates, we find that,
 $$\mean{R^2} = \mathscr{N}\{0, n l\}$$
 
-Taking $l \longrightarrow 0$ we find the worm-like chain
-model[@Kratky1949], a distinct model which describes a continuous
-polymer. Here we find that
+In the limit where the polymer is much longer than the monomer length,
+however, we might try to view this material as a continuum
+by taking $l \rightarrow 0$. Considering small bends of a isotropic
+polymer (*e.g.* with is no energetically preferable direction for
+bending), we see that the free energy is dominated by a quadratic term
+in the bending curvature $\kappa$ (as $\kappa=0$ defines the
+system's equilibrium),
+$$F_\mathrm{bend} = \frac{1}{2} a \kappa^2$$
+It can be shown that under this model the angular correlation between the
+tangents of two sections of polymer separated by length $d$ is given by,
+$$ \langle \cos\theta \rangle = e^{-d T / a} $$
 
-$$F_\mathrm{bend} = \frac{1}{2} a \theta^2$$
+
+
+[@Kratky1949], a distinct
+model which describes a continuous polymer. Here 
+
 
 TODO: [@Landau1973, §127]
 TODO: Introduce $l_p$
@@ -154,6 +166,7 @@ TODO: @Mazur2013
 
 TODO: Mention @Podgornik2006
 TODO: @Czapla2006
+TODO: @Chen2011
 TODO: @Mills1999
 TODO: @Yuan2008
 
