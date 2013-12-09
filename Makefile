@@ -1,9 +1,9 @@
 all : proposal.pdf droplet.pdf
 
-%.pdf : %.mkd defs.tex
+%.pdf : %.mkd defs.tex refs.bib
 	pandoc -H defs.tex --bibliography refs.bib $< -o $@
 
-.PHONY : refs.bib
-refs.bib :
-	-cp ${HOME}/lori/papers/library.bib $@
-	-git commit $@ -m "Update references"
+.PHONY : update-refs
+update-refs :
+	cp ${HOME}/lori/papers/library.bib $@
+	git commit $@ -m "Update references"
