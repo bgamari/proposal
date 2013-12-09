@@ -3,7 +3,7 @@
 Fluorescence spectroscopic methods facilitate experiments which probe
 molecular structure, conformation, and dynamics with single-molecule
 sensitivity. While study of molecules diffusing in solution is easily
-performed[@Deniz1999], these techniques offer only a fleeting glimpse
+performed[@Dahan1999], these techniques offer only a fleeting glimpse
 of each species. Consequently, these experiments are restrictive in
 the range of timescales and interactions they can probe.
 

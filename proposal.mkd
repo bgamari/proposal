@@ -166,7 +166,7 @@ TODO: @Mazur2013
 
 TODO: Mention @Podgornik2006
 TODO: @Czapla2006
-TODO: @Chen2011
+TODO: @Chen2010
 TODO: @Mills1999
 TODO: @Yuan2008
 
@@ -176,7 +176,7 @@ TODO: @Crick1975
 TODO: @Wiggins2006
 TODO: @Wiggins2006a
 TODO: @Spiriti2012
-TODO: @Padinheerti2013
+TODO: @Padinhateeri2013
 TODO: @Demurtas2009?
 TODO: @Mazur2007
 
