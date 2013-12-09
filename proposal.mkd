@@ -27,7 +27,7 @@ The freely-jointed chain model views the polymer as $n$ stiff
 links each of length $l$[@Benham2005] with no directional
 correlation. As the end-to-end distance $R$ of the molecule is given
 by a sum of independent variates, we find that,
-$$\mean{R^2} = \mathscr{N}\{0, n l\}$$
+$$\mean{R^2} = \mathcal{N}\{0, n l\}$$
 
 In the limit where the polymer is much longer than the monomer length,
 however, we might try to view this material as a continuum
