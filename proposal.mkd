@@ -127,7 +127,7 @@ roughly dsDNA oligos from 10 to 35 bp long were labelled on both ends
 with gold nanoparticles. Scattering due to the nanoparticles served as
 a probe for the end-to-end distance of the polymer.
 
-<!-- Mathewe-Fenn refutations -->
+<!-- Mathew-Fenn refutations -->
 While the authors pointed to a cooperative stretching process as the
 cause for this enhanced variance, follow-up papers point to the
 excluded volume of the nanoparticles themselves[@Becker2009] or
@@ -137,7 +137,7 @@ appreciable deviation from worm-like chain behavior, noting that the
 excluded volume of the probe is responsible for any
 excess[@Mastroianni2009].
 
-<!-- Mathewe-Fenn response -->
+<!-- Mathew-Fenn response -->
 A follow-up from Mathew-Fenn extended the experiment with more oligo
 lengths and an additional linker configuration, modulating oligo
 rigidity through ionic strength[@MathewFenn2009]. In light of this
@@ -158,8 +158,9 @@ between 67 and 106 bp in length to find a length dependence
 unexplained by the worm-like chain model.
 
 <!-- Vologodskii -->
-Finally, Vologodskii
-[@Vologodskii2013]
+Within the year, Vologodskii responded citing the flexibility of the
+single-stranded fluorophore linker and sequence errors from synthesis
+as the source of Vafabakhsh's excess flexibility[@Vologodskii2013].
 
 <!-- Mazur -->
 TODO: @Mazur2013
@@ -182,7 +183,30 @@ TODO: @Mazur2007
 
 ## Perturbed short DNA
 
+In addition to its largely straight double-helical form, B-DNA
+can be made to take on a number of perturbed conformations through
+sequence modification. It is well known that runs of repeated bases
+induce an intrinsic curvature in the polymer[@Crothers1990]. The
+addition of non-complementary bases in the middle of a complementary
+run gives rise to so-called "bubbles". Finally, insertion of bases in
+the middle of one of the two strands of a B-DNA gives rise to
+geometries commonly known as kinks and bulges.
+
+Each of these geometries has a unique effect on the flexibility of the polymer.
+
 ### Related Work
 
  * @Wozniak2008
 
+## G-Quadruplex
+
+It has long been known[@Sen1988] that guanine-rich DNA sequences can
+form quadruplex structures consisting of four single-strands of 
+bound by Hoogstein pairing[@Hoogsteen1963]. 
+
+## Proposed work
+
+In my work I will reexamine Ha's FRET-based cyclization experiment in
+light of recent evidence for the applicability of the worm-like chain
+model to short polymers. As a first step I will attempt to reproduce
+Ha's findings. 
