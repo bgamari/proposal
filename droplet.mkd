@@ -1,7 +1,17 @@
 # Characterization of droplet encapsulation for fluorescence spectroscopy
 
+My thesis will study the effects on a droplet environment on
+fluorescence measurements on a typical biological polymer. Below I
+will briefly describe the fluorescence specotroscopic tools we use in
+our lab, followed by our encapsulation technique using emulsion droplets
+to contain and isolate single-molecules. I will then describe a novel instrument
+for tracking motion of droplets, enabling fluorescence study of
+single-molecules over several minutes. Finally, I will propose a set
+of experiments examining the effect of droplet containment on the
+chemical and physical environment surrounding the molecule.
+
 ## Fluorescence spectroscopy
-Fluorescence spectroscopic methods facilitate experiments which probe
+Fluorescence spectroscopic methods facilitate experiments capable of probing
 molecular structure, conformation, and dynamics with single-molecule
 sensitivity. While experiments examining molecules diffusing in
 solution area readily performed[@Dahan1999, FIXME more], these techniques offer
@@ -10,7 +20,7 @@ experiments are restrictive in the range of timescales and
 interactions they can probe.
 
 Immobilization of molecular species provides a way around this
-limitation, enabling single molecule sensitive studies without
+limitation, enabling single-molecule sensitive studies without
 temporal or ensemble averaging. The most commonly used means of
 immobilization is surface attachment. Here the molecule of interesting
 and a surface are both chemically modified to be mutually sticky.
@@ -58,24 +68,29 @@ the system under study.
 
 One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the environmental conditions
-match expectations. Initial measurements from our lab have
+are well understood. Initial measurements from our lab have
 demonstrated that care is needed in interpretting fluorescence
-experiments in droplet environments. While Tang, *et al.* reported
+experiments in droplet environments. While Tang *et al.* reported
 no evidence of perturbation in polarization anisotropy measurements on
-enhanced green fluorescent protein (EGFP)[@Tang2008,@Jofre2007].
+enhanced green fluorescent protein (EGFP) on short time scales, recent
+observations by Milas have raised questions regarding the
+applicability of these measurements to real biophysical
+systems[@Tang2008,@Jofre2007, @Milas2014].
 
 It is known that cyanine dyes terminally attached to RNA demonstrates
 a several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010]. Recent FRET experiments on short
-double-stranded RNA[@Milas2013] have provided evidence that droplets
-stabilize stacking of cyanine fluorophores on the end of the
-strand. The idea of this stacking was
+a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
+and I on short double-stranded RNA[@Milas2013] have provided evidence
+that droplets stabilize stacking of cyanine fluorophores on the end of
+the strand, an idea first put forth by Iqbal[@Iqbal2008]
 
+<!--
 A complicating factor in this protocol is the potentially destructive
 effect of ultrasonication on the molecule under study. Reiner, *et
 al.* have noted that emulsion preparation by ultrasonication results
 in significant sample degradation in the case of red fluorescent
 protein (RFP) [@Reiner2006].
+-->
 
 ## Droplet tracking
 
@@ -151,6 +166,6 @@ be sufficiently resolved to produce a stable track.
 
 In the event that our photodiode is unable to resolve the scattered
 signal I will attempt to identify a protocol for producing larger
-droplets. Alternatively, other group-members are developing techniques
+droplets. Alternatively, other members of our group are developing techniques
 for immobilization and manipulation of droplets within a microfluidic
 device.

@@ -5,7 +5,7 @@ confinement, and some interesting data analysis
 
 ## Background
 
- * early biophysical measurements were largely bulk measurements
+ * early biophysical measurements were largely ensemble measurements
  * utility of single molecule view
    * 
  * fluorescence techniques have enabled 
@@ -82,9 +82,9 @@ polymers are substantially more flexible than predicted by the
 worm-like chain model.
 
 This is perhaps most directly seen in a experiment by Wiggins *et al.*
-which imaged with atomic force microscopy dsDNA adsorbed on a
-surface[@Wiggins2006]. Here large-angle bends were seen several times
-more often than predicted by the worm-like chain model.
+which imaged dsDNA adsorbed on a surface by atomic force
+microscopy[@Wiggins2006]. Here large-angle bends were seen several
+times more often than predicted by the worm-like chain model.
 
 A common tool for the characterization of polymer flexibility is the
 cyclization experiment[@Shore1981].
