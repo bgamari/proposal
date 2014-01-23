@@ -1,13 +1,13 @@
 # Characterization of droplet encapsulation for fluorescence spectroscopy
 
-My thesis will study the effects on a droplet environment on
-fluorescence measurements on a typical biological polymer. Below I
+My thesis will study the effects of a droplet environment on
+fluorescence measurements of a typical biological polymer. Below I
 will briefly describe the fluorescence specotroscopic tools we use in
 our lab, followed by our encapsulation technique using emulsion droplets
 to contain and isolate single-molecules. I will then describe a novel instrument
-for tracking motion of droplets, enabling fluorescence study of
+for tracking the motion of droplets, enabling fluorescence study of
 single-molecules over several minutes. Finally, I will propose a set
-of experiments examining the effect of droplet containment on the
+of experiments examining the effects of droplet containment on the
 chemical and physical environment surrounding the molecule.
 
 ## Fluorescence spectroscopy
@@ -19,20 +19,27 @@ only a fleeting glimpse of each species. Consequently, these
 experiments are restrictive in the range of timescales and
 interactions they can probe.
 
-Immobilization of molecular species provides a way around this
+TODO: Describe specific fluorescence experiments?
+TODO: Figure showing apparatus?
+
+Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies without
 temporal or ensemble averaging. The most commonly used means of
-immobilization is surface attachment. Here the molecule of interesting
-and a surface are both chemically modified to be mutually sticky.
-Unfortunately this approach poses a variety of challenges. Direct
+immobilization is surface attachment. Here the molecule of interest
+and an immobile surface are both chemically modified to be mutually sticky. 
+This approach poses a variety of challenges. Direct
 interaction between the surface and the molecule under study can
-substantially perturb system behavior[@Yasuda2003]. Further, the
-chemistry required for the modification of the surface and system
-poses a substantial practical barrier.
+substantially perturb the behavior of the studied system
+[@Yasuda2003]. Further, the chemistry required for the modification of
+the surface and molecule poses a substantial practical barrier.
+
+TODO: Figure vesicle encapsulation
+TODO: Figure droplet encapsulation
 
 An alternative to surface immobilization is encapsulation. Vesicles offer a 
-relatively convenient means[@Boukobza2001,@Okumus2004] to encapsulate
-single molecules. Once formed, these vesicles can either be studied in
+relatively convenient means[@Boukobza2001,@Okumus2004] of encapsulating
+single molecules. Vesicles are small bubbles enclosed by a lipid
+membrane. Once formed, these vesicles can either be studied in
 solution, affording longer dwell times in the observation volume, or
 chemically tethered to a surface. Unfortunately, these vesicles are
 prone to interactions with the system under study[@citeneeded] and
@@ -48,7 +55,7 @@ single-molecules in water-in-oil emulsion droplets. The protocol
 requires little sample preparation and results in emulsions which are
 stable for hours. Furthermore, as all sample solution will end up in a
 droplet, the technique is extremely efficient in its sample
-useage. Initial indications[@Goldner2009] suggest that the presence of
+useage. Initial indications[@Tang2008] suggest that the presence of
 the droplet interface leaves the system of interest largely
 unperturbed. Like vesicles, these emulsions can be either probed in
 solution or used for immobilization.
@@ -75,7 +82,11 @@ no evidence of perturbation in polarization anisotropy measurements on
 enhanced green fluorescent protein (EGFP) on short time scales, recent
 observations by Milas have raised questions regarding the
 applicability of these measurements to real biophysical
-systems[@Tang2008,@Jofre2007, @Milas2014].
+systems[@Tang2008, @Jofre2007, @Milas2014].
+
+It should be noted that while Tang's droplets were formed without
+surfactant by way of mechanical injection, our recent measurements
+have used more stable droplets formed by shear and a surfactant.
 
 It is known that cyanine dyes terminally attached to RNA demonstrates
 a several states where the dye stacks on its neighboring base much as
@@ -104,10 +115,18 @@ possible to optically measure the diffusive motion of the
 encapsulants, and therefore the molecules contained withint.
 
 We have developed a system for tracking droplet motion
-in solution. This enables study of single-molecules over
-time-scales previously only accessible through surface immobilization.
-The ability to study isolated single-molecules for long durations makes
-droplet encapsulation a promising tool.
+in solution inspired by Desai *et al.* This system enables study of
+single-molecules over time-scales previously only accessible through
+surface immobilization.  The ability to study isolated
+single-molecules for long durations makes droplet encapsulation a
+promising tool.
+
+The tracking system infers the position of the particle relative to the
+microscope's focus point by examining scattering through the particle
+with a detector situated in the back-focal plane of the
+microscope. After learning a polynomial model of the displacement of
+this scattered beam as a function of particle position, one can infer
+the position of a diffusing particle.
 
 ## Proposed work
 
@@ -135,6 +154,12 @@ questions surrounding the flexibility of short dsDNA remain open. Some
 of these might be discussed in Section 2 [FIXME].
 
 ### Experimental work
+
+My work will begin by building on @Tang2008 to further examine the
+effect of the droplet surface on the rotational and translational
+freedom of the molecule under study. These measurements will consist
+of rotational anisotropy measurements on my oligos both in solution
+and droplet confinement. While Tang formed
 
 I will use a variety of fluorescence tools to probe the behavior of
 DNA oligos both in solution and in droplet encapsulation.
@@ -164,8 +189,8 @@ optimizing the tracking system to handle the smaller signal produced
 by these small particles, there is no guarantee that this signal can
 be sufficiently resolved to produce a stable track.
 
-In the event that our photodiode is unable to resolve the scattered
-signal I will attempt to identify a protocol for producing larger
-droplets. Alternatively, other members of our group are developing techniques
-for immobilization and manipulation of droplets within a microfluidic
-device.
+In the event that the tracking system's detection electronics is
+unable to resolve the scattered signal I will attempt to identify a
+protocol for producing larger droplets. Alternatively, other members
+of our group are developing techniques for immobilization and
+manipulation of droplets within a microfluidic device.

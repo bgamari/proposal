@@ -14,7 +14,7 @@ TODO: say we are focusing on B-DNA
 
 The flexibility of DNA and RNA play a pivotal role in their
 function. It is well-known that these polymers are bent on wide range of
-length-scales during their many functions within the cell.
+length-scales in their many functions within the cell.
 Kornberg demonstrated that chromatin is consists of DNA organized
 around histone cores, forcing the polymer into curvatures on the order
 of nanometers[@Kornberg1974]. When unpacked from chromatin,
