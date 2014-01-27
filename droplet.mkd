@@ -167,6 +167,7 @@ DNA oligos both in solution and in droplet encapsulation.
 experiments will revolve around characterizing the behavior of dye
 within a droplet. Here we have 
 
+ * Zeta potential measurement
  * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
  * Polarization anisotropy to examine rotational freedom
  * FCS to examine translational diffusion
