@@ -10,7 +10,9 @@ single-molecules over several minutes. Finally, I will propose a set
 of experiments examining the effects of droplet containment on the
 chemical and physical environment surrounding the molecule.
 
-## Fluorescence spectroscopy
+## Background
+
+### Fluorescence spectroscopy
 Fluorescence spectroscopic methods facilitate experiments capable of probing
 molecular structure, conformation, and dynamics with single-molecule
 sensitivity. While experiments examining molecules diffusing in
@@ -49,7 +51,7 @@ outside of a vesicle. Collectively, these factors make vesicle
 encapsulation an inconvenient technique which is often avoided unless
 needed.
 
-## Droplet encapsulation
+### Droplet encapsulation
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The protocol
 requires little sample preparation and results in emulsions which are
@@ -71,23 +73,31 @@ While we have been using droplets in this capacity for several years,
 there remain several outstanding questions surround their effect on
 the system under study.
 
-### Droplet environment
+## Motivation: Fluorescence spectroscopy in a droplet environment
 
 One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the environmental conditions
-are well understood. Initial measurements from our lab have
+of the droplet's volume are well understood. Initial measurements from our lab have
 demonstrated that care is needed in interpretting fluorescence
-experiments in droplet environments. While Tang *et al.* reported
-no evidence of perturbation in polarization anisotropy measurements on
-enhanced green fluorescent protein (EGFP) on short time scales, recent
-observations by Milas have raised questions regarding the
-applicability of these measurements to real biophysical
-systems[@Tang2008, @Jofre2007, @Milas2014].
+experiments in droplet environments.
 
+In an early paper examining the use of droplets for fluorescence
+measurements Tang *et al.* reported
+no evidence of perturbation in polarization anisotropy measurements on
+enhanced green fluorescent protein (EGFP) on short time
+scales[@Tang2008]. Polarization anisotropy is reflective of the rotational
+coherence of the dye and, consequently, the object to which it is
+attached. In contrast, recent observations by Milas have raised
+questions regarding the applicability of these measurements to real
+biophysical systems[@Jofre2007, @Milas2014].
+
+\footnote{
 It should be noted that while Tang's droplets were formed without
 surfactant by way of mechanical injection, our recent measurements
 have used more stable droplets formed by shear and a surfactant.
+}
 
+### For thesis? Dye stacking on nucleotides
 It is known that cyanine dyes terminally attached to RNA demonstrates
 a several states where the dye stacks on its neighboring base much as
 a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
@@ -95,38 +105,28 @@ and I on short double-stranded RNA[@Milas2013] have provided evidence
 that droplets stabilize stacking of cyanine fluorophores on the end of
 the strand, an idea first put forth by Iqbal[@Iqbal2008]
 
-<!--
-A complicating factor in this protocol is the potentially destructive
-effect of ultrasonication on the molecule under study. Reiner, *et
-al.* have noted that emulsion preparation by ultrasonication results
-in significant sample degradation in the case of red fluorescent
-protein (RFP) [@Reiner2006].
--->
+## Related work
 
-## Droplet tracking
+The properties of oil-in-water emulsions and their interfaces have
+been widely studied in a number of communities. Vibrational
+spectroscopy on related oil-in-water emulsions have demonstrated that
+these interfaces carry a negative charge[@Tian2009]. Further interface
+potential measurements have shown that this charge dissipates at high
+pH[@Zimmermann2001, @Marinova1996, @Stubenrauch2002], leading many to
+infer that this surface charge is due to an accumulation of hydroxide
+ions on the interface.
 
-The ability to observe a fluorescence trajectory over a long duration
-without the artifacts introduced by surface tethering
-enables a wide variety of previously inaccessible measurements
-including slow molecular kinetics, ....
+It is widely believed that water organizes on hydrophobic interfaces
+such as outside of an oil-in-water droplet[@Vacha2008].
+[@Kudin2007]
 
-As droplets are much larger than the molecules they contain it is
-possible to optically measure the diffusive motion of the
-encapsulants, and therefore the molecules contained withint.
+[@Knecht2007] 
 
-We have developed a system for tracking droplet motion
-in solution inspired by Desai *et al.* This system enables study of
-single-molecules over time-scales previously only accessible through
-surface immobilization.  The ability to study isolated
-single-molecules for long durations makes droplet encapsulation a
-promising tool.
+Our case of water-in-oil emulsions is considerably less studied.
 
-The tracking system infers the position of the particle relative to the
-microscope's focus point by examining scattering through the particle
-with a detector situated in the back-focal plane of the
-microscope. After learning a polynomial model of the displacement of
-this scattered beam as a function of particle position, one can infer
-the position of a diffusing particle.
+
+[@Tian2009]
+
 
 ## Proposed work
 
@@ -167,12 +167,94 @@ DNA oligos both in solution and in droplet encapsulation.
 experiments will revolve around characterizing the behavior of dye
 within a droplet. Here we have 
 
+#### Measurement of surface potential
+
+It has been widely documented that emulsion droplets of oil in water
+carry charge on their surface. This charge gives rise to an electric
+surface potential and, consequently, repulsive interactions between
+particles which stabilize the colloid. 
+believe that our water-in-oil emulsions exhibit a similar surface
+behavior.
+
+While the consequences of a non-zero surface potential are not clear,
+it is likely that the chemistry within the droplet volume will be
+affected. This might explain the unexpected behavior in pH and
+molecular dynamics that we have observed.
+
+While there are a number of tools for characterizing the surface
+potential of oil-in-water emulsions, few of these are applicable to
+our water-in-oil droplets. As a first attempt at examining the effect
+of pH, salt, and * on surface potential I have started a set of
+studies using Phase-Analysis Light Scattering
+(PALS)[@Tscharnuter2001], a technique for measuring the
+electrophoretic mobility of a suspension of emulsion droplets.
+
+The interpretation of these mobilities in terms of surface charge is
+not as clear for our water-in-oil emulsions as it is for the typical
+oil-in-water case. While in oil-in-water emulsions the presence of
+ionic double-layering gives rise to analysis complications from
+viscous forces, we 
+
  * Zeta potential measurement
  * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
  * Polarization anisotropy to examine rotational freedom
  * FCS to examine translational diffusion
  * Measure same in droplet, identify effective concentrations in droplet environment
  * Different dyes?
+
+#### Droplet tracking
+
+The ability to observe a fluorescence trajectory over a long duration
+without the artifacts introduced by surface tethering
+enables a wide variety of previously inaccessible measurements
+including slow molecular kinetics, ....
+
+As droplets are much larger than the molecules they contain it is
+possible to optically measure the diffusive motion of the
+encapsulants, and therefore the molecules contained within.
+
+We have developed a system for tracking droplet motion
+in solution inspired by Desai *et al.* This system enables study of
+single-molecules over time-scales previously only accessible through
+surface immobilization.  The ability to study isolated
+single-molecules for long durations makes droplet encapsulation a
+promising tool.
+
+The tracking system infers the position of the particle relative to the
+microscope's focus point by examining scattering through the particle
+with a detector situated in the back-focal plane of the
+microscope. After learning a polynomial model of the displacement of
+this scattered beam as a function of particle position, one can infer
+the position of a diffusing particle.
+
+#### DNA quadruplex system
+
+Over the course of cell division a human cell must reliably replicate
+the entire three-billion base genome. To carry out the task nature has
+devised an intricate set of mechanisms to ensure replication error
+rates of less than $10^{-6}$.  Even with such a low bulk error rate,
+the genetic replication machinery of most organisms suffers from the
+shortcoming that they do not reliably preserve bases near the ends of
+a chromosome. To work around this shortcoming, nature has introduced
+regions of non-coding DNA near the ends of the genome. This
+*telomeric* DNA is lost during the replication process, to be
+later replaced by dedicated enzymes.
+
+Telomeric DNA is known to have repeats of G-rich spans which 
+have been shown to form a wide array of structures *in
+vitro*. In particular, these sequences are known to form
+G-quadruplexes[@Sen1988], structures where a single strand of DNA
+pairs with itself, giving rise to a four-way symmetric structure
+which has been linked to a variety of regulatory processes in model
+systems[@TODO].
+
+Early work on quadruplex systems demonstrated that
+the stability of quadruplex systems is heavily dependent upon ionic
+conditions[@Miyoshi2002].
+
+
+
+
 
 ### Analysis
 
