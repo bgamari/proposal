@@ -6,13 +6,19 @@
    $d((GGGTTA)_3 GGG)$
  * FRET studies from previous work [@Ueyama2002, @Takenaka2003]
    * Only saw FRET with $K$ and $Na$, less $K$ required
-   * TMR brighter in $Na$ than $K$
    * $Mg^{+2}$ caused quenching of donor, no FRET
-   * 
+ * Section 3.3: Fluorescence properties
+   * TMR brighter in $Na$
+   * Propose Fig. 3 model of why, stacking
+ * Section 3.4: Anisotropy
+   * Obvious decrease in anisotropy on formation of quadruplex
+ * Section 3.5: FRET
+   * Cation type and concentration affect quantum yield of fluoroscein
+     and to a lesser degree TMR
 
 ## @Miyoshi2002
 
- * Looking at $d(G_4 T_4 G_4)$ with crowders of,
+ * Looking at $d(G_4 T_4 G_4)$ under CD with crowders of,
    * Putrescine (polycation)
    * Cadaverine (polycation)
    * Spermine (polycation)
@@ -28,7 +34,24 @@
    typical DNA by @Lerman1971), crowding with cations doesn't
  * Examine binding of PEG and putrescein to DNA, argue that binding of
    putrescein to DNA inhibits transition to parallel state
-
+ * Melting to determine quadruplex stability (looking at CD intensity
+   @ $\lambda=295 nm$)
+   * 100 mM NaCl:
+     * $\Delta H = -205 kcal/mol$
+     * $T \Delta S = -177 kcal/mol$
+     * $\Delta G = -28 kcal/mol$
+   * 100 mM NaCl + 2M Putrescein
+     * $\Delta H = -213 kcal/mol$
+     * $T \Delta S = -191 kcal/mol$
+     * $\Delta G = -22 kcal/mol$
+   * Crowding with putrescein destabilizes quadruplex largely through
+     entropic contribution
+   * Citing @Ellis2001, claims that configurational entropy of solute
+     decreases in presence of crowding
+   * Also points out that crowding will raise the activity coefficient
+     of ions and water but claims that this is only significant for
+     molecules with molecular weight >1000 citing @Minton1983
+   
 ## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
 
 
@@ -36,3 +59,11 @@
 
  
  
+## Long-loop G-Quadruplexes are misfolded population minorities ... [@Koirala2013]
+
+ * Pulling on quadruplexes
+ * Systems:
+   * hTelo-[45678]: $5'-(TTAGGG)_n TTA$
+   * hTelo5-Mut: $5'-(TTAGGG)_2 TTAAAA (TTAGGG)_2 TTA$
+   * Sandwiched between ~2000 bp handles
+ * Resolve triplex intermediates on path to quadruplex
