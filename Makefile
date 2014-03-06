@@ -7,5 +7,5 @@ all : proposal.pdf droplet.pdf
 
 .PHONY : update-refs
 update-refs :
-	cp ${HOME}/lori/papers/library.bib $@
-	git commit $@ -m "Update references"
+	cp ${HOME}/lori/papers/library.bib refs.bib
+	git commit refs.bib -m "Update references"
