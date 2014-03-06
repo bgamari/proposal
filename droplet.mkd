@@ -31,9 +31,11 @@ immobilization is surface attachment. Here the molecule of interest
 and an immobile surface are both chemically modified to be mutually sticky. 
 This approach poses a variety of challenges. Direct
 interaction between the surface and the molecule under study can
-substantially perturb the behavior of the studied system
-[@Yasuda2003]. Further, the chemistry required for the modification of
-the surface and molecule poses a substantial practical barrier.
+substantially perturb the behavior of the studied system\footnote{@Yasuda2003
+observed that nearly all $F_1$ ATPase molecules showed no activity
+when bound to a glass surface}. Further, the chemistry required for the
+modification of the surface and molecule poses a substantial practical
+barrier.
 
 TODO: Figure vesicle encapsulation
 TODO: Figure droplet encapsulation
@@ -124,8 +126,32 @@ such as outside of an oil-in-water droplet[@Vacha2008].
 
 Our case of water-in-oil emulsions is considerably less studied.
 
-
 [@Tian2009]
+
+## DNA quadruplex system
+
+Over the course of cell division a human cell must reliably replicate
+the entire three-billion base genome. To carry out the task nature has
+devised an intricate set of mechanisms to ensure replication error
+rates of less than $10^{-6}$.  Even with such a low bulk error rate,
+the genetic replication machinery of most organisms suffers from the
+shortcoming that they do not reliably preserve bases near the ends of
+a chromosome. To work around this shortcoming, nature has introduced
+regions of non-coding DNA near the ends of the genome. This
+*telomeric* DNA is lost during the replication process, to be
+later replaced by dedicated enzymes.
+
+Telomeric DNA is known to have repeats of G-rich spans which 
+have been shown to form a wide array of structures *in
+vitro*. In particular, these sequences are known to form
+G-quadruplexes[@Sen1988], structures where a single strand of DNA
+pairs with itself, giving rise to a four-way symmetric structure
+which has been linked to a variety of regulatory processes in model
+systems[@TODO].
+
+Early work on quadruplex systems demonstrated that
+the stability of quadruplex structures is heavily dependent upon both
+ionic and crowding conditions[@Miyoshi2002, @Miyoshi2006].
 
 
 ## Proposed work
@@ -227,39 +253,10 @@ microscope. After learning a polynomial model of the displacement of
 this scattered beam as a function of particle position, one can infer
 the position of a diffusing particle.
 
-#### DNA quadruplex system
-
-Over the course of cell division a human cell must reliably replicate
-the entire three-billion base genome. To carry out the task nature has
-devised an intricate set of mechanisms to ensure replication error
-rates of less than $10^{-6}$.  Even with such a low bulk error rate,
-the genetic replication machinery of most organisms suffers from the
-shortcoming that they do not reliably preserve bases near the ends of
-a chromosome. To work around this shortcoming, nature has introduced
-regions of non-coding DNA near the ends of the genome. This
-*telomeric* DNA is lost during the replication process, to be
-later replaced by dedicated enzymes.
-
-Telomeric DNA is known to have repeats of G-rich spans which 
-have been shown to form a wide array of structures *in
-vitro*. In particular, these sequences are known to form
-G-quadruplexes[@Sen1988], structures where a single strand of DNA
-pairs with itself, giving rise to a four-way symmetric structure
-which has been linked to a variety of regulatory processes in model
-systems[@TODO].
-
-Early work on quadruplex systems demonstrated that
-the stability of quadruplex systems is heavily dependent upon ionic
-conditions[@Miyoshi2002].
-
-
-
 
 
 ### Analysis
 
- * Correction: Non-uniform radial position distribution due to
-   electrostatics? Quenching against interface?
  * Rotational anisotropy of acceptor and donor
  * 
 
