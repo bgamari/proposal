@@ -66,4 +66,41 @@
    * hTelo-[45678]: $5'-(TTAGGG)_n TTA$
    * hTelo5-Mut: $5'-(TTAGGG)_2 TTAAAA (TTAGGG)_2 TTA$
    * Sandwiched between ~2000 bp handles
- * Resolve triplex intermediates on path to quadruplex
+ * Fit to fully-connected three-state kinetic model for hTelo-4 and hTelo-5
+ * Resolve triplex and long-loop intermediates on path to quadruplex
+ * Measured at 23 Celcius
+ 
+## @Ying2003
+
+ * Early FRET paper trying to resolve conflicting NMR (in $Na^+$,
+   @Wang1993) and X-ray (in $K^+$, @Parkinson2002) structures
+ * Thermodynamics from CD and UV melting
+ * Claim to see parallel configuration in K and anti-parallel in Na
+ * Single molecule FRET with TMR and Cy5
+ * Noticed via UV melting that Cy5 label stabilizes duplex in presence of KCl
+ * At low salt (10mM) see two FRET populations, wide indicative of heterogeneity
+ * Watch hybridization with complementary strand, infer kinetics
+
+## @Fujimoto2012
+
+ * Looking at loop length dependence of quadruplex under dilute and
+   crowding conditions in $Na^+$
+ * Circular dichroism for thermodynamics
+ * "Structure of the loop critical in determining not only the
+   thermodynammic stability but also the hydration of the whole
+   G-quadruplex"
+ * Characterize effect of hydration on stability as a function of loop
+   length
+ * 
+
+## @Lee2005
+
+ * TJ Ha
+ * Measuring FRET on quadruplex DNA on surface with TIRF
+ * 5'-Cy5-(GGGTTA)_3 GGG + linker
+ * See three distinct peaks in FRET efficiency histogram: One unfolded
+   state, two folded
+ * The
+
+Idea: Slew temperature up and down to tune kinetics, watch FRET
+efficiency, use probabilistic model to infer underlying rates
