@@ -5,18 +5,26 @@ author: Ben Gamari
 
 ## Introduction
 
-My thesis will study the effects of a droplet environment on
-fluorescence measurements of a typical biological polymer. Below I
+TODO: motivate
+
+This thesis will study the effects of a droplet environment on
+fluorescence measurements of a typical biological polymer. Below we
 will briefly describe the fluorescence specotroscopic techniques used in
-our lab. Following this, I'll introduce a novel encapsulation
+our lab, along with the *.
+
+Following this we will discuss my work on molecular dynamics modelling of
+dye photophysics with respect to FRET on RNA.
+
+We will then introduce an encapsulation
 technique developed in our lab using emulsion droplets to contain,
 isolate, and manipulate single-molecules. I will then describe a novel
 apparatus for tracking the motion of these droplets, enabling
 fluorescence study of isolated single-molecules over several
 minutes.
 
-Finally, I will propose a set of experiments examining the folding
-kinetics of quadruplex structures in telomeric DNA.
+Finally, I will describe an experimental study of telomeric DNA
+structures using tools.
+
 
 ## Background
 
@@ -33,6 +41,8 @@ TODO: Describe specific fluorescence experiments?
 
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
+### Single-molecule immobilization
+
 Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies without
 temporal or ensemble averaging. The most commonly used means of
@@ -46,7 +56,8 @@ when bound to a glass surface}. Further, the chemistry required for the
 modification of the surface and molecule poses a substantial practical
 barrier.
 
-TODO: Figure vesicle encapsulation
+![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment](figures/vesicle)
+
 TODO: Figure droplet encapsulation
 
 An alternative to surface immobilization is encapsulation. Vesicles offer a 
@@ -62,7 +73,7 @@ outside of a vesicle. Collectively, these factors make vesicle
 encapsulation an inconvenient technique which is often avoided unless
 needed.
 
-### Droplet encapsulation
+#### Droplet encapsulation
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The protocol
 requires only minutes to perform and results in emulsions which are
@@ -84,26 +95,39 @@ While we have been using droplets in this capacity for several years,
 there remain several outstanding questions surround their effect on
 the system under study.
 
-### Telomeric DNA
+### Systems
 
-Over the course of cell division a human cell must reliably replicate
-the entire three-billion base genome. To carry out the task nature has
-devised an intricate set of mechanisms to ensure replication error
-rates of less than $10^{-6}$.  Even with such a low bulk error rate,
-the genetic replication machinery of most organisms suffers from the
-shortcoming that they do not reliably preserve bases near the ends of
-a chromosome. To work around this shortcoming, nature has introduced
-regions of non-coding DNA near the ends of the genome. This
-*telomeric* DNA is lost during the replication process, to be
-later replaced by dedicated enzymes.
+In this thesis we will examine two classes of biological systems, a short RNA
+and long telomeric DNA.
 
-## Motivation: Fluorescence spectroscopy in a droplet environment
+## Characterization of FRET on RNA
+
+Milas
+
+It is known that cyanine dyes terminally attached to RNA demonstrates
+a several states where the dye stacks on its neighboring base much as
+a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
+and I on short double-stranded RNA[@Milas2013] have provided evidence
+that droplets stabilize stacking of cyanine fluorophores on the end of
+the strand, an idea first put forth by Iqbal[@Iqbal2008]
+
+## Single-molecule particle encapsulation and tracking with fluorescence
+
+solution FRET, particle tracking, FRET
 
 One of the challenges of conducting a fluorescence experiment in
-droplet encapsulation is ensuring that the environmental conditions
-of the droplet's volume are well understood. Initial measurements from our lab have
-demonstrated that care is needed in interpretting fluorescence
-experiments in droplet environments.
+droplet encapsulation is ensuring that the environmental conditions of
+the droplet's volume are well understood. Initial measurements from
+our lab have demonstrated that care is needed in interpretting
+fluorescence experiments in droplet environments.
+
+The droplets produced by our technique are typically hundreds of
+nanometers in diameter. It is well-documented that droplets like these
+exhibit an electrostatic surface potential in
+equilibrium. Consequently, ion concentrations are known to be
+nonhomogenous throughout the droplet volume. These two factors greatly
+complicate interpretation of experiments performed under droplet
+confinement.
 
 In an early paper examining the use of droplets[^1] for fluorescence
 measurements Tang *et al.* reported
@@ -119,8 +143,6 @@ biophysical systems[@Jofre2007, @Milas2014].
       surfactant by way of mechanical injection, our recent measurements
       have used more stable droplets formed by shear and a surfactant.
 
-## Related work
-
 ### Emulsion droplet environment
 The properties of oil-in-water emulsions and their interfaces have
 been widely studied in a number of communities. Vibrational
@@ -131,85 +153,11 @@ pH[@Zimmermann2001, @Marinova1996, @Stubenrauch2002], leading many to
 infer that this surface charge is due to an accumulation of hydroxide
 ions on the interface[@Kudin2007].
 
-It is widely believed that water organizes on hydrophobic interfaces
-such as the outside surface of an oil-in-water droplet[@Vacha2008].
-
-[@Knecht2007] 
-
-The literature examining our case of water-in-oil emulsions is
-oil-in-water case.
-
-[@Tian2009]
-
-
-Telomeric DNA is known to have repeats of G-rich spans which 
-have been shown to form a wide array of structures *in
-vitro*. In particular, these sequences are known to form
-G-quadruplexes[@Sen1988], structures where a single strand of DNA
-pairs with itself, giving rise to a four-way symmetric structure
-which has been linked to a variety of regulatory processes in model
-systems[@TODO].
-
-Early work on quadruplex systems demonstrated that
-the stability of quadruplex structures is heavily dependent upon both
-ionic and crowding conditions[@Miyoshi2002, @Miyoshi2006].
-
-
-## Proposed work
-
-Droplet encapsulation poses substantial challenges for
-control over experimental environment[@Milas2013]. The droplets
-produced by the technique are typically hundreds of nanometers in
-diameter. It is well-documented that droplets like these exhibit an
-electrostatic surface potential in equilibrium. Consequently, ion
-concentrations are known to be nonhomogenous throughout the droplet
-volume. These two factors greatly complicate interpretation of
-experiments performed under droplet confinement.
-
-In order to explore the effects of droplet confinement in a typical
-biomolecular system, I propose a series experiments on a set of model
-systems. These will probe the environment local to the specimen
-through the behavior of both the molecule itself and its attached
-dyes.
-
-The systems will consist of a selection of DNA oligos. These systems are
-an interesting choice as they are robust, can exhibit interesting
-mechnical behavior, and are easily synthesized and labelled. 
-The ability of FRET to probe intra-molecular distances makes it well-suited to
-probe conformations of short DNA systems. Finally, several basic
-questions surrounding the flexibility of short dsDNA remain open. Some
-of these might be discussed in Section 2 [FIXME].
-
-### For thesis? Dye stacking on nucleotides
-It is known that cyanine dyes terminally attached to RNA demonstrates
-a several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
-and I on short double-stranded RNA[@Milas2013] have provided evidence
-that droplets stabilize stacking of cyanine fluorophores on the end of
-the strand, an idea first put forth by Iqbal[@Iqbal2008]
-
-### Experimental work
-
-My work will begin by building on @Tang2008 to further examine the
-effect of the droplet surface on the rotational and translational
-freedom of the molecule under study. These measurements will consist
-of rotational anisotropy measurements on my oligos both in solution
-and droplet confinement. While Tang formed
-
-I will use a variety of fluorescence tools to probe the behavior of
-DNA oligos both in solution and in droplet encapsulation.
-
-experiments will revolve around characterizing the behavior of dye
-within a droplet. Here we have 
-
-#### Characterization of droplet environment
-
 It has been widely documented that emulsion droplets of oil in water
 carry charge on their surface. This charge gives rise to an electric
 surface potential and, consequently, repulsive interactions between
-particles which stabilize the colloid. 
-It stands to reason that our water-in-oil emulsions exhibit a similar
-surface behavior.
+particles which stabilize the colloid. It stands to reason that our
+water-in-oil emulsions exhibit a similar surface behavior.
 
 While the consequences of a non-zero surface potential are not clear,
 it is likely that the chemistry within the droplet volume will be
@@ -231,14 +179,18 @@ oil-in-water case. While in oil-in-water emulsions the presence of
 ionic double-layering gives rise to analysis complications from
 viscous forces, we 
 
- * Zeta potential measurement
- * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
- * Polarization anisotropy to examine rotational freedom
- * FCS to examine translational diffusion
- * Measure same in droplet, identify effective concentrations in droplet environment
- * Different dyes?
+It is widely believed that water organizes on hydrophobic interfaces
+such as the outside surface of an oil-in-water droplet[@Vacha2008].
 
-#### Droplet tracking
+[@Knecht2007] 
+
+The literature examining our case of water-in-oil emulsions is
+oil-in-water case.
+
+[@Tian2009]
+
+
+### Droplet tracking
 
 The ability to observe a fluorescence trajectory over a long duration
 without the artifacts introduced by surface tethering
@@ -263,9 +215,62 @@ microscope. After learning a polynomial model of the displacement of
 this scattered beam as a function of particle position, one can infer
 the position of a diffusing particle.
 
+### Future work
+
+My work will continue by building on @Tang2008 to further examine the
+effect of the droplet surface on the rotational and translational
+freedom of the molecule under study. These measurements will consist
+of rotational anisotropy measurements on my oligos both in solution
+and droplet confinement. While Tang formed
+
+ * Zeta potential measurement
+ * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
+ * FCS to examine translational diffusion
+ * Polarization anisotropy to examine rotational freedom
+ * Measure same in droplet, identify effective concentrations in droplet environment
+ * Different dyes?
 
 
-### todo
+## Study of Telomeric DNA
+
+quadruplex, in solution, droplet solution, tracked droplets
+
+Over the course of cell division a human cell must reliably replicate
+the entire three-billion base genome. To carry out the task nature has
+devised an intricate set of mechanisms to ensure replication error
+rates of less than $10^{-6}$.  Even with such a low bulk error rate,
+the genetic replication machinery of most organisms suffers from the
+shortcoming that they do not reliably preserve bases near the ends of
+a chromosome. To work around this shortcoming, nature has introduced
+regions of non-coding DNA near the ends of the genome. This
+*telomeric* DNA is lost during the replication process, to be
+later replaced by dedicated enzymes.
+
+
+
+Telomeric DNA is known to have repeats of G-rich spans which 
+have been shown to form a wide array of structures *in
+vitro*. In particular, these sequences are known to form
+G-quadruplexes[@Sen1988], structures where a single strand of DNA
+pairs with itself, giving rise to a four-way symmetric structure
+which has been linked to a variety of regulatory processes in model
+systems[@TODO].
+
+Early work on quadruplex systems demonstrated that
+the stability of quadruplex structures is heavily dependent upon both
+ionic and crowding conditions[@Miyoshi2002, @Miyoshi2006].
+
+
+### Proposed work
+
+The systems will consist of a selection of DNA oligos. These systems are
+an interesting choice as they are robust, can exhibit interesting
+mechnical behavior, and are easily synthesized and labelled. 
+The ability of FRET to probe intra-molecular distances makes it well-suited to
+probe conformations of short DNA systems. Finally, several basic
+questions surrounding the flexibility of short dsDNA remain open. Some
+of these might be discussed in Section 2 [FIXME].
+
 
  * Rotational anisotropy of acceptor and donor
  * FRET
