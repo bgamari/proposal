@@ -1,4 +1,4 @@
-PANDOC_OPTS=-V links-as-notes -V geometry:margin=1in -Vdocumentclass=book -Vtitle --latex-engine=lualatex
+PANDOC_OPTS=-V links-as-notes -V geometry:margin=1in -Vdocumentclass=book -Vtoc --latex-engine=lualatex
 SVG_FIGURES=$(wildcard figures/*.svg)
 
 all : proposal.pdf droplet.pdf
