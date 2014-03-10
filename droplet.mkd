@@ -7,13 +7,16 @@ author: Ben Gamari
 
 My thesis will study the effects of a droplet environment on
 fluorescence measurements of a typical biological polymer. Below I
-will briefly describe the fluorescence specotroscopic tools we use in
-our lab, followed by our encapsulation technique using emulsion droplets
-to contain and isolate single-molecules. I will then describe a novel instrument
-for tracking the motion of droplets, enabling fluorescence study of
-single-molecules over several minutes. Finally, I will propose a set
-of experiments examining the effects of droplet containment on the
-chemical and physical environment surrounding the molecule.
+will briefly describe the fluorescence specotroscopic techniques used in
+our lab. Following this, I'll introduce a novel encapsulation
+technique developed in our lab using emulsion droplets to contain,
+isolate, and manipulate single-molecules. I will then describe a novel
+apparatus for tracking the motion of these droplets, enabling
+fluorescence study of isolated single-molecules over several
+minutes.
+
+Finally, I will propose a set of experiments examining the folding
+kinetics of quadruplex structures in telomeric DNA.
 
 ## Background
 
@@ -81,60 +84,7 @@ While we have been using droplets in this capacity for several years,
 there remain several outstanding questions surround their effect on
 the system under study.
 
-## Motivation: Fluorescence spectroscopy in a droplet environment
-
-One of the challenges of conducting a fluorescence experiment in
-droplet encapsulation is ensuring that the environmental conditions
-of the droplet's volume are well understood. Initial measurements from our lab have
-demonstrated that care is needed in interpretting fluorescence
-experiments in droplet environments.
-
-In an early paper examining the use of droplets for fluorescence
-measurements Tang *et al.* reported
-no evidence of perturbation in polarization anisotropy measurements on
-enhanced green fluorescent protein (EGFP) on short time
-scales[@Tang2008]. Polarization anisotropy is reflective of the rotational
-coherence of the dye and, consequently, the object to which it is
-attached. In contrast, recent observations by Milas have raised
-questions regarding the applicability of these measurements to real
-biophysical systems[@Jofre2007, @Milas2014].
-
-\footnote{
-It should be noted that while Tang's droplets were formed without
-surfactant by way of mechanical injection, our recent measurements
-have used more stable droplets formed by shear and a surfactant.
-}
-
-### For thesis? Dye stacking on nucleotides
-It is known that cyanine dyes terminally attached to RNA demonstrates
-a several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
-and I on short double-stranded RNA[@Milas2013] have provided evidence
-that droplets stabilize stacking of cyanine fluorophores on the end of
-the strand, an idea first put forth by Iqbal[@Iqbal2008]
-
-## Related work
-
-The properties of oil-in-water emulsions and their interfaces have
-been widely studied in a number of communities. Vibrational
-spectroscopy on related oil-in-water emulsions have demonstrated that
-these interfaces carry a negative charge[@Tian2009]. Further interface
-potential measurements have shown that this charge dissipates at high
-pH[@Zimmermann2001, @Marinova1996, @Stubenrauch2002], leading many to
-infer that this surface charge is due to an accumulation of hydroxide
-ions on the interface.
-
-It is widely believed that water organizes on hydrophobic interfaces
-such as outside of an oil-in-water droplet[@Vacha2008].
-[@Kudin2007]
-
-[@Knecht2007] 
-
-Our case of water-in-oil emulsions is considerably less studied.
-
-[@Tian2009]
-
-## DNA quadruplex system
+### Telomeric DNA
 
 Over the course of cell division a human cell must reliably replicate
 the entire three-billion base genome. To carry out the task nature has
@@ -146,6 +96,51 @@ a chromosome. To work around this shortcoming, nature has introduced
 regions of non-coding DNA near the ends of the genome. This
 *telomeric* DNA is lost during the replication process, to be
 later replaced by dedicated enzymes.
+
+## Motivation: Fluorescence spectroscopy in a droplet environment
+
+One of the challenges of conducting a fluorescence experiment in
+droplet encapsulation is ensuring that the environmental conditions
+of the droplet's volume are well understood. Initial measurements from our lab have
+demonstrated that care is needed in interpretting fluorescence
+experiments in droplet environments.
+
+In an early paper examining the use of droplets[^1] for fluorescence
+measurements Tang *et al.* reported
+no evidence of perturbation in polarization anisotropy measurements on
+enhanced green fluorescent protein (EGFP) on short time
+scales[@Tang2008]. Polarization anisotropy is reflective of the rotational
+coherence of the dye and, consequently, the object to which it is
+attached. In contrast, recent observations by Milas have raised
+questions regarding the applicability of these measurements to real
+biophysical systems[@Jofre2007, @Milas2014].
+
+[^1]: It should be noted that while Tang's droplets were formed without
+      surfactant by way of mechanical injection, our recent measurements
+      have used more stable droplets formed by shear and a surfactant.
+
+## Related work
+
+### Emulsion droplet environment
+The properties of oil-in-water emulsions and their interfaces have
+been widely studied in a number of communities. Vibrational
+spectroscopy on related oil-in-water emulsions have demonstrated that
+these interfaces carry a negative charge[@Tian2009]. Further interface
+potential measurements have shown that this charge dissipates at high
+pH[@Zimmermann2001, @Marinova1996, @Stubenrauch2002], leading many to
+infer that this surface charge is due to an accumulation of hydroxide
+ions on the interface[@Kudin2007].
+
+It is widely believed that water organizes on hydrophobic interfaces
+such as the outside surface of an oil-in-water droplet[@Vacha2008].
+
+[@Knecht2007] 
+
+The literature examining our case of water-in-oil emulsions is
+oil-in-water case.
+
+[@Tian2009]
+
 
 Telomeric DNA is known to have repeats of G-rich spans which 
 have been shown to form a wide array of structures *in
@@ -184,6 +179,14 @@ The ability of FRET to probe intra-molecular distances makes it well-suited to
 probe conformations of short DNA systems. Finally, several basic
 questions surrounding the flexibility of short dsDNA remain open. Some
 of these might be discussed in Section 2 [FIXME].
+
+### For thesis? Dye stacking on nucleotides
+It is known that cyanine dyes terminally attached to RNA demonstrates
+a several states where the dye stacks on its neighboring base much as
+a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
+and I on short double-stranded RNA[@Milas2013] have provided evidence
+that droplets stabilize stacking of cyanine fluorophores on the end of
+the strand, an idea first put forth by Iqbal[@Iqbal2008]
 
 ### Experimental work
 
