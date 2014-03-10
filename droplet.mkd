@@ -22,7 +22,8 @@ experiments are restrictive in the range of timescales and
 interactions they can probe.
 
 TODO: Describe specific fluorescence experiments?
-TODO: Figure showing apparatus?
+
+![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
 Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies without
@@ -56,13 +57,13 @@ needed.
 ### Droplet encapsulation
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The protocol
-requires little sample preparation and results in emulsions which are
-stable for hours. Furthermore, as all sample solution will end up in a
-droplet, the technique is extremely efficient in its sample
-useage. Initial indications[@Tang2008] suggest that the presence of
-the droplet interface leaves the system of interest largely
-unperturbed. Like vesicles, these emulsions can be either probed in
-solution or used for immobilization.
+requires only minutes to perform and results in emulsions which are
+stable for hours. Furthermore, as all sample solution will end up in the
+emulsion, the technique requires very little sample for a
+single-molecule sensitive experiment. Initial indications[@Tang2008]
+suggest that the presence of the droplet interface leaves the system
+of interest largely unperturbed. Like vesicles, these emulsions can be
+either probed in solution or used for immobilization.
 
 The droplets are made in perfluorinated oil with an appropriate
 surfactant. They are formed through shear by sonication. While there is
@@ -193,19 +194,20 @@ DNA oligos both in solution and in droplet encapsulation.
 experiments will revolve around characterizing the behavior of dye
 within a droplet. Here we have 
 
-#### Measurement of surface potential
+#### Characterization of droplet environment
 
 It has been widely documented that emulsion droplets of oil in water
 carry charge on their surface. This charge gives rise to an electric
 surface potential and, consequently, repulsive interactions between
 particles which stabilize the colloid. 
-believe that our water-in-oil emulsions exhibit a similar surface
-behavior.
+It stands to reason that our water-in-oil emulsions exhibit a similar
+surface behavior.
 
 While the consequences of a non-zero surface potential are not clear,
 it is likely that the chemistry within the droplet volume will be
-affected. This might explain the unexpected behavior in pH and
-molecular dynamics that we have observed.
+affected. It has been observed by our group and
+others[@Crans2012,@Hasegawa2001] that pH conditions [@Marques2014]
+and molecular dynamics that we have observed.
 
 While there are a number of tools for characterizing the surface
 potential of oil-in-water emulsions, few of these are applicable to
@@ -255,10 +257,11 @@ the position of a diffusing particle.
 
 
 
-### Analysis
+### todo
 
  * Rotational anisotropy of acceptor and donor
- * 
+ * FRET
+ * fluorescence lifetime
 
 ## Risks
 
