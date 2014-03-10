@@ -1,4 +1,9 @@
-# Characterization of droplet encapsulation for fluorescence spectroscopy
+---
+title: Characterization of droplet encapsulation for fluorescence spectroscopy
+author: Ben Gamari
+---
+
+## Introduction
 
 My thesis will study the effects of a droplet environment on
 fluorescence measurements of a typical biological polymer. Below I
