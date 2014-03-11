@@ -102,18 +102,40 @@ and long telomeric DNA.
 
 ## Characterization of FRET on RNA
 
-Milas
+<!--
+summary: work with Peker Milas
+-->
+
+Fӧrster resonance energy transfer is widely used to study structural
+transformations of biological macromolecules. While many of these
+studies[@todo] rely on this technique for qualitative insights, there
+is increasing interest in using FRET in a more quantitative
+setting[@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
+quantitative interpretation of FRET results is fraught with
+difficulties. Correlations between orientational degrees of freedom
+and inter-dye distance are not uncommon[@VanBeek2007], orientational
+diffusion is often less than free[@Schuler2005], and dye photophysics
+can introduce difficult-to-characterize artifacts
+[@Jia2007; @Chung2010; @Levitus1995].
+
+Nucleic acids in particular present their own set of
+challenges. Multiple decay pathways[@Sabanayagam2005] and
+base-specific fluorescence enhancement[@Harvey2009b] confound the FRET
+signal. Moreover, linker dynamics[@Sindbert2011] and
+geometric[@Lilley2000] considerations complicate modelling.
 
 It is known that cyanine dyes terminally attached to RNA demonstrates
 a several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010]. Recent work by Peker Milas
+a nucleic acid base would [@Lilley2010; @Iqbal2008]. Recent work by Peker Milas
 and I on short double-stranded RNA[@Milas2013] have provided evidence
 that droplets stabilize stacking of cyanine fluorophores on the end of
 the strand, an idea first put forth by Iqbal[@Iqbal2008]
 
 ## Single-molecule particle encapsulation and tracking with fluorescence
 
-solution FRET, particle tracking, FRET
+<!--
+summary: solution FRET, particle tracking, FRET, modelling of FCS in droplets?
+-->
 
 One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the environmental conditions of
@@ -233,7 +255,10 @@ and droplet confinement. While Tang formed
 
 ## Study of Telomeric DNA
 
+<!--
+Summary:
 quadruplex, in solution, droplet solution, tracked droplets
+-->
 
 Over the course of cell division a human cell must reliably replicate
 the entire three-billion base genome. To carry out the task nature has
@@ -245,7 +270,6 @@ a chromosome. To work around this shortcoming, nature has introduced
 regions of non-coding DNA near the ends of the genome. This
 *telomeric* DNA is lost during the replication process, to be
 later replaced by dedicated enzymes.
-
 
 
 Telomeric DNA is known to have repeats of G-rich spans which 
@@ -289,3 +313,5 @@ unable to resolve the scattered signal I will attempt to identify a
 protocol for producing larger droplets. Alternatively, other members
 of our group are developing techniques for immobilization and
 manipulation of droplets within a microfluidic device.
+
+## References
