@@ -32,7 +32,7 @@ structures using tools.
 Fluorescence spectroscopic methods facilitate experiments capable of probing
 molecular structure, conformation, and dynamics with single-molecule
 sensitivity. While experiments examining molecules diffusing in
-solution area readily performed[@Dahan1999, FIXME more], these techniques offer
+solution area readily performed[@Dahan1999; FIXME more], these techniques offer
 only a fleeting glimpse of each species. Consequently, these
 experiments are restrictive in the range of timescales and
 interactions they can probe.
@@ -61,7 +61,7 @@ barrier.
 TODO: Figure droplet encapsulation
 
 An alternative to surface immobilization is encapsulation. Vesicles offer a 
-relatively convenient means[@Boukobza2001,@Okumus2004] of encapsulating
+relatively convenient means[@Boukobza2001; @Okumus2004] of encapsulating
 single molecules. Vesicles are small bubbles enclosed by a lipid
 membrane. Once formed, these vesicles can either be studied in
 solution, affording longer dwell times in the observation volume, or
@@ -129,15 +129,15 @@ nonhomogenous throughout the droplet volume. These two factors greatly
 complicate interpretation of experiments performed under droplet
 confinement.
 
-In an early paper examining the use of droplets[^1] for fluorescence
-measurements Tang *et al.* reported
+In an early paper examining the use of droplets for fluorescence
+measurements[^1] Tang *et al.* reported
 no evidence of perturbation in polarization anisotropy measurements on
 enhanced green fluorescent protein (EGFP) on short time
 scales[@Tang2008]. Polarization anisotropy is reflective of the rotational
 coherence of the dye and, consequently, the object to which it is
 attached. In contrast, recent observations by Milas have raised
 questions regarding the applicability of these measurements to real
-biophysical systems[@Jofre2007, @Milas2014].
+biophysical systems[@Jofre2007; @Milas2014].
 
 [^1]: It should be noted that while Tang's droplets were formed without
       surfactant by way of mechanical injection, our recent measurements
@@ -149,7 +149,7 @@ been widely studied in a number of communities. Vibrational
 spectroscopy on related oil-in-water emulsions have demonstrated that
 these interfaces carry a negative charge[@Tian2009]. Further interface
 potential measurements have shown that this charge dissipates at high
-pH[@Zimmermann2001, @Marinova1996, @Stubenrauch2002], leading many to
+pH[@Zimmermann2001; @Marinova1996; @Stubenrauch2002], leading many to
 infer that this surface charge is due to an accumulation of hydroxide
 ions on the interface[@Kudin2007].
 
@@ -162,7 +162,7 @@ water-in-oil emulsions exhibit a similar surface behavior.
 While the consequences of a non-zero surface potential are not clear,
 it is likely that the chemistry within the droplet volume will be
 affected. It has been observed by our group and
-others[@Crans2012,@Hasegawa2001] that pH conditions [@Marques2014]
+others[@Crans2012; @Hasegawa2001] that pH conditions [@Marques2014]
 and molecular dynamics that we have observed.
 
 While there are a number of tools for characterizing the surface
@@ -258,7 +258,7 @@ systems[@TODO].
 
 Early work on quadruplex systems demonstrated that
 the stability of quadruplex structures is heavily dependent upon both
-ionic and crowding conditions[@Miyoshi2002, @Miyoshi2006].
+ionic and crowding conditions[@Miyoshi2002; @Miyoshi2006].
 
 
 ### Proposed work
@@ -270,7 +270,6 @@ The ability of FRET to probe intra-molecular distances makes it well-suited to
 probe conformations of short DNA systems. Finally, several basic
 questions surrounding the flexibility of short dsDNA remain open. Some
 of these might be discussed in Section 2 [FIXME].
-
 
  * Rotational anisotropy of acceptor and donor
  * FRET
