@@ -134,7 +134,7 @@ the strand, an idea first put forth by Iqbal[@Iqbal2008]
 ## Single-molecule particle encapsulation and tracking with fluorescence
 
 <!--
-summary: solution FRET, particle tracking, FRET, modelling of FCS in droplets?
+summary: solution FRET, particle tracking, FRET, modelling of FCS in droplets? no
 -->
 
 One of the challenges of conducting a fluorescence experiment in
@@ -260,30 +260,42 @@ Summary:
 quadruplex, in solution, droplet solution, tracked droplets
 -->
 
-Over the course of cell division a human cell must reliably replicate
-the entire three-billion base genome. To carry out the task nature has
-devised an intricate set of mechanisms to ensure replication error
+Over the course of division a human cell must reliably replicate
+the entire three-billion base genome. To carry out this task nature has
+devised an intricate set of mechanisms to produce replication error
 rates of less than $10^{-6}$.  Even with such a low bulk error rate,
-the genetic replication machinery of most organisms suffers from the
-shortcoming that they do not reliably preserve bases near the ends of
-a chromosome. To work around this shortcoming, nature has introduced
+the replication machinery of most organisms suffers from the
+shortcoming that bases near the ends of a chromosome are not reliably
+preserved. Without compensating for this behavior, successive
+generations of cells would being lacking growing bodies of
+genes[@Counter1992]. To counter this, nature has introduced
 regions of non-coding DNA near the ends of the genome. This
-*telomeric* DNA is lost during the replication process, to be
-later replaced by dedicated enzymes.
+*telomeric* DNA is lost during the replication process, to be 
+replaced later in the cell's lifecycle.
 
+figure out where to put this: Abnormality in the telomere and
+associated machinery has been linked to a variety of
+diseases, including a subset of cancers.
 
-Telomeric DNA is known to have repeats of G-rich spans which 
-have been shown to form a wide array of structures *in
-vitro*. In particular, these sequences are known to form
-G-quadruplexes[@Sen1988], structures where a single strand of DNA
-pairs with itself, giving rise to a four-way symmetric structure
+Telomeric DNA is characterized by regions rich in guanine. *In vitro* regions like these
+have been shown to form a peculiar structure, the G quadruplex[@Sen1998].
+In these structures bases along a single strand of DNA
+form pairs, giving rise to a four-way symmetric configuration
 which has been linked to a variety of regulatory processes in model
-systems[@TODO].
+systems[@Johnson2008].
+
+recently structures resembling the G quadruplex have been reportedly found
+in the human genome[@Huppert2007; @Bifffi2013].
 
 Early work on quadruplex systems demonstrated that
-the stability of quadruplex structures is heavily dependent upon both
+the stability of these structures is heavily dependent upon both
 ionic and crowding conditions[@Miyoshi2002; @Miyoshi2006].
 
+Klug[@1989] demonstrated that G quadruplexes were more stable in the
+presence of $K^+$ than $Na^+$. Later work[@Hardin1992; @Hardin2001]
+attributed this to preferential intercalation of the potassium ion into
+the middle channel of the quadruplex.
+Miyoshi[@Miyoshi2006] demonstrated that crowding with polyethylene glycol stabilizes
 
 ### Proposed work
 
