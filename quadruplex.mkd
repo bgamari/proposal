@@ -52,6 +52,7 @@
      of ions and water but claims that this is only significant for
      molecules with molecular weight >1000 citing @Minton1983
    
+## @Miyoshi2006
 ## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
 
 
@@ -104,3 +105,7 @@
 
 Idea: Slew temperature up and down to tune kinetics, watch FRET
 efficiency, use probabilistic model to infer underlying rates
+
+## @Zahler1991
+
+ * Quadruplex blocks binding of telomerase

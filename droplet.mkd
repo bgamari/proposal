@@ -253,7 +253,7 @@ and droplet confinement. While Tang formed
  * Different dyes?
 
 
-## Study of Telomeric DNA
+## Study of Quadruplex DNA
 
 <!--
 Summary:
@@ -271,21 +271,24 @@ generations of cells would being lacking growing bodies of
 genes[@Counter1992]. To counter this, nature has introduced
 regions of non-coding DNA near the ends of the genome. This
 *telomeric* DNA is lost during the replication process, to be 
-replaced later in the cell's lifecycle.
+replaced later in the cell's lifecycle by telomerase enzymes.
 
 figure out where to put this: Abnormality in the telomere and
 associated machinery has been linked to a variety of
 diseases, including a subset of cancers.
 
-Telomeric DNA is characterized by regions rich in guanine. *In vitro* regions like these
-have been shown to form a peculiar structure, the G quadruplex[@Sen1998].
-In these structures bases along a single strand of DNA
-form pairs, giving rise to a four-way symmetric configuration
-which has been linked to a variety of regulatory processes in model
-systems[@Johnson2008].
+Telomeric DNA is characterized by regions rich in guanine. *In vitro*
+regions like these have been shown to form a peculiar structure, the *G
+quadruplex*[@Sen1998].  In these structures bases along a single strand
+of DNA form pairs, giving rise to a four-way symmetric configuration
+known to block the binding of telomerase[@Zahler1991]. It is believed
+that this serves a regulatory role.
 
-recently structures resembling the G quadruplex have been reportedly found
-in the human genome[@Huppert2007; @Bifffi2013].
+In addition to in telomeric DNA there is a growing body of evidence
+that quadruplexes serve regulatory purposes outside of the
+telomere[@Johnson2008].  Recently structures resembling the G
+quadruplex have been reportedly found in primers in the human
+genome[@Huppert2007; @Bifffi2013].
 
 Early work on quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
@@ -294,7 +297,7 @@ ionic and crowding conditions[@Miyoshi2002; @Miyoshi2006].
 Klug[@1989] demonstrated that G quadruplexes were more stable in the
 presence of $K^+$ than $Na^+$. Later work[@Hardin1992; @Hardin2001]
 attributed this to preferential intercalation of the potassium ion into
-the middle channel of the quadruplex.
+the central channel of the quadruplex.
 Miyoshi[@Miyoshi2006] demonstrated that crowding with polyethylene glycol stabilizes
 
 ### Proposed work
