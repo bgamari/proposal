@@ -58,6 +58,7 @@ barrier.
 
 ![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment](figures/vesicle)
 
+
 TODO: Figure droplet encapsulation
 
 An alternative to surface immobilization is encapsulation. Vesicles offer a 
@@ -126,10 +127,11 @@ geometric[@Lilley2000] considerations complicate modelling.
 
 It is known that cyanine dyes terminally attached to RNA demonstrates
 a several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010; @Iqbal2008]. Recent work by Peker Milas
-and I on short double-stranded RNA[@Milas2013] have provided evidence
-that droplets stabilize stacking of cyanine fluorophores on the end of
-the strand, an idea first put forth by Iqbal[@Iqbal2008]
+a nucleic acid base would [@Lilley2010; @iqbal2008orientation]. Recent
+work by Peker Milas and I on short double-stranded RNA[@Milas2013]
+have provided evidence that droplets stabilize stacking of cyanine
+fluorophores on the end of the strand, an idea first put forth by
+Iqbal[@iqbal2008orientation]
 
 ## Single-molecule particle encapsulation and tracking with fluorescence
 
@@ -173,7 +175,7 @@ these interfaces carry a negative charge[@Tian2009]. Further interface
 potential measurements have shown that this charge dissipates at high
 pH[@Zimmermann2001; @Marinova1996; @Stubenrauch2002], leading many to
 infer that this surface charge is due to an accumulation of hydroxide
-ions on the interface[@Kudin2007].
+ions on the interface[@Kudin2008].
 
 It has been widely documented that emulsion droplets of oil in water
 carry charge on their surface. This charge gives rise to an electric
@@ -279,12 +281,12 @@ diseases, including a subset of cancers.
 
 Telomeric DNA is characterized by regions rich in guanine. *In vitro*
 regions like these have been shown to form a peculiar structure, the *G
-quadruplex*[@Sen1998].  In these structures bases along a single strand
+quadruplex*[@Sen1988].  In these structures bases along a single strand
 of DNA form pairs, giving rise to a four-way symmetric configuration
 known to block the binding of telomerase[@Zahler1991]. It is believed
 that this serves a regulatory role.
 
-In addition to in telomeric DNA there is a growing body of evidence
+In addition to telomeric DNA there is a growing body of evidence
 that quadruplexes serve regulatory purposes outside of the
 telomere[@Johnson2008].  Recently structures resembling the G
 quadruplex have been reportedly found in primers in the human
@@ -292,9 +294,9 @@ genome[@Huppert2007; @Bifffi2013].
 
 Early work on quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
-ionic and crowding conditions[@Miyoshi2002; @Miyoshi2006].
+ionic and osmotic conditions[@Miyoshi2002; @Miyoshi2006].
 
-Klug[@1989] demonstrated that G quadruplexes were more stable in the
+Klug[@Klug1989] demonstrated that G quadruplexes were more stable in the
 presence of $K^+$ than $Na^+$. Later work[@Hardin1992; @Hardin2001]
 attributed this to preferential intercalation of the potassium ion into
 the central channel of the quadruplex.
@@ -302,7 +304,11 @@ Miyoshi[@Miyoshi2006] demonstrated that crowding with polyethylene glycol stabil
 
 ### Proposed work
 
-The systems will consist of a selection of DNA oligos. These systems are
+This project will study a selection of quadruplex-forming DNA oligos
+using the unique capabilities provided by the droplet tools described
+above. 
+
+These systems are
 an interesting choice as they are robust, can exhibit interesting
 mechnical behavior, and are easily synthesized and labelled. 
 The ability of FRET to probe intra-molecular distances makes it well-suited to
