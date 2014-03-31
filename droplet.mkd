@@ -296,11 +296,16 @@ Early work on quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
 ionic and osmotic conditions[@Miyoshi2002; @Miyoshi2006].
 
-Klug[@Klug1989] demonstrated that G quadruplexes were more stable in the
-presence of $K^+$ than $Na^+$. Later work[@Hardin1992; @Hardin2001]
-attributed this to preferential intercalation of the potassium ion into
-the central channel of the quadruplex.
-Miyoshi[@Miyoshi2006] demonstrated that crowding with polyethylene glycol stabilizes
+Klug[@Klug1989] demonstrated that G quadruplexes were more stable in
+the presence of $K^+$ than $Na^+$. Later
+work[@Hardin1992; @Hardin2001] attributed this to preferential
+intercalation of the potassium ion into the central channel of the
+quadruplex.  Miyoshi[@Miyoshi2006] demonstrated that crowding with
+polyethylene glycol stabilizes
+
+@Lee2014 demonstrated that internal fluorescent labels exhibit both
+improved photostability and a smaller effect on the thermodynamic
+stability of the labelled oligo.
 
 ### Proposed work
 
