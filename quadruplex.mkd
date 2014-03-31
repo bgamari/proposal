@@ -8,15 +8,15 @@
 
 ## Fluoroscence anisotropy and FRET studies of G-quadruplex formation in presence of different cations [@Juskowiak2005]
 
- * Studied G-quadruplex formation in presence of $Li⁺$, $Na⁺$,
-   $K⁺$, $NEt₄⁺$, $Mg^{+2}$
+ * Studied G-quadruplex formation in presence of Li⁺, Na⁺,
+   K⁺, NEt₄⁺, $Mg^{+2}$
  * Fluoroscein donor, tetramethylrhodamine acceptor on termini of
    $d((GGGTTA)₃ GGG)$
  * FRET studies from previous work [@Ueyama2002, @Takenaka2003]
-   * Only saw FRET with $K$ and $Na$, less $K$ required
+   * Only saw FRET with K and Na, less K required
    * $Mg^{+2}$ caused quenching of donor, no FRET
  * Section 3.3: Fluorescence properties
-   * TMR brighter in $Na$
+   * TMR brighter in Na
    * Propose Fig. 3 as model of why: TMR stacking on dGs
  * Section 3.4: Anisotropy
    * Obvious decrease in anisotropy on formation of quadruplex
@@ -87,7 +87,7 @@
  
 ## Studies on the structure and dynamics of the human telomeric G quadruplex by single-molecule resonance energy transfer [@Ying2003]
 
- * Early FRET paper trying to resolve conflicting NMR (in $Na⁺$,
+ * Early FRET paper trying to resolve conflicting NMR (in Na⁺,
    @Wang1993) and X-ray (in $K⁺$, @Parkinson2002) structures
  * Thermodynamics from CD and UV melting
  * Claim to see parallel configuration in K and anti-parallel in Na
@@ -151,10 +151,10 @@
  * Argue that four different conformations transition to
    "propeller-like" parallel quadruplex in presence of crowding and K⁺
 
-
-
 ## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
 
+ * Survey of CD measurements revealing structural polymorphism in DNA
 
 ## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
  
+# References
