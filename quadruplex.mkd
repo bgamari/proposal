@@ -3,7 +3,10 @@
  * Replace loop T with internal Cy3, examine anisotropy
  * Replace loop T with dT-TMR, FRET between this and opposing dye
 
-## Fluoroscence anisotropy and FRET studies of G-quadruplex formation in presence of different cations [@Justokowiak2005]
+ * Slew temperature up and down to tune kinetics, watch FRET
+ * efficiency, use probabilistic model to infer underlying rates
+
+## Fluoroscence anisotropy and FRET studies of G-quadruplex formation in presence of different cations [@Juskowiak2005]
 
  * Studied G-quadruplex formation in presence of $Li⁺$, $Na⁺$,
    $K⁺$, $NEt₄⁺$, $Mg^{+2}$
@@ -14,14 +17,14 @@
    * $Mg^{+2}$ caused quenching of donor, no FRET
  * Section 3.3: Fluorescence properties
    * TMR brighter in $Na$
-   * Propose Fig. 3 model of why, stacking
+   * Propose Fig. 3 as model of why: TMR stacking on dGs
  * Section 3.4: Anisotropy
    * Obvious decrease in anisotropy on formation of quadruplex
  * Section 3.5: FRET
    * Cation type and concentration affect quantum yield of fluoroscein
      and to a lesser degree TMR
 
-## @Miyoshi2002
+## Molecular crowding regulates the structural switch of the DNA G-quadruplex [@Miyoshi2002]
 
  * Looking at $d(G₄ T₄ G₄)$ under CD with crowders of,
    * Putrescine (polycation)
@@ -69,16 +72,11 @@
  * As function of water activity,
    * stability of quadruplex decreased with increased activity
    * argue that this gives the number of water molecules freed during quadruplex formation
-
-## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
-
-
-## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
- 
  
 ## Long-loop G-Quadruplexes are misfolded population minorities ... [@Koirala2013]
 
  * Pulling on quadruplexes
+ * Silly technique name: iPoDNano 
  * Systems:
    * hTelo-[45678]: $5'-(TTAGGG)_n TTA$
    * hTelo5-Mut: $5'-(TTAGGG)₂ TTAAAA (TTAGGG)₂ TTA$
@@ -98,7 +96,7 @@
  * At low salt (10mM) see two FRET populations, wide indicative of heterogeneity
  * Watch hybridization with complementary strand, infer kinetics
 
-## @Fujimoto2012
+## Thermodynamics-hydration relataionships within loops that affect G-quadruplexes under molecular crowding conditions [@Fujimoto2013]
 
  * Looking at loop length dependence of quadruplex under dilute and
    crowding conditions in $Na⁺$
@@ -110,7 +108,7 @@
  * Characterize effect of hydration on stability as a function of loop
    length
 
-## @Lee2005
+## Extreme conformational diversity in human telomeric DNA [@Lee2005]
 
  * TJ Ha
  * Measuring FRET on quadruplex DNA on surface with TIRF
@@ -119,10 +117,7 @@
    state, two folded
  * The
 
-Idea: Slew temperature up and down to tune kinetics, watch FRET
-efficiency, use probabilistic model to infer underlying rates
-
-## @Zahler1991
+## Inhibition of telomerase by G-quartet DNA structures [@Zahler1991]
 
  * Quadruplex blocks binding of telomerase
 
@@ -131,10 +126,10 @@ efficiency, use probabilistic model to infer underlying rates
  * Single molecule force-extension
  * 100mM KCl
  * 5'-(ACAGGGGTGTGGGG)_2 ACA
- * Compare to @Yu2008
+ * Compare to @Yu2009
  * Fitting to model of rupture force probability by Dudko, Hummer, and Szabo
 
-## ILPR G-Quadruplexes Formed in Seconds Demonstrate High Mechanical Stabilities [@Yu2008]
+## ILPR G-Quadruplexes Formed in Seconds Demonstrate High Mechanical Stabilities [@Yu2009]
 
 ## Structure of the human telomere in Na⁺ solution [@Lim2013]
 
@@ -156,3 +151,10 @@ efficiency, use probabilistic model to infer underlying rates
  * Argue that four different conformations transition to
    "propeller-like" parallel quadruplex in presence of crowding and K⁺
 
+
+
+## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
+
+
+## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
+ 
