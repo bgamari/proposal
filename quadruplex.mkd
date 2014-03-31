@@ -1,9 +1,14 @@
+## ideas
+
+ * Replace loop T with internal Cy3, examine anisotropy
+ * Replace loop T with dT-TMR, FRET between this and opposing dye
+
 ## Fluoroscence anisotropy and FRET studies of G-quadruplex formation in presence of different cations [@Justokowiak2005]
 
- * Studied G-quadruplex formation in presence of $Li^+$, $Na^+1$,
-   $K^+$, $NEt_4^+$
+ * Studied G-quadruplex formation in presence of $Li⁺$, $Na⁺$,
+   $K⁺$, $NEt₄⁺$, $Mg^{+2}$
  * Fluoroscein donor, tetramethylrhodamine acceptor on termini of
-   $d((GGGTTA)_3 GGG)$
+   $d((GGGTTA)₃ GGG)$
  * FRET studies from previous work [@Ueyama2002, @Takenaka2003]
    * Only saw FRET with $K$ and $Na$, less $K$ required
    * $Mg^{+2}$ caused quenching of donor, no FRET
@@ -18,13 +23,13 @@
 
 ## @Miyoshi2002
 
- * Looking at $d(G_4 T_4 G_4)$ under CD with crowders of,
+ * Looking at $d(G₄ T₄ G₄)$ under CD with crowders of,
    * Putrescine (polycation)
    * Cadaverine (polycation)
    * Spermine (polycation)
    * Glycerol (neutral)
    * PEG (neutral)
-   * $CaCl_2$
+   * $CaCl₂$
  * Always with 100mM $NaCl$, 50mM MES (buffer, pH=6.1)
  * Characterized binding free energy
    * without crowding: $-\Delta G_25 = 22 kcal/mol$
@@ -52,12 +57,23 @@
      of ions and water but claims that this is only significant for
      molecules with molecular weight >1000 citing @Minton1983
    
-## @Miyoshi2006
+## Hydration regulates thermodynamics of G-quadruplex formation under molecular crowding conditions [@Miyoshi2006]
+
+ * UV melting
+ * Na⁺, K⁺, PEG 200
+ * Compare quadruplex to hairpin-looped (HP) duplex (seen in Fig. 4, bottom)
+ * Thrombin DNA: $5' - G₂ T₂ G₂ TGT G₂ T₂ G₂$ (anti-parallel quadruplex)
+ * With addition of 40% w/w PEG 200,
+   * $\Delta G_25$ of quadruplex formation decreases from -3.5 kcal/mol to -5.5 kcal/mol
+   * HP duplex destabilized (-9.8 kcal/mol → -6.9 kcal/mol)
+ * As function of water activity,
+   * stability of quadruplex decreased with increased activity
+   * argue that this gives the number of water molecules freed during quadruplex formation
+
 ## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
 
 
 ## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
-
  
  
 ## Long-loop G-Quadruplexes are misfolded population minorities ... [@Koirala2013]
@@ -65,16 +81,16 @@
  * Pulling on quadruplexes
  * Systems:
    * hTelo-[45678]: $5'-(TTAGGG)_n TTA$
-   * hTelo5-Mut: $5'-(TTAGGG)_2 TTAAAA (TTAGGG)_2 TTA$
+   * hTelo5-Mut: $5'-(TTAGGG)₂ TTAAAA (TTAGGG)₂ TTA$
    * Sandwiched between ~2000 bp handles
  * Fit to fully-connected three-state kinetic model for hTelo-4 and hTelo-5
  * Resolve triplex and long-loop intermediates on path to quadruplex
  * Measured at 23 Celcius
  
-## @Ying2003
+## Studies on the structure and dynamics of the human telomeric G quadruplex by single-molecule resonance energy transfer [@Ying2003]
 
- * Early FRET paper trying to resolve conflicting NMR (in $Na^+$,
-   @Wang1993) and X-ray (in $K^+$, @Parkinson2002) structures
+ * Early FRET paper trying to resolve conflicting NMR (in $Na⁺$,
+   @Wang1993) and X-ray (in $K⁺$, @Parkinson2002) structures
  * Thermodynamics from CD and UV melting
  * Claim to see parallel configuration in K and anti-parallel in Na
  * Single molecule FRET with TMR and Cy5
@@ -85,14 +101,14 @@
 ## @Fujimoto2012
 
  * Looking at loop length dependence of quadruplex under dilute and
-   crowding conditions in $Na^+$
+   crowding conditions in $Na⁺$
  * Circular dichroism for thermodynamics
+ * Gel, UV melting, osmometry
  * "Structure of the loop critical in determining not only the
    thermodynammic stability but also the hydration of the whole
    G-quadruplex"
  * Characterize effect of hydration on stability as a function of loop
    length
- * 
 
 ## @Lee2005
 
@@ -109,3 +125,34 @@ efficiency, use probabilistic model to infer underlying rates
 ## @Zahler1991
 
  * Quadruplex blocks binding of telomerase
+
+## Single-molecule study of G-quadruplex disruption using dynamic force spectroscopy [@DeMessieres2012]
+
+ * Single molecule force-extension
+ * 100mM KCl
+ * 5'-(ACAGGGGTGTGGGG)_2 ACA
+ * Compare to @Yu2008
+ * Fitting to model of rupture force probability by Dudko, Hummer, and Szabo
+
+## ILPR G-Quadruplexes Formed in Seconds Demonstrate High Mechanical Stabilities [@Yu2008]
+
+## Structure of the human telomere in Na⁺ solution [@Lim2013]
+
+ * NMR study, CD
+ * Systems:
+    * htel22: $A (GGG TTA)₃ GGG$
+    * htel27: $TTA (GGG TTA)₃ GGG TTA$
+  * Claim to find new anti-parallel structure formed in presence of Na⁺
+
+## Structure of human telomeric DNA in crowded solution [@Heddi2011]
+
+ * NMR, CD study, molecular dynamics
+ * systems:
+    * htelo3: $5' G₃ (TTAG₃)₃ T$
+    * htelo3b: $5' AG₃ (TTAG₃)₃ T$
+    * htelo1: $5' TAG₃ (TTAG₃)₃$
+    * htelo4: $5' AG₃ (CTAG₃)₃$
+    * htelo2: $5' TAG₃ (TTAG₃)₃ TT$
+ * Argue that four different conformations transition to
+   "propeller-like" parallel quadruplex in presence of crowding and K⁺
+
