@@ -1,11 +1,33 @@
 ## ideas
 
- * Replace loop T with internal Cy3, examine anisotropy
+ * Replace loop with internal Cy3, examine anisotropy
  * Replace loop T with dT-TMR, FRET between this and opposing dye
+   * Replace 
+ * Intermediates
 
  * Slew temperature up and down to tune kinetics, watch FRET
- * efficiency, use probabilistic model to infer underlying rates
+   efficiency, use probabilistic model to infer underlying rates
+ * Available labels:
+    * 5-TMR-dT (exc=546nm, em=579nm)
+    * Cyanine 3 along backbone (exc=550nm, em=564nm)
+    * Cyanine 5 along backbone (exc=648nm, em=668nm)
+    * Fluoroscein-dT (exc=495nm, em=520nm)
+    * 3' terminal BHQ-2
 
+## Notes for group meeting
+
+ * Ions:
+    * @Sundquist1989
+    * @Ying2003 (FRET): Disambiguate X-ray, NMR
+    * @Lee2005 (FRET): Claim to find multiple states
+    * @Juskowiak2005: lots of ions
+ * @Koirala2013 (pulling): three-state kinetic model
+ * @Fujimoto2013: Look at loop length, claim that the loop determines stability and hydration
+ * Crowding:
+    * @Miyoshi2002: trying different crowders
+    * @Lim2013: New anti-parallel structure
+    * @Heddi2011
+    
 ## Fluoroscence anisotropy and FRET studies of G-quadruplex formation in presence of different cations [@Juskowiak2005]
 
  * Studied G-quadruplex formation in presence of Li⁺, Na⁺,
@@ -96,14 +118,14 @@
  * At low salt (10mM) see two FRET populations, wide indicative of heterogeneity
  * Watch hybridization with complementary strand, infer kinetics
 
-## Thermodynamics-hydration relataionships within loops that affect G-quadruplexes under molecular crowding conditions [@Fujimoto2013]
+## Thermodynamics-hydration relationships within loops that affect G-quadruplexes under molecular crowding conditions [@Fujimoto2013]
 
  * Looking at loop length dependence of quadruplex under dilute and
    crowding conditions in $Na⁺$
  * Circular dichroism for thermodynamics
  * Gel, UV melting, osmometry
  * "Structure of the loop critical in determining not only the
-   thermodynammic stability but also the hydration of the whole
+   thermodynamic stability but also the hydration of the whole
    G-quadruplex"
  * Characterize effect of hydration on stability as a function of loop
    length
