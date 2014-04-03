@@ -31,13 +31,18 @@ structures using tools.
 ### Fluorescence spectroscopy
 Fluorescence spectroscopic methods facilitate experiments capable of probing
 molecular structure, conformation, and dynamics with single-molecule
-sensitivity. While experiments examining molecules diffusing in
-solution area readily performed[@Dahan1999; FIXME more], these techniques offer
-only a fleeting glimpse of each species. Consequently, these
-experiments are restrictive in the range of timescales and
-interactions they can probe.
+sensitivity.
 
 TODO: Describe specific fluorescence experiments?
+
+While experiments examining molecules diffusing in
+solution are easily performed[@Dahan1999; FIXME more], these techniques offer
+only a fleeting glimpse of each species. With the hydrodynamic radius
+of many biomolecules of interest being on the order of nanometers,
+these molecules require on the order of hundreds of
+microseconds. In being able to sense the probed molecule for such
+short durations, these experiments are restrictive in the range of
+timescales and interactions they can examine.
 
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
@@ -45,40 +50,48 @@ TODO: Describe specific fluorescence experiments?
 
 Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies without
-temporal or ensemble averaging. The most commonly used means of
-immobilization is surface attachment. Here the molecule of interest
-and an immobile surface are both chemically modified to be mutually sticky. 
-This approach poses a variety of challenges. Direct
-interaction between the surface and the molecule under study can
-substantially perturb the behavior of the studied system\footnote{@Yasuda2003
-observed that nearly all $F_1$ ATPase molecules showed no activity
-when bound to a glass surface}. Further, the chemistry required for the
-modification of the surface and molecule poses a substantial practical
-barrier.
+temporal or ensemble averaging. By ensuring the molecule under study
+cannot move appreciably, it can be probed on timescales only bounded
+by the lifetime of its fluorophores.
+
+One commonly used means of immobilization is surface
+attachment. Here the molecule of interest and an immobile surface are
+both chemically modified to be mutually sticky.  This approach poses a
+variety of challenges. Direct interaction between the surface and the
+molecule under study can substantially perturb the behavior of the
+studied system\footnote{@Yasuda2003 observed that nearly all of the
+$F_1$ ATPase molecules under study showed no activity when bound to a
+glass surface}. Further, the chemistry required for the modification
+of the surface and molecule poses a substantial practical barrier.
 
 ![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment](figures/vesicle)
 
-
 TODO: Figure droplet encapsulation
 
-An alternative to surface immobilization is encapsulation. Vesicles offer a 
-relatively convenient means[@Boukobza2001; @Okumus2004] of encapsulating
-single molecules. Vesicles are small bubbles enclosed by a lipid
-membrane. Once formed, these vesicles can either be studied in
-solution, affording longer dwell times in the observation volume, or
-chemically tethered to a surface. Unfortunately, these vesicles are
-prone to interactions with the system under study[@citeneeded] and
-pose difficulties for sample preparation[@citeneeded]. Moreover, large
-quantities of sample are required as most molecules will end up
-outside of a vesicle. Collectively, these factors make vesicle
-encapsulation an inconvenient technique which is often avoided unless
-needed.
+An alternative to surface immobilization is encapsulation, placing
+the molecule of interest in a larger isolated volume. One can then
+immobilize and even manipulate this container and consequently the
+molecule.
+
+Currently the most convenient means of encapsulating single molecules
+is by producing a lipid membrane around them, forming a structure
+known as a *vesicle*[@Boukobza2001; @Okumus2004].  Once formed, these
+vesicles can either be studied in solution, affording longer dwell
+times in the observation volume due
+to their larger size, or chemically tethered to a
+surface. Unfortunately, vesicles are prone to interactions with
+the system under study[@citeneeded], form under only a narrow range of
+chemical conditions[@Vafabakhsh2012], and pose difficulties for sample
+preparation[@citeneeded]. Moreover, large quantities of sample are
+required as a majority of the solution (and therefore molecules) end up
+outside of a vesicle. Collectively, these considerations complicate the application of
+vesicle encapsulation for many systems.
 
 #### Droplet encapsulation
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The protocol
 requires only minutes to perform and results in emulsions which are
-stable for hours. Furthermore, as all sample solution will end up in the
+stable for hours. Furthermore, as nearly all sample solution will end up in the
 emulsion, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications[@Tang2008]
 suggest that the presence of the droplet interface leaves the system
