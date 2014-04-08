@@ -1,0 +1,20 @@
+PANDOC_OPTS=-V links-as-notes -V geometry:margin=1in -Vdocumentclass=book -Vtoc --latex-engine=xelatex
+SVG_FIGURES=$(wildcard figures/*.svg)
+
+%.pdf : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib figures-pdf
+	pandoc -H $(TOP)/defs.tex --bibliography $(TOP)/refs.bib $(PANDOC_OPTS) --default-image-extension=pdf $< -o $@
+
+
+.PHONY : update-refs
+update-refs :
+	cp ${HOME}/lori/papers/library.bib $(TOP)/refs.bib
+	git commit $(TOP)/refs.bib -m "Update references"
+
+.PHONY : figures-pdf
+figures-pdf : $(SVG_FIGURES:.svg=.pdf)
+
+%.pdf : %.svg
+	inkscape --export-pdf=$@ $<
+
+clean :
+	rm -f $(SVG_FIGURES:.svg=.pdf)
