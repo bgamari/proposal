@@ -59,10 +59,13 @@ attachment. Here the molecule of interest and an immobile surface are
 both chemically modified to be mutually sticky.  This approach poses a
 variety of challenges. Direct interaction between the surface and the
 molecule under study can substantially perturb the behavior of the
-studied system\footnote{@Yasuda2003 observed that nearly all of the
-$F_1$ ATPase molecules under study showed no activity when bound to a
-glass surface}. Further, the chemistry required for the modification
-of the surface and molecule poses a substantial practical barrier.
+studied system[^Yasuda]. Further, the chemistry required for the
+modification of the surface and molecule poses a substantial practical
+barrier.
+
+[^Yasuda]: @Yasuda2003 observed that nearly all of the $F_1$ ATPase
+           molecules under study showed no activity when bound to a
+           glass surface
 
 ![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment](figures/vesicle)
 
@@ -84,8 +87,8 @@ the system under study[@citeneeded], form under only a narrow range of
 chemical conditions[@Vafabakhsh2012], and pose difficulties for sample
 preparation[@citeneeded]. Moreover, large quantities of sample are
 required as a majority of the solution (and therefore molecules) end up
-outside of a vesicle. Collectively, these considerations complicate the application of
-vesicle encapsulation for many systems.
+outside of a vesicle. Collectively, these considerations complicate
+the application of vesicle encapsulation for many systems.
 
 #### Droplet encapsulation
 Our group has developed a technique for the encapsulation of
@@ -166,7 +169,7 @@ nonhomogenous throughout the droplet volume. These two factors greatly
 complicate interpretation of experiments performed under droplet
 confinement.
 
-In an early paper examining the use of droplets for fluorescence
+In an early study using droplet encapsulation for fluorescence
 measurements[^1] Tang *et al.* reported
 no evidence of perturbation in polarization anisotropy measurements on
 enhanced green fluorescent protein (EGFP) on short time
@@ -197,10 +200,8 @@ particles which stabilize the colloid. It stands to reason that our
 water-in-oil emulsions exhibit a similar surface behavior.
 
 While the consequences of a non-zero surface potential are not clear,
-it is likely that the chemistry within the droplet volume will be
-affected. It has been observed by our group and
-others[@Crans2012; @Hasegawa2001] that pH conditions [@Marques2014]
-and molecular dynamics that we have observed.
+it is likely that the chemistry within the droplet volume is be
+affected. It has been observed[@Crans2012; @Hasegawa2001] that pH conditions within[@Marques2014]
 
 While there are a number of tools for characterizing the surface
 potential of oil-in-water emulsions, few of these are applicable to
@@ -338,19 +339,38 @@ of these might be discussed in Section 2 [FIXME].
  * FRET
  * fluorescence lifetime
 
+ 1) Reproduce previous study by @Lee2005,
+    a) $5'-Cy5-(GGGTTA)₃ GGG$ in solution, diffusing droplets, tracked droplets
+    b) Explore ionic conditions in droplets:
+       a) K⁺, Na⁺: 0mM, 10mM, 100mM
+    b) explore effect of PEG 200 on switching kinetics: 0mM, 1mM, 20mM, 200mM
+    c) 
+ 2) Attempt rotational anisotropy study of quadruplex internally labelled in loop
+    a) $5'-GGGT-Cy5-A (GGGTTA)₂ GGG$
+
 ## Risks
 
 Our droplet tracking system has been demonstrated to reliably track
 particles down to sizes of 500 nm. Our current droplet preparation
 protocol produces 100 nm diameter droplets. While I have started
-optimizing the tracking system to handle the smaller signal produced
+optimizing the tracking system for the smaller signal produced
 by these small particles, there is no guarantee that this signal can
-be sufficiently resolved to produce a stable track.
+be resolved well enough to produce a stable track.
 
-In the event that the tracking system's detection electronics is
-unable to resolve the scattered signal I will attempt to identify a
-protocol for producing larger droplets. Alternatively, other members
-of our group are developing techniques for immobilization and
-manipulation of droplets within a microfluidic device.
+Moreover, Lee, *et al.* used surface attachment and TIRF microscopy to examine
+hundreds of specimens at once over the course of tens of minutes. With
+this technique they were able to observe thousands of switching
+events. In contrast, our approach will probe single molecules at a
+time. While count rates may be higher, allowing access to faster
+kinetic timescales, it's unclear that it will practical to collect
+event counts comparable to those seen by Lee, especially in crowded
+conditions where quadruplex structures are known to be relatively stable.
+
+In that particle tracking is found to be infeasible for this application
+I will fall back on alternative methods for immobilization and
+manipulation of droplets being developed by other members of our
+group. These include manipulation and storage of droplets within
+microfluidic devices.
+
 
 ## References
