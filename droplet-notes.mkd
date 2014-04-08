@@ -1,0 +1,23 @@
+# @Zimmermann2001
+
+ * Examines charge on interface of films of Teflon AF
+ * Measured streaming potential and streaming current in
+   aqueous KCl, KOH, HCl
+ * Inferred $\zeta$ potential and surface conductivity
+
+# Electrophoretic mobility does not always reflect the charge on an oil droplet [@Knecht2008]
+
+ * Point out that attributing mobility to adsorption of
+   hydronium/hydroxyl is inconsistent with "difference in isoelectric
+   point and point of zero charge observed in experiment"
+ * MD simulation of heptane drop in water ($r=1.5nm, 4.7 nm, 8.2 nm$) in electric field
+ * Despite lack of ions, simulations produce negative mobility
+ * Refer to experiments in @Taylor1957, @Marinova1996
+ * Suggest that interfacial roughness is necessary for electrophoretic forces
+
+# @Marinova1996
+
+# The conundrum of pH in water nanodroplets [@Crans2012]
+
+ * 
+
