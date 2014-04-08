@@ -54,6 +54,14 @@ these small systems were well described by the WLC.
    $l_p(I) = l_p(\infty) + \frac{l_p(0) - l_p(\infty)}{b I^{n/2} + 1}$
  * Found Odijk-Skonick-Fixman (OSF)[@Odijk1977; @Skolnick1977] theory held for $I > 50mM$
 
+## DNA bending, flexibility, and helical repeat by cyclization kinetics [@Crothers1992]
+
+ * Early paper using cyclization to study flexibility of polymers from 150 to 166 bp long
+ 
+## [@Shore1981]
+
+ * First describe use of cycliczation to probe flexiblity?
+
 ## Single-Molecule Measurements of the Persistence Length of Double-Stranded RNA [@Abels2005]
 
  * Force extension with magnetic tweezers:
@@ -202,6 +210,14 @@ these small systems were well described by the WLC.
  > The looping rate has a weak length dependence between 67 and 106 bp
  > that cannot be described by the worm-like chain model.
 
+## DNA flexibility on short length scales probed by atomic force microscopy [@Mazur2013]
+
+ * Used AFM
+
+## The Worm-Like Chain Theory And Bending Of Short DNA [@Mazur2007]
+
+ * TODO
+
 ## Stretching and bending fluctuations of short DNA molecules [@Padinhateeri2013]
 
  * Examine discrete generalization of WLC model, compare to data from @MathewFenn2009
@@ -213,7 +229,7 @@ these small systems were well described by the WLC.
 
 ## Bending of short DNA helices [@Vologodskii2013]
 
- * Critical comment on @Ha2012
+ * Critical comment on @Vafabakhsh20121
  * Good explanation of flaw of @Cloutier2004
  * Explain contradiction between @Vafabakhsh2012 and @Du2005, @Demurtas2009, @Du2008
  * Cite flexibility of single-stranded DNA, longer contour length compared to duplex
