@@ -601,6 +601,13 @@
          id="path5279-6"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
+      <rect
+         style="color:#000000;fill:url(#pattern8709);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5669-2"
+         width="18.78791"
+         height="13.41689"
+         x="184.97681"
+         y="260.44565" />
       <path
          d="m 90,162.36218 c 0,2.76143 -2.238576,5 -5,5 -2.761424,0 -5,-2.23857 -5,-5 0,-2.76142 2.238576,-5 5,-5 2.761424,0 5,2.23858 5,5 z"
          sodipodi:ry="5"
@@ -611,13 +618,6 @@
          style="fill:#58b635;fill-opacity:1;stroke:none"
          sodipodi:type="arc"
          transform="matrix(0.62626368,0,0,0.67494577,141.13835,150.48499)" />
-      <rect
-         style="color:#000000;fill:url(#pattern8709);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect5669-2"
-         width="18.78791"
-         height="13.41689"
-         x="184.97681"
-         y="260.44565" />
     </g>
     <g
        id="g5889"
@@ -653,6 +653,13 @@
          id="path5279-67"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
+      <rect
+         style="color:#000000;fill:url(#pattern8709-0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5669-4"
+         width="18.78791"
+         height="13.41689"
+         x="184.97682"
+         y="260.07065" />
       <path
          transform="matrix(0.62626368,0,0,0.67494577,141.13835,163.90188)"
          sodipodi:type="arc"
@@ -663,13 +670,6 @@
          sodipodi:rx="5"
          sodipodi:ry="5"
          d="m 90,162.36218 c 0,2.76143 -2.238576,5 -5,5 -2.761424,0 -5,-2.23857 -5,-5 0,-2.76142 2.238576,-5 5,-5 2.761424,0 5,2.23858 5,5 z" />
-      <rect
-         style="color:#000000;fill:url(#pattern8709-0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect5669-4"
-         width="18.78791"
-         height="13.41689"
-         x="184.97682"
-         y="260.07065" />
     </g>
     <path
        sodipodi:nodetypes="cc"
