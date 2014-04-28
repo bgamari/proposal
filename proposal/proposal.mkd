@@ -463,7 +463,7 @@ manipulation of droplets being developed by other members of our
 group. These include manipulation and storage of droplets within
 microfluidic devices.
 
-If the droplet technique proves in its entirety to be unuseable, I
+If the droplet technique proves in its entirety to be unusable, I
 will fall back to examining the crowding dependence of quadruplex DNA.
 
 ## References
