@@ -31,9 +31,11 @@ structures using these tools.
 ## Background
 
 ### Fluorescence spectroscopy
-Fluorescence spectroscopic methods facilitate experiments capable of probing
-molecular structure, conformation, and dynamics often with single-molecule
-sensitivity.
+Fluorescence spectroscopic methods facilitate experiments capable of
+probing molecular structure, conformation, and dynamics often with
+single-molecule sensitivity.
+
+![A high-level view of the physical process of fluorescence.](figures/fluorescence)
 
 The process of fluorescence involves a molecule, known as a
 fluorophore, which can be *excited* by a specific wavelength of
@@ -64,7 +66,8 @@ By exploiting the tendency of fluorophores with overlapping excitation and
 emission spectra to transfer energy when nearby one can extract
 further information from this technique. By labelling two points on
 the molecule of interest and examining the probability of energy
-transfer, one can determine intramolecular distances. This technique,
+transfer, one can determine intramolecular distances. This
+technique[@Forster1960; @Deniz1999],
 known of Fӧrster Resonance Energy Transfer (FRET), is widely used to
 study biomolecular conformation and kinetics.
 
@@ -235,22 +238,30 @@ particles which stabilize the colloid. It stands to reason that our
 water-in-oil emulsions exhibit a similar surface behavior.
 
 While the consequences of a non-zero surface potential are not clear,
-it is likely that the chemistry within the droplet volume is be
-affected. It has been observed[@Crans2012; @Hasegawa2001] that pH conditions within[@Marques2014]
+it is likely that the chemistry within the droplet volume is
+affected. It has been observed[@Crans2012; @Hasegawa2001] that pH
+conditions within reverse micelles[^micelle] differ substantially from
+those in bulk solution. Several groups[@Peterson2005; @Marques2014]
+have approached this problem seeking to enable high-fidelity
+measurements of reverse-micelle encapsulated proteins with NMR
+spectroscopy. These attempts are mostly centered around surfactant
+choice and suggest that a fair amount of control can be had over
+internal pH.
 
-While there are a number of tools for characterizing the surface
-potential of oil-in-water emulsions, few of these are applicable to
-our water-in-oil droplets. As a first attempt at examining the effect
+[^micelle]: Micelles are small (1-10nm) water droplets in a lipid
+            continuous phase
+
+As a first attempt at examining the effect
 of pH, salt, and * on surface potential I have started a set of
 studies using Phase-Analysis Light Scattering
 (PALS)[@Tscharnuter2001], a technique for measuring the
 electrophoretic mobility of a suspension of emulsion droplets.
 
-The interpretation of these mobilities in terms of surface charge is
+The interpretation of these mobilities as a probe of surface charge is
 not as clear for our water-in-oil emulsions as it is for the typical
-oil-in-water case. While in oil-in-water emulsions the presence of
-ionic double-layering gives rise to analysis complications from
-viscous forces, we 
+oil-in-water case. While in oil-in-water emulsions ionic
+double-layering gives rise to analysis complications from
+electrostatic and viscous forces, it's not clear that these
 
 It is widely believed that water organizes on hydrophobic interfaces
 such as the outside surface of an oil-in-water droplet[@Vacha2008].
@@ -268,12 +279,10 @@ oil-in-water case.
 The ability to observe a fluorescence trajectory over a long duration
 without the artifacts introduced by surface tethering
 enables a wide variety of previously inaccessible measurements
-including slow molecular kinetics, ....
+including those of slow molecular kinetics, ....
 
-As droplets are much larger than the molecules they contain it is
-possible to optically measure the diffusive motion of the
-encapsulants, and therefore the molecules contained within.
-
+As our droplets are much larger than the molecules they contain it is
+possible to optically measure their diffusive motion.
 We have developed a system for tracking droplet motion
 in solution inspired by Desai *et al.* This system enables study of
 single-molecules over time-scales previously only accessible through
@@ -368,7 +377,7 @@ above.
 
 These systems are
 an interesting choice as they are chemically robust, exhibit interesting
-conformational dynamics, and are easily synthesized and labelled. 
+conformational dynamics, and are readily synthesized and labelled. 
 The ability of FRET to probe intra-molecular distances makes it well-suited to
 probe conformations of short DNA systems. Finally, several basic
 questions surrounding the flexibility of short dsDNA remain open. Some
@@ -378,6 +387,7 @@ of these might be discussed in [the appropriate section](#study-of-quadruplex-dn
  * FRET
  * fluorescence lifetime
 
+ 0) Attempt to characterize pH in single droplet
  1) Reproduce previous study by @Lee2005,
     a) $5'-Cy5-(GGGTTA)₃ GGG$ in solution, diffusing droplets, tracked droplets
     b) Explore ionic conditions in droplets:

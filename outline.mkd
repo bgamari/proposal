@@ -1,22 +1,16 @@
-# ideas
+## Issues
 
-Measure differential rotational anisotropy of both ends of short DNA, compare against helical wormlike chain theory [@Yamakawa1983]
+ * Physical question for quadruplex
+    * 
+ * Contribution in droplet work?
+    * tracking
+    * Analysis of
 
-Look at @Yang2002
+ * pH in droplets
+    * Measure pH alongside system?
+    * Calibrate in bulk
+    * Infer kinetics
+    * With tracking/immobilization
+    * diffusing droplets, infer distribution?
 
-Examine time correlation of FRET efficiency with TCSPC
-
-# thesis
- 
- * background
-   * early biophysical measurements were largely ensemble measurements
-   * these measurements enabled us to build an understanding of the
-     bulk properties of numerous polymers, enzymes, and motors
-   * Now with a bulk view in place, details of individual's behavior become ripe for investigation
-   * utility of single molecule view
-     * separating distinct populations
-     * watching single molecule dynamics
-     * probing interactions between small number of species
-   * fluorescence techniques have enabled 
-
-
+ * 

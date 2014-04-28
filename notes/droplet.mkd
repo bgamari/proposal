@@ -21,3 +21,21 @@
 
  * 
 
+# Novel surfactant mixtures for NMR spectroscopy of encapsulated ... [@Peterson2005]
+
+ * Nice statement of problem,
+   > To achieve optimal performance for high-resolution NMR, the
+   > volume of the reverse micelle is strictly controlled by limiting
+   > the amount of water available to form the internal aqueous
+   > core. Under the condition of a limited water pool, the
+   > interaction between the protein and the surfactant head groups
+   > can potentially alter the protein structure. This undesirable
+   > effect can sometimes but not always be overcome with the addition
+   > of salts to disrupt electrostatic interactions, but this often
+   > reduces the encapsulation efficiency. Here we report the
+   > development and evaluation of novel surfactant mixtures that
+   > appear to allow considerable flexibility for NMR studies of
+   > encapsulated proteins dissolved in low-viscosity solvents.
+ * Looking for new surfantant mixture to enable 
+
+# Measurement and Control of pH in the Aqueous Interior of Reverse Micelles [@Marques2014]
