@@ -42,21 +42,17 @@ Figure \ref{fig:fluorescence}. Here the fluorescent molecule molecule, known as 
 fluorophore, begins in its ground state ($\ket{0}$ [^braket]) when it is excited
 by an incident photon of a specific wavelength (known as its *excitation wavelength*)
 The system quickly passes non-radiatively through a large number of
-intermediate states as its local environment rearranges. Finally the
-system settles into its excited fluorescent state where it will remain
-until radiatively decaying back to its ground state. The lifetime of
-this fluorescent state is known as the fluorophore's fluorescence
-lifetime and is typically of order $10^{-9}$ seconds.
+intermediate states as its local environment rearranges (losing
+energy, known as the Stokes shift). Finally the system settles into
+its excited fluorescent state where it will remain until radiatively
+decaying back to its ground state. The lifetime of this fluorescent
+state is known as the fluorophore's fluorescence lifetime and is
+typically of order $10^{-9}$ seconds.
 
 [^braket]: The $\ket{i}$ notation is commonly used in quantum
            mechanics to denote the state $i$ of a given system.
 
-which can be *excited* by a specific wavelength of
-light. In this process, the exciting photon is absorbed by the
-fluorophore, moving it to a unstable state. This state will decay
-through one of a variety of pathways, often emitting a lower-energy
-fluorescence photon. The fact that the excitation and emisssion
-energies differ enables light resulting from fluorescence to be
+The Stokes shift enables light resulting from fluorescence to be
 distinguished from the excitation light that produced it.
 
 Fluorescence spectroscopic techniques exploit fluoroscence as a means
@@ -419,9 +415,9 @@ decay.
 While fluoroscein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
 in fluorescence lifetime. By filling droplets with fluoroscein such
-that the mean droplet occupancy is on the order of 100 molecules, it
-should be possible to collect enough statistics to infer a lifetime
-mixture (on the order of $10⁶$ photons).
+that the mean droplet occupancy is on the order of 100 molecules (~500
+nmol/L), it should be possible to collect enough statistics to infer a
+lifetime mixture (on the order of $10⁶$ photons).
 
 If the change in lifetime from fluoroscein is found to be inadequate,
 there are a number[@Han] of other dyes that could be
@@ -459,7 +455,7 @@ kinetic timescales, it's unclear that it will practical to collect
 event counts comparable to those seen by Lee, especially in crowded
 conditions where quadruplex structures are known to be relatively stable.
 
-In that particle tracking is found to be infeasible for this application
+If particle tracking is found to be infeasible for this application
 I will fall back on alternative methods for immobilization and
 manipulation of droplets being developed by other members of our
 group. These include manipulation and storage of droplets within
