@@ -84,6 +84,8 @@ technique[@Forster1960; @Deniz1999],
 known of Fӧrster Resonance Energy Transfer (FRET), is widely used to
 study biomolecular conformation and kinetics.
 
+![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET)](figures/fret_processes)
+
 TODO: Describe specific fluorescence experiments?
 
 While experiments examining molecules diffusing in
@@ -192,13 +194,20 @@ base-specific fluorescence enhancement[@Harvey2009b] confound the FRET
 signal. Moreover, linker dynamics[@Sindbert2011] and
 geometric[@Lilley2000] considerations complicate modelling.
 
-It is known that cyanine dyes terminally attached to RNA demonstrates
-a several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010; @iqbal2008orientation]. Recent
-work by Peker Milas and I on short double-stranded RNA[@Milas2013]
-have provided evidence that droplets stabilize stacking of cyanine
-fluorophores on the end of the strand, an idea first put forth by
-Iqbal[@iqbal2008orientation]
+It is believed that cyanine dyes terminally attached to RNA demonstrate
+several states where the dye stacks on its neighboring base much as
+a nucleic acid base would [@Lilley2010; @iqbal2008orientation].
+
+Recent work by Peker Milas and I on short double-stranded
+RNA[@Milas2013] have provided further evidence for this behavior. In
+this work we coupled single-molecule sensitive FRET measurements with
+molecular dynamics (MD) simulation of the labelled system. By
+extracting relevant geometric quantities from the MD model, we were
+able to construct FRET observations from this simulated
+system. In comparing these observations to experiment we were able to
+test hypotheses concerning the photophysics of the labels and
+magnitude of the F\"orster radius.
+
 
 ## Single-molecule particle encapsulation and tracking with fluorescence
 
@@ -232,7 +241,10 @@ biophysical systems[@Jofre2007; @Milas2014].
 
 [^1]: It should be noted that while Tang's droplets were formed without
       surfactant by way of mechanical injection, our recent measurements
-      have used more stable droplets formed by shear and a surfactant.
+      have used more stable droplets formed by shear and a
+      surfactant. This difference in surfactant may strongly affect
+      the nature of the droplet's interface and how it affects the
+      system under study.
 
 ### Emulsion droplet environment
 The properties of oil-in-water emulsions and their interfaces have
@@ -310,15 +322,6 @@ microscope. After learning a polynomial model of the displacement of
 this scattered beam as a function of particle position, one can infer
 the position of a diffusing particle.
 
-### Future work
-
-My work will continue by building on @Tang2008 to further examine the
-effect of the droplet surface on the rotational and translational
-freedom of the molecule under study. These measurements will consist
-of rotational anisotropy measurements on my oligos both in solution
-and droplet confinement. While Tang formed
-
- * Zeta potential measurement
  * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
  * FCS to examine translational diffusion
  * Polarization anisotropy to examine rotational freedom
@@ -326,7 +329,7 @@ and droplet confinement. While Tang formed
  * Different dyes?
 
 
-## Study of Quadruplex DNA
+## Kinetics of Quadruplex DNA
 
 <!--
 Summary:
@@ -399,6 +402,34 @@ of these might be discussed in [the appropriate section](#study-of-quadruplex-dn
  * Rotational anisotropy of acceptor and donor
  * FRET
  * fluorescence lifetime
+
+#### Characterization of droplet pH
+The first experiment will attempt to measure the pH distribution in
+individual droplets through fluorescence lifetime. This experiment
+will use immobilized droplets (either on a surface or tracked)
+containing fluoroscein, a pH sensitive dye. The pH dependence of
+fluoroscein arises from the number of coordinated hydrogens
+changing[@Sjoback1995]. Between pH 4 and 6 the molecule is largely in
+its singly ionized form, missing one hydrogen. This state has an
+absorption line around $λ=472$ nm and a fluorescence lifetime of $τ =
+3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
+which has an absorption around 490 nm and a $τ = 4.1$ ns emission
+decay.
+
+While fluoroscein is often used to measure pH by examining the shift
+in its emission spectrum, I will instead use the corresponding shift
+in fluorescence lifetime. By filling droplets with fluoroscein such
+that the mean droplet occupancy is on the order of 100 molecules, it
+should be possible to collect enough statistics to infer a lifetime
+mixture (on the order of $10⁶$ photons).
+
+If the change in lifetime from fluoroscein is found to be inadequate,
+there are a number[@Han] of other dyes that could be
+tried. Alternatively, direct measurement of the emission spectrum is
+also possible.
+
+
+#### notes
 
  0) Attempt to characterize pH in single droplet
  1) Reproduce previous study by @Lee2005,
