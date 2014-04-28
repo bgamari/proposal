@@ -305,11 +305,12 @@ including those of slow molecular kinetics, ....
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
 We have developed a system for tracking droplet motion
-in solution inspired by Desai *et al.* This system enables study of
+in solution inspired by Desai *et al.* [@Desai2007] This system enables study of
 single-molecules over time-scales previously only accessible through
-surface immobilization.  The ability to study isolated
+surface immobilization but without the difficult sample preparation
+that this technique requires. The ability to study isolated
 single-molecules for long durations makes droplet encapsulation a
-promising tool.
+promising tool for probing biomolecular dynamics.
 
 The tracking system infers the position of the particle relative to the
 microscope's focus point by examining scattering through the particle
