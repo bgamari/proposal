@@ -35,10 +35,23 @@ Fluorescence spectroscopic methods facilitate experiments capable of
 probing molecular structure, conformation, and dynamics often with
 single-molecule sensitivity.
 
-![A high-level view of the physical process of fluorescence.](figures/fluorescence)
+![A high-level model of fluorescence.\label{fig:fluorescence}](figures/fluorescence)
 
-The process of fluorescence involves a molecule, known as a
-fluorophore, which can be *excited* by a specific wavelength of
+The physical processes responsible for fluorescence are shown in
+Figure \ref{fig:fluorescence}. Here the fluorescent molecule molecule, known as a
+fluorophore, begins in its ground state ($\ket{0}$ [^braket]) when it is excited
+by an incident photon of a specific wavelength (known as its *excitation wavelength*)
+The system quickly passes non-radiatively through a large number of
+intermediate states as its local environment rearranges. Finally the
+system settles into its excited fluorescent state where it will remain
+until radiatively decaying back to its ground state. The lifetime of
+this fluorescent state is known as the fluorophore's fluorescence
+lifetime and is typically of order $10^{-9}$ seconds.
+
+[^braket]: The $\ket{i}$ notation is commonly used in quantum
+           mechanics to denote the state $i$ of a given system.
+
+which can be *excited* by a specific wavelength of
 light. In this process, the exciting photon is absorbed by the
 fluorophore, moving it to a unstable state. This state will decay
 through one of a variety of pathways, often emitting a lower-energy

@@ -5,6 +5,8 @@ CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 %.pdf : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib figures-pdf
 	pandoc -H $(TOP)/defs.tex --bibliography $(TOP)/refs.bib $(PANDOC_OPTS) --default-image-extension=pdf $< -o $@
 
+%.tex : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib figures-pdf
+	pandoc -H $(TOP)/defs.tex --bibliography $(TOP)/refs.bib $(PANDOC_OPTS) --default-image-extension=pdf $< -o $@
 
 .PHONY : update-refs
 update-refs :
