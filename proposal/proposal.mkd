@@ -101,7 +101,8 @@ dipole moments $\hat{μ}ᵢ$,
 
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 
-TODO: Discuss free rotation
+As often only the distance $R$ is of interest, $κ²$ is often taken to
+be $2/3$ under an assumption of free rotation of both dyes.
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET)\label{fig:fret}](figures/fret_processes)
 
@@ -333,27 +334,31 @@ intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes 
 
-@Ying2003
-@Lee2005 looks at a variety of 
+Ying [@Ying2003] sought to resolve conflicting structures derived from
+previous NMR and X-ray experiments.
 
+Lee [@Lee2005] revisited and refined the approach by Ying
 
-@Lee2014 demonstrated that internal fluorescent labels exhibit both
-improved photostability and a smaller effect on the thermodynamic
-stability of the labelled oligo.
 
 ### Contributions
 
-This project will study a selection of quadruplex-forming DNA oligos
-using the unique capabilities provided by the droplet tools described
-above. 
+Below I will discuss the on-going and future contributions of this
+project. I will begin by briefly introducing a set of
+tools for the analysis of FRET and FCS experimental data.  I will then
+discuss an application of these tools on a measurement of a model RNA
+16-mer system. This will serve to demontrate the need for robust
+molecular immobilization techniques which we answer with droplet
+immobilization. As this technique is still very new, I'll propose a
+set of experiments to characterize the chemical environment within the
+droplet environment. Finally, I will propose a set of measurements on
+the G-quadruplex DNA system. Here I will examine switching dynamics as
+a function of osmotic pressure, demonstrating the wide range of
+timescales accessible to droplet immobilized fluorescence experiments.
 
-or
-
-This system was chosen due to its chemical robustness, interesting
+The system was chosen due to its chemical robustness, interesting
 conformational dynamics, and ease of synthesis and labelling.
 
-
-an interesting choice as they are chemically robust, exhibit interesting
+The G quadruplex is an appropriate choice of model system as it is chemically robust, exhibits interesting
 conformational dynamics, and are readily synthesized and labelled. 
 The ability of FRET to probe intra-molecular distances makes it well-suited to
 probe conformations of short DNA systems. Finally, several basic
@@ -457,7 +462,7 @@ containing fluoroscein, a pH sensitive dye. The pH dependence of
 fluoroscein arises from the number of coordinated hydrogens
 changing [@Sjoback1995]. Between pH 4 and 6 the molecule is largely in
 its singly ionized form, missing one hydrogen. This state has an
-absorption line around $λ=472$ nm and a fluorescence lifetime of $τ =
+absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
 decay.
@@ -486,6 +491,10 @@ attachment.
 Starting with the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
 TMR}$) [@Ying2003], I will demonstrate a typical FRET experiment
 inside of immobilized droplets.
+
+@Lee2014 demonstrated that internal fluorescent labels exhibit both
+improved photostability and a smaller effect on the thermodynamic
+stability of the labelled oligo.
 
 
 #### notes
