@@ -306,16 +306,16 @@ ends of the genome. This *telomeric* DNA is lost during the
 replication process, to be replaced later in the cell's lifecycle by
 telomerase enzymes.
 
-figure out where to put this: Abnormality in the telomere and
-associated machinery has been linked to a variety of
-diseases, including some cancers.
-
 Telomeric DNA is characterized by regions rich in guanine. *In vitro*
 regions like these have been shown to form a peculiar structure, the *G
 quadruplex* [@Sen1988].  In these structures bases along a single strand
 of DNA form pairs, giving rise to a four-way symmetric configuration
 known to block the binding of telomerase [@Zahler1991]. It is believed
 that this serves a regulatory role.
+
+Abnormality in the telomere and associated machinery has been linked
+to a variety of diseases and holds promise as a target for anticancer
+agents[@Neidle2002; @Hurley2002].
 
 In addition to telomeric DNA there is a growing body of evidence
 that quadruplexes serve regulatory purposes outside of the
@@ -327,15 +327,15 @@ Early work on quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
 ionic and osmotic conditions [@Miyoshi2002; @Miyoshi2006].
 
-Sundquist [@Sundquist1989] demonstrated that G quadruplexes were more stable in
-the presence of $K^+$ than $Na^+$. Later
-work[@Hardin1992; @Hardin2001] attributed this to preferential
+Sundquist [@Sundquist1989] demonstrated that G quadruplexes were more
+stable in the presence of K⁺ than Na⁺. Later work
+[@Hardin1992; @Hardin2001] attributed this to preferential
 intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
-polyethylene glycol stabilizes 
+polyethylene glycol stabilizes
 
 Ying [@Ying2003] sought to resolve conflicting structures derived from
-previous NMR and X-ray experiments.
+previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments.
 
 Lee [@Lee2005] revisited and refined the approach by Ying
 
@@ -343,27 +343,30 @@ Lee [@Lee2005] revisited and refined the approach by Ying
 ### Contributions
 
 Below I will discuss the on-going and future contributions of this
-project. I will begin by briefly introducing a set of
-tools for the analysis of FRET and FCS experimental data.  I will then
-discuss an application of these tools on a measurement of a model RNA
-16-mer system. This will serve to demontrate the need for robust
-molecular immobilization techniques which we answer with droplet
-immobilization. As this technique is still very new, I'll propose a
-set of experiments to characterize the chemical environment within the
-droplet environment. Finally, I will propose a set of measurements on
-the G-quadruplex DNA system. Here I will examine switching dynamics as
-a function of osmotic pressure, demonstrating the wide range of
+project. I will begin by briefly introducing a set of tools for the
+analysis of FRET and FCS experimental data.  I will then discuss an
+application of these tools on a measurement of a model RNA 16-mer
+system. This will serve to demontrate the need for robust molecular
+immobilization techniques which we answer with droplet
+immobilization which we realize through tracking and microfluidics.
+
+As this technique is still very new, I'll propose a set of experiments
+to characterize the chemical environment within the droplet
+environment. Finally, I will propose a set of measurements on the
+G-quadruplex DNA system. Here I will examine switching dynamics as a
+function of osmotic pressure, demonstrating the wide range of
 timescales accessible to droplet immobilized fluorescence experiments.
 
 The system was chosen due to its chemical robustness, interesting
 conformational dynamics, and ease of synthesis and labelling.
 
-The G quadruplex is an appropriate choice of model system as it is chemically robust, exhibits interesting
-conformational dynamics, and are readily synthesized and labelled. 
-The ability of FRET to probe intra-molecular distances makes it well-suited to
-probe conformations of short DNA systems. Finally, several basic
-questions surrounding the flexibility of short dsDNA remain open. Some
-of these might be discussed in [the appropriate section](#study-of-quadruplex-dna).
+The G quadruplex is an appropriate choice of model system as it is
+chemically robust, exhibits interesting conformational dynamics, and
+are readily synthesized and labelled.  The ability of FRET to probe
+intra-molecular distances makes it well-suited to probe conformations
+of short DNA systems. Finally, several basic questions surrounding the
+flexibility of short dsDNA remain open. Some of these might be
+discussed in [the appropriate section](#study-of-quadruplex-dna).
 
  * Rotational anisotropy of acceptor and donor
  * FRET
@@ -372,13 +375,13 @@ of these might be discussed in [the appropriate section](#study-of-quadruplex-dn
 
 #### FRET analysis tools
 
-Single-molecule sensitive fluorescence techniques can provide insight into a variety of
-biologically relevant systems interpretation of resulting data is a non-trival
-exercise. Between spectral cross-talk, background, and spectral sensitivity, 
-and detection of fluorescence bursts from sample diffusion, a fluorescence experiment is subject to
+Single-molecule sensitive fluorescence techniques can provide insight
+into a variety of biologically relevant systems interpretation of
+resulting data is a non-trival exercise. Between spectral cross-talk,
+background, and spectral sensitivity, and detection of fluorescence
+bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
 for quantitatively accurate results.
-
 
 
 #### Characterization of FRET on RNA
