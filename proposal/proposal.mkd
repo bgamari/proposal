@@ -83,7 +83,7 @@ excitation and emission spectra to transfer energy when nearby one can
 extract further geometric information from the molecule under study
 \ref{fig:fret}. By labelling two points on the molecule of interest
 and examining the probability of energy transfer, one can determine
-intramolecular distances. This technique [@Forster1960; @Deniz1999],
+intramolecular distances. This technique [@Forster1960; @Dahan1999],
 known as Fӧrster Resonance Energy Transfer (FRET), is widely used to
 study biomolecular conformation and kinetics.
 
@@ -437,12 +437,12 @@ decay.
 While fluoroscein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
 in fluorescence lifetime. By filling droplets with fluoroscein such
-that the mean droplet occupancy is on the order of 100 molecules (~500
+that the mean droplet occupancy is on the order of 100 molecules ($\~500$
 nmol/L), it should be possible to collect enough statistics to infer a
 lifetime mixture (on the order of $10⁶$ photons).
 
 If the change in lifetime from fluoroscein is found to be inadequate,
-there are a number [@Han] of other dyes that could be
+there are a number [@Han2010] of other dyes that could be
 tried. Alternatively, direct measurement of the emission spectrum is
 also possible.
 
