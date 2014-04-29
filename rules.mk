@@ -10,7 +10,7 @@ CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 
 .PHONY : update-refs
 update-refs :
-	cp ${HOME}/lori/papers/library.bib $(TOP)/refs.bib
+	bib2bib --remove abstract --remove annote -s '$keys' ${HOME}/lori/papers/library.bib > $(TOP)/refs.bib
 	git commit $(TOP)/refs.bib -m "Update references"
 
 .PHONY : figures-pdf
