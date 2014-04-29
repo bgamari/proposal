@@ -26,8 +26,10 @@ the motion of these droplets in solution, enabling fluorescence
 studies of isolated single-molecules over time-scales previously only
 accessible via strongly perturbative techniques.
 
-Relying on these techniques, we will then propose a set of experiments
-to probe the pH of individual droplets.
+Building on these tools, we will then propose a set of experiments
+to probe the pH of individual droplets. This experiment will both
+answer basic questions regarding liquid-liquid interfaces as well as
+enable later biomolecular applications.
 
 Finally, I will describe an experimental study of telomeric DNA
 structures using these tools.
@@ -76,13 +78,13 @@ signal, one can infer molecular sizes, concentrations, and kinetics.
              common point. The region enclosing this focal point is
              known as the *observation volume*.
 
-By exploiting the tendency of fluorophores with overlapping excitation
-and emission spectra to transfer energy when nearby one can extract
-further geometric information from the molecule under study
+By exploiting the tendency of a pair of fluorophores with overlapping
+excitation and emission spectra to transfer energy when nearby one can
+extract further geometric information from the molecule under study
 \ref{fig:fret}. By labelling two points on the molecule of interest
 and examining the probability of energy transfer, one can determine
 intramolecular distances. This technique [@Forster1960; @Deniz1999],
-known of Fӧrster Resonance Energy Transfer (FRET), is widely used to
+known as Fӧrster Resonance Energy Transfer (FRET), is widely used to
 study biomolecular conformation and kinetics.
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET)\label{fig:fret}](figures/fret_processes)
@@ -122,33 +124,33 @@ barrier.
     molecules under study showed no activity when bound to a
     glass surface
 
-![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment](figures/vesicle)
+![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment\label{fig:vesicle}](figures/vesicle)
 
-An alternative to surface immobilization is encapsulation, placing
-the molecule of interest in a larger isolated volume. One can then
-immobilize and even manipulate this container and consequently the
-molecule.
+An alternative to surface immobilization is encapsulation where the
+molecule of interest is placed in a confining volume. One can then
+immobilize or manipulate this container and the molecule within.
 
 Currently the most convenient means of encapsulating single molecules
-is by producing a lipid membrane around them, forming a structure
-known as a *vesicle* [@Boukobza2001; @Okumus2004].  Once formed, these
-vesicles can either be studied in solution, affording longer dwell
-times in the observation volume due
-to their larger size, or chemically tethered to a
-surface. Unfortunately, vesicles are prone to interactions with
-the system under study [@citeneeded], form under only a narrow range of
-chemical conditions [@Vafabakhsh2012], and pose difficulties for sample
-preparation [@citeneeded]. Moreover, large quantities of sample are
-required as a majority of the solution (and therefore molecules) end up
-outside of a vesicle. Collectively, these considerations complicate
-the application of vesicle encapsulation for many systems.
+is by lipid membrane as seen in Figure \ref{fig:vesicle}.  This
+structure, known as a *vesicle*, consists of a volume of water,
+typically less than one attoliter, contained within a closed lipid
+bilayer [@Boukobza2001; @Okumus2004].  Once formed, these vesicles can
+either be studied in solution, affording longer dwell times in the
+observation volume due to their larger size, or chemically tethered to
+a surface. Unfortunately, vesicles are known to interact with some
+systems, form under only a narrow range of chemical conditions
+[@Vafabakhsh2012], and present practical challenges in sample
+preparation. Moreover, this technique suffers from poor sample
+utilization as only a small fraction of the sample volume ends up
+within a vesicle.  Collectively, these considerations preclude use
+vesicle encapsulation for many systems.
 
 #### Droplet encapsulation
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The protocol
 requires only minutes to perform and results in emulsions which are
-stable for hours. Furthermore, as nearly all sample solution will end up in the
-emulsion, the technique requires very little sample for a
+stable for hours. Furthermore, as nearly all sample solution will end up in 
+emulsion droplets, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
 of interest largely unperturbed. Like vesicles, these emulsions can be
@@ -157,8 +159,8 @@ either probed in solution or used for immobilization.
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
 The droplets are made in perfluorinated oil with an appropriate
-surfactant. They are formed through shear by sonication. While there is
-a small degree of control over size by adjustment of surfactant quantity,
+surfactant. They are formed through shear by sonication. While 
+a small degree of control over size is available through adjustment of surfactant quantity,
 the droplets produced by this protocol are generally around 100 nm in
 diameter. This makes them ideal for containment of small biological
 polymers.
@@ -175,7 +177,14 @@ scales [@Tang2008]. Polarization anisotropy is reflective of the rotational
 coherence of the dye and, consequently, the object to which it is
 attached. In contrast, recent observations by Milas have raised
 questions regarding the applicability of these measurements to real
-biophysical systems [@Jofre2007; @Milas2014].
+biophysical systems [@Milas2014].
+
+There remain numerous open questions surrounding the sort of
+perturbation that a droplet environment brings about. For instance,
+Jofre reported fluorescence anisotropy measurements where the
+introduction of a droplet environment brought about an apparent
+reduction in rotational coherence, a finding that remains unexplained
+[@Jofre2007].
 
 [^droplet-differences]:
       It should be noted that while Tang's droplets were formed without
