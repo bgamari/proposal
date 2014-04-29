@@ -1,6 +1,8 @@
 ---
 title: Droplet encapsulation of biomolecules for fluorescence spectroscopy
 author: Ben Gamari
+email: bgamari@physics.umass.edu
+affil: Department of Physics, University of Massachusetts, Amherst
 ---
 
 ## Introduction
@@ -361,35 +363,16 @@ of these might be discussed in [the appropriate section](#study-of-quadruplex-dn
  * fluorescence lifetime
 
 
-#### Droplet tracking
+#### FRET analysis tools
 
-The ability to observe a fluorescence trajectory over a long duration
-without the artifacts introduced by surface tethering
-enables a wide variety of previously inaccessible measurements
-including those of slow molecular kinetics, ....
+Single-molecule sensitive fluorescence techniques can provide insight into a variety of
+biologically relevant systems interpretation of resulting data is a non-trival
+exercise. Between spectral cross-talk, background, and spectral sensitivity, 
+and detection of fluorescence bursts from sample diffusion, a fluorescence experiment is subject to
+numerous experimental artifacts that must be estimated and corrected
+for quantitatively accurate results.
 
-As our droplets are much larger than the molecules they contain it is
-possible to optically measure their diffusive motion.
-We have developed a system for tracking droplet motion
-in solution inspired by Desai *et al.* [@Desai2007] This system enables study of
-single-molecules over time-scales previously only accessible through
-surface immobilization but without the difficult sample preparation
-that this technique requires. The ability to study isolated
-single-molecules for long durations makes droplet encapsulation a
-promising tool for probing biomolecular dynamics.
 
-The tracking system infers the position of the particle relative to the
-microscope's focus point by examining scattering through the particle
-with a detector situated in the back-focal plane of the
-microscope. After learning a polynomial model of the displacement of
-this scattered beam as a function of particle position, one can infer
-the position of a diffusing particle.
-
- * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
- * FCS to examine translational diffusion
- * Polarization anisotropy to examine rotational freedom
- * Measure same in droplet, identify effective concentrations in droplet environment
- * Different dyes?
 
 #### Characterization of FRET on RNA
 
@@ -427,7 +410,39 @@ extracting relevant geometric quantities from the MD model, we were
 able to construct FRET observations from this simulated
 system. In comparing these observations to experiment we were able to
 test hypotheses concerning the photophysics of the labels and
-magnitude of the F\"orster radius.
+magnitude of the Fӧrster radius.
+
+
+#### Droplet tracking
+
+The ability to observe a fluorescence trajectory over a long duration
+without the artifacts introduced by surface tethering
+enables a wide variety of previously inaccessible measurements
+including those of slow molecular kinetics, ....
+
+As our droplets are much larger than the molecules they contain it is
+possible to optically measure their diffusive motion.
+We have developed a system for tracking droplet motion
+in solution inspired by Desai *et al.* [@Desai2007] This system enables study of
+single-molecules over time-scales previously only accessible through
+surface immobilization but without the difficult sample preparation
+that this technique requires. The ability to study isolated
+single-molecules for long durations makes droplet encapsulation a
+promising tool for probing biomolecular dynamics.
+
+The tracking system infers the position of the particle relative to the
+microscope's focus point by examining scattering through the particle
+with a detector situated in the back-focal plane of the
+microscope. After learning a polynomial model of the displacement of
+this scattered beam as a function of particle position, one can infer
+the position of a diffusing particle.
+
+ * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
+ * FCS to examine translational diffusion
+ * Polarization anisotropy to examine rotational freedom
+ * Measure same in droplet, identify effective concentrations in droplet environment
+ * Different dyes?
+
 
 #### Characterization of droplet pH
 <!--
@@ -456,6 +471,7 @@ If the change in lifetime from fluoroscein is found to be inadequate,
 there are a number [@Han2010] of other dyes that could be
 tried. Alternatively, direct measurement of the emission spectrum is
 also possible.
+
 
 #### Study of G quadruplex DNA
 
