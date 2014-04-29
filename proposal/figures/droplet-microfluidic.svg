@@ -93,7 +93,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -990,17 +990,17 @@
        width="12.690589"
        height="1.6259648"
        x="111.69392"
-       y="224.46819" />
+       y="234.46819" />
     <text
        sodipodi:linespacing="125%"
        id="text8892"
-       y="223.29399"
+       y="233.29399"
        x="104.3216"
        style="font-size:2.46463037px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        xml:space="preserve"><tspan
          style="font-size:8.21543407px"
          id="tspan8894"
-         y="223.29399"
+         y="233.29399"
          x="104.3216"
          sodipodi:role="line">~10nm</tspan></text>
     <path
@@ -1047,5 +1047,17 @@
        id="path4548"
        d="m 254.00651,140.96029 c -9.75896,-0.23777 -22.48464,-5.15332 -31.5602,1.3697"
        style="fill:none;stroke:#000000;stroke-width:1.41716242;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="100.31013"
+       y="139.24008"
+       id="text5069"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5071"
+         x="100.31013"
+         y="139.24008"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">Perfluorinated oil</tspan></text>
   </g>
 </svg>
