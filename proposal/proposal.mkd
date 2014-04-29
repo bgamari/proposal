@@ -9,11 +9,11 @@ affil: Department of Physics, University of Massachusetts, Amherst
 
 This thesis will study the effects of a droplet environment on
 fluorescence measurements of a typical biological polymer. Below we
-will briefly describe the fluorescence specotroscopic techniques used in
+will briefly describe the fluorescence spectroscopic techniques used in
 our lab.
 
-Following this we will discuss my previous work modelling FRET on a
-model RNA oligomer, particularly focussing on conformational
+Following this we will discuss my previous work modeling FRET on a
+model RNA oligomer, particularly focusing on conformational
 and photophysical effects. This work will bear relevance to the
 fluorescence studies proposed later in this document.
 
@@ -64,26 +64,26 @@ typically of order $10^{-9}$ seconds.
 The Stokes shift enables light resulting from fluorescence to be
 distinguished from the excitation light that produced it.
 
-Fluorescence spectroscopic techniques exploit fluoroscence as a means
+Fluorescence spectroscopic techniques exploit fluorescence as a means
 of probing physical systems. One frequently used mode of inquiry is
 fluorescence correlation spectroscopy, where each molecule in an
-ensemble is labelled with a single fluorophore. These molecules are
+ensemble is labeled with a single fluorophore. These molecules are
 then allowed to freely diffuse in solution while a small volume of the
 solution is observed with a confocal microscope[^confocal]. In this
-configuration labelled molecules diffusing through the observation
+configuration labeled molecules diffusing through the observation
 volume will be excited and subsequently produce fluorescence which is
 then detected. By examining correlations in the resulting intensity
 signal, one can infer molecular sizes, concentrations, and kinetics.
 
 [^confocal]: *Confocal microscope* here refers to a microscope where a
-             set of photon-detectors and an excitation laser are focussed on a
+             set of photon-detectors and an excitation laser are focused on a
              common point. The region enclosing this focal point is
              known as the *observation volume*.
 
 By exploiting the tendency of a pair of fluorophores with overlapping
 excitation and emission spectra to transfer energy when nearby one can
 extract further geometric information from the molecule under study
-\ref{fig:fret}. By labelling two points on the molecule of interest
+\ref{fig:fret}. By labeling two points on the molecule of interest
 and examining the probability of energy transfer, one can determine
 intramolecular distances. This technique [@Forster1960; @Dahan1999],
 known as Fӧrster Resonance Energy Transfer (FRET), is widely used to
@@ -213,13 +213,13 @@ reduction in rotational coherence, a finding that remains unexplained
 ## Single-molecule particle encapsulation and tracking with fluorescence
 
 <!--
-summary: solution FRET, particle tracking, FRET, modelling of FCS in droplets? no
+summary: solution FRET, particle tracking, FRET, modeling of FCS in droplets? no
 -->
 
 One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the environmental conditions of
 the droplet's volume are well understood. Initial measurements from
-our lab have demonstrated that care is needed in interpretting
+our lab have demonstrated that care is needed in interpreting
 fluorescence experiments in droplet environments.
 
 The droplets produced by our technique are typically hundreds of
@@ -303,12 +303,12 @@ generations of cells would lack a growing body of
 genes, eventually leading to non-viable cells [@Counter1992]. To
 counter this, nature has introduced regions of non-coding DNA near the
 ends of the genome. This *telomeric* DNA is lost during the
-replication process, to be replaced later in the cell's lifecycle by
+replication process, to be replaced later in the cell's life-cycle by
 telomerase enzymes.
 
 Telomeric DNA is characterized by regions rich in guanine. *In vitro*
 regions like these have been shown to form a peculiar structure, the *G
-quadruplex* [@Sen1988].  In these structures bases along a single strand
+quadruplex* [@Sen1988].  In these structures bases of a single strand
 of DNA form pairs, giving rise to a four-way symmetric configuration
 known to block the binding of telomerase [@Zahler1991]. It is believed
 that this serves a regulatory role.
@@ -346,7 +346,7 @@ Below I will discuss the on-going and future contributions of this
 project. I will begin by briefly introducing a set of tools for the
 analysis of FRET and FCS experimental data.  I will then discuss an
 application of these tools on a measurement of a model RNA 16-mer
-system. This will serve to demontrate the need for robust molecular
+system. This will serve to demonstrate the need for robust molecular
 immobilization techniques which we answer with droplet
 immobilization which we realize through tracking and microfluidics.
 
@@ -358,11 +358,11 @@ function of osmotic pressure, demonstrating the wide range of
 timescales accessible to droplet immobilized fluorescence experiments.
 
 The system was chosen due to its chemical robustness, interesting
-conformational dynamics, and ease of synthesis and labelling.
+conformational dynamics, and ease of synthesis and labeling.
 
 The G quadruplex is an appropriate choice of model system as it is
 chemically robust, exhibits interesting conformational dynamics, and
-are readily synthesized and labelled.  The ability of FRET to probe
+are readily synthesized and labeled.  The ability of FRET to probe
 intra-molecular distances makes it well-suited to probe conformations
 of short DNA systems. Finally, several basic questions surrounding the
 flexibility of short dsDNA remain open. Some of these might be
@@ -377,7 +377,7 @@ discussed in [the appropriate section](#study-of-quadruplex-dna).
 
 Single-molecule sensitive fluorescence techniques can provide insight
 into a variety of biologically relevant systems interpretation of
-resulting data is a non-trival exercise. Between spectral cross-talk,
+resulting data is a non-trivial exercise. Between spectral cross-talk,
 background, and spectral sensitivity, and detection of fluorescence
 bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
@@ -406,7 +406,7 @@ Nucleic acids in particular present their own set of
 challenges. Multiple decay pathways [@Sabanayagam2005] and
 base-specific fluorescence enhancement [@Harvey2009b] confound the FRET
 signal. Moreover, linker dynamics [@Sindbert2011] and
-geometric [@Lilley2000] considerations complicate modelling.
+geometric [@Lilley2000] considerations complicate modeling.
 
 It is believed that cyanine dyes terminally attached to RNA demonstrate
 several states where the dye stacks on its neighboring base much as
@@ -415,7 +415,7 @@ a nucleic acid base would [@Lilley2010; @iqbal2008orientation].
 Recent work by Peker Milas and I on short double-stranded
 RNA [@Milas2013] has provided further evidence for this behavior. In
 this work we coupled single-molecule sensitive FRET measurements with
-molecular dynamics (MD) simulation of the labelled system. By
+molecular dynamics (MD) simulation of the labeled system. By
 extracting relevant geometric quantities from the MD model, we were
 able to construct FRET observations from this simulated
 system. In comparing these observations to experiment we were able to
@@ -461,8 +461,8 @@ the position of a diffusing particle.
 The first experiment will attempt to measure the pH distribution in
 individual droplets through fluorescence lifetime. This experiment
 will use immobilized droplets (either on a surface or tracked)
-containing fluoroscein, a pH sensitive dye. The pH dependence of
-fluoroscein arises from the number of coordinated hydrogens
+containing fluorescein, a pH sensitive dye. The pH dependence of
+fluorescein arises from the number of coordinated hydrogens
 changing [@Sjoback1995]. Between pH 4 and 6 the molecule is largely in
 its singly ionized form, missing one hydrogen. This state has an
 absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
@@ -470,14 +470,14 @@ absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
 decay.
 
-While fluoroscein is often used to measure pH by examining the shift
+While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
-in fluorescence lifetime. By filling droplets with fluoroscein such
+in fluorescence lifetime. By filling droplets with fluorescein such
 that the mean droplet occupancy is on the order of 100 molecules ($\~500$
 nmol/L), it should be possible to collect enough statistics to infer a
 lifetime mixture (on the order of $10⁶$ photons).
 
-If the change in lifetime from fluoroscein is found to be inadequate,
+If the change in lifetime from fluorescein is found to be inadequate,
 there are a number [@Han2010] of other dyes that could be
 tried. Alternatively, direct measurement of the emission spectrum is
 also possible.
@@ -497,7 +497,7 @@ inside of immobilized droplets.
 
 @Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
-stability of the labelled oligo.
+stability of the labeled oligo.
 
 
 #### notes
@@ -509,7 +509,7 @@ stability of the labelled oligo.
        a) K⁺, Na⁺: 0mM, 10mM, 100mM
     c) explore effect of PEG 200 on switching kinetics: 0mM, 1mM, 20mM, 200mM
     d) 
- 2) Attempt rotational anisotropy study of quadruplex internally labelled in loop
+ 2) Attempt rotational anisotropy study of quadruplex internally labeled in loop
     a) $5'-GGGT-Cy5-A (GGGTTA)₂ GGG$
 
 ## Risks
