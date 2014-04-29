@@ -387,10 +387,10 @@ summary: work with Peker Milas
 -->
 
 Fӧrster resonance energy transfer is widely used to study structural
-transformations of biological macromolecules. While many of these
-studies [@todo] rely on this technique for qualitative insights, there
-is increasing interest in using FRET in a more quantitative
-setting [@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
+transformations of biological macromolecules. While FRET is often used
+for qualitative insight, there
+is increasing interest in applications of a more quantitative 
+nature [@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
 quantitative interpretation of FRET results is fraught with
 difficulties. Correlations between orientational degrees of freedom
 and inter-dye distance are not uncommon [@VanBeek2007], orientational
@@ -409,7 +409,7 @@ several states where the dye stacks on its neighboring base much as
 a nucleic acid base would [@Lilley2010; @iqbal2008orientation].
 
 Recent work by Peker Milas and I on short double-stranded
-RNA [@Milas2013] have provided further evidence for this behavior. In
+RNA [@Milas2013] has provided further evidence for this behavior. In
 this work we coupled single-molecule sensitive FRET measurements with
 molecular dynamics (MD) simulation of the labelled system. By
 extracting relevant geometric quantities from the MD model, we were
@@ -454,8 +454,9 @@ reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle encapsulation and surface
 attachment.
 
-Starting with the construct used by Ying ($5'-Cy5-(GGGTTA)_3 GGG -
-TMR$) [@Ying2003], I will examine FRET inside of immobilized droplets.
+Starting with the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
+TMR}$) [@Ying2003], I will demonstrate a typical FRET experiment
+inside of immobilized droplets.
 
 
 #### notes
