@@ -56,8 +56,8 @@ decaying back to its ground state. The lifetime of this fluorescent
 state is known as the fluorophore's fluorescence lifetime and is
 typically of order $10^{-9}$ seconds.
 
-[^braket]: The $\ket{i}$ notation is commonly used in quantum
-           mechanics to denote the state $i$ of a given system.
+[^braket]:
+    The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
 
 The Stokes shift enables light resulting from fluorescence to be
 distinguished from the excitation light that produced it.
@@ -85,14 +85,25 @@ extract further geometric information from the molecule under study
 and examining the probability of energy transfer, one can determine
 intramolecular distances. This technique [@Forster1960; @Dahan1999],
 known as Fӧrster Resonance Energy Transfer (FRET), is widely used to
-study biomolecular conformation and kinetics.
+study biomolecular conformation and kinetics
+[@Preus2012; @Dietrich2002].
+
+Here the probability of energy transfer is related two the
+inter-fluorophore distance $R$,
+
+$$ E = \frac{1}{1 + (R / R₀)⁶} $$
+
+where $R₀$, known as the Fӧrster radius, is related to a quantity
+which captures the relative orientation of the two fluorophores,
+
+$$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
+
+TODO: Discuss free totation
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET)\label{fig:fret}](figures/fret_processes)
 
-TODO: Describe specific fluorescence experiments?
-
 While experiments examining molecules diffusing in
-solution are easily performed [@Dahan1999; FIXME more], these techniques offer
+solution are easily performed [@Dahan1999; @todo], these techniques offer
 only a fleeting glimpse of each species. With the hydrodynamic radius
 of many biomolecules of interest being on the order of nanometers,
 these molecules require on the order of hundreds of
