@@ -96,11 +96,12 @@ inter-fluorophore distance $R$,
 $$ E = \frac{1}{1 + (R / R₀)⁶} $$
 
 where $R₀$, known as the Fӧrster radius, is related to a quantity
-which captures the relative orientation of the two fluorophores,
+which captures the relative orientation of the two fluorophores'
+dipole moments $\hat{μ}ᵢ$,
 
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 
-TODO: Discuss free totation
+TODO: Discuss free rotation
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET)\label{fig:fret}](figures/fret_processes)
 
@@ -109,9 +110,10 @@ solution are easily performed [@Dahan1999; @todo], these techniques offer
 only a fleeting glimpse of each species. With the hydrodynamic radius
 of many biomolecules of interest being on the order of nanometers,
 these molecules require on the order of hundreds of
-microseconds. In being able to sense the probed molecule for such
-short durations, these experiments are restrictive in the range of
-timescales and interactions they can examine.
+microseconds to traverse the observation volume. In being able to
+sense the probed molecule for only such short durations, these experiments
+are restrictive in the range of timescales and interactions they can
+examine.
 
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
