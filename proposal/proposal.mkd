@@ -4,6 +4,8 @@ author: Ben Gamari
 email: bgamari@physics.umass.edu
 affil: Department of Physics, University of Massachusetts, Amherst
 ---
+\doublespacing
+\newpage
 
 ## Introduction
 

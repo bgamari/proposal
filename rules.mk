@@ -1,4 +1,4 @@
-PANDOC_OPTS=-V links-as-notes -V geometry:margin=1in -Vdocumentclass=book -Vtoc --latex-engine=xelatex
+PANDOC_OPTS=-V links-as-notes -V geometry:left=1.5in -V geometry:right=1in -V geometry:top=1in -V geometry:bottom=1in -Vdocumentclass=book -Vtoc --latex-engine=xelatex
 SVG_FIGURES=$(wildcard figures/*.svg)
 CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 
