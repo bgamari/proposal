@@ -565,3 +565,4 @@ will fall back to examining the crowding dependence of quadruplex DNA.
 
 ## References
 
+\singlespacing
