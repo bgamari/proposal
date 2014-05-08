@@ -402,7 +402,7 @@ geometric [@Lilley2000] considerations complicate modeling.
 
 It is believed that cyanine dyes terminally attached to RNA demonstrate
 several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@Lilley2010; @iqbal2008orientation].
+a nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
 
 Recent work by Peker Milas and I on short double-stranded
 RNA [@Milas2013] has provided further evidence for this behavior. In
@@ -482,7 +482,7 @@ This experiment will proceed as follows,
   1. To calibrate the measurement, measure fluorescence lifetime of
      fluorescein diffusing in solution under a range of pHs (ranging
      from 3 to 8)
-  2. To begin droplet effort, measure fluorescence lifetime with
+  2. To the begin droplet effort, measure fluorescence lifetime with
      droplets diffusing in solution
   3. When particle tracking has been stabilized, measure fluorescence
      lifetime in individual tracked droplets to characterize pH distribution
@@ -497,7 +497,7 @@ and dianion species shown in \ref{fig:fluorescein}
 [^concentration]. This is in turn related to the pH within the droplet
 by the Henderson-Hasselbach relation,
 
-$pH = pKₐ - \log{\frac{[H^+] [A^-]}{[HA]}}$
+$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$
 
 [^concentration]:
     Note that this ignores contributions from the weakly fluorescent
@@ -505,10 +505,11 @@ $pH = pKₐ - \log{\frac{[H^+] [A^-]}{[HA]}}$
     through the anionic state. These contributions can be added to
     this model if necessary.
 
-The task of learning a mixture of exponential lifetimes (characterized by $A_1$ and $A_2$ above) from photon
-arrival time observations has been treated before by a number of
-groups [@Barber2010; @Eggeling1998; @Edel2007]. Building on this work,
-I will explore means of learning a mixing distribution over pH.
+The task of learning a mixture of exponential lifetimes (characterized
+by $A_1$ and $A_2$ above) from photon arrival time observations has
+been treated before by a number of groups
+[@Barber2010; @Eggeling1998; @Edel2007]. Building on this work, I will
+explore means of learning a mixing distribution over pH.
 
 If the change in lifetime from fluorescein is found to be too small to
 be resolved, there are a number [@Han2010] of other dyes that could be
@@ -534,6 +535,10 @@ Thermal excitation?
 improved photostability and a smaller effect on the thermodynamic
 stability of the labeled oligo.
 
+The problem of learning reaction kinetics from FRET experiments has
+been well
+explored[@Okamoto2012; @Greenfeld2012; @Uphoff2011; @Torella2011; @Kalinin2010; @Bronson2009; @Andrec2003].
+
 ### FRET analysis tools
 
 Single-molecule sensitive fluorescence techniques can provide insight
@@ -543,7 +548,6 @@ background, and spectral sensitivity, and detection of fluorescence
 bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
 for quantitatively accurate results.
-
 
 
 <!--
