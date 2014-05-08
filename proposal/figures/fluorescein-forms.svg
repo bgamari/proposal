@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="430.76862"
-   height="87.048813"
+   height="138.26764"
    id="svg3259"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="fluoroscein-forms.svg">
+   sodipodi:docname="fluorescein-forms.svg">
   <defs
      id="defs3261" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="108.95366"
-     inkscape:cy="36.358084"
+     inkscape:zoom="2.8"
+     inkscape:cx="188.58704"
+     inkscape:cy="60.163756"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +38,34 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="103.57143,36.889726"
+       id="guide6826" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="225,17.604012"
+       id="guide6840" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="48.571429,107.96505"
+       id="guide6848" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="159.64286,77.607905"
+       id="guide6850" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="270,60.107905"
+       id="guide6852" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="381.42857,50.107905"
+       id="guide6854" />
+  </sodipodi:namedview>
   <metadata
      id="metadata3264">
     <rdf:RDF>
@@ -55,7 +82,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-82.802444,-310.92566)">
+     transform="translate(-82.802444,-309.4537)">
     <g
        id="g6219"
        transform="translate(30.304576,0)">
@@ -410,7 +437,9 @@
            y="320.04285"
            x="66.749374"
            id="tspan5867"
-           sodipodi:role="line">Cation (+1)</tspan></text>
+           sodipodi:role="line">Cation (F<tspan
+   style="font-size:65.00091553%;baseline-shift:super"
+   id="tspan6842">+1</tspan>)</tspan></text>
     </g>
     <g
        id="g6279"
@@ -758,7 +787,7 @@
            y="320.04285"
            x="200.41919"
            id="tspan5871"
-           sodipodi:role="line">Neutral (0)</tspan></text>
+           sodipodi:role="line">Neutral (F)</tspan></text>
     </g>
     <g
        id="g6397"
@@ -1120,7 +1149,9 @@
            y="320.04285"
            x="460.86826"
            id="tspan5879"
-           sodipodi:role="line">Dianion (-2)</tspan></text>
+           sodipodi:role="line">Dianion (F<tspan
+   style="font-size:65.00091553%;baseline-shift:super"
+   id="tspan6846">-2</tspan>)</tspan></text>
     </g>
     <g
        id="g6337"
@@ -1135,7 +1166,9 @@
            y="320.04285"
            x="335.58609"
            id="tspan5875"
-           sodipodi:role="line">Anion (-1)</tspan></text>
+           sodipodi:role="line">Anion (F<tspan
+   style="font-size:65.00091553%;baseline-shift:super"
+   id="tspan6844">-1</tspan>)</tspan></text>
       <g
          transform="matrix(0.2,0,0,0.2,291.90111,239.97447)"
          id="g6045">
@@ -1485,11 +1518,11 @@
        sodipodi:cy="46.870243"
        sodipodi:rx="7.1428571"
        sodipodi:ry="6.6071429"
-       d="m 55.535714,46.870243 a 7.1428571,6.6071429 0 1 1 -14.285714,0 7.1428571,6.6071429 0 1 1 14.285714,0 z"
+       d="m 55.535714,46.870243 c 0,3.649024 -3.197966,6.607143 -7.142857,6.607143 -3.944891,0 -7.142857,-2.958119 -7.142857,-6.607143 0,-3.649024 3.197966,-6.607143 7.142857,-6.607143 3.944891,0 7.142857,2.958119 7.142857,6.607143 z"
        transform="translate(82.802444,311.67566)" />
     <path
        transform="translate(259.40958,286.67566)"
-       d="m 55.535714,46.870243 a 7.1428571,6.6071429 0 1 1 -14.285714,0 7.1428571,6.6071429 0 1 1 14.285714,0 z"
+       d="m 55.535714,46.870243 c 0,3.649024 -3.197966,6.607143 -7.142857,6.607143 -3.944891,0 -7.142857,-2.958119 -7.142857,-6.607143 0,-3.649024 3.197966,-6.607143 7.142857,-6.607143 3.944891,0 7.142857,2.958119 7.142857,6.607143 z"
        sodipodi:ry="6.6071429"
        sodipodi:rx="7.1428571"
        sodipodi:cy="46.870243"
@@ -1505,7 +1538,76 @@
        sodipodi:cy="46.870243"
        sodipodi:rx="7.1428571"
        sodipodi:ry="6.6071429"
-       d="m 55.535714,46.870243 a 7.1428571,6.6071429 0 1 1 -14.285714,0 7.1428571,6.6071429 0 1 1 14.285714,0 z"
+       d="m 55.535714,46.870243 c 0,3.649024 -3.197966,6.607143 -7.142857,6.607143 -3.944891,0 -7.142857,-2.958119 -7.142857,-6.607143 0,-3.649024 3.197966,-6.607143 7.142857,-6.607143 3.944891,0 7.142857,2.958119 7.142857,6.607143 z"
        transform="translate(448.15958,322.38995)" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+       x="164.23102"
+       y="410.8316"
+       id="text6806"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6808"
+         x="164.23102"
+         y="410.8316">pK<tspan
+   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;baseline-shift:sub;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+   id="tspan6818">a </tspan>= 2.08</tspan></text>
+    <text
+       xml:space="preserve"
+       x="274.58817"
+       y="410.8316"
+       id="text6810"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6812"
+         x="274.58817"
+         y="410.8316">pK<tspan
+   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;baseline-shift:sub;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+   id="tspan6816">a </tspan>= 4.31</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+       x="383.15961"
+       y="410.8316"
+       id="text6820"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6822"
+         x="383.15961"
+         y="410.8316">pK<tspan
+   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;baseline-shift:sub;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+   id="tspan6824">a</tspan> = 6.43</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+       x="327.94531"
+       y="430.11734"
+       id="text6828"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6830"
+         x="327.94531"
+         y="430.11734">τ = 3.0 ns</tspan><tspan
+         sodipodi:role="line"
+         x="327.94531"
+         y="445.11734"
+         id="tspan6832">ϕ = 0.37</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6834"
+       y="430.11734"
+       x="444.58817"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:STIXGeneral;-inkscape-font-specification:STIXGeneral"
+       xml:space="preserve"><tspan
+         y="430.11734"
+         x="444.58817"
+         id="tspan6836"
+         sodipodi:role="line">τ = 4.1 ns</tspan><tspan
+         id="tspan6838"
+         y="445.11734"
+         x="444.58817"
+         sodipodi:role="line">ϕ = 0.93</tspan></text>
   </g>
 </svg>

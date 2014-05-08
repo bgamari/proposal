@@ -468,7 +468,7 @@ absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
 decay.
 
-![The various ionization states of fluoroscein. Differences are circled in red.\label{fig:fluoroscein}](figures/fluorescein-forms)
+![The various ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal are circled in red. Quantities due to @Sjoback1995.\label{fig:fluoroscein}](figures/fluorescein-forms)
 
 While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
@@ -486,6 +486,8 @@ This experiment will proceed as follows,
      droplets diffusing in solution
   3. When particle tracking has been stabilized, measure fluorescence
      lifetime in individual tracked droplets to characterize pH distribution
+
+Learning ...
 
 If the change in lifetime from fluorescein is found to be inadequate,
 there are a number [@Han2010] of other dyes that could be
