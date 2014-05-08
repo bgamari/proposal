@@ -189,10 +189,11 @@ confinement.
 
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
-TODO: Why perfluorinated (non-fluorescent, reasonable viscosity, inert)
-
 The emulsion is formed in perfluorinated oil with an appropriate
-surfactant. They are made through shear by means of sonication. While
+surfactant. Perfluorinated oils are used due to their non-fluorescent,
+inert nature, their viscosity, and the wide range of refractive
+indices available (which is useful for optical trapping and
+tracking). They are made through shear by means of sonication. While
 a small degree of control over droplet size is available through adjustment of
 surfactant concentration, those produced by the usual protocol are
 generally around 100 nm in diameter. This makes them ideal for
