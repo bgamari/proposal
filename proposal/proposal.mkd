@@ -214,12 +214,6 @@ introduction of a droplet environment brought about an apparent
 reduction in rotational coherence, a finding that remains unexplained
 [@Jofre2007].
 
-Moreover, recent observations by Milas have raised
-questions regarding the applicability of these measurements to real
-biophysical systems [@Milas2014].
-TOOD: More above
-
-
 [^droplet-differences]:
       It should be noted that while Tang's droplets were formed without
       surfactant by way of mechanical injection, our recent measurements
@@ -274,10 +268,14 @@ internal pH.
             continuous phase
 
 As a first attempt at examining the effect
-of pH, salt, and * on surface potential I have started a set of
+of pH and salt concentration on surface potential I have started a set of
 studies using Phase-Analysis Light Scattering
 (PALS) [@Tscharnuter2001], a technique for measuring the
-electrophoretic mobility of a suspension of emulsion droplets.
+electrophoretic mobility of a suspension of emulsion droplets. Using an instrument in the Department of Soil Sciences, ...
+Unfortunately, results thusfar have been mixed. The signal observed in these experiments has been extremely small
+
+Furthermore, recent simulations[@Knecht2007] has drawn into question the
+typical interpretation of electrophoretic measurements.
 
 The interpretation of these mobilities as a probe of surface charge is
 not as clear for our water-in-oil emulsions as it is for the typical
@@ -287,15 +285,6 @@ electrostatic and viscous forces, it's not clear that these
 
 It is widely believed that water organizes on hydrophobic interfaces
 such as the outside surface of an oil-in-water droplet [@Vacha2008].
-
-[@Knecht2007] 
-
-Despite the wealth of literature examining oil-in-water emulsions, our
-case of water-in-oil is far less discussed.
-
-[@Tian2009]
-
-
 
 ### Quadruplex DNA
 
@@ -477,7 +466,7 @@ decay.
 While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
 in fluorescence lifetime. By filling droplets with fluorescein such
-that the mean droplet occupancy is on the order of 100 molecules ($\~500$
+that the mean droplet occupancy is on the order of 100 molecules (approximately $500$
 nmol/L), it should be possible to collect enough statistics to infer a
 lifetime mixture (on the order of $10⁶$ photons).
 
