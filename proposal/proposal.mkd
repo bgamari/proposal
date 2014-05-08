@@ -249,10 +249,10 @@ pH [@Zimmermann2001; @Marinova1996; @Stubenrauch2002], leading many to
 infer that this surface charge is due to an accumulation of hydroxide
 ions on the oil-water interface [@Kudin2008].
 
-This surface charge gives rise to an electric
-surface potential and, consequently, repulsive interactions between
-particles which stabilize the colloid. It stands to reason that our
-water-in-oil emulsions exhibit a similar surface behavior.
+This surface charge gives rise to an electric potential across the
+interface and, consequently, repulsive interactions between particles
+which stabilize the colloid. It stands to reason that our water-in-oil
+emulsions may exhibit a similar surface behavior.
 
 While the consequences of a non-zero surface potential are not clear,
 it is likely that chemical behavior within the droplet volume is
@@ -268,14 +268,16 @@ internal pH.
 [^micelle]: Micelles are small (1-10nm) water droplets in a lipid
             continuous phase
 
-As a first attempt at examining the effect
-of pH and salt concentration on surface potential I have started a set of
-studies using Phase-Analysis Light Scattering
-(PALS) [@Tscharnuter2001], a technique for measuring the
-electrophoretic mobility of a suspension of emulsion droplets. Using an instrument in the Department of Soil Sciences, ...
-Unfortunately, results thusfar have been mixed. The signal observed in these experiments has been extremely small
+TODO: Define mobility
 
-Furthermore, recent simulations[@Knecht2007] has drawn into question the
+As a first attempt at examining the effect of pH and salt
+concentration on surface potential I have started a set of studies
+using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
+technique for measuring the electrophoretic mobility of a suspension
+of emulsion droplets.  Results thusfar have been mixed. Both the
+measured phase signal and derived mobility are quite small ...
+
+Furthermore, recent simulations [@Knecht2007] has drawn into question the
 conventional interpretation of electrophoretic measurements.
 
 The interpretation of these mobilities as a probe of surface charge is
@@ -370,10 +372,11 @@ of short DNA systems. Finally, several basic questions surrounding the
 flexibility of short dsDNA remain open. Some of these might be
 discussed in [the appropriate section](#study-of-quadruplex-dna).
 
+<!--
  * Rotational anisotropy of acceptor and donor
  * FRET
  * fluorescence lifetime
-
+-->
 
 
 ### Characterization of FRET on RNA
@@ -420,7 +423,6 @@ magnitude of the Fӧrster radius.
 The ability to observe a fluorescence trajectory over a long duration
 without the artifacts introduced by surface tethering
 enables a wide variety of previously inaccessible measurements.
-including those of slow molecular kinetics, ....
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
@@ -445,11 +447,13 @@ learning the tracking model, which must happen quickly enough that the
 particle can be considered to be stationarity (relative to its size)
 over the course of data acquisition.
 
+<!--
  * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
  * FCS to examine translational diffusion
  * Polarization anisotropy to examine rotational freedom
  * Measure same in droplet, identify effective concentrations in droplet environment
  * Different dyes?
+-->
 
 
 ### Characterization of droplet pH
@@ -468,7 +472,7 @@ absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
 decay.
 
-![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
+![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
 
 While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
@@ -490,12 +494,12 @@ This experiment will proceed as follows,
 For each droplet in these experiments, I will expect to see a fluorescence
 lifetime distribution that looks like,
 
-$P(τ) = A₁ λ₁ e^{-τ λ₁} + A₂ λ₂ e^{-τ λ₂}$
+$P(τ) = α λ₁ e^{-τ λ₁} + (1 - α) λ₂ e^{-τ λ₂}$
 
-Where the ratio $A₁ / A₂$ is related to the concentration of the anion
-and dianion species shown in \ref{fig:fluorescein}
-[^concentration]. This is in turn related to the pH within the droplet
-by the Henderson-Hasselbach relation,
+Where $α$ is related to the concentration of the anion and dianion
+species shown in Figure \ref{fig:fluorescein} [^concentration]. This is in
+turn related to the pH within the droplet by the Henderson-Hasselbach
+relation,
 
 $\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$
 
@@ -506,7 +510,7 @@ $\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$
     this model if necessary.
 
 The task of learning a mixture of exponential lifetimes (characterized
-by $A_1$ and $A_2$ above) from photon arrival time observations has
+by $α$ and $λᵢ$ above) from photon arrival time observations has
 been treated before by a number of groups
 [@Barber2010; @Eggeling1998; @Edel2007]. Building on this work, I will
 explore means of learning a mixing distribution over pH.
@@ -526,18 +530,37 @@ immobilization in place of vesicle encapsulation and surface
 attachment.
 
 Starting with the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
-TMR}$) [@Ying2003], I will demonstrate a FRET experiment inside of
-immobilized droplets.
+TMR}$) [@Ying2003], I will demonstrate a FRET experiment under droplet confinement.
+This experiment will proceed as follows,
 
-Thermal excitation?
+  1. Demonstrate the stability and switching of the system by solution FRET.
+     Here I should observe a bimodal FRET efficiency distribution. The
+     amplitude of these populations should scale with salt
+     concentration (using Mg⁺)
+  2. Repeat this experiment in diffusing droplets. Again, a bimodal
+     FRET distribution should be observed with roughly equivalent
+     proportions to (1).
+  3.a. Repeat this experiment in droplet immobilization via particle
+     tracking. This should allow the dynamics of a single particle to
+     be followed in time. Unfortunately, it will likely be difficult to
+     gather enough switching events with this method to estimate
+     kinetic rates. In this case, proceed to (3.b)
+  3.b. Repeat again with microfluidic droplet manipulation and TIRF microscopy. This
+     technique will enable higher throughput although precludes
+     probing quantities needing confocal microscopy such as
+     fluorescence lifetime.
 
 @Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
 stability of the labeled oligo.
 
 The problem of learning reaction kinetics from FRET experiments has
-been well
-explored[@Okamoto2012; @Greenfeld2012; @Uphoff2011; @Torella2011; @Kalinin2010; @Bronson2009; @Andrec2003].
+been explored by a number of
+groups
+[@Okamoto2012; @Greenfeld2012; @Uphoff2011; @Torella2011; @Kalinin2010; @Bronson2009; @Andrec2003]. I
+will extend these techniques as necessary. One possibility is the use
+of active temperature modulation to shift the equilibrium of the
+system.
 
 ### FRET analysis tools
 
@@ -547,7 +570,9 @@ resulting data is a non-trivial exercise. Between spectral cross-talk,
 background, and spectral sensitivity, and detection of fluorescence
 bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
-for quantitatively accurate results.
+for quantitatively accurate results. Unfortunately, the lack of
+availability of an open toolchain for analysis of fluorescence data
+means that groups generally must reimplement these tools as needed.
 
 I have developed complete suite of open-source tools for acquisition
 and analysis of fluorescence timestamp data. These tools are used both
@@ -555,7 +580,7 @@ in and outside of our lab and won the Open Source Software Innovation
 competition held by the University of Massachusetts Institute for
 Biology, Biostatistics, and Bioinformatics (ICB3). Interested readers are
 referred to the competition submission for further details on this
-work[@Gamari2013OSSI].
+work [@Gamari2013OSSI].
 
 <!--
  0) Attempt to characterize pH in single droplet
