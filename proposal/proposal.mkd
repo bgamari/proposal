@@ -123,7 +123,7 @@ TODO: Mention photobleaching
 ### Single-molecule immobilization
 
 Immobilization of the molecules under study provides a way around this
-limitation, enabling single-molecule sensitive studies without
+limitation, enabling single-molecule sensitive studies with far less
 temporal or ensemble averaging. By ensuring the molecule under study
 cannot move appreciably, it can be probed on timescales only bounded
 by the robustness of its fluorophores.
@@ -132,9 +132,10 @@ One common technique for molecular immobilization is surface
 attachment. Here the molecule of interest and a fixed surface are
 both chemically modified to be mutually sticky. Some fraction of the
 molecules under study will then adhere to the surface, where they will
-remain translationally confined. This approach poses a variety of
-challenges: direct interaction between the surface and the molecule
-under study can substantially perturb the behavior of the studied
+remain translationally confined and can be probed with confocal
+microscopy. This approach poses a variety of challenges: direct
+interaction between the surface and the molecule under study can
+substantially perturb the behavior of the studied
 system[^Yasuda]. Further, the chemistry required for the modification
 of the surface and molecule poses a substantial practical barrier.
 
@@ -157,35 +158,44 @@ bilayer [@Boukobza2001; @Okumus2004].  Once formed, these vesicles can
 either be studied in solution, affording longer dwell times in the
 observation volume due to their larger size, or chemically tethered to
 a surface. Unfortunately, vesicles are known to interact with some
-systems, form under only a narrow range of chemical conditions
+systems[^vesicle interaction], form under only a narrow range of chemical conditions
 [@Vafabakhsh2012], and present practical challenges in sample
 preparation. Moreover, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
 within a vesicle.  Collectively, these considerations preclude use
 vesicle encapsulation for many systems.
 
-#### Droplet encapsulation
+[^vesicle interaction]:
+    Many proteins, in particular those that sit on membrane surfaces,
+    interact strongly with vesicle interfaces.
+
+#### Droplet confinement
 Our group has developed a technique for the encapsulation of
-single-molecules in water-in-oil emulsion droplets. The protocol
+single-molecules in water-in-oil emulsion droplets. The preparation protocol
 requires only minutes to perform and results in emulsions which are
 stable for hours. Furthermore, as nearly all sample solution will end up in 
 emulsion droplets, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
-of interest largely unperturbed. Like vesicles, these emulsions can be
-either probed in solution or immobilized.
-TODO: Explain immobilization (microfluidic and optical trapping)
+of interest largely unperturbed.
+
+Like vesicles, these emulsions can be either probed in solution, where
+they afford longer observation times due to their size, or
+immobilized.  Immobilization of emulsion droplets can be realized
+through several means. These include optical trapping[@Reiner2006],
+optical tracking (which will be discussed shortly), and microfluidic
+confinement.
 
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
 TODO: Why perfluorinated (non-fluorescent, reasonable viscosity, inert)
 
-The droplets are formed in perfluorinated oil with an appropriate
-surfactant. They are made through shear by means of sonication. While 
-a small degree of control over size is available through adjustment of surfactant concentration,
-the droplets produced by this protocol are generally around 100 nm in
-diameter. This makes them ideal for containment of small biological
-polymers.
+The emulsion is formed in perfluorinated oil with an appropriate
+surfactant. They are made through shear by means of sonication. While
+a small degree of control over droplet size is available through adjustment of
+surfactant concentration, those produced by the usual protocol are
+generally around 100 nm in diameter. This makes them ideal for
+containment of small biological polymers.
 
 There remain numerous open questions surrounding the sort of
 perturbation imposed by droplet confinement. Many of the
@@ -217,28 +227,23 @@ TOOD: More above
       the nature of the droplet's interface and how it affects the
       system under study.
 
-## Contribution: Droplet confinement for fluorescence microscopy
-
-<!--
-summary: solution FRET, particle tracking, FRET
--->
+## Droplet confinement for fluorescence microscopy
 
 One of the challenges of conducting a fluorescence experiment in
-droplet encapsulation is ensuring that the environmental conditions of
+droplet encapsulation is ensuring that the conditions within
 the droplet's volume are well understood. Initial measurements from
 our lab have demonstrated that care is needed in interpreting
 fluorescence experiments in droplet environments.
 
-The droplets produced by our technique are typically hundreds of
-nanometers in diameter. It is well-documented that droplets like these
-exhibit an electrostatic surface potential in
-equilibrium. Consequently, ion concentrations are known to be
-nonhomogenous throughout the droplet volume
+The droplets produced by our technique are typically on the order of
+100 nanometers in diameter. It is well-documented that droplets like
+these exhibit an electrostatic surface potential in
+equilibrium[@Marinova1996]. Consequently, ion concentrations are known
+to be nonhomogenous throughout the droplet volume
 [@Vazdar2012; @Luo2006]. These two factors greatly complicate
 interpretation of experiments performed under droplet confinement.
 
-
-### Emulsion droplet environment
+### Study of emulsion droplet environment
 The properties of oil-in-water emulsions and their interfaces have
 been widely studied in a number of communities. Vibrational
 spectroscopy on related oil-in-water emulsions have demonstrated that
@@ -246,10 +251,9 @@ these interfaces carry a negative charge [@Tian2009]. Further interface
 potential measurements have shown that this charge dissipates at high
 pH [@Zimmermann2001; @Marinova1996; @Stubenrauch2002], leading many to
 infer that this surface charge is due to an accumulation of hydroxide
-ions on the interface [@Kudin2008].
+ions on the oil-water interface [@Kudin2008].
 
-It has been widely documented that emulsion droplets of oil in water
-carry charge on their surface. This charge gives rise to an electric
+This surface charge gives rise to an electric
 surface potential and, consequently, repulsive interactions between
 particles which stabilize the colloid. It stands to reason that our
 water-in-oil emulsions exhibit a similar surface behavior.
@@ -292,7 +296,7 @@ case of water-in-oil is far less discussed.
 
 
 
-## Contribution: Kinetics of Quadruplex DNA
+### Quadruplex DNA
 
 <!--
 Summary:
@@ -347,7 +351,7 @@ previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments.
 Lee [@Lee2005] revisited and refined the approach by Ying
 
 
-### Contributions
+## Contributions
 
 Below I will discuss the on-going and future contributions of this
 project. I will begin by briefly introducing a set of tools for the
@@ -380,18 +384,8 @@ discussed in [the appropriate section](#study-of-quadruplex-dna).
  * fluorescence lifetime
 
 
-#### FRET analysis tools
 
-Single-molecule sensitive fluorescence techniques can provide insight
-into a variety of biologically relevant systems interpretation of
-resulting data is a non-trivial exercise. Between spectral cross-talk,
-background, and spectral sensitivity, and detection of fluorescence
-bursts from sample diffusion, a fluorescence experiment is subject to
-numerous experimental artifacts that must be estimated and corrected
-for quantitatively accurate results.
-
-
-#### Characterization of FRET on RNA
+### Characterization of FRET on RNA
 
 <!--
 summary: work with Peker Milas
@@ -430,11 +424,11 @@ test hypotheses concerning the photophysics of the labels and
 magnitude of the Fӧrster radius.
 
 
-#### Droplet tracking
+### Droplet tracking
 
 The ability to observe a fluorescence trajectory over a long duration
 without the artifacts introduced by surface tethering
-enables a wide variety of previously inaccessible measurements
+enables a wide variety of previously inaccessible measurements.
 including those of slow molecular kinetics, ....
 
 As our droplets are much larger than the molecules they contain it is
@@ -461,7 +455,7 @@ the position of a diffusing particle.
  * Different dyes?
 
 
-#### Characterization of droplet pH
+### Characterization of droplet pH
 <!--
  * Measure pH in droplets
 -->
@@ -490,17 +484,17 @@ used. Alternatively, direct measurement of the emission spectrum is
 also possible.
 
 
-#### Study of G quadruplex DNA
+### Study of G quadruplex DNA under droplet confinement
 
-The second prong of the work will use droplet etechniqueto examine
+The second prong of the work will use droplet confinment to examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle encapsulation and surface
 attachment.
 
 Starting with the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
-TMR}$) [@Ying2003], I will demonstrate a typical spFRET experiment
-inside of immobilized droplets. 
+TMR}$) [@Ying2003], I will demonstrate a FRET experiment inside of
+immobilized droplets.
 
 Thermal excitation?
 
@@ -508,9 +502,18 @@ Thermal excitation?
 improved photostability and a smaller effect on the thermodynamic
 stability of the labeled oligo.
 
+### FRET analysis tools
 
-#### notes
+Single-molecule sensitive fluorescence techniques can provide insight
+into a variety of biologically relevant systems interpretation of
+resulting data is a non-trivial exercise. Between spectral cross-talk,
+background, and spectral sensitivity, and detection of fluorescence
+bursts from sample diffusion, a fluorescence experiment is subject to
+numerous experimental artifacts that must be estimated and corrected
+for quantitatively accurate results.
 
+
+<!--
  0) Attempt to characterize pH in single droplet
  1) Reproduce previous study by @Lee2005,
     a) $5'-Cy5-(GGGTTA)₃ GGG$ in solution, diffusing droplets, tracked droplets
@@ -520,6 +523,7 @@ stability of the labeled oligo.
     d) 
  2) Attempt rotational anisotropy study of quadruplex internally labeled in loop
     a) $5'-GGGT-Cy5-A (GGGTTA)₂ GGG$
+-->
 
 ## Risks
 
