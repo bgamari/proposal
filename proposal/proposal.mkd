@@ -12,9 +12,7 @@ affil: Department of Physics, University of Massachusetts, Amherst
 This thesis will study the effects of a droplet environment on
 fluorescence measurements of a typical biological polymer. Below we
 will briefly describe the fluorescence spectroscopic techniques used in
-our lab.
-
-Following this we will discuss my previous work modeling FRET on a
+our lab. Following this we will discuss my previous work modeling FRET on a
 model RNA oligomer, particularly focusing on conformational
 and photophysical effects. This work will bear relevance to the
 fluorescence studies proposed later in this document.
@@ -28,15 +26,15 @@ characterizing and controlling droplets' chemical environment.
 We will describe a complementary apparatus for tracking
 the motion of these droplets in solution, enabling fluorescence
 studies of isolated single-molecules over time-scales previously only
-accessible via strongly perturbative techniques.
+accessible via more restrictive immobilization techniques.
 
 Building on these tools, we will then propose a set of experiments
-to probe the pH of individual droplets. This experiment will both
-answer basic questions regarding liquid-liquid interfaces as well as
-enable later biomolecular applications.
+to probe the chemical characteristics of individual droplets. This
+experiment will both answer basic questions regarding liquid-liquid
+interfaces as well as enable later biomolecular applications.
 
 Finally, I will describe an experimental study of telomeric DNA
-structures using these tools.
+structures using the above tools.
 
 
 ## Background
@@ -48,34 +46,37 @@ single-molecule sensitivity.
 
 ![A high-level model of fluorescence.\label{fig:fluorescence}](figures/fluorescence)
 
-The physical processes responsible for fluorescence are shown in
-Figure \ref{fig:fluorescence}. Here the fluorescent molecule molecule, known as a
+The physical process responsible for fluorescence is illustrated in
+Figure \ref{fig:fluorescence}. Here the fluorescent molecule, also referred to as a
 fluorophore, begins in its ground state ($\ket{0}$ [^braket]) when it is excited
-by an incident photon of a specific wavelength (known as its *excitation wavelength*)
+by an incident photon of a specific wavelength (known as its *excitation wavelength*).
 The system quickly passes non-radiatively through a large number of
 intermediate states as its local environment rearranges (losing
-energy, known as the Stokes shift). Finally the system settles into
-its excited fluorescent state where it will remain until radiatively
-decaying back to its ground state. The lifetime of this fluorescent
-state is known as the fluorophore's fluorescence lifetime and is
-typically of order $10^{-9}$ seconds.
+energy, known as the Stokes shift) in response to the newly excited
+fluorophore. Finally the system settles into its excited fluorescent
+state where it will remain until decaying back to its ground state
+potentially with the emission of a photon. The lifetime of this
+fluorescent state is known as the fluorophore's *fluorescence lifetime*
+and is typically of order $10^{-9}$ seconds.
 
 [^braket]:
     The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
 
 The Stokes shift enables light resulting from fluorescence to be
-distinguished from the excitation light that produced it.
+distinguished from the excitation light that produced it by spectral
+filtering.
 
 Fluorescence spectroscopic techniques exploit fluorescence as a means
 of probing physical systems. One frequently used mode of inquiry is
 fluorescence correlation spectroscopy, where each molecule in an
 ensemble is labeled with a single fluorophore. These molecules are
-then allowed to freely diffuse in solution while a small volume of the
-solution is observed with a confocal microscope[^confocal]. In this
+then allowed to freely diffuse in solution while a small volume 
+is observed with a confocal microscope[^confocal]. In this
 configuration labeled molecules diffusing through the observation
 volume will be excited and subsequently produce fluorescence which is
-then detected. By examining correlations in the resulting intensity
-signal, one can infer molecular sizes, concentrations, and kinetics.
+then detected. By examining correlations in the detected fluorescence
+intensity signal, one can infer molecular sizes[@Sengupta2003],
+concentrations, and chemical kinetics[@Aragon1976; @Dix2006].
 
 [^confocal]: *Confocal microscope* here refers to a microscope where a
              set of photon-detectors and an excitation laser are focused on a
@@ -83,41 +84,40 @@ signal, one can infer molecular sizes, concentrations, and kinetics.
              known as the *observation volume*.
 
 By exploiting the tendency of a pair of fluorophores with overlapping
-excitation and emission spectra to transfer energy when nearby one can
+excitation and emission spectra to transfer energy at short separation distances one can
 extract further geometric information from the molecule under study
-\ref{fig:fret}. By labeling two points on the molecule of interest
-and examining the probability of energy transfer, one can determine
+(Figure \ref{fig:fret}). By labeling two points on the molecule of interest
+and examining the probability of energy transfer, one can infer
 intramolecular distances. This technique [@Forster1960; @Dahan1999],
 known as Fӧrster Resonance Energy Transfer (FRET), is widely used to
 study biomolecular conformation and kinetics
 [@Preus2012; @Dietrich2002].
 
-Here the probability of energy transfer is related two the
+Here the probability of energy transfer is related to the
 inter-fluorophore distance $R$,
-
 $$ E = \frac{1}{1 + (R / R₀)⁶} $$
-
 where $R₀$, known as the Fӧrster radius, is related to a quantity
 which captures the relative orientation of the two fluorophores'
 dipole moments $\hat{μ}ᵢ$,
-
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
-
 As often only the distance $R$ is of interest, $κ²$ is often taken to
-be $2/3$ under an assumption of free rotation of both dyes.
+be $2/3$ under an assumption of free rotation of both fluorophores.
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET)\label{fig:fret}](figures/fret_processes)
 
-While experiments examining molecules diffusing in
-solution are easily performed [@Dahan1999; @todo], these techniques offer
-only a fleeting glimpse of each species. With the hydrodynamic radius
+While experiments examining species diffusing in
+solution are easily performed [@Dahan1999], such diffusive techniques offer
+only a short glimpse of each molecule. With the hydrodynamic radius
 of many biomolecules of interest being on the order of nanometers,
 these molecules require on the order of hundreds of
-microseconds to traverse the observation volume. In being able to
-sense the probed molecule for only such short durations, these experiments
-are restrictive in the range of timescales and interactions they can
-examine.
+microseconds to traverse the observation volume. This is on the order
+of the inter-photon arrival time of a typeical fluorescence
+experiment. In being able to sense the probed molecule for only such
+short durations, these experiments are restrictive in the range of
+timescales and interactions they can examine.
+TODO: Clarify above?
 
+TODO: Mention photobleaching
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
 ### Single-molecule immobilization
@@ -126,16 +126,17 @@ Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies without
 temporal or ensemble averaging. By ensuring the molecule under study
 cannot move appreciably, it can be probed on timescales only bounded
-by the lifetime of its fluorophores.
+by the robustness of its fluorophores.
 
 One common technique for molecular immobilization is surface
 attachment. Here the molecule of interest and a fixed surface are
-both chemically modified to be mutually sticky. This approach poses a
-variety of challenges: direct interaction between the surface and the
-molecule under study can substantially perturb the behavior of the
-studied system[^Yasuda]. Further, the chemistry required for the
-modification of the surface and molecule poses a substantial practical
-barrier.
+both chemically modified to be mutually sticky. Some fraction of the
+molecules under study will then adhere to the surface, where they will
+remain translationally confined. This approach poses a variety of
+challenges: direct interaction between the surface and the molecule
+under study can substantially perturb the behavior of the studied
+system[^Yasuda]. Further, the chemistry required for the modification
+of the surface and molecule poses a substantial practical barrier.
 
 [^Yasuda]:
     @Yasuda2003 observed that nearly all of the $F_1$ ATPase
@@ -172,37 +173,41 @@ emulsion droplets, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
 of interest largely unperturbed. Like vesicles, these emulsions can be
-either probed in solution or used for immobilization.
+either probed in solution or immobilized.
+TODO: Explain immobilization (microfluidic and optical trapping)
 
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
-The droplets are made in perfluorinated oil with an appropriate
-surfactant. They are formed through shear by sonication. While 
-a small degree of control over size is available through adjustment of surfactant quantity,
+TODO: Why perfluorinated (non-fluorescent, reasonable viscosity, inert)
+
+The droplets are formed in perfluorinated oil with an appropriate
+surfactant. They are made through shear by means of sonication. While 
+a small degree of control over size is available through adjustment of surfactant concentration,
 the droplets produced by this protocol are generally around 100 nm in
 diameter. This makes them ideal for containment of small biological
 polymers.
 
-While we have been using droplets in this capacity for several years,
-there remain several outstanding questions surround their effect on
-the system under study. These will be further explored in Section [^Contributions].
-
-In an early study using droplet encapsulation for fluorescence
-measurements[^droplet-differences] Tang *et al.* reported
-no evidence of perturbation in polarization anisotropy measurements on
-enhanced green fluorescent protein (EGFP) on short time
-scales [@Tang2008]. Polarization anisotropy is reflective of the rotational
-coherence of the dye and, consequently, the object to which it is
-attached. In contrast, recent observations by Milas have raised
-questions regarding the applicability of these measurements to real
-biophysical systems [@Milas2014].
-
 There remain numerous open questions surrounding the sort of
-perturbation that a droplet environment brings about. For instance,
-Jofre reported fluorescence anisotropy measurements where the
+perturbation imposed by droplet confinement. Many of the
+characterization efforts along these lines to date have examined
+polarization anisotropy which is reflective of the rotational
+coherence of a fluorophore and, consequently, the object to which it
+is attached.
+
+In an early study[^droplet-differences] Tang *et al.* reported no evidence
+of perturbation on short timescales in polarization anisotropy
+measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
+
+In contrast, Jofre reported fluorescence anisotropy measurements where the
 introduction of a droplet environment brought about an apparent
 reduction in rotational coherence, a finding that remains unexplained
 [@Jofre2007].
+
+Moreover, recent observations by Milas have raised
+questions regarding the applicability of these measurements to real
+biophysical systems [@Milas2014].
+TOOD: More above
+
 
 [^droplet-differences]:
       It should be noted that while Tang's droplets were formed without
@@ -212,10 +217,10 @@ reduction in rotational coherence, a finding that remains unexplained
       the nature of the droplet's interface and how it affects the
       system under study.
 
-## Single-molecule particle encapsulation and tracking with fluorescence
+## Contribution: Droplet confinement for fluorescence microscopy
 
 <!--
-summary: solution FRET, particle tracking, FRET, modeling of FCS in droplets? no
+summary: solution FRET, particle tracking, FRET
 -->
 
 One of the challenges of conducting a fluorescence experiment in
@@ -287,7 +292,7 @@ case of water-in-oil is far less discussed.
 
 
 
-## Kinetics of Quadruplex DNA
+## Contribution: Kinetics of Quadruplex DNA
 
 <!--
 Summary:
@@ -481,21 +486,23 @@ lifetime mixture (on the order of $10⁶$ photons).
 
 If the change in lifetime from fluorescein is found to be inadequate,
 there are a number [@Han2010] of other dyes that could be
-tried. Alternatively, direct measurement of the emission spectrum is
+used. Alternatively, direct measurement of the emission spectrum is
 also possible.
 
 
 #### Study of G quadruplex DNA
 
-The second prong of the work will use the droplet technique to examine
+The second prong of the work will use droplet etechniqueto examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle encapsulation and surface
 attachment.
 
 Starting with the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
-TMR}$) [@Ying2003], I will demonstrate a typical FRET experiment
-inside of immobilized droplets.
+TMR}$) [@Ying2003], I will demonstrate a typical spFRET experiment
+inside of immobilized droplets. 
+
+Thermal excitation?
 
 @Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
