@@ -276,7 +276,7 @@ electrophoretic mobility of a suspension of emulsion droplets. Using an instrume
 Unfortunately, results thusfar have been mixed. The signal observed in these experiments has been extremely small
 
 Furthermore, recent simulations[@Knecht2007] has drawn into question the
-typical interpretation of electrophoretic measurements.
+conventional interpretation of electrophoretic measurements.
 
 The interpretation of these mobilities as a probe of surface charge is
 not as clear for our water-in-oil emulsions as it is for the typical
@@ -468,7 +468,7 @@ absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
 decay.
 
-![The various ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal are circled in red. Quantities due to @Sjoback1995.\label{fig:fluoroscein}](figures/fluorescein-forms)
+![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
 
 While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
@@ -487,10 +487,31 @@ This experiment will proceed as follows,
   3. When particle tracking has been stabilized, measure fluorescence
      lifetime in individual tracked droplets to characterize pH distribution
 
-Learning ...
+For each droplet in these experiments, I will expect to see a fluorescence
+lifetime distribution that looks like,
 
-If the change in lifetime from fluorescein is found to be inadequate,
-there are a number [@Han2010] of other dyes that could be
+$P(τ) = A₁ λ₁ e^{-τ λ₁} + A₂ λ₂ e^{-τ λ₂}$
+
+Where the ratio $A₁ / A₂$ is related to the concentration of the anion
+and dianion species shown in \ref{fig:fluorescein}
+[^concentration]. This is in turn related to the pH within the droplet
+by the Henderson-Hasselbach relation,
+
+$pH = pKₐ - \log{\frac{[H^+] [A^-]}{[HA]}}$
+
+[^concentration]:
+    Note that this ignores contributions from the weakly fluorescent
+    cationic and neutral species, as well as decay from these states
+    through the anionic state. These contributions can be added to
+    this model if necessary.
+
+The task of learning a mixture of exponential lifetimes (characterized by $A_1$ and $A_2$ above) from photon
+arrival time observations has been treated before by a number of
+groups [@Barber2010; @Eggeling1998; @Edel2007]. Building on this work,
+I will explore means of learning a mixing distribution over pH.
+
+If the change in lifetime from fluorescein is found to be too small to
+be resolved, there are a number [@Han2010] of other dyes that could be
 used. Alternatively, direct measurement of the emission spectrum is
 also possible.
 
@@ -522,6 +543,7 @@ background, and spectral sensitivity, and detection of fluorescence
 bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
 for quantitatively accurate results.
+
 
 
 <!--
