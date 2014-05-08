@@ -549,6 +549,13 @@ bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
 for quantitatively accurate results.
 
+I have developed complete suite of open-source tools for acquisition
+and analysis of fluorescence timestamp data. These tools are used both
+in and outside of our lab and won the Open Source Software Innovation
+competition held by the University of Massachusetts Institute for
+Biology, Biostatistics, and Bioinformatics (ICB3). Interested readers are
+referred to the competition submission for further details on this
+work[@Gamari2013OSSI].
 
 <!--
  0) Attempt to characterize pH in single droplet
