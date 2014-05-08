@@ -118,6 +118,7 @@ timescales and interactions they can examine.
 TODO: Clarify above?
 
 TODO: Mention photobleaching
+
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
 ### Single-molecule immobilization
@@ -470,6 +471,8 @@ absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
 decay.
+
+![The various ionization states of fluoroscein. Differences are circled in red.\label{fig:fluoroscein}](figures/fluorescein-forms)
 
 While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
