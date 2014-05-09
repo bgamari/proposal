@@ -33,8 +33,8 @@ to probe the chemical characteristics of individual droplets. This
 experiment will both answer basic questions regarding liquid-liquid
 interfaces as well as enable later biomolecular applications.
 
-Finally, I will describe an experimental study of telomeric DNA
-structures using the above tools.
+Finally, I will propose an experimental study of conformational
+switching of a DNA system using the above tools.
 
 
 ## Background
@@ -53,9 +53,9 @@ by an incident photon of a specific wavelength (known as its *excitation wavelen
 The system quickly passes non-radiatively through a large number of
 intermediate states as its local environment rearranges (losing
 energy, known as the Stokes shift) in response to the newly excited
-fluorophore. Finally the system settles into its excited fluorescent
-state where it will remain until decaying back to its ground state
-potentially with the emission of a photon. The lifetime of this
+fluorophore. This Stokes decay ends with the system settling into its excited fluorescent
+state where it will remain until decaying back to its ground state,
+potentially with the emission of a photon (known as *radiative decay*). The lifetime of this
 fluorescent state is known as the fluorophore's *fluorescence lifetime*
 and is typically of order $10^{-9}$ seconds.
 
@@ -66,6 +66,7 @@ The Stokes shift enables light resulting from fluorescence to be
 distinguished from the excitation light that produced it by spectral
 filtering.
 
+#### Fluorescence Correlation Spectroscopy
 Fluorescence spectroscopic techniques exploit fluorescence as a means
 of probing physical systems. One frequently used mode of inquiry is
 fluorescence correlation spectroscopy, where each molecule in an
@@ -83,22 +84,30 @@ concentrations, and chemical kinetics[@Aragon1976; @Dix2006].
              common point. The region enclosing this focal point is
              known as the *observation volume*.
 
+#### Fӧrster Resonance Energy Transfer
 By exploiting the tendency of a pair of fluorophores with overlapping
 excitation and emission spectra to transfer energy at short separation distances one can
 extract further geometric information from the molecule under study
-(Figure \ref{fig:fret}). By labeling two points on the molecule of interest
-and examining the probability of energy transfer, one can infer
-intramolecular distances. This technique [@Forster1960; @Dahan1999],
-known as Fӧrster Resonance Energy Transfer (FRET), is widely used to
-study biomolecular conformation and kinetics
+(Figure \ref{fig:fret}). In this scheme, the donor fluorophore $D$ is
+excited, after which point it will either decay (either radiatively or
+non-radiatively) or *donate* the energy it absorbed to a nearby
+*acceptor* fluorophore. If the latter, the acceptor will eventually
+ decay, possibly with the emission of a photon.
+
+By labeling two points on the molecule of interest
+and examining the probability of energy transfer (*e.g.* fluorescence
+intensities in the donor and acceptor spectral channels), one can
+infer intramolecular distances. This technique
+[@Forster1960; @Dahan1999], known as Fӧrster Resonance Energy Transfer
+(FRET), is widely used to study biomolecular conformation and kinetics
 [@Preus2012; @Dietrich2002].
 
-Here the probability of energy transfer is related to the
-inter-fluorophore distance $R$,
-$$ E = \frac{1}{1 + (R / R₀)⁶} $$
+Here the probability of energy transfer, known as the FRET efficiency
+$E$, is related to the inter-fluorophore distance $R$,
+$$ E = P(\mathrm{Energy~Transfer}) = \frac{1}{1 + (R / R₀)⁶} $$
 where $R₀$, known as the Fӧrster radius, is related to a quantity
 which captures the relative orientation of the two fluorophores'
-dipole moments $\hat{μ}ᵢ$,
+electric dipole moments $\hat{μ}ᵢ$,
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 As often only the distance $R$ is of interest, $κ²$ is often taken to
 be $2/3$ under an assumption of free rotation of both fluorophores.
@@ -268,13 +277,21 @@ internal pH.
 [^micelle]: Micelles are small (1-10nm) water droplets in a lipid
             continuous phase
 
-TODO: Define mobility
+Carrying charge, emulsion droplets feel force under the influence of
+an electric field. As droplets exist in a viscous mediium, they also
+feel a retarding force at non-zero velocity. Through force balance we
+find that the velocity $\vec v$ of a particle in a field $\vec E$ is
+given (to first order) by,
+$$\vec v = \mu_e \vec E$$
+where $\mu_e$ is known as the electrophoretic mobility. With further
+physical modelling, we can relate this mobility to various physical
+properties of the colloid.
 
 As a first attempt at examining the effect of pH and salt
 concentration on surface potential I have started a set of studies
 using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
 technique for measuring the electrophoretic mobility of a suspension
-of emulsion droplets.  Results thusfar have been mixed. Both the
+of emulsion droplets. Results thusfar have been mixed. Both the
 measured phase signal and derived mobility are quite small ...
 
 Furthermore, recent simulations [@Knecht2007] has drawn into question the
@@ -343,6 +360,7 @@ previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments.
 
 Lee [@Lee2005] revisited and refined the approach by Ying
 
+TODO: Define switching behavior
 
 ## Contributions
 
@@ -477,8 +495,8 @@ decay.
 While fluorescein is often used to measure pH by examining the shift
 in its emission spectrum, I will instead use the corresponding shift
 in fluorescence lifetime. By filling droplets with fluorescein such
-that the mean droplet occupancy is on the order of 100 molecules (approximately $500$
-nmol/L), it should be possible to collect enough statistics to infer a
+that the mean droplet occupancy is on the order of 100 molecules (on the order of
+$\mathrm{μmol/L}$), it should be possible to collect enough statistics to infer a
 lifetime mixture (on the order of $10⁶$ photons).
 
 This experiment will proceed as follows,
