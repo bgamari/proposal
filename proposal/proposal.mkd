@@ -66,9 +66,12 @@ The Stokes shift enables light resulting from fluorescence to be
 distinguished from the excitation light that produced it by spectral
 filtering.
 
-#### Fluorescence Correlation Spectroscopy
 Fluorescence spectroscopic techniques exploit fluorescence as a means
-of probing physical systems. One frequently used mode of inquiry is
+of probing physical systems.
+
+#### Fluorescence Correlation Spectroscopy
+
+One frequently used fluorescence-based mode of inquiry is
 fluorescence correlation spectroscopy, where each molecule in an
 ensemble is labeled with a single fluorophore. These molecules are
 then allowed to freely diffuse in solution while a small volume 
@@ -83,6 +86,20 @@ concentrations, and chemical kinetics[@Aragon1976; @Dix2006].
              set of photon-detectors and an excitation laser are focused on a
              common point. The region enclosing this focal point is
              known as the *observation volume*.
+
+#### Measuring fluorescence lifetime
+
+To measure the fluorescence lifetime of a fluorophore one illuminates the
+observation volume with an intense but short pulse. At the moment of
+excitation (call this $t=0$), any fluorophores in the observation
+volume will be excited. By measuring the photon arrival times $t_i$
+relative to the time of excitation, one can construct the waiting time
+distribution $P(t)$. In the simple case of a fluorophore with one
+decay pathway, this distribution is exponential,
+$$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
+The excitation pulse width is typically on the order of picoseconds to
+ensure a well-defined excitation point. This process is then repeated
+periodically (typically around 80 MHz).
 
 #### Fӧrster Resonance Energy Transfer
 By exploiting the tendency of a pair of fluorophores with overlapping
@@ -292,7 +309,7 @@ concentration on surface potential I have started a set of studies
 using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
 technique for measuring the electrophoretic mobility of a suspension
 of emulsion droplets. Results thusfar have been mixed. Both the
-measured phase signal and derived mobility are quite small ...
+measured phase signal and the derived mobility are quite small ...
 
 Furthermore, recent simulations [@Knecht2007] has drawn into question the
 conventional interpretation of electrophoretic measurements.
@@ -303,8 +320,10 @@ oil-in-water case. While in oil-in-water emulsions ionic
 double-layering gives rise to analysis complications from
 electrostatic and viscous forces, it's not clear that these
 
+<!--
 It is widely believed that water organizes on hydrophobic interfaces
 such as the outside surface of an oil-in-water droplet [@Vacha2008].
+-->
 
 ### Quadruplex DNA
 
@@ -419,28 +438,25 @@ Nucleic acids in particular present their own set of
 challenges. Multiple decay pathways [@Sabanayagam2005] and
 base-specific fluorescence enhancement [@Harvey2009b] confound the FRET
 signal. Moreover, linker dynamics [@Sindbert2011] and
-geometric [@Lilley2000] considerations complicate modeling.
+geometric considerations [@Lilley2000] complicate modeling.
 
-It is believed that cyanine dyes terminally attached to RNA demonstrate
-several states where the dye stacks on its neighboring base much as
-a nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
+One example of this can be found in nucleic acid studies. It is
+believed that cyanine dyes terminally attached to RNA demonstrate
+several states where the dye stacks on its neighboring base much as a
+nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
 
 Recent work by Peker Milas and I on short double-stranded
 RNA [@Milas2013] has provided further evidence for this behavior. In
 this work we coupled single-molecule sensitive FRET measurements with
 molecular dynamics (MD) simulation of the labeled system. By
 extracting relevant geometric quantities from the MD model, we were
-able to construct FRET observations from this simulated
-system. In comparing these observations to experiment we were able to
-test hypotheses concerning the photophysics of the labels and
-magnitude of the Fӧrster radius.
+able to construct a Monte Carlo model to generate FRET observations
+from this simulated system. In comparing these observations to
+experiment we were able to test several hypotheses concerning the
+photophysical behavior of the labels and magnitude of the Fӧrster radius.
 
 
 ### Droplet tracking
-
-The ability to observe a fluorescence trajectory over a long duration
-without the artifacts introduced by surface tethering
-enables a wide variety of previously inaccessible measurements.
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
@@ -492,12 +508,14 @@ decay.
 
 ![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
 
-While fluorescein is often used to measure pH by examining the shift
-in its emission spectrum, I will instead use the corresponding shift
-in fluorescence lifetime. By filling droplets with fluorescein such
-that the mean droplet occupancy is on the order of 100 molecules (on the order of
-$\mathrm{μmol/L}$), it should be possible to collect enough statistics to infer a
-lifetime mixture (on the order of $10⁶$ photons).
+While fluorescein is often used to measure pH by examining the change
+in its emission spectrum (reflecting the relative proportions of the
+anionic and dianionic species discussed above), I will instead use the
+corresponding shift in fluorescence lifetime. By filling droplets with
+fluorescein such that the mean droplet occupancy is on the order of
+100 molecules (on the order of $\mathrm{μmol/L}$), it should be
+possible to collect enough statistics to infer a mixing distribution over
+pH.
 
 This experiment will proceed as follows,
 
@@ -580,7 +598,7 @@ will extend these techniques as necessary. One possibility is the use
 of active temperature modulation to shift the equilibrium of the
 system.
 
-### FRET analysis tools
+### Data analysis tools
 
 Single-molecule sensitive fluorescence techniques can provide insight
 into a variety of biologically relevant systems interpretation of
