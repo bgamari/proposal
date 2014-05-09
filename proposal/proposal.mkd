@@ -375,11 +375,22 @@ quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes
 
 Ying [@Ying2003] sought to resolve conflicting structures derived from
-previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments.
+previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
+FRET. By labelling opposing ends of a quadruplex-forming sequence with Cyanine 5
+and TMR, the authors resolve end-to-end distance as a proxy for
+conformational state. Their study reveals two FRET populations with
+signs of heterogeneity suggesting switching dynamic equilibrium. This
+equilibrium is shown to be strongly dependent upon the identity and
+concentration of the ions present. The authors claim that the unfolded
+form of the system should exhibit far lower FRET efficiency than
+either of these peaks, leading them to identify them as parallel and
+anti-parallel folded states.
 
-Lee [@Lee2005] revisited and refined the approach by Ying
+Lee [@Lee2005] revisited and refined the approach of Ying 
 
-TODO: Define switching behavior
+TODO: Finish writing this section:
+  * Define switching behavior
+  * Cover @Koirala2013, @Ying2003, @Justkowiak2005, @Fujimoto2013
 
 ## Contributions
 
