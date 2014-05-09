@@ -79,8 +79,8 @@ is observed with a confocal microscope[^confocal]. In this
 configuration labeled molecules diffusing through the observation
 volume will be excited and subsequently produce fluorescence which is
 then detected. By examining correlations in the detected fluorescence
-intensity signal, one can infer molecular sizes[@Sengupta2003],
-concentrations, and chemical kinetics[@Aragon1976; @Dix2006].
+intensity signal, one can infer molecular sizes [@Sengupta2003],
+concentrations, and chemical kinetics [@Aragon1976; @Dix2006].
 
 [^confocal]: *Confocal microscope* here refers to a microscope where a
              set of photon-detectors and an excitation laser are focused on a
@@ -185,14 +185,14 @@ bilayer [@Boukobza2001; @Okumus2004].  Once formed, these vesicles can
 either be studied in solution, affording longer dwell times in the
 observation volume due to their larger size, or chemically tethered to
 a surface. Unfortunately, vesicles are known to interact with some
-systems[^vesicle interaction], form under only a narrow range of chemical conditions
+systems[^vesicle-interaction], form under only a narrow range of chemical conditions
 [@Vafabakhsh2012], and present practical challenges in sample
 preparation. Moreover, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
 within a vesicle.  Collectively, these considerations preclude use
 vesicle encapsulation for many systems.
 
-[^vesicle interaction]:
+[^vesicle-interaction]:
     Many proteins, in particular those that sit on membrane surfaces,
     interact strongly with vesicle interfaces.
 
@@ -576,12 +576,12 @@ This experiment will proceed as follows,
   2. Repeat this experiment in diffusing droplets. Again, a bimodal
      FRET distribution should be observed with roughly equivalent
      proportions to (1).
-  3.a. Repeat this experiment in droplet immobilization via particle
+  3. Repeat this experiment in droplet immobilization via particle
      tracking. This should allow the dynamics of a single particle to
      be followed in time. Unfortunately, it will likely be difficult to
      gather enough switching events with this method to estimate
-     kinetic rates. In this case, proceed to (3.b)
-  3.b. Repeat again with microfluidic droplet manipulation and TIRF microscopy. This
+     kinetic rates. In this case, proceed to,
+  4. Repeat again with microfluidic droplet manipulation and TIRF microscopy. This
      technique will enable higher throughput although precludes
      probing quantities needing confocal microscopy such as
      fluorescence lifetime.
@@ -610,7 +610,7 @@ for quantitatively accurate results. Unfortunately, the lack of
 availability of an open toolchain for analysis of fluorescence data
 means that groups generally must reimplement these tools as needed.
 
-I have developed complete suite of open-source tools for acquisition
+I have developed a suite of open-source tools for acquisition
 and analysis of fluorescence timestamp data. These tools are used both
 in and outside of our lab and won the Open Source Software Innovation
 competition held by the University of Massachusetts Institute for
