@@ -246,7 +246,7 @@ reduction in rotational coherence, a finding that remains unexplained
       surfactant by way of mechanical injection, our recent measurements
       have used more stable droplets formed by shear and a
       surfactant. This difference in surfactant may strongly affect
-      the nature of the droplet's interface and how it affects the
+      the nature of the droplet's interface and how it interacts with the
       system under study.
 
 ## Droplet confinement for fluorescence microscopy
@@ -529,15 +529,12 @@ This experiment will proceed as follows,
 
 For each droplet in these experiments, I will expect to see a fluorescence
 lifetime distribution that looks like,
-
-$P(τ) = α λ₁ e^{-τ λ₁} + (1 - α) λ₂ e^{-τ λ₂}$
-
+$$P(τ) = α λ₁ e^{-τ λ₁} + (1 - α) λ₂ e^{-τ λ₂}$$ 
 Where $α$ is related to the concentration of the anion and dianion
 species shown in Figure \ref{fig:fluorescein} [^concentration]. This is in
 turn related to the pH within the droplet by the Henderson-Hasselbach
 relation,
-
-$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$
+$$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$$
 
 [^concentration]:
     Note that this ignores contributions from the weakly fluorescent
