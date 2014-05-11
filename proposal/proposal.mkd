@@ -44,7 +44,7 @@ Fluorescence spectroscopic methods facilitate experiments capable of
 probing molecular structure, conformation, and dynamics often with
 single-molecule sensitivity.
 
-![A high-level model of fluorescence.\label{fig:fluorescence}](figures/fluorescence)
+![A high-level model of fluorescence shown as a Jablonski diagram. The system begins (left box) in the ground state ($\ket{0}$) when it is excited by an incident photon, transitioning to $\ket{\mathrm{excited}}$. The system then undergoes a Stokes decay through a large number of intermediate states, reaching $\ket{\mathrm{fluorescent}}$ where it can decay with production of a photon.\label{fig:fluorescence}](figures/fluorescence)
 
 The physical process responsible for fluorescence is illustrated in
 Figure \ref{fig:fluorescence}. Here the fluorescent molecule, also referred to as a
