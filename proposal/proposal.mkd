@@ -87,7 +87,7 @@ concentrations, and chemical kinetics [@Aragon1976; @Dix2006].
              common point. The region enclosing this focal point is
              known as the *observation volume*.
 
-#### Measuring fluorescence lifetime
+#### Fluorescence lifetime spectroscopy
 
 To measure the fluorescence lifetime of a fluorophore one illuminates the
 observation volume with an intense but short pulse. At the moment of
@@ -99,7 +99,8 @@ decay pathway, this distribution is exponential,
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
 The excitation pulse width is typically on the order of picoseconds to
 ensure a well-defined excitation point. This process is then repeated
-periodically (typically around 80 MHz).
+periodically (typically around 80 MHz) to collect sufficient statistics to
+infer a distribution over fluorescence lifetime.
 
 #### Fӧrster Resonance Energy Transfer
 By exploiting the tendency of a pair of fluorophores with overlapping
