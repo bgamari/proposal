@@ -72,7 +72,7 @@ means of probing physical systems.
 #### Fluorescence Correlation Spectroscopy
 
 One frequently used fluorescence-based mode of inquiry is
-fluorescence correlation spectroscopy, where each molecule in an
+fluorescence correlation spectroscopy (FCS), where each molecule in an
 ensemble is labeled with a single fluorophore. These molecules are
 then allowed to freely diffuse in solution while a small volume 
 is observed with a confocal microscope[^confocal]. In this
