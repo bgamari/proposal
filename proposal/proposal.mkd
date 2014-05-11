@@ -161,8 +161,6 @@ molecule for only such short durations, these experiments are
 restrictive in the range of timescales and interactions they can
 examine.
 
-TODO: Mention photobleaching
-
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
 ## Single-molecule immobilization
@@ -177,8 +175,10 @@ One common technique for molecular immobilization is surface
 attachment. Here the molecule of interest and a fixed surface are
 both chemically modified to be mutually sticky. Some fraction of the
 molecules under study will then adhere to the surface, where they will
-remain translationally confined and can be probed with confocal
-microscopy. This approach poses a variety of challenges: direct
+remain translationally confined and can be probed with either confocal
+or imaging microscopy. In this way, single molecules can be probed for
+timescales only limited by the longevity of the fluorophores.
+This approach poses a variety of challenges: direct
 interaction between the surface and the molecule under study can
 substantially perturb the behavior of the studied
 system[^Yasuda]. Further, the chemistry required for the modification
