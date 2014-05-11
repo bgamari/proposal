@@ -1,5 +1,5 @@
 ---
-title: Droplet encapsulation of biomolecules for fluorescence spectroscopy
+title: "Droplet encapsulation of biomolecules for fluorescence spectroscopy: A demonstration examining G-quadruplex folding dynamics"
 author: Ben Gamari
 email: bgamari@physics.umass.edu
 affil: Department of Physics, University of Massachusetts, Amherst
@@ -374,6 +374,7 @@ intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes
 
+<!-- Ying 2003 -->
 Ying [@Ying2003] sought to resolve conflicting structures derived from
 previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
 FRET. By labelling opposing ends of a quadruplex-forming sequence with Cyanine 5
@@ -383,14 +384,33 @@ signs of heterogeneity suggesting switching dynamic equilibrium. This
 equilibrium is shown to be strongly dependent upon the identity and
 concentration of the ions present. The authors claim that the unfolded
 form of the system should exhibit far lower FRET efficiency than
-either of these peaks, leading them to identify them as parallel and
-anti-parallel folded states.
+either of these peaks, leading them to identify the states as parallel
+and anti-parallel folded conformations.
 
-Lee [@Lee2005] revisited and refined the approach of Ying 
+The authors conclude from the parallel configuration is better
+stabilized by K⁺ while the anti-parallel conformation is preferred in
+the presence of Na⁺. ...
 
-TODO: Finish writing this section:
-  * Define switching behavior
-  * Cover @Koirala2013, @Ying2003, @Justkowiak2005, @Fujimoto2013
+<!-- Lee 2005 -->
+Lee [@Lee2005] revisited and refined the approach of Ying, examining a
+similar oligo ($5'-Cy5-(GGGTA)₃-GGG$) under surface attachment with
+TIRF[^TIRF].
+
+[^TIRF]:
+    Total Internal Reflection Fluorescence microscopy (TIRF) is an
+    experimental technique used for imaging surfaces where excitation
+    beam is incident at the critical angle to a glass surface.  The
+    beam undergoes total internal reflection, giving rise to an
+    evanescent field within a few hundred nanometers of this
+    surface. Fluorophores in this field will be excited and their
+    fluorescence collected in the usual manner.
+
+<!-- Justkowiak 2005 -->
+
+<!-- Koirala 2013 -->
+
+<!-- Fujimoto 2013 -->
+Fujimoto [@Fujimoto2013]
 
 ## Contributions
 
@@ -663,7 +683,22 @@ group. These include manipulation and storage of droplets within
 microfluidic devices.
 
 If the droplet technique proves in its entirety to be unusable, I
-will fall back to examining the crowding dependence of quadruplex DNA.
+will fall back to examining the crowding dependence of quadruplex DNA
+dynamics.
+
+## Conclusion
+
+Here I've proposed a set of experiments characterizing and
+demonstrating a novel tool for fluorescence spectroscopy.
+Droplet confinement provides the ability to fluorescently probe single
+molecules over a wide range of timescales without the strong
+perturbation imposed by surface confinement and without the practical
+challenges of vesicle confinement.
+
+The proposed experiments demonstrate a novel means of examining pH in small volumes,
+and demonstrate a novel instrument for tracking the diffusive motion
+of particles, and use this instrument to probe a biologically relevant
+model system with FRET.
 
 ## References
 
