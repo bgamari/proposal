@@ -411,7 +411,7 @@ the presence of Na⁺. ...
 
 <!-- Lee 2005 -->
 Lee [@Lee2005] revisited and refined the approach of Ying, examining a
-similar oligo ($5'-Cy5-(GGGTA)₃-GGG$) under surface attachment with
+similar oligomer ($5'-Cy5-(GGGTA)₃-GGG$) under surface attachment with
 TIRF[^TIRF].
 
 [^TIRF]:
@@ -634,7 +634,7 @@ This experiment will proceed as follows,
 
 @Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
-stability of the labeled oligo.
+stability of the labeled oligomer.
 
 The problem of learning reaction kinetics from FRET experiments has
 been explored by a number of
