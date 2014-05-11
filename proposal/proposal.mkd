@@ -688,17 +688,17 @@ dynamics.
 
 ## Conclusion
 
-Here I've proposed a set of experiments characterizing and
-demonstrating a novel tool for fluorescence spectroscopy.
-Droplet confinement provides the ability to fluorescently probe single
+This work proposes a set of experiments characterizing and
+demonstrating a novel tool for fluorescence spectroscopy.  Droplet
+confinement provides the ability to fluorescently probe single
 molecules over a wide range of timescales without the strong
 perturbation imposed by surface confinement and without the practical
 challenges of vesicle confinement.
 
-The proposed experiments demonstrate a novel means of examining pH in small volumes,
-and demonstrate a novel instrument for tracking the diffusive motion
-of particles, and use this instrument to probe a biologically relevant
-model system with FRET.
+The proposed experiments demonstrate a novel means of examining pH in
+small volumes, and demonstrate a novel instrument for tracking the
+diffusive motion of particles, and use this instrument to probe a
+biologically relevant model system with FRET.
 
 ## References
 
