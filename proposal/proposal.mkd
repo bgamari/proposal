@@ -147,7 +147,7 @@ $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R})
 As often only the distance $R$ is of interest, the fluorophores are
 typically assumed to be freely rotating which implies $κ² = 2/3$.
 
-![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A} represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
+![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A}$ represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
 While experiments examining species diffusing in solution are easily
 performed [@Dahan1999], such diffusive techniques offer only a short
