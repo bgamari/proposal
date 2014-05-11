@@ -62,12 +62,12 @@ and is typically of order $10^{-9}$ seconds.
 [^braket]:
     The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
 
-The Stokes shift enables light resulting from fluorescence to be
-distinguished from the excitation light that produced it by spectral
-filtering.
-
-Fluorescence spectroscopic techniques exploit fluorescence as a means
-of probing physical systems.
+The Stokes shift gives rise to a shift in the wavelength of fluorescence
+light from the excitation light from which it arose. This allows scattered
+excitation light to be distinguished from fluorescence.
+fluorescence to be used as a means of probing physical systems.
+This enables fluorescence spectroscopy, the use fluorescence as a
+means of probing physical systems.
 
 #### Fluorescence Correlation Spectroscopy
 
