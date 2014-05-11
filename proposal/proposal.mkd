@@ -137,7 +137,7 @@ only a short glimpse of each molecule. With the hydrodynamic radius
 of many biomolecules of interest being on the order of nanometers,
 these molecules require on the order of hundreds of
 microseconds to traverse the observation volume. This is on the order
-of the inter-photon arrival time of a typeical fluorescence
+of the inter-photon arrival time of a typical fluorescence
 experiment. In being able to sense the probed molecule for only such
 short durations, these experiments are restrictive in the range of
 timescales and interactions they can examine.
@@ -261,7 +261,7 @@ The droplets produced by our technique are typically on the order of
 100 nanometers in diameter. It is well-documented that droplets like
 these exhibit an electrostatic surface potential in
 equilibrium[@Marinova1996]. Consequently, ion concentrations are known
-to be nonhomogenous throughout the droplet volume
+to be non-homogeneous throughout the droplet volume
 [@Vazdar2012; @Luo2006]. These two factors greatly complicate
 interpretation of experiments performed under droplet confinement.
 
@@ -295,20 +295,20 @@ internal pH.
             continuous phase
 
 Carrying charge, emulsion droplets feel force under the influence of
-an electric field. As droplets exist in a viscous mediium, they also
+an electric field. As droplets exist in a viscous medium, they also
 feel a retarding force at non-zero velocity. Through force balance we
 find that the velocity $\vec v$ of a particle in a field $\vec E$ is
 given (to first order) by,
 $$\vec v = \mu_e \vec E$$
 where $\mu_e$ is known as the electrophoretic mobility. With further
-physical modelling, we can relate this mobility to various physical
+physical modeling, we can relate this mobility to various physical
 properties of the colloid.
 
 As a first attempt at examining the effect of pH and salt
 concentration on surface potential I have started a set of studies
 using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
 technique for measuring the electrophoretic mobility of a suspension
-of emulsion droplets. Results thusfar have been mixed. Both the
+of emulsion droplets. Results thus far have been mixed. Both the
 measured phase signal and the derived mobility are quite small ...
 
 Furthermore, recent simulations [@Knecht2007] has drawn into question the
@@ -509,7 +509,7 @@ the position of a diffusing particle in real-time.
 While conceptually simply, there are several practical challenges in
 implementing such a system. The greatest of these is the process of
 learning the tracking model, which must happen quickly enough that the
-particle can be considered to be stationarity (relative to its size)
+particle can be considered to be stationary (relative to its size)
 over the course of data acquisition.
 
 <!--
@@ -587,7 +587,7 @@ also possible.
 
 ### Study of G quadruplex DNA under droplet confinement
 
-The second prong of the work will use droplet confinment to examine
+The second prong of the work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle encapsulation and surface
