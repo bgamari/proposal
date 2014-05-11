@@ -113,7 +113,7 @@ infer a distribution over fluorescence lifetime.
 If one places two distinct fluorophores
 in close proximity to one another, under certain conditions they will
 undergo energy transfer. That is when one is excited, fluorescence
-will observed from the other. This process, known F\"orster transfer,
+will observed from the other. This process, known Fӧrster transfer,
 requires that the fluorophores' absorption and emission spectra
 overlap and is dependent upon their distance and relative
 orientations. This geometric dependence enables use of this effect for
@@ -146,7 +146,7 @@ $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R})
 As often only the distance $R$ is of interest, the fluorophores are
 typically assumed to be freely rotating which implies $κ² = 2/3$.
 
-![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
+![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A} represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
 While experiments examining species diffusing in solution are easily
 performed [@Dahan1999], such diffusive techniques offer only a short
@@ -226,7 +226,7 @@ of interest largely unperturbed.
 Like vesicles, these emulsions can be either probed in solution, where
 they afford longer observation times due to their size, or
 immobilized.  Immobilization of emulsion droplets can be realized
-through several means. These include optical trapping[@Reiner2006],
+through several means. These include optical trapping [@Reiner2006],
 optical tracking (which will be discussed shortly), and microfluidic
 confinement.
 
@@ -253,7 +253,7 @@ In an early study[^droplet-differences] Tang *et al.* reported no evidence
 of perturbation on short timescales in polarization anisotropy
 measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
 
-In contrast, Jofre reported fluorescence anisotropy measurements where the
+In contrast, Jofre reported fluorescence polarization anisotropy measurements where the
 introduction of a droplet environment brought about an apparent
 reduction in rotational coherence, a finding that remains unexplained
 [@Jofre2007].
