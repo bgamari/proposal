@@ -7,7 +7,7 @@ affil: Department of Physics, University of Massachusetts, Amherst
 \doublespacing
 \newpage
 
-## Introduction
+# Introduction
 
 Fluorescence spectroscopic techniques are widely used in biology and
 biophysics to probe biomolecular systems. While there exist a number
@@ -17,7 +17,7 @@ limitations. This thesis studies a novel technique for molecular
 immobilization for single-molecule studies, encapsulating molecules in
 aqueous droplets. These tools are then used to measure a model DNA system.
 
-### Outline of Proposal
+## Outline of Proposal
 Below we will briefly describe the fluorescence spectroscopic
 techniques used in our lab. Following this we will discuss my previous
 work modeling FRET on a small model RNA molecule, particularly focusing on
@@ -44,9 +44,9 @@ Finally, I will propose an experimental study of conformational
 switching of a DNA system using the above tools.
 
 
-## Background
+# Background
 
-### Fluorescence spectroscopy
+## Fluorescence spectroscopy
 Fluorescence spectroscopic methods facilitate experiments capable of
 probing molecular structure, conformation, and dynamics often with
 single-molecule sensitivity.
@@ -76,7 +76,7 @@ fluorescence to be used as a means of probing physical systems.
 This enables fluorescence spectroscopy, the use fluorescence as a
 means of probing physical systems.
 
-#### Fluorescence Correlation Spectroscopy
+### Fluorescence Correlation Spectroscopy
 
 One frequently used fluorescence-based mode of inquiry is
 fluorescence correlation spectroscopy (FCS), where each molecule in an
@@ -94,7 +94,7 @@ concentrations, and chemical kinetics [@Aragon1976; @Dix2006].
              common point. The region enclosing this focal point is
              known as the *observation volume*.
 
-#### Fluorescence lifetime spectroscopy
+### Fluorescence lifetime spectroscopy
 
 To measure the fluorescence lifetime of a fluorophore one illuminates the
 observation volume with an intense but short pulse. At the moment of
@@ -102,14 +102,15 @@ excitation (call this $t=0$), any fluorophores in the observation
 volume will be excited. By measuring the photon arrival times $t_i$
 relative to the time of excitation, one can construct the waiting time
 distribution $P(t)$. In the simple case of a fluorophore with one
-decay pathway, this distribution is exponential,
+decay pathway, this distribution
+is exponential,
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
 The excitation pulse width is typically on the order of picoseconds to
 ensure a well-defined excitation point. This process is then repeated
 periodically (typically around 80 MHz) to collect sufficient statistics to
 infer a distribution over fluorescence lifetime.
 
-#### Fӧrster Resonance Energy Transfer
+### Fӧrster Resonance Energy Transfer
 If one places two distinct fluorophores
 in close proximity to one another, under certain conditions they will
 undergo energy transfer. That is when one is excited, fluorescence
@@ -164,7 +165,7 @@ TODO: Mention photobleaching
 
 ![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
-### Single-molecule immobilization
+## Single-molecule immobilization
 
 Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies with less pronounced
@@ -213,7 +214,7 @@ vesicle encapsulation for many systems.
     Many proteins, in particular those that sit on membrane surfaces,
     interact strongly with vesicle interfaces.
 
-#### Droplet confinement
+### Droplet confinement
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The preparation protocol
 requires only minutes to perform and results in emulsions which are
@@ -266,7 +267,7 @@ reduction in rotational coherence, a finding that remains unexplained
       the nature of the droplet's interface and how it interacts with the
       system under study.
 
-### Droplet confinement for fluorescence microscopy
+## Droplet confinement for fluorescence microscopy
 
 One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the conditions within
@@ -282,7 +283,7 @@ to be non-homogeneous throughout the droplet volume
 [@Vazdar2012; @Luo2006]. These two factors greatly complicate
 interpretation of experiments performed under droplet confinement.
 
-#### Chemical environment of emultion droplets
+### Chemical environment within emulsion droplets
 The properties of oil-in-water emulsions and their interfaces have
 been widely studied in a number of communities. Vibrational
 spectroscopy on related oil-in-water emulsions have demonstrated that
@@ -342,7 +343,7 @@ It is widely believed that water organizes on hydrophobic interfaces
 such as the outside surface of an oil-in-water droplet [@Vacha2008].
 -->
 
-### Quadruplex DNA
+## Quadruplex DNA
 
 <!--
 Summary:
@@ -429,7 +430,7 @@ TIRF[^TIRF].
 <!-- Fujimoto 2013 -->
 Fujimoto [@Fujimoto2013]
 
-## Contributions
+# Contributions
 
 Below I will discuss the on-going and future contributions of this
 project. I will begin by briefly introducing a set of tools for the
@@ -464,7 +465,7 @@ discussed in [the appropriate section](#study-of-quadruplex-dna).
 -->
 
 
-### Characterization of FRET on RNA
+## Characterization of FRET on RNA
 
 <!--
 summary: work with Peker Milas
@@ -504,7 +505,7 @@ experiment we were able to test several hypotheses concerning the
 photophysical behavior of the labels and magnitude of the Fӧrster radius.
 
 
-### Droplet tracking
+## Droplet tracking
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
@@ -538,7 +539,7 @@ over the course of data acquisition.
 -->
 
 
-### Characterization of droplet pH
+## Characterization of droplet pH
 <!--
  * Measure pH in droplets
 -->
@@ -602,7 +603,7 @@ used. Alternatively, direct measurement of the emission spectrum is
 also possible.
 
 
-### Study of G quadruplex DNA under droplet confinement
+## Study of G quadruplex DNA under droplet confinement
 
 The second prong of the work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system. This will begin by
@@ -643,7 +644,7 @@ will extend these techniques as necessary. One possibility is the use
 of active temperature modulation to shift the equilibrium of the
 system.
 
-### Data analysis tools
+## Data analysis tools
 
 Single-molecule sensitive fluorescence techniques can provide insight
 into a variety of biologically relevant systems interpretation of
@@ -675,7 +676,7 @@ work [@Gamari2013OSSI].
     a) $5'-GGGT-Cy5-A (GGGTTA)₂ GGG$
 -->
 
-## Risks
+# Risks
 
 Our droplet tracking system has been demonstrated to reliably track
 particles down to sizes of 500 nm. Our current droplet preparation
@@ -703,7 +704,7 @@ If the droplet technique proves in its entirety to be unusable, I
 will fall back to examining the crowding dependence of quadruplex DNA
 dynamics.
 
-## Conclusion
+# Conclusion
 
 This work proposes a set of experiments characterizing and
 demonstrating a novel tool for fluorescence spectroscopy.  Droplet
@@ -717,6 +718,6 @@ small volumes, and demonstrate a novel instrument for tracking the
 diffusive motion of particles, and use this instrument to probe a
 biologically relevant model system with FRET.
 
-## References
+# References
 
 \singlespacing
