@@ -266,7 +266,7 @@ reduction in rotational coherence, a finding that remains unexplained
       the nature of the droplet's interface and how it interacts with the
       system under study.
 
-## Droplet confinement for fluorescence microscopy
+### Droplet confinement for fluorescence microscopy
 
 One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the conditions within
@@ -282,7 +282,7 @@ to be non-homogeneous throughout the droplet volume
 [@Vazdar2012; @Luo2006]. These two factors greatly complicate
 interpretation of experiments performed under droplet confinement.
 
-### Study of emulsion droplet environment
+#### Chemical environment of emultion droplets
 The properties of oil-in-water emulsions and their interfaces have
 been widely studied in a number of communities. Vibrational
 spectroscopy on related oil-in-water emulsions have demonstrated that
