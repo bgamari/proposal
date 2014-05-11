@@ -9,13 +9,20 @@ affil: Department of Physics, University of Massachusetts, Amherst
 
 ## Introduction
 
-This thesis will study the effects of a droplet environment on
-fluorescence measurements of a typical biological polymer. Below we
-will briefly describe the fluorescence spectroscopic techniques used in
-our lab. Following this we will discuss my previous work modeling FRET on a
-model RNA oligomer, particularly focusing on conformational
-and photophysical effects. This work will bear relevance to the
-fluorescence studies proposed later in this document.
+Fluorescence spectroscopic techniques are widely used in biology and
+biophysics to probe biomolecular systems. While there exist a number
+of techniques enabling the study of single-molecules for long
+durations (*e.g.* minutes to hours), each comes with its own
+limitations. This thesis studies a novel technique for molecular
+immobilization for single-molecule studies, encapsulating molecules in
+aqueous droplets. These tools are then used to measure a model DNA system.
+
+### Outline of Proposal
+Below we will briefly describe the fluorescence spectroscopic
+techniques used in our lab. Following this we will discuss my previous
+work modeling FRET on a small model RNA molecule, particularly focusing on
+conformational and photophysical effects. This work will bear
+relevance to the fluorescence studies proposed later in this document.
 
 We will then introduce an encapsulation technique developed in our lab
 using attoliter-volume emulsion droplets to contain, isolate, and
