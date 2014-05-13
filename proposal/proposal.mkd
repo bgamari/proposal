@@ -327,16 +327,19 @@ concentration on surface potential I have started a set of studies
 using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
 technique for measuring the electrophoretic mobility of a suspension
 of emulsion droplets. Results thus far have been mixed. Both the
-measured phase signal and the derived mobility are quite small ...
+measured phase signal and the derived mobility are quite small
+compared to samples typically characterized by this method.
 
-Furthermore, recent simulations [@Knecht2007] has drawn into question the
-conventional interpretation of electrophoretic measurements.
+The interpretation of electrophoretic experiments can be
+nuanced. There are few accepted standards to calibrate the technique
+and reproducibility is hard to attain [@Delgado2005]. Moreover, recent
+simulations [@Knecht2007] has drawn into question the interpretation
+of electrophoretic measurements as reflecting the surface charge.
 
-The interpretation of these mobilities as a probe of surface charge is
-not as clear for our water-in-oil emulsions as it is for the typical
-oil-in-water case. While in oil-in-water emulsions ionic
-double-layering gives rise to analysis complications from
-electrostatic and viscous forces, it's not clear that these
+While electrophoretic measurements are typically used to characterize
+oil droplets suspended in a aqueous continuous phase, our system is
+inverted (water droplets in oil). This may give rise to a vastly
+different electrostratic environment.
 
 <!--
 It is widely believed that water organizes on hydrophobic interfaces
