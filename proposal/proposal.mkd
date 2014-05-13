@@ -531,7 +531,7 @@ photophysical behavior of the labels and magnitude of the Fӧrster radius.
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
 We have developed a system for tracking droplet motion
-in solution inspired by Desai *et al.* [@Desai2007] This system enables study of
+in solution inspired by @Desai2007. This system enables study of
 single-molecules over time-scales previously only accessible through
 surface immobilization but without the difficult sample preparation
 that this technique requires. The ability to study isolated
