@@ -372,7 +372,7 @@ regions like these have been shown to form a peculiar structure, the *G
 quadruplex* [@Sen1988].  In these structures bases of a single strand
 of DNA form pairs, giving rise to a four-way symmetric configuration
 known to block the binding of telomerase [@Zahler1991]. It is believed
-that this serves a regulatory role.
+that these structures may serve a regulatory role [@Yu2009].
 
 Abnormality in the telomere and associated machinery has been linked
 to a variety of diseases and holds promise as a target for anticancer
@@ -385,10 +385,11 @@ quadruplex have been reportedly found in primers in the human
 genome [@Huppert2007; @Biffi2013].
 
 Of particular interest in this work (especially the secondary work
-discussed in Section \ref{risks}) is the various conformational forms
-of the quadruplex motif, the conditions in which these structures
-form, and the mechanisms responsible for their stability. Below we
-will discuss some previous inquiries along these lines.
+introduced in Section \ref{risks}) is the various conformational forms
+supported by the quadruplex motif, the conditions in which these
+structures form, and the mechanisms responsible for their
+stability. Below we will discuss some previous inquiries along these
+lines.
 
 # Previous work
 
@@ -405,7 +406,7 @@ polyethylene glycol stabilizes
 <!-- Phan 2003 -->
 
 <!-- Ying 2003 -->
-Ying [@Ying2003] sought to resolve conflicting structures derived from
+@Ying2003 sought to resolve conflicting structures derived from
 previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
 FRET. By labelling opposing ends of a quadruplex-forming sequence with Cyanine 5
 and TMR, the authors resolve end-to-end distance as a proxy for
@@ -420,7 +421,7 @@ that the parallel configuration is better stabilized by K⁺ while the
 anti-parallel conformation is preferred in the presence of Na⁺.
 
 <!-- Lee 2005 -->
-Lee [@Lee2005] revisited and refined the approach of Ying, examining a
+@Lee2005 revisited and refined the approach of Ying, examining a
 similar oligomer ($\mathrm{5'-Cy5-(GGGTA)₃-GGG}$) under surface attachment with
 TIRF[^TIRF]. The authors observed three long-lived (mean occupancy
 time of >10 seconds) FRET states, which they attributed to two
@@ -434,8 +435,6 @@ between short-lived intermediate states.
 To rule out the possibility of surface artifacts, the authors
 performed an additional experiment in vesicle confinement,
 immobilizing each vesicle by tethering to a stationary lipid bilayer.
-
-<!-- Kypr 2008 -->
 
 <!-- Boncina 2012 -->
 A set of experiments by @Boncina2012 suggested that quadruplex

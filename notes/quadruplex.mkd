@@ -175,7 +175,7 @@
 
 ## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
 
- * Survey of CD measurements revealing structural polymorphism in DNA
+ * Survey of CD measurements revealing structural polymorphism in DNA (beyond quadruplex)
  
 
 ## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
