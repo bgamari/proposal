@@ -176,7 +176,19 @@
 ## Circular dichroism and conformational polymorphism of DNA [@Kypr2008]
 
  * Survey of CD measurements revealing structural polymorphism in DNA
+ 
 
 ## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
  
+## Energetic basis of Human Telomeric DNA Folding into G-quadruplex Structures [@Boncina2012]
+
+ * Folding is a three-state process
+ * system:
+   * tel22: $5' AGGG (TTAGGG)₃ 3'$
+ * in K⁺
+ * calorimetry (DSC, ITC) and spectroscopy (CD)
+ * Set free energies
+ * Very nice population prediction
+
+
 # References

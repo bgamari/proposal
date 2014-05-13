@@ -392,6 +392,8 @@ intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes
 
+<!-- Phan 2003 -->
+
 <!-- Ying 2003 -->
 Ying [@Ying2003] sought to resolve conflicting structures derived from
 previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
@@ -403,16 +405,35 @@ equilibrium is shown to be strongly dependent upon the identity and
 concentration of the ions present. The authors claim that the unfolded
 form of the system should exhibit far lower FRET efficiency than
 either of these peaks, leading them to identify the states as parallel
-and anti-parallel folded conformations.
-
-The authors conclude from the parallel configuration is better
-stabilized by K⁺ while the anti-parallel conformation is preferred in
-the presence of Na⁺. ...
+and anti-parallel folded conformations. The authors further concluded
+that the parallel configuration is better stabilized by K⁺ while the
+anti-parallel conformation is preferred in the presence of Na⁺.
 
 <!-- Lee 2005 -->
 Lee [@Lee2005] revisited and refined the approach of Ying, examining a
 similar oligomer ($5'-Cy5-(GGGTA)₃-GGG$) under surface attachment with
-TIRF[^TIRF].
+TIRF[^TIRF]. The authors observed three long-lived (mean occupancy
+time of >10 seconds) FRET states, which they attributed to two
+distinct folded states (hypothesized to be anti-parallel and parallel
+geometries) and one unfolded state. The authors found that the
+anti-parallel state is favored at high K⁺ concentrations, with lower
+concentrations giving rise to a parallel configuration. In the
+intermediate salt regime, the authors observed switching dynamics
+between short-lived intermediate states.
+
+To rule out the possibility of surface artifacts, the authors
+performed an additional experiment in vesicle confinement,
+immobilizing each vesicle by tethering to a stationary lipid bilayer.
+
+<!-- Kypr 2008 -->
+
+<!-- Boncina 2012 -->
+A set of experiments by Boncina [@Boncina2012] suggested that
+quadruplex formation is a three-state process. Through calorimetry and
+circular dichroism measurements, Boncina sets energies on a
+three-state model consisting of folded, unfolded, and a partially
+unfolded intermediate state, in agreement with previous modelling
+efforts by Lee (although the short-lived intermediates are not observed).
 
 [^TIRF]:
     Total Internal Reflection Fluorescence microscopy (TIRF) is an
@@ -594,7 +615,7 @@ $$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$$
 The task of learning a mixture of exponential lifetimes (characterized
 by $α$ and $λᵢ$ above) from photon arrival time observations has
 been treated before by a number of groups
-[@Barber2010; @Eggeling1998; @Edel2007]. Building on this work, I will
+[@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994]. Building on this work, I will
 explore means of learning a mixing distribution over pH.
 
 If the change in lifetime from fluorescein is found to be too small to
