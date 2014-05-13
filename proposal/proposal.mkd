@@ -411,7 +411,7 @@ anti-parallel conformation is preferred in the presence of Na⁺.
 
 <!-- Lee 2005 -->
 Lee [@Lee2005] revisited and refined the approach of Ying, examining a
-similar oligomer ($5'-Cy5-(GGGTA)₃-GGG$) under surface attachment with
+similar oligomer ($\mathrm{5'-Cy5-(GGGTA)₃-GGG}$) under surface attachment with
 TIRF[^TIRF]. The authors observed three long-lived (mean occupancy
 time of >10 seconds) FRET states, which they attributed to two
 distinct folded states (hypothesized to be anti-parallel and parallel
@@ -688,13 +688,13 @@ work [@Gamari2013OSSI].
 <!--
  0) Attempt to characterize pH in single droplet
  1) Reproduce previous study by @Lee2005,
-    a) $5'-Cy5-(GGGTTA)₃ GGG$ in solution, diffusing droplets, tracked droplets
+    a) $\mathrm{5'-Cy5-(GGGTTA)₃ GGG}$ in solution, diffusing droplets, tracked droplets
     b) Explore ionic conditions in droplets:
        a) K⁺, Na⁺: 0mM, 10mM, 100mM
     c) explore effect of PEG 200 on switching kinetics: 0mM, 1mM, 20mM, 200mM
     d) 
  2) Attempt rotational anisotropy study of quadruplex internally labeled in loop
-    a) $5'-GGGT-Cy5-A (GGGTTA)₂ GGG$
+    a) $\mathrm{5'-GGGT-Cy5-A (GGGTTA)₂ GGG}$
 -->
 
 # Risks
