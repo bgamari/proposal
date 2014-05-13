@@ -360,12 +360,12 @@ rates of less than $10^{-6}$.  Even with such a low bulk error rate,
 the replication machinery of most organisms suffers from the
 shortcoming that bases near the ends of a chromosome are not reliably
 preserved. Without compensating for this behavior, successive
-generations of cells would lack a growing body of
-genes, eventually leading to non-viable cells [@Counter1992]. To
-counter this, nature has introduced regions of non-coding DNA near the
-ends of the genome. This *telomeric* DNA is lost during the
-replication process, to be replaced later in the cell's life-cycle by
-telomerase enzymes.
+generations of cells would lack a growing body of genes, eventually
+leading to non-viable cells [@Counter1992]. To counter this, nature
+has introduced regions of non-coding single-stranded DNA near the ends
+of the genome. This *telomeric* DNA is several hundred bases long,
+much of which is lost during replication, to be replaced
+later in the cell's life-cycle by dedicated enzymes.
 
 Telomeric DNA is characterized by regions rich in guanine. *In vitro*
 regions like these have been shown to form a peculiar structure, the *G
@@ -389,7 +389,7 @@ introduced in Section \ref{risks}) is the various conformational forms
 supported by the quadruplex motif, the conditions in which these
 structures form, and the mechanisms responsible for their
 stability. Below we will discuss some previous inquiries along these
-lines. Those looking for a more thorough review might consult @Lane2008.
+lines. Those looking for a more thorough review might consult @Lane2008, @Huppert2008.
 
 # Previous work
 
@@ -402,8 +402,6 @@ stable in the presence of K⁺ than Na⁺. Later work
 intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes
-
-<!-- Phan 2003 -->
 
 <!-- Ying 2003 -->
 @Ying2003 sought to resolve conflicting structures derived from
@@ -419,6 +417,9 @@ either of these peaks, leading them to identify the states as parallel
 and anti-parallel folded conformations. The authors further concluded
 that the parallel configuration is better stabilized by K⁺ while the
 anti-parallel conformation is preferred in the presence of Na⁺.
+<!-- Phan 2003 -->
+Concurrently, @Phan2003 characterized a similar set of systems with NMR,
+revealing a similar polymorphism to that observed by Ying.
 
 <!-- Lee 2005 -->
 @Lee2005 revisited and refined the approach of Ying, examining a
@@ -456,6 +457,7 @@ the short-lived intermediates are not observed).
 <!-- Justkowiak 2005 -->
 
 <!-- Koirala 2013 -->
+@Koirala2013 used force spectroscopy
 
 <!-- Fujimoto 2013 -->
 While Hoogsteen pairing of the G tracts clearly plays an important

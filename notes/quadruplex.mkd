@@ -188,7 +188,13 @@
 ## @Huppert2008
 
  * Review
- 
+
+
+## Structure of a two-G-tetrad intramolecular G-quadruplex formed by a variant human telomeric sequence in K⁺ solution [@Zhang2010]
+
+ * NMR, CD on Tel22, I14-Tel23
+ * In K⁺
+
 
 ## Energetic basis of Human Telomeric DNA Folding into G-quadruplex Structures [@Boncina2012]
 
@@ -200,5 +206,12 @@
  * Set free energies
  * Very nice population prediction
 
+## Two-repeat human telomeric d(TAGGGTTAGGGT) sequence forms interconverting parallel and antiparallel G-quadruplexes in solution: distinct topologies, thermodynamic properties, and folding/unfolding kinetics [@Phan2003]
+
+ * NMR study of dimeric quadruplex
+ * system:
+   * $5' TAGGGT TAGGGT 3'$ forms both anti-parallel and parallel
+   * $5' TAGGGU TAGGGT 3'$ forms predominantly parallel
+   * $5' UAGGGT UAGGGT 3'$ forms antiparallel dimeric quadruplex
 
 # References
