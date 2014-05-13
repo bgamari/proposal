@@ -179,7 +179,17 @@
  
 
 ## Circular dichroism and guanine quadruplexes [@Vorlickova2012]
+
+
+## Stability and kinetics of G-quadruplex structures [@Lane2008]
+
+ * Review
+
+## @Huppert2008
+
+ * Review
  
+
 ## Energetic basis of Human Telomeric DNA Folding into G-quadruplex Structures [@Boncina2012]
 
  * Folding is a three-state process

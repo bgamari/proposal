@@ -389,7 +389,7 @@ introduced in Section \ref{risks}) is the various conformational forms
 supported by the quadruplex motif, the conditions in which these
 structures form, and the mechanisms responsible for their
 stability. Below we will discuss some previous inquiries along these
-lines.
+lines. Those looking for a more thorough review might consult @Lane2008.
 
 # Previous work
 
@@ -461,9 +461,10 @@ the short-lived intermediates are not observed).
 While Hoogsteen pairing of the G tracts clearly plays an important
 role in the stability of the quadruplex structure, @Fujimoto2013 demonstrated
 that the loop region (the TTA sequence punctuating the G tracts) also
-has an important thermodynamic contribution. By examining the
-stability of the structure as function of loop length (ranging from
-two to six bases), the authors showed that the
+has an important thermodynamic contribution. 
+
+<!-- Heddi 2011 -->
+
 
 # Contributions
 
