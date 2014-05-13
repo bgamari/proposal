@@ -376,7 +376,7 @@ that this serves a regulatory role.
 
 Abnormality in the telomere and associated machinery has been linked
 to a variety of diseases and holds promise as a target for anticancer
-agents[@Neidle2002; @Hurley2002].
+agents [@Neidle2002; @Hurley2002].
 
 In addition to telomeric DNA there is a growing body of evidence
 that quadruplexes serve regulatory purposes outside of the
@@ -384,11 +384,18 @@ telomere [@Johnson2008].  Recently structures resembling the G
 quadruplex have been reportedly found in primers in the human
 genome [@Huppert2007; @Biffi2013].
 
-Early work on quadruplex systems demonstrated that
+Of particular interest in this work (especially the secondary work
+discussed in Section \ref{risks}) is the various conformational forms
+of the quadruplex motif, the conditions in which these structures
+form, and the mechanisms responsible for their stability. Below we
+will discuss some previous inquiries along these lines.
+
+# Previous work
+
+Early work on G quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
 ionic and osmotic conditions [@Miyoshi2002; @Miyoshi2006].
-
-Sundquist [@Sundquist1989] demonstrated that G quadruplexes were more
+@Sundquist1989 demonstrated that quadruplexes were more
 stable in the presence of K⁺ than Na⁺. Later work
 [@Hardin1992; @Hardin2001] attributed this to preferential
 intercalation of the potassium ion into the central channel of the
@@ -431,12 +438,12 @@ immobilizing each vesicle by tethering to a stationary lipid bilayer.
 <!-- Kypr 2008 -->
 
 <!-- Boncina 2012 -->
-A set of experiments by Boncina [@Boncina2012] suggested that
-quadruplex formation is a three-state process. Through calorimetry and
-circular dichroism measurements, Boncina sets energies on a
-three-state model consisting of folded, unfolded, and a partially
-unfolded intermediate state, in agreement with previous modelling
-efforts by Lee (although the short-lived intermediates are not observed).
+A set of experiments by @Boncina2012 suggested that quadruplex
+formation is a three-state process. Through calorimetry and circular
+dichroism measurements, Boncina sets energies on a three-state model
+consisting of folded, unfolded, and a partially unfolded intermediate
+state, in agreement with previous modelling efforts by Lee (although
+the short-lived intermediates are not observed).
 
 [^TIRF]:
     Total Internal Reflection Fluorescence microscopy (TIRF) is an
@@ -452,12 +459,17 @@ efforts by Lee (although the short-lived intermediates are not observed).
 <!-- Koirala 2013 -->
 
 <!-- Fujimoto 2013 -->
-Fujimoto [@Fujimoto2013]
+While Hoogsteen pairing of the G tracts clearly plays an important
+role in the stability of the quadruplex structure, @Fujimoto2013 demonstrated
+that the loop region (the TTA sequence punctuating the G tracts) also
+has an important thermodynamic contribution. By examining the
+stability of the structure as function of loop length (ranging from
+two to six bases), the authors showed that the
 
 # Contributions
 
 Below I will discuss the on-going and future contributions of this
-project. I will begin by briefly introducing a set of tools for the
+work. I will begin by briefly introducing a set of tools for the
 analysis of FRET and FCS experimental data.  I will then discuss an
 application of these tools on a measurement of a model RNA 16-mer
 system. This will serve to demonstrate the need for robust molecular
@@ -661,12 +673,11 @@ improved photostability and a smaller effect on the thermodynamic
 stability of the labeled oligomer.
 
 The problem of learning reaction kinetics from FRET experiments has
-been explored by a number of
-groups
+been explored by a number of groups
 [@Okamoto2012; @Greenfeld2012; @Uphoff2011; @Torella2011; @Kalinin2010; @Bronson2009; @Andrec2003]. I
-will extend these techniques as necessary. One possibility is the use
-of active temperature modulation to shift the equilibrium of the
-system.
+will extend these techniques as necessary. One particular extension of
+interest is the use of active temperature modulation to shift the
+equilibrium of the system.
 
 ## Data analysis tools
 
@@ -725,7 +736,7 @@ group. These include manipulation and storage of droplets within
 microfluidic devices.
 
 If the droplet technique proves in its entirety to be unusable, I
-will fall back to examining the crowding dependence of quadruplex DNA
+will fall back to examining the osmotic dependence of quadruplex DNA
 dynamics.
 
 # Conclusion
