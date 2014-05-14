@@ -463,7 +463,16 @@ the short-lived intermediates are not observed).
 <!-- Justkowiak 2005 -->
 
 <!-- Koirala 2013 -->
-@Koirala2013 used force spectroscopy
+@Koirala2013 used force spectroscopy[^force-spectroscopy] to resolve
+folded states. The authors found that triplex states are among the
+intermediates on the folding pathway to the typical quadruplex. The
+authors also examined sequences with five and more TTAGGG repeats,
+finding that they can form a variety of short-lived long-loop
+geometries.
+
+[^force-spectrscopy]:
+    Here particles are attached to the ends of a polymer such that
+    they can be manipulated by, *e.g.*, optical trapping. 
 
 <!-- Fujimoto 2013 -->
 While Hoogsteen pairing of the G tracts clearly plays an important
