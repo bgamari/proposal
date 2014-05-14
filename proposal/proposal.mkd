@@ -394,7 +394,7 @@ stability. Below we will discuss some previous inquiries along these
 lines. Those looking for a more thorough review might consult
 @Lane2008 or @Huppert2008.
 
-### Previous work
+### Related work
 
 Early work on G quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
