@@ -471,8 +471,11 @@ finding that they can form a variety of short-lived long-loop
 geometries.
 
 [^force-spectrscopy]:
-    Here particles are attached to the ends of a polymer such that
-    they can be manipulated by, *e.g.*, optical trapping. 
+    Here "handle" particles are attached to the ends of a polymer such that
+    they can be manipulated by, *e.g.*, optical trapping. The ends are
+    then pulled while the displacement of the handles is monitored,
+    resulting in a force-extension curve which can be interpretted by
+    a variety of means.
 
 <!-- Fujimoto 2013 -->
 While Hoogsteen pairing of the G tracts clearly plays an important
