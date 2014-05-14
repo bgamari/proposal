@@ -82,12 +82,15 @@ One frequently used fluorescence-based mode of inquiry is
 fluorescence correlation spectroscopy (FCS), where each molecule in an
 ensemble is labeled with a single fluorophore. These molecules are
 then allowed to freely diffuse in solution while a small volume 
-is observed with a confocal microscope[^confocal]. In this
-configuration labeled molecules diffusing through the observation
-volume will be excited and subsequently produce fluorescence which is
-then detected. By examining correlations in the detected fluorescence
-intensity signal, one can infer molecular sizes [@Sengupta2003],
-concentrations, and chemical kinetics [@Aragon1976; @Dix2006].
+is observed with a confocal microscope[^confocal], shown in Figure
+\ref{fig:confocal}. In this configuration labeled molecules diffusing
+through the observation volume will be excited and subsequently
+produce fluorescence which is then detected. By examining correlations
+in the detected fluorescence intensity signal, one can infer molecular
+sizes [@Sengupta2003], concentrations, and chemical kinetics
+[@Aragon1976; @Dix2006].
+
+![A typical confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.](figures/fret-setup)
 
 [^confocal]: *Confocal microscope* here refers to a microscope where a
              set of photon-detectors and an excitation laser are focused on a
@@ -160,8 +163,6 @@ will be capture per molecule.. In being able to sense the probed
 molecule for only such short durations, these experiments are
 restrictive in the range of timescales and interactions they can
 examine.
-
-![A typical fluorescence spectroscopy apparatus.](figures/fret-setup)
 
 ## Single-molecule immobilization
 
