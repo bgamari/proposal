@@ -391,7 +391,7 @@ structures form, and the mechanisms responsible for their
 stability. Below we will discuss some previous inquiries along these
 lines. Those looking for a more thorough review might consult @Lane2008, @Huppert2008.
 
-# Previous work
+### Previous work
 
 Early work on G quadruplex systems demonstrated that
 the stability of these structures is heavily dependent upon both
