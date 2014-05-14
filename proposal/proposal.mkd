@@ -76,7 +76,7 @@ fluorescence to be used as a means of probing physical systems.
 This enables fluorescence spectroscopy, the use fluorescence as a
 means of probing physical systems.
 
-### Fluorescence Correlation Spectroscopy
+### Fluorescence correlation spectroscopy
 
 One frequently used fluorescence-based mode of inquiry is
 fluorescence correlation spectroscopy (FCS), where each molecule in an
@@ -110,7 +110,7 @@ ensure a well-defined excitation point. This process is then repeated
 periodically (typically around 80 MHz) to collect sufficient statistics to
 infer a distribution over fluorescence lifetime.
 
-### Fӧrster Resonance Energy Transfer
+### Fӧrster resonance energy transfer
 If one places two distinct fluorophores
 in close proximity to one another, under certain conditions they will
 undergo energy transfer. That is when one is excited, fluorescence
