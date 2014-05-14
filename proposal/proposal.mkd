@@ -147,7 +147,7 @@ where $R₀$, known as the Fӧrster radius, is lengthscale that the
 defines the range of Fӧrster transfer. It is related to a quantity, $κ²$,
 that captures the relative orientation of the two fluorophores'
 electric dipole moments $\hat{μ}ᵢ$,
-$$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}_2) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
+$$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}₂) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 As often only the distance $R$ is of interest, the fluorophores are
 typically assumed to be freely rotating which implies $κ² = 2/3$.
 
