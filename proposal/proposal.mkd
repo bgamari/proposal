@@ -159,7 +159,7 @@ biomolecules of interest being on the order of nanometers, these
 molecules require on the order of hundreds of microseconds to traverse
 the observation volume. This is comparable of the inter-photon arrival
 time of a typical fluorescence experiment, meaning that few photons
-will be capture per molecule.. In being able to sense the probed
+will be captured per molecule. In being able to sense the probed
 molecule for only such short durations, these experiments are
 restrictive in the range of timescales and interactions they can
 examine.
