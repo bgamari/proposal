@@ -298,9 +298,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="-503.41758"
-     inkscape:cy="52.767244"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="186.52846"
+     inkscape:cy="117.81143"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -2624,7 +2624,7 @@
          id="tspan10399"
          x="221.88445"
          y="403.23816"
-         style="font-size:20px">Parallel</tspan><tspan
+         style="font-size:20px">Anti-parallel</tspan><tspan
          sodipodi:role="line"
          x="221.88445"
          y="428.23816"
@@ -2641,7 +2641,7 @@
          x="432.30173"
          id="tspan10403"
          sodipodi:role="line"
-         style="font-size:20px">Anti-parallel</tspan><tspan
+         style="font-size:20px">Parallel</tspan><tspan
          y="428.23816"
          x="432.30173"
          sodipodi:role="line"
