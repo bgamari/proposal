@@ -168,7 +168,7 @@ examine.
 
 Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies with less pronounced
-temporal or ensemble averaging. By ensuring the molecule under study
+temporal and ensemble averaging. By ensuring the molecule under study
 cannot move appreciably, it can be probed on timescales only bounded
 by the robustness of its fluorophores.
 
