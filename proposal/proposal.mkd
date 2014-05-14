@@ -403,6 +403,8 @@ intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes
 
+![Parallel and anti-parallel quadruplex topologies](figures/quadruplex)
+
 <!-- Ying 2003 -->
 @Ying2003 sought to resolve conflicting structures derived from
 previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
@@ -414,9 +416,10 @@ equilibrium is shown to be strongly dependent upon the identity and
 concentration of the ions present. The authors claim that the unfolded
 form of the system should exhibit far lower FRET efficiency than
 either of these peaks, leading them to identify the states as parallel
-and anti-parallel folded conformations. The authors further concluded
-that the parallel configuration is better stabilized by K⁺ while the
-anti-parallel conformation is preferred in the presence of Na⁺.
+and anti-parallel folded conformations, shown in Figure
+\ref{fig:quadruplex}. The authors further concluded that the parallel
+configuration is better stabilized by K⁺ while the anti-parallel
+conformation is preferred in the presence of Na⁺.
 <!-- Phan 2003 -->
 Concurrently, @Phan2003 characterized a similar set of systems with NMR,
 revealing a similar polymorphism to that observed by Ying.
@@ -492,9 +495,10 @@ The G quadruplex is an appropriate choice of model system as it is
 chemically robust, exhibits interesting conformational dynamics, and
 are readily synthesized and labeled.  The ability of FRET to probe
 intra-molecular distances makes it well-suited to probe conformations
-of short DNA systems. Finally, several basic questions surrounding the
-flexibility of short dsDNA remain open. Some of these might be
-discussed in [the appropriate section](#study-of-quadruplex-dna).
+of such short DNA systems.
+
+Finally, I will discuss some previous contributions in the form of
+fluorescence data analysis tools and techniques.
 
 <!--
  * Rotational anisotropy of acceptor and donor
@@ -620,7 +624,7 @@ $$P(τ) = α λ₁ e^{-τ λ₁} + (1 - α) λ₂ e^{-τ λ₂}$$
 Where $α$ is related to the concentration of the anion and dianion
 species shown in Figure \ref{fig:fluorescein} [^concentration]. This is in
 turn related to the pH within the droplet by the Henderson-Hasselbach
-relation,
+relation [^concentration2],
 $$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$$
 
 [^concentration]:
@@ -628,6 +632,11 @@ $$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$$
     cationic and neutral species, as well as decay from these states
     through the anionic state. These contributions can be added to
     this model if necessary.
+
+[^concentration2]:
+    The exact sense in which this relationship applies is in actuality
+    a bit subtle in the case of a small-volume droplet. The interested
+    reader is referred to @Crans2012 for further discussion.
 
 The task of learning a mixture of exponential lifetimes (characterized
 by $α$ and $λᵢ$ above) from photon arrival time observations has
@@ -739,7 +748,8 @@ microfluidic devices.
 
 If the droplet technique proves in its entirety to be unusable, I
 will fall back to examining the osmotic dependence of quadruplex DNA
-dynamics.
+dynamics, a variable which was omitted from the dynamic studies
+discussed previously.
 
 # Conclusion
 
