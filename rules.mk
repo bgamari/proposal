@@ -3,11 +3,11 @@ PANDOC_TEX_OPTS+=-V links-as-notes -V geometry:left=1.5in -V geometry:right=1in 
 SVG_FIGURES=$(wildcard figures/*.svg)
 CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 
-%.pdf : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib $(SVG_FIGURES:.svg=.pdf)
-	pandoc -H $(TOP)/defs.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
+%.pdf : %.mkd $(TOP)/header.tex $(TOP)/refs.bib $(SVG_FIGURES:.svg=.pdf)
+	pandoc -H $(TOP)/header.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
 
-%.tex : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib $(SVG_FIGURES:.svg=.pdf)
-	pandoc -H $(TOP)/defs.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
+%.tex : %.mkd $(TOP)/header.tex $(TOP)/refs.bib $(SVG_FIGURES:.svg=.pdf)
+	pandoc -H $(TOP)/header.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
 
 %.html : %.mkd $(TOP)/header.html $(TOP)/refs.bib $(SVG_FIGURES)
 	pandoc --standalone --to=html5 --number-figures --mathjax -H $(TOP)/header.html $(PANDOC_OPTS) $(PANDOC_HTML_OPTS) --default-image-extension=svg $< -o $@
