@@ -12,6 +12,11 @@ CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 %.html : %.mkd $(TOP)/header.html $(TOP)/refs.bib $(SVG_FIGURES)
 	pandoc --standalone --to=html5 --number-figures --mathjax -H $(TOP)/header.html $(PANDOC_OPTS) $(PANDOC_HTML_OPTS) --default-image-extension=svg $< -o $@
 
+%-web : %.html $(SVG_FIGURES)
+	mkdir $@ $@/figures
+	cp $< $@
+	cp $(SVG_FIGURES) $@/figures
+
 .PHONY : update-refs
 update-refs :
 	bib2bib --remove abstract --remove annote -s '$keys' ${HOME}/lori/papers/library.bib > $(TOP)/refs.bib
