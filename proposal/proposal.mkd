@@ -142,7 +142,7 @@ infer intramolecular distances. This technique
 The probability of energy transfer, known as the FRET efficiency
 $E$, is related to the inter-fluorophore distance $R$,
 $$ E = P(\mathrm{Energy~Transfer}) = \frac{1}{1 + (R / R₀)⁶} $$
-where $R₀$, known as the Fӧrster radius, is lengthscale that the
+where $R₀$, known as the Fӧrster radius, is length-scale that the
 defines the range of Fӧrster transfer. It is related to a quantity, $κ²$,
 that captures the relative orientation of the two fluorophores'
 electric dipole moments $\hat{μ}ᵢ$,
