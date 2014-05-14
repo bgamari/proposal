@@ -118,7 +118,7 @@ infer a distribution over fluorescence lifetime.
 If one places two distinct fluorophores
 in close proximity to one another, under certain conditions they will
 undergo energy transfer. That is when one is excited, fluorescence
-will observed from the other. This process, known Fӧrster transfer,
+will observed from the other. This process, known as Fӧrster transfer,
 requires that the fluorophores' absorption and emission spectra
 overlap and is dependent upon their distance and relative
 orientations. This geometric dependence enables use of this effect for
