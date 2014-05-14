@@ -667,7 +667,7 @@ also possible.
 
 ## Study of G quadruplex DNA under droplet confinement
 
-The second prong of the work will use droplet confinement to examine
+The second prong of this work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle encapsulation and surface
