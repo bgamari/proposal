@@ -69,7 +69,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4"
-     inkscape:cx="60.039744"
+     inkscape:cx="86.039744"
      inkscape:cy="89.113345"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -110,7 +110,7 @@
        x="100.31013"
        y="89.69854" />
     <rect
-       style="color:#000000;fill:#6ee675;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#4b9c50;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.90000009999999975;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8861"
        width="199.43175"
        height="20.297041"
@@ -118,7 +118,7 @@
        y="240.44304" />
     <path
        inkscape:connector-curvature="0"
-       style="color:#000000;fill:#b4e0ff;fill-opacity:1;fill-rule:nonzero;stroke:#28507d;stroke-width:1.63044417;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#cae6fa;fill-opacity:1;fill-rule:nonzero;stroke:#28507d;stroke-width:1.63044417000000008;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path4450"
        d="m 244.12307,187.72579 c 0,18.41817 -9.82593,35.43735 -25.77639,44.64643 -15.95076,9.20907 -35.60263,9.20907 -51.5531,0 -15.95046,-9.20908 -25.7764,-26.22826 -25.7764,-44.64643 0,-18.41816 9.82594,-35.43705 25.7764,-44.64613 15.95047,-9.20907 35.60234,-9.20907 51.5531,0 15.95046,9.20908 25.77639,26.22797 25.77639,44.64613 0,0 0,0 0,0" />
     <g
@@ -1010,7 +1010,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <rect
-       style="color:#000000;fill:#6ee675;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#4b9c50;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4510"
        width="199.53426"
        height="43.041542"
