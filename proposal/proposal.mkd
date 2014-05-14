@@ -11,11 +11,12 @@ affil: Department of Physics, University of Massachusetts, Amherst
 
 Fluorescence spectroscopic techniques are widely used in biology and
 biophysics to probe biomolecular systems. While there exist a number
-of techniques enabling the study of single-molecules for long
+of techniques for immobilizing single molecules to enable study for long
 durations (*e.g.* minutes to hours), each comes with its own
 limitations. This thesis studies a novel technique for molecular
 immobilization for single-molecule studies, encapsulating molecules in
-aqueous droplets. These tools are then used to measure a model DNA system.
+aqueous droplets. These tools are then used to measure a model DNA
+system.
 
 ## Outline of Proposal
 Below we will briefly describe the fluorescence spectroscopic
@@ -90,7 +91,7 @@ in the detected fluorescence intensity signal, one can infer molecular
 sizes [@Sengupta2003], concentrations, and chemical kinetics
 [@Aragon1976; @Dix2006].
 
-![A typical confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.](figures/fret-setup)
+![A typical confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal}](figures/fret-setup)
 
 [^confocal]: *Confocal microscope* here refers to a microscope where a
              set of photon-detectors and an excitation laser are focused on a
@@ -190,7 +191,7 @@ of the surface and molecule poses a substantial practical barrier.
     molecules under study showed no activity when bound to a
     glass surface
 
-![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment\label{fig:vesicle}](figures/vesicle)
+![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment. Here we see a bilayer confining a single molecule and tethered to a functionalized glass surface.\label{fig:vesicle}](figures/vesicle)
 
 An alternative to surface immobilization is encapsulation where the
 molecule of interest is placed in a confining volume. One can then
