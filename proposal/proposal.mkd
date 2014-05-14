@@ -403,7 +403,7 @@ intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
 polyethylene glycol stabilizes
 
-![Parallel and anti-parallel quadruplex topologies](figures/quadruplex)
+![Parallel and anti-parallel quadruplex topologies. The oblong cubes represent guanosine bases. Note that, in the interest of clarify, bases in the loop regions (thiamines and adenosines) are not shown.](figures/quadruplex)
 
 <!-- Ying 2003 -->
 @Ying2003 sought to resolve conflicting structures derived from
