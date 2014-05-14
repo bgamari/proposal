@@ -10,7 +10,7 @@ CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 	pandoc -H $(TOP)/defs.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
 
 %.html : %.mkd $(TOP)/header.html $(TOP)/refs.bib $(SVG_FIGURES)
-	pandoc --standalone --mathjax -H $(TOP)/header.html $(PANDOC_OPTS) --default-image-extension=svg $< -o $@
+	pandoc --standalone --to=html5 --mathjax -H $(TOP)/header.html $(PANDOC_OPTS) $(PANDOC_HTML_OPTS) --default-image-extension=svg $< -o $@
 
 .PHONY : update-refs
 update-refs :
