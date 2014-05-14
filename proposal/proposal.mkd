@@ -707,9 +707,9 @@ equilibrium of the system.
 
 ## Data analysis tools
 
-Single-molecule sensitive fluorescence techniques can provide insight
-into a variety of biologically relevant systems interpretation of
-resulting data is a non-trivial exercise. Between spectral cross-talk,
+While single-molecule sensitive fluorescence techniques can provide insight
+into a variety of biologically relevant systems, interpretation of
+resulting data can be a non-trivial exercise. Between spectral cross-talk,
 background, and spectral sensitivity, and detection of fluorescence
 bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
