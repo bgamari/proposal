@@ -1,12 +1,16 @@
-PANDOC_OPTS+=-V links-as-notes -V geometry:left=1.5in -V geometry:right=1in -V geometry:top=1in -V geometry:bottom=1in -Vdocumentclass=book -Vtoc --latex-engine=xelatex -V numbersections
+PANDOC_OPTS+=--bibliography $(TOP)/refs.bib
+PANDOC_TEX_OPTS+=-V links-as-notes -V geometry:left=1.5in -V geometry:right=1in -V geometry:top=1in -V geometry:bottom=1in -Vdocumentclass=book -Vtoc --latex-engine=xelatex -V numbersections 
 SVG_FIGURES=$(wildcard figures/*.svg)
 CLEAN_FILES += $(SVG_FIGURES:.svg=.pdf)
 
-%.pdf : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib figures-pdf
-	pandoc -H $(TOP)/defs.tex --bibliography $(TOP)/refs.bib $(PANDOC_OPTS) --default-image-extension=pdf $< -o $@
+%.pdf : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib $(SVG_FIGURES:.svg=.pdf)
+	pandoc -H $(TOP)/defs.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
 
-%.tex : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib figures-pdf
-	pandoc -H $(TOP)/defs.tex --bibliography $(TOP)/refs.bib $(PANDOC_OPTS) --default-image-extension=pdf $< -o $@
+%.tex : %.mkd $(TOP)/defs.tex $(TOP)/refs.bib $(SVG_FIGURES:.svg=.pdf)
+	pandoc -H $(TOP)/defs.tex $(PANDOC_OPTS) $(PANDOC_TEX_OPTS) --default-image-extension=pdf $< -o $@
+
+%.html : %.mkd $(TOP)/header.html $(TOP)/refs.bib $(SVG_FIGURES)
+	pandoc --standalone --mathjax -H $(TOP)/header.html $(PANDOC_OPTS) --default-image-extension=svg $< -o $@
 
 .PHONY : update-refs
 update-refs :
