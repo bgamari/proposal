@@ -24,7 +24,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="99.058528"
+     inkscape:cx="54.611816"
      inkscape:cy="93.694787"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
@@ -102,14 +102,14 @@
      transform="translate(101.40625,-623.13708)"
      style="display:inline">
     <rect
-       style="color:#000000;fill:#b4e0ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#cae6fa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect7981"
        width="199.53426"
        height="151.00378"
        x="-101.20508"
        y="623.13708" />
     <rect
-       style="color:#000000;fill:#6ee675;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#4b9c50;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.90000009999999975;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8861"
        width="199.43175"
        height="20.297041"
@@ -140,7 +140,7 @@
        transform="matrix(0.20364529,0,0,0.20233988,-76.148563,629.22839)" />
     <path
        inkscape:connector-curvature="0"
-       style="color:#000000;fill:#b4e0ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.55242336;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#cae6fa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.55242336000000003;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path4450"
        d="m 9.896989,678.78942 c 0,6.2404 -3.3292067,12.00674 -8.7335427,15.12694 -5.4043347,3.12019 -12.0627503,3.12019 -17.4670843,0 -5.404336,-3.1202 -8.733541,-8.88654 -8.73354,-15.12694 0,-6.24039 3.329204,-12.00674 8.73354,-15.12694 5.404334,-3.1202 12.0627496,-3.1202 17.4670843,0 5.404336,3.1202 8.7335427,8.88655 8.7335427,15.12694 0,0 1.4e-6,0 1.4e-6,0" />
     <g
