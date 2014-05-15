@@ -337,7 +337,15 @@ given (to first order) by,
 $$\vec v = \mu_e \vec E$$
 where $\mu_e$ is known as the electrophoretic mobility. With further
 physical modeling, we can relate this mobility to various physical
-properties of the colloid.
+properties of the colloid. Namely, if the effect of electric
+double-layering is ignored one finds the Helmholtz-Smoluchkowski
+equation for elecphoretic mobility,
+$$μ_e = \frac{\epsilon_r \epsilon_0 \zeta}{\eta}$$
+where $\eta$ is the dynamic viscosity of the medium, $\epsilon_0$ is
+the permittivity of free space, $\epsilon_r$ is the dielectric
+constant of the medium, and $\zeta$ is the electric potential at a
+known distance from the particle surface (namely the radius of the
+slipping plane, the effective hydrodynamic radius of the particle).
 
 <!--
 It is widely believed that water organizes on hydrophobic interfaces
@@ -667,9 +675,9 @@ discussed previously.
 
 # Prior work
 
-The pieces of the above work are currently sit in various states of
+I have worked on a number of projects in my time in the physics program. While some have been completed, others The pieces of the above work are currently sit in various states of
 completion. Below I will discuss in each case what has been done and
-what remains.
+what remains. 
 
 ## Data analysis tools
 
@@ -771,7 +779,7 @@ of electrophoretic measurements as reflecting the surface charge.
 While electrophoretic measurements are typically used to characterize
 oil droplets suspended in a aqueous continuous phase, our system is
 inverted (water droplets in oil). This may give rise to a vastly
-different electrostratic environment.
+different electrostatic environment.
 
 For these reasons, it remains to be seen whether these measurements
 will provide any insight into the chemical environment of our
