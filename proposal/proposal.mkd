@@ -449,7 +449,7 @@ immobilizing each vesicle by tethering to a stationary lipid bilayer.
 <!-- Boncina 2012 -->
 A set of experiments by @Boncina2012 suggested that quadruplex
 formation is a three-state process. Through calorimetry and circular
-dichroism measurements, Boncina sets energies on a three-state model
+dichroism measurements, Boncina attempts to fit a three-state energetic model
 consisting of folded, unfolded, and a partially unfolded intermediate
 state, in agreement with previous modelling efforts by Lee (although
 the short-lived intermediates are not observed).
@@ -504,16 +504,7 @@ to characterize the chemical environment within the droplet
 environment. Finally, I will propose a set of measurements on the
 G-quadruplex DNA system. Here I will examine switching dynamics as a
 function of osmotic pressure, demonstrating the wide range of
-timescales accessible to droplet immobilized fluorescence experiments.
-
-The system was chosen due to its chemical robustness, interesting
-conformational dynamics, and ease of synthesis and labeling.
-
-The G quadruplex is an appropriate choice of model system as it is
-chemically robust, exhibits interesting conformational dynamics, and
-are readily synthesized and labeled.  The ability of FRET to probe
-intra-molecular distances makes it well-suited to probe conformations
-of such short DNA systems.
+timescales accessible to a droplet immobilized fluorescence study.
 
 Finally, I will discuss some previous contributions in the form of
 fluorescence data analysis tools and techniques.
