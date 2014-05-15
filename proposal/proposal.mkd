@@ -241,7 +241,7 @@ emulsion droplets, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
 of interest largely unperturbed. Finally, solutions in various
-droplets can be mixed on-demand[@Reiner2006], enabling the study of
+droplets can be mixed on-demand[@Tang2009; @Reiner2006], enabling the study of
 dynamics.
 
 Like vesicles, these emulsions can be either probed in solution, where
@@ -505,67 +505,57 @@ timescales accessible to a droplet immobilized fluorescence study.
 Finally, I will discuss some previous contributions in the form of
 fluorescence data analysis tools and techniques.
 
-<!--
- * Rotational anisotropy of acceptor and donor
- * FRET
- * fluorescence lifetime
--->
-
 ## Real-time localization and tracking of diffusive droplets
 
 As our droplets are much larger than the molecules they contain it is
-possible to optically measure their diffusive motion.
-I have developed a system for tracking droplet motion
-in solution inspired by @Desai2007. This system enables study of
-single-molecules over time-scales previously only accessible through
-surface immobilization but without the difficult sample preparation
-that this technique requires. The ability to study isolated
-single-molecules for long durations makes droplet encapsulation a
-promising tool for probing biomolecular dynamics.
+possible to optically measure their diffusive motion. The ability to
+localize and track droplets for minutes and longer enables a variety
+of unique measurements.
 
-The tracking system infers the position of the particle relative to the
-microscope's focus point by examining scattering through the particle
-with a detector situated in the back-focal plane of the
-microscope. After learning a polynomial model of the displacement of
-this scattered beam as a function of particle position, one can infer
-the position of a diffusing particle in real-time.
+To realize this goal, we use back focal-plane interferometric
+technique to infer the position of the droplet centroid with respect
+to the center of the observation volume. 
 
-While conceptually simply, there are several practical challenges in
-implementing such a system. The greatest of these is the process of
-learning the tracking model, which must happen quickly enough that the
-particle can be considered to be stationary (relative to its size)
-over the course of data acquisition.
+![A high-level view of the particle tracking apparatus.](figures/tracking)
 
-<!--
- * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
- * FCS to examine translational diffusion
- * Polarization anisotropy to examine rotational freedom
- * Measure same in droplet, identify effective concentrations in droplet environment
- * Different dyes?
--->
-
-## Characterization and control of pH in droplet
+## Characterization and control of pH in droplets
 <!--
  * Measure pH in droplets
 -->
 A central piece of this work will be characterizing the chemical
-conditions of imposed by droplet confinement. Preliminary measurements
-suggest that pH may be the most problematic parameter. For this
-reason, the proposed work will begin with a set pH measurements.
+conditions of imposed by droplet confinement. In @Milas2014, we
+examined an RNA oligomer both under droplet confinement and in
+solution. By examining photon count statistics
+[@Chen1999; @Huang2004], we were able to distinguish intensity states
+of the fluorophores. In solution measurements the photon count
+distribution was well-fit by a single-species model while both at low
+pH (pH of 4) and in droplet confinement a three-species model was
+necessary. The similarity between the droplet and low-pH solution
+measurements suggest a strongly perturbed chemical environment within
+the droplet. FRET measurements of this same molecule under similar
+conditions lead to similar conclusions.
+
+Currently others in our lab examining this problem with bulk
+spectroscopy. Here, we create a droplet emulsion filled with a pH
+sensitive fluorophore, in this case fluorescein. The pH dependence of
+fluorescein arises from a change in number of hydrogens coordinating
+with the molecule, as shown in Figure \ref{fig:fluorescein}. Between
+pH 4 and 6 the molecule is largely in its singly ionized form, missing
+one hydrogen. This state has an
+absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
+3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
+which has an absorption around 490 nm and a $τ = 4.1$ ns emission
+decay. By examining the emission spectrum of the dye, one can infer
+the relative proportions of the anionic and dianionic species seen
+above.
+
+![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
+
 
 This work will attempt to measure the pH distribution in
 individual droplets through fluorescence lifetime. This experiment
 will use immobilized droplets (either on a surface or tracked)
-containing fluorescein, a pH sensitive dye. The pH dependence of
-fluorescein arises from the number of coordinated hydrogens
-changing [@Sjoback1995]. Between pH 4 and 6 the molecule is largely in
-its singly ionized form, missing one hydrogen. This state has an
-absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
-3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
-which has an absorption around 490 nm and a $τ = 4.1$ ns emission
-decay.
-
-![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
+containing fluorescein, a pH sensitive dye.
 
 While fluorescein is often used to measure pH by examining the change
 in its emission spectrum (reflecting the relative proportions of the
@@ -623,6 +613,26 @@ also possible.
 
 # Prior work
 
+## Data analysis tools
+
+While single-molecule sensitive fluorescence techniques can provide insight
+into a variety of biologically relevant systems, interpretation of
+resulting data can be a non-trivial exercise. Between spectral cross-talk,
+background, and spectral sensitivity, and detection of fluorescence
+bursts from sample diffusion, a fluorescence experiment is subject to
+numerous experimental artifacts that must be estimated and corrected
+for quantitatively accurate results. Unfortunately, the lack of
+an open toolchain for analysis of fluorescence data
+means that groups generally must reimplement these tools as needed.
+
+I have developed a suite of open-source tools for acquisition
+and analysis of fluorescence timestamp data[@Gamari2013]. These tools are used both
+in and outside of our lab and won the Open Source Software Innovation
+competition held by the University of Massachusetts Institute for
+Biology, Biostatistics, and Bioinformatics (ICB3). Interested readers are
+referred to the competition submission for further details on this
+work [@Gamari2013OSSI].
+
 ## Characterization of FRET on RNA
 
 <!--
@@ -662,6 +672,30 @@ from this simulated system. In comparing these observations to
 experiment we were able to test several hypotheses concerning the
 photophysical behavior of the labels and magnitude of the Fӧrster radius.
 
+## Particle tracking
+
+I have developed a system for tracking droplet motion
+in solution inspired by @Desai2007. This system enables study of
+single-molecules over time-scales previously only accessible through
+surface immobilization but without the difficult sample preparation
+that this technique requires. The ability to study isolated
+single-molecules for long durations makes droplet encapsulation a
+promising tool for probing biomolecular dynamics.
+
+The tracking system infers the position of the particle relative to the
+microscope's focus point by examining scattering through the particle
+with a detector situated in the back-focal plane of the
+microscope. After learning a polynomial model of the displacement of
+this scattered beam as a function of particle position, one can infer
+the position of a diffusing particle in real-time.
+
+![A representative tracking trajectory of a one micron polystyrene bead diffusing in mineral oil. Notice the upward trend of the bead due to its buoyancy.](figures/track)
+
+While conceptually simply, there are several practical challenges in
+implementing such a system. The greatest of these is the process of
+learning the tracking model, which must happen quickly enough that the
+particle can be considered to be stationary (relative to its size)
+over the course of data acquisition.
 
 ## Characterization of droplet pH
 
@@ -730,38 +764,6 @@ will extend these techniques as necessary. One particular extension of
 interest is the use of active temperature modulation to shift the
 equilibrium of the system.
 
-## Data analysis tools
-
-While single-molecule sensitive fluorescence techniques can provide insight
-into a variety of biologically relevant systems, interpretation of
-resulting data can be a non-trivial exercise. Between spectral cross-talk,
-background, and spectral sensitivity, and detection of fluorescence
-bursts from sample diffusion, a fluorescence experiment is subject to
-numerous experimental artifacts that must be estimated and corrected
-for quantitatively accurate results. Unfortunately, the lack of
-an open toolchain for analysis of fluorescence data
-means that groups generally must reimplement these tools as needed.
-
-I have developed a suite of open-source tools for acquisition
-and analysis of fluorescence timestamp data[@Gamari2013]. These tools are used both
-in and outside of our lab and won the Open Source Software Innovation
-competition held by the University of Massachusetts Institute for
-Biology, Biostatistics, and Bioinformatics (ICB3). Interested readers are
-referred to the competition submission for further details on this
-work [@Gamari2013OSSI].
-
-<!--
- 0) Attempt to characterize pH in single droplet
- 1) Reproduce previous study by @Lee2005,
-    a) $\mathrm{5'-Cy5-(GGGTTA)₃ GGG}$ in solution, diffusing droplets, tracked droplets
-    b) Explore ionic conditions in droplets:
-       a) K⁺, Na⁺: 0mM, 10mM, 100mM
-    c) explore effect of PEG 200 on switching kinetics: 0mM, 1mM, 20mM, 200mM
-    d) 
- 2) Attempt rotational anisotropy study of quadruplex internally labeled in loop
-    a) $\mathrm{5'-GGGT-Cy5-A (GGGTTA)₂ GGG}$
--->
-
 # Risks
 
 Our droplet tracking system has been demonstrated to reliably track
@@ -810,3 +812,29 @@ biologically relevant model system with FRET.
 # References
 
 \singlespacing
+
+<!--
+ 0) Attempt to characterize pH in single droplet
+ 1) Reproduce previous study by @Lee2005,
+    a) $\mathrm{5'-Cy5-(GGGTTA)₃ GGG}$ in solution, diffusing droplets, tracked droplets
+    b) Explore ionic conditions in droplets:
+       a) K⁺, Na⁺: 0mM, 10mM, 100mM
+    c) explore effect of PEG 200 on switching kinetics: 0mM, 1mM, 20mM, 200mM
+    d) 
+ 2) Attempt rotational anisotropy study of quadruplex internally labeled in loop
+    a) $\mathrm{5'-GGGT-Cy5-A (GGGTTA)₂ GGG}$
+-->
+
+<!--
+ * Rotational anisotropy of acceptor and donor
+ * FRET
+ * fluorescence lifetime
+-->
+
+<!--
+ * Measure fluorescence lifetime in solution over variety of salt concentrations, pHs
+ * FCS to examine translational diffusion
+ * Polarization anisotropy to examine rotational freedom
+ * Measure same in droplet, identify effective concentrations in droplet environment
+ * Different dyes?
+-->
