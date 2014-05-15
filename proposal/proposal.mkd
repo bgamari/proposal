@@ -495,7 +495,7 @@ authors also examined sequences with five and more TTAGGG repeats,
 finding that they can form a variety of short-lived long-loop
 geometries.
 
-[^force-spectrscopy]:
+[^force-spectroscopy]:
     Here "handle" particles are attached to the ends of a polymer such that
     they can be manipulated by, *e.g.*, optical trapping. The ends are
     then pulled while the displacement of the handles is monitored,
