@@ -182,7 +182,7 @@ by the robustness of its fluorophores.
 One common technique for molecular immobilization is surface
 attachment. Here the molecule of interest is modified to include a
 linker which can stick to a properly functionalized surface (such as a
-silanized[@Jia1999] or PEGylated[@Lee2005] surface). When introduced
+silanized[@Jia1999] or streptavidin-treated [@Lee2005] surface). When introduced
 into a volume bounded by a such a surface, some fraction of the
 molecules under study will then stick, where they will remain
 translationally confined and can be probed with either confocal or
@@ -215,12 +215,12 @@ systems[^vesicle-interaction], form under only a narrow range of
 chemical conditions [@Vafabakhsh2012], and present practical
 challenges in sample preparation.
 
-While the ability to
-introduce new molecules into the container and modify its chemical
-environment are desirable in an immobilization scheme, doing so is
-quite challenging[@TODO] in the case of vesicle confinement.
+While the ability to introduce new molecules into the container and
+modify its chemical environment are desirable in an immobilization
+scheme, doing so is quite challenging in the case of vesicle
+confinement[@TODO].
 
-Finallly, this technique suffers from poor sample
+Finally, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
 within a vesicle.  Collectively, these considerations preclude use
 vesicle encapsulation for many systems.
