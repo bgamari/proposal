@@ -218,10 +218,10 @@ systems[^vesicle-interaction], form under only a narrow range of
 chemical conditions [@Vafabakhsh2012], and present practical
 challenges in sample preparation.
 
-While the ability to introduce new molecules into the container and
-modify its chemical environment are desirable in an immobilization
-scheme, doing so is quite challenging in the case of vesicle
-confinement[@TODO].
+While the ability to introduce new molecules into a container and
+modify its chemical environment are desirable capabilities in an
+immobilization scheme, protocols for reliably fusing vesicles come
+with a variety of practical challenges [@Kyoung2013].
 
 Finally, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
