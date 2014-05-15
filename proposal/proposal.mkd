@@ -180,14 +180,15 @@ cannot move appreciably, it can be probed on timescales only bounded
 by the robustness of its fluorophores.
 
 One common technique for molecular immobilization is surface
-attachment[@TODO]. Here the molecule of interest is modified to include a
-linker which can stick to a properly functionalized surface. When
-introduced into a volume bounded by a such a surface, some fraction of
-the molecules under study will then stick, where they will remain
-translationally confined and can be probed with either confocal
-or imaging microscopy. This approach poses a variety of challenges: direct
-interaction between the surface and the molecule under study can
-substantially perturb the behavior of the studied
+attachment. Here the molecule of interest is modified to include a
+linker which can stick to a properly functionalized surface (such as a
+silanized[@Jia1999] or PEGylated[@Lee2005] surface). When introduced
+into a volume bounded by a such a surface, some fraction of the
+molecules under study will then stick, where they will remain
+translationally confined and can be probed with either confocal or
+imaging microscopy. This approach poses a variety of challenges:
+direct interaction between the surface and the molecule under study
+can substantially perturb the behavior of the studied
 system[^Yasuda]. Further, the chemistry required for the modification
 of the surface and molecule can pose a substantial practical barrier.
 
