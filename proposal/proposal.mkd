@@ -594,7 +594,12 @@ over the course of data acquisition.
 <!--
  * Measure pH in droplets
 -->
-The first experiment will attempt to measure the pH distribution in
+A central piece of this work will be characterizing the chemical
+conditions of imposed by droplet confinement. Preliminary measurements
+suggest that pH may be the most problematic parameter. For this
+reason, the proposed work will begin with a set pH measurements.
+
+This work will attempt to measure the pH distribution in
 individual droplets through fluorescence lifetime. This experiment
 will use immobilized droplets (either on a surface or tracked)
 containing fluorescein, a pH sensitive dye. The pH dependence of
