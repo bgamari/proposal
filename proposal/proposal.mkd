@@ -271,11 +271,6 @@ In an early study[^droplet-differences] Tang *et al.* reported no evidence
 of perturbation on short timescales in polarization anisotropy
 measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
 
-In contrast, Jofre reported fluorescence polarization anisotropy
-measurements where the introduction of a droplet environment brought
-about an apparent reduction in rotational coherence, a finding that
-remains unexplained [@Jofre2007].
-
 [^droplet-differences]:
       It should be noted that while Tang's droplets were formed without
       surfactant by way of mechanical injection, our recent measurements
