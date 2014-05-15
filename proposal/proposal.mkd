@@ -325,8 +325,6 @@ spectroscopy. These attempts are mostly centered around surfactant
 choice and suggest that a fair amount of control can be had over
 internal pH.
 
-TODO: Discuss surface charge with Lori
-
 [^micelle]: Micelles are small (1-10nm) droplets of surfactant in
     water. Reverse micelles are similarly sized droplets of water in
     an amphiphillic liquid.
@@ -556,17 +554,15 @@ above.
 
 ![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
 
-
-This work will attempt to measure the pH distribution in
-individual droplets through fluorescence lifetime. This experiment
-will use immobilized droplets (either on a surface or tracked)
-containing fluorescein, a pH sensitive dye.
-
-While fluorescein is often used to measure pH by examining the change
-in its emission spectrum (reflecting the relative proportions of the
-anionic and dianionic species discussed above), I will instead use the
-corresponding shift in fluorescence lifetime. By filling droplets with
-fluorescein such that the mean droplet occupancy is on the order of
+Likewise, one can perform a similar inference of pH by examining
+fluorescence lifetime. This has the advantage of being more easily
+performed on low-intensity signals, such as that produced by a single
+droplet. It is in this manner that this work will attempt to measure
+the pH distribution in individual droplets. This experiment will
+ultimately seek to use immobilized droplets (either on a surface or
+tracked).
+By filling droplets with
+fluorophore such that the mean droplet occupancy is on the order of
 100 molecules (on the order of $\mathrm{μmol/L}$), it should be
 possible to collect enough statistics to infer a mixing distribution over
 pH.
@@ -575,7 +571,8 @@ This experiment will proceed as follows,
 
   1. To calibrate the measurement, measure fluorescence lifetime of
      fluorescein diffusing in solution under a range of pHs (ranging
-     from 3 to 8)
+     from 3 to 8). This will allow me to build a empirical model of
+     the pH dependence of fluorescence lifetime.
   2. To the begin droplet effort, measure fluorescence lifetime with
      droplets diffusing in solution
   3. When particle tracking has been stabilized, measure fluorescence
@@ -724,7 +721,7 @@ For these reasons, it remains to be seen whether these measurements
 will provide any insight into the chemical environment of our
 emulsions.
 
-TODO: PALS data
+<!-- TODO: PALS data -->
 
 ## Study of G quadruplex DNA under droplet confinement
 
