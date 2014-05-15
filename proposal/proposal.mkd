@@ -191,8 +191,8 @@ of the surface and molecule can pose a substantial practical barrier.
 ![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment. Here we see a bilayer confining a single molecule and tethered to a functionalized glass surface.\label{fig:vesicle}](figures/vesicle)
 
 An alternative to surface immobilization is encapsulation where the
-molecule of interest is placed in a confining volume. One can then
-immobilize or manipulate this container and the molecule within.
+molecule of interest is placed in a confining container. One can then
+immobilize or manipulate this vessel and the molecule within.
 
 Currently the most convenient means of encapsulating single molecules
 is by lipid membrane as seen in Figure \ref{fig:vesicle}.  This
@@ -272,7 +272,8 @@ One of the challenges of conducting a fluorescence experiment in
 droplet encapsulation is ensuring that the conditions within
 the droplet's volume are well understood. Initial measurements from
 our lab have demonstrated that care is needed in interpreting
-fluorescence experiments in droplet environments.
+fluorescence experiments in droplet environments, suggesting that the
+pH of the confined volume is substantially different from the bulk.
 
 The droplets produced by our technique are typically on the order of
 100 nanometers in diameter. It is well-documented that droplets like
@@ -340,6 +341,10 @@ oil droplets suspended in a aqueous continuous phase, our system is
 inverted (water droplets in oil). This may give rise to a vastly
 different electrostratic environment.
 
+For these reasons, it remains to be seen whether these measurements
+will provide any insight into the chemical environment of our
+emulsions.
+
 <!--
 It is widely believed that water organizes on hydrophobic interfaces
 such as the outside surface of an oil-in-water droplet [@Vacha2008].
@@ -362,9 +367,9 @@ preserved. Without compensating for this behavior, successive
 generations of cells would lack a growing body of genes, eventually
 leading to non-viable cells [@Counter1992]. To counter this, nature
 has introduced regions of non-coding single-stranded DNA near the ends
-of the genome. This *telomeric* DNA is several hundred bases long,
-much of which is lost during replication, to be replaced
-later in the cell's life-cycle by dedicated enzymes.
+of the genome. In humans this *telomeric* DNA is several hundred bases
+long, much of which is lost during replication, to be replaced later
+in the cell's life-cycle by dedicated enzymes.
 
 Telomeric DNA is characterized by regions rich in guanine. *In vitro*
 regions like these have been shown to form a peculiar structure, the *G
@@ -384,12 +389,13 @@ quadruplex have been reportedly found in primers in the human
 genome [@Huppert2007; @Biffi2013].
 
 Of particular interest in this work (especially the secondary work
-introduced in Section \ref{risks}) is the various conformational forms
-supported by the quadruplex motif, the conditions in which these
+introduced in Section \ref{risks}) is the various conformations
+supported by the quadruplex motif, the conditions under which these
 structures form, and the mechanisms responsible for their
 stability. Below we will discuss some previous inquiries along these
 lines. Those looking for a more thorough review might consult
-@Lane2008 or @Huppert2008.
+@Lane2008 or @Huppert2008. below we will describe some of the existing
+literation addressing these issues.
 
 ### Related work
 
@@ -401,7 +407,7 @@ stable in the presence of K⁺ than Na⁺. Later work
 [@Hardin1992; @Hardin2001] attributed this to preferential
 intercalation of the potassium ion into the central channel of the
 quadruplex. Miyoshi [@Miyoshi2006] demonstrated that crowding with
-polyethylene glycol stabilizes
+polyethylene glycol stabilizes the quadruplex.
 
 ![Parallel and anti-parallel quadruplex topologies. The oblong cubes represent guanosine bases. Note that, in the interest of clarify, bases in the loop regions (thiamines and adenines) are not shown.\label{fig:quadruplex}](figures/quadruplex)
 
@@ -427,8 +433,8 @@ revealing a similar polymorphism to that observed by Ying.
 <!-- Lee 2005 -->
 @Lee2005 revisited and refined the approach of Ying, examining a
 similar oligomer ($\mathrm{5'-Cy5-(GGGTA)₃-GGG}$) under surface attachment with
-TIRF[^TIRF]. The authors observed three long-lived (mean occupancy
-time of >10 seconds) FRET states, which they attributed to two
+TIRF[^TIRF]. The authors observed three long-lived FRET states (mean occupancy
+time of tens to hundreds of seconds), which they attributed to two
 distinct folded states (hypothesized to be anti-parallel and parallel
 geometries) and one unfolded state. The authors found that the
 anti-parallel state is favored at high K⁺ concentrations, with lower
