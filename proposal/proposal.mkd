@@ -527,6 +527,11 @@ optimizing the tracking system for the smaller signal produced by
 these small particles, there is no guarantee that this signal can be
 resolved well enough to produce a stable track.
 
+If signal strength is found to be a problem, I will examine options
+for increasing droplet size. Options include changing surfactant
+concentration and identity, as well as formation of droplets within a
+microfluidic device.
+
 Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
 hundreds of specimens simultaneously over the course of tens of minutes. With
 this technique they were able to observe thousands of switching
@@ -637,6 +642,19 @@ also possible.
 
 
 ## Study of G quadruplex switching dynamics
+
+The second prong of this work will use droplet confinement to examine
+the switching dynamics of the G quadruplex system.
+Given the number of recent papers reexamining various aspects of the
+quadruplex's switching behavior
+[@Fujimoto2013; @Koirala2013; @Lim2013; @Long2013; @Boncina2012], it
+seems past due that the single-molecule examinination of dynamics by
+Lee et al. was revisited [TODO]. Of particular interest here is the
+dependence of quadruplex switching dynamics on osmotic pressure.
+
+This will begin by reproducing the findings of Lee [@Lee2005], using
+droplet immobilization in place of vesicle encapsulation and surface
+attachment.
 
 TODO
 
