@@ -512,11 +512,14 @@ possible to optically measure their diffusive motion. The ability to
 localize and track droplets for minutes and longer enables a variety
 of unique measurements.
 
-To realize this goal, we use back focal-plane interferometric
-technique to infer the position of the droplet centroid with respect
-to the center of the observation volume. 
+To realize this goal, we use a technique inspired by @Desai2007. Here
+a probe beam is passed through the sample and its deflction measured
+to infer the position of the droplet centroid with respect to the
+center of the observation volume. To map from detector response to
+particle position a polynomial model is learned from an active
+calibration measurement.
 
-![A high-level view of the particle tracking apparatus.](figures/tracking)
+![A simplified view of the particle tracking apparatus. A tracking beam is deflected by a droplet in the observation volume. This deflection is measured by a position sensitive photodiode. This signal in turn feeds a feedback loop which drives a translation stage to follow the diffusive motion of the particle.](figures/tracking)
 
 ## Characterization and control of pH in droplets
 <!--
@@ -534,6 +537,8 @@ necessary. The similarity between the droplet and low-pH solution
 measurements suggest a strongly perturbed chemical environment within
 the droplet. FRET measurements of this same molecule under similar
 conditions lead to similar conclusions.
+
+![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labelled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos.](figures/rna-pch)
 
 Currently others in our lab examining this problem with bulk
 spectroscopy. Here, we create a droplet emulsion filled with a pH
@@ -674,28 +679,25 @@ photophysical behavior of the labels and magnitude of the Fӧrster radius.
 
 ## Particle tracking
 
-I have developed a system for tracking droplet motion
-in solution inspired by @Desai2007. This system enables study of
-single-molecules over time-scales previously only accessible through
-surface immobilization but without the difficult sample preparation
-that this technique requires. The ability to study isolated
-single-molecules for long durations makes droplet encapsulation a
-promising tool for probing biomolecular dynamics.
+I have developed a prototype system for tracking droplet motion
+in solution. This system has been demonstrated on a variety of model
+systems. A representative tracking trajectory of a one-micron diameter
+polystyrene bead diffusing in mineral oil is shown in Figure
+\ref{fig:track}.
 
-The tracking system infers the position of the particle relative to the
-microscope's focus point by examining scattering through the particle
-with a detector situated in the back-focal plane of the
-microscope. After learning a polynomial model of the displacement of
-this scattered beam as a function of particle position, one can infer
-the position of a diffusing particle in real-time.
+![A representative tracking trajectory of a one micron polystyrene bead diffusing in mineral oil. Notice the upward trend of the bead due to its buoyancy.\label{fig:track}](figures/track)
 
-![A representative tracking trajectory of a one micron polystyrene bead diffusing in mineral oil. Notice the upward trend of the bead due to its buoyancy.](figures/track)
+Scaling this technique up to be viable for tracking emulsion droplets
+poses several practical challenges.  While conceptually simply, there
+are several practical challenges in implementing such a system. The
+greatest of these is the process of learning the tracking model, which
+must happen quickly enough that the particle can be considered to be
+stationary (relative to its size) over the course of calibration process.
+Furthermore, the bandwidth of the feedback loop must be wider and
+detector electronics more sensitive to measure the small detector
+response.
 
-While conceptually simply, there are several practical challenges in
-implementing such a system. The greatest of these is the process of
-learning the tracking model, which must happen quickly enough that the
-particle can be considered to be stationary (relative to its size)
-over the course of data acquisition.
+Much of the work described above has been completed. What remains is to TODO
 
 ## Characterization of droplet pH
 
