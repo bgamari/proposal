@@ -649,6 +649,10 @@ discussed previously.
 
 # Prior work
 
+The pieces of the above work are currently sit in various states of
+completion. Below I will discuss in each case what has been done and
+what remains.
+
 ## Data analysis tools
 
 While single-molecule sensitive fluorescence techniques can provide insight
