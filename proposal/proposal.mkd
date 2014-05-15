@@ -329,8 +329,8 @@ internal pH.
 TODO: Discuss surface charge with Lori
 
 [^micelle]: Micelles are small (1-10nm) droplets of surfactant in
-    water. Reverse micelles are similarly sized droplets of surfactant
-    TODO
+    water. Reverse micelles are similarly sized droplets of water in
+    an amphiphillic liquid.
 
 Carrying charge, emulsion droplets feel force under the influence of
 an electric field. As droplets exist in a viscous medium, they also
