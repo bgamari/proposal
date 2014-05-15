@@ -797,6 +797,8 @@ small volumes, and demonstrate a novel instrument for tracking the
 diffusive motion of particles, and use this instrument to probe a
 biologically relevant model system with FRET.
 
+\appendix
+
 # References
 
 \singlespacing
