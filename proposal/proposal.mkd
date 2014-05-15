@@ -541,7 +541,7 @@ signal. Moreover, linker dynamics [@Sindbert2011] and
 geometric considerations [@Lilley2000] complicate modeling.
 
 One example of this can be found in nucleic acid studies. It is
-believed that cyanine dyes terminally attached to RNA demonstrate
+believed that cyanine dyes terminally attached to RNA exhibit
 several states where the dye stacks on its neighboring base much as a
 nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
 
