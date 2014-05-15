@@ -180,7 +180,7 @@ cannot move appreciably, it can be probed on timescales only bounded
 by the robustness of its fluorophores.
 
 One common technique for molecular immobilization is surface
-attachment. Here the molecule of interest is modified to include a
+attachment[@TODO]. Here the molecule of interest is modified to include a
 linker which can stick to a properly functionalized surface. When
 introduced into a volume bounded by a such a surface, some fraction of
 the molecules under study will then stick, where they will remain
@@ -210,14 +210,14 @@ bilayer [@Boukobza2001; @Okumus2004].  Once formed, these vesicles can
 either be studied in solution, affording longer dwell times in the
 observation volume due to their larger size, or chemically tethered to
 a surface. Unfortunately, vesicles are known to interact with some
-systems[^vesicle-interaction], form under only a narrow range of chemical conditions
-[@Vafabakhsh2012], and present practical challenges in sample
-preparation.
+systems[^vesicle-interaction], form under only a narrow range of
+chemical conditions [@Vafabakhsh2012], and present practical
+challenges in sample preparation.
 
-Furthermore, while it is often useful to introduce new components into
-the confined solution, this, with few exceptions[@TODO] the contents
-of a vesicle is fixed over its lifetime whereas the ability to modify
-the environment with the TODO.
+While the ability to
+introduce new molecules into the container and modify its chemical
+environment are desirable in an immobilization scheme, doing so is
+quite challenging[@TODO] in the case of vesicle confinement.
 
 Finallly, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
