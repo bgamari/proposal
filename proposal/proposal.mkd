@@ -19,24 +19,24 @@ aqueous droplets. These tools are then used to measure a model DNA
 system.
 
 ## Outline of Proposal
-Below we will briefly describe the fluorescence spectroscopic
-techniques used in our lab. Following this we will discuss my previous
+Below I will briefly describe the fluorescence spectroscopic
+techniques used in our lab. Following this I will discuss my previous
 work modeling FRET on a small model RNA molecule, particularly focusing on
 conformational and photophysical effects. This work will bear
 relevance to the fluorescence studies proposed later in this document.
 
-We will then introduce an encapsulation technique developed in our lab
+I will then introduce an encapsulation technique developed in our lab
 using attoliter-volume emulsion droplets to contain, isolate, and
-manipulate single-molecules. We will discuss some of the technical
+manipulate single-molecules. I will discuss some of the technical
 challenges involved in realizing this technique, particularly in
 characterizing and controlling droplets' chemical environment.
 
-We will describe a complementary apparatus for tracking
+I will describe a complementary apparatus for tracking
 the motion of these droplets in solution, enabling fluorescence
 studies of isolated single-molecules over time-scales previously only
 accessible via more restrictive immobilization techniques.
 
-Building on these tools, we will then propose a set of experiments
+Building on these tools, I will then propose a set of experiments
 to probe the chemical characteristics of individual droplets. This
 experiment will both answer basic questions regarding liquid-liquid
 interfaces as well as enable later biomolecular applications.
@@ -414,9 +414,9 @@ Of particular interest in this work (especially the secondary work
 introduced in Section \ref{risks}) is the various conformations
 supported by the quadruplex motif, the conditions under which these
 structures form, and the mechanisms responsible for their
-stability. Below we will discuss some previous inquiries along these
+stability. Below I will discuss some previous inquiries along these
 lines. Those looking for a more thorough review might consult
-@Lane2008 or @Huppert2008. below we will describe some of the existing
+@Lane2008 or @Huppert2008. below I will describe some of the existing
 literation addressing these issues.
 
 ### Related work
@@ -518,8 +518,8 @@ work. I will begin by briefly introducing a set of tools for the
 analysis of FRET and FCS experimental data.  I will then discuss an
 application of these tools on a measurement of a model RNA 16-mer
 system. This will serve to demonstrate the need for robust molecular
-immobilization techniques which we answer with droplet
-immobilization which we realize through tracking and microfluidics.
+immobilization techniques which I answer with droplet
+immobilization realized through tracking and microfluidics.
 
 As this technique is still very new, I'll propose a set of experiments
 to characterize the chemical environment within the droplet
