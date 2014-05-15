@@ -580,12 +580,16 @@ This experiment will proceed as follows,
 
 For each droplet in these experiments, I will expect to see a fluorescence
 lifetime distribution that looks like,
-$$P(τ) = α λ₁ e^{-τ λ₁} + (1 - α) λ₂ e^{-τ λ₂}$$ 
+$$P(t) = α λ₁ e^{-t/τ₁} + (1 - α) λ₂ e^{-t/τ₂}$$ 
 Where $α$ is related to the concentration of the anion and dianion
-species shown in Figure \ref{fig:fluorescein} [^concentration]. This is in
-turn related to the pH within the droplet by the Henderson-Hasselbach
-relation [^concentration2],
-$$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$$
+species shown in Figure \ref{fig:fluorescein} [^concentration]. Given
+that the difference between the fluorescence lifetimes of the relevant
+ionization states ($\tau_1=3.0$ and $\tau_2=4.1$ ns) is so small, a
+first analysis might follow past work by fitting a single-exponential
+to the resulting photon arrival time histogram. The lifetime resulting
+from such a fit will have no direct relation to either of the two
+fluorophore lifetimes, but can be related empirically to pH though the
+calibration experiments performed in step 1 above.
 
 [^concentration]:
     Note that this ignores contributions from the weakly fluorescent
@@ -593,16 +597,15 @@ $$\mathrm{pH} = \mathrm{pKₐ} - \log{\frac{\conc{H^+} \conc{A^-}}{\conc{HA}}}$$
     through the anionic state. These contributions can be added to
     this model if necessary.
 
-[^concentration2]:
-    The exact sense in which this relationship applies is in actuality
-    a bit subtle in the case of a small-volume droplet. The interested
-    reader is referred to @Crans2012 for further discussion.
+A more principled approach would directly learn a mixing distribution over $\alpha$
+from the photon arrival time observations. Such an approach
+is shown in the form of a graphical probabilistic model in Figure
+\ref{fig:lifetime-model}.
 
-The task of learning a mixture of exponential lifetimes (characterized
-by $α$ and $λᵢ$ above) from photon arrival time observations has
-been treated before by a number of groups
-[@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994]. Building on this work, I will
-explore means of learning a mixing distribution over pH.
+In addition to this simple model, the task of learning a mixture of
+exponential lifetimes (characterized by $α$ and $λᵢ$ above) from
+photon arrival time observations has been treated before by a number
+of groups [@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994].
 
 If the change in lifetime from fluorescein is found to be too small to
 be resolved, there are a number [@Han2010] of other dyes that could be
@@ -612,6 +615,7 @@ also possible.
 
 ## Study of G quadruplex switching dynamics
 
+TODO
 
 # Prior work
 
