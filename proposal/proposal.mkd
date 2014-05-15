@@ -51,10 +51,10 @@ TODO: Why is conformational switching important? What is the goal?
 
 ## Fluorescence spectroscopy
 Fluorescence spectroscopic methods facilitate experiments capable of
-probing molecular structure, conformation, and dynamics often with
+probing molecular structure, conformation, and dynamics sometimes with
 single-molecule sensitivity.
 
-![A energy diagram showing the states and transitions involved in fluorescence. The system begins (left box) in the ground state ($\ket{0}$) when it is excited by an incident photon, transitioning to $\ket{\mathrm{excited}}$. The system then undergoes a Stokes decay through a large number of intermediate states, reaching $\ket{\mathrm{fluorescent}}$ where it can decay with production of a photon.\label{fig:fluorescence}](figures/fluorescence)
+![A energy diagram showing the states and transitions involved in fluorescence. The system begins (left box) in the ground state ($\ket{0}$) when it is excited by an incident photon, transitioning to $\ket{\mathrm{excited}}$. The system then undergoes a nearly instantaneous Stokes decay through a large number of intermediate states, reaching $\ket{\mathrm{fluorescent}}$ where it can decay with production of a photon (with a typical lifetime of order nanoseconds).\label{fig:fluorescence}](figures/fluorescence)
 
 The physical process responsible for fluorescence is illustrated in
 Figure \ref{fig:fluorescence}. Here the fluorescent molecule, also referred to as a
@@ -74,10 +74,13 @@ and is typically of order $10^{-9}$ seconds.
 
 The Stokes shift gives rise to a shift in the wavelength of fluorescence
 light from the excitation light from which it arose. This allows scattered
-excitation light to be distinguished from fluorescence.
-fluorescence to be used as a means of probing physical systems.
-This enables fluorescence spectroscopy, the use fluorescence as a
-means of probing physical systems.
+excitation light to be distinguished from fluorescence. Furthermore,
+the spectrum, lifetime, and polarization of a fluorescence process is
+sensitive to the local physical and chemical environment surrounding
+of a fluorophore. Collectively, these considerations enable
+fluorescence as a probe of physical and chemical systems. Below we
+will discuss a few modes in which fluorescence is often used in this
+manner.
 
 ### Fluorescence correlation spectroscopy
 
@@ -289,10 +292,10 @@ fluorescence experiments in droplet environments, suggesting that the
 pH of the confined volume is substantially different from the bulk.
 
 The droplets produced by our technique are typically on the order of
-100 nanometers in diameter. It is well-documented that droplets like
-these exhibit an electrostatic surface potential in
-equilibrium [@Marinova1996]. Consequently, ion concentrations are known
-to be non-homogeneous throughout the droplet volume
+100 nanometers in radius. It is well-documented that oil-water interfaces like
+these exhibit an electrostatic surface potential in equilibrium
+[@Marinova1996]. Furthermore, ion concentrations are known to be
+non-homogeneous near oil-water interfaces
 [@Vazdar2012; @Luo2006]. These two factors greatly complicate
 interpretation of experiments performed under droplet confinement.
 
@@ -337,31 +340,6 @@ $$\vec v = \mu_e \vec E$$
 where $\mu_e$ is known as the electrophoretic mobility. With further
 physical modeling, we can relate this mobility to various physical
 properties of the colloid.
-
-As a first attempt at examining the effect of pH and salt
-concentration on surface potential I have started a set of studies
-using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
-technique for measuring the electrophoretic mobility of a suspension
-of emulsion droplets. Results thus far have been mixed. Both the
-measured phase signal and the derived mobility are quite small
-compared to samples typically characterized by this method.
-
-The interpretation of electrophoretic experiments can be
-nuanced. There are few accepted standards to calibrate the technique
-and reproducibility is hard to attain [@Delgado2005]. Moreover, recent
-simulations [@Knecht2007] has drawn into question the interpretation
-of electrophoretic measurements as reflecting the surface charge.
-
-While electrophoretic measurements are typically used to characterize
-oil droplets suspended in a aqueous continuous phase, our system is
-inverted (water droplets in oil). This may give rise to a vastly
-different electrostratic environment.
-
-For these reasons, it remains to be seen whether these measurements
-will provide any insight into the chemical environment of our
-emulsions.
-
-TODO: PALS data
 
 <!--
 It is widely believed that water organizes on hydrophobic interfaces
@@ -507,9 +485,9 @@ has an important thermodynamic contribution.
 <!-- Heddi 2011 -->
 
 
-# Contributions
+# Specific Aims
 
-Below I will discuss the on-going and future contributions of this
+Below I will discuss the on-going and future goals of this
 work. I will begin by briefly introducing a set of tools for the
 analysis of FRET and FCS experimental data.  I will then discuss an
 application of these tools on a measurement of a model RNA 16-mer
@@ -533,48 +511,7 @@ fluorescence data analysis tools and techniques.
  * fluorescence lifetime
 -->
 
-
-## Characterization of FRET on RNA
-
-<!--
-summary: work with Peker Milas
--->
-
-Fӧrster resonance energy transfer is widely used to study structural
-transformations of biological macromolecules. While FRET is often used
-for qualitative insight, there
-is increasing interest in applications of a more quantitative 
-nature [@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
-quantitative interpretation of FRET results is fraught with
-difficulties. Correlations between orientational degrees of freedom
-and inter-dye distance are not uncommon [@VanBeek2007], orientational
-diffusion is often less than free [@Schuler2005], and dye photophysics
-can introduce difficult-to-characterize artifacts
-[@Jia2007; @Chung2010; @Levitus1995].
-
-Nucleic acids in particular present their own set of
-challenges. Multiple decay pathways [@Sabanayagam2005] and
-base-specific fluorescence enhancement [@Harvey2009b] confound the
-FRET signal. Moreover, linker dynamics [@Sindbert2011] and geometric
-considerations [@Lilley2000] complicate modeling.
-
-One example of this can be found in nucleic acid studies. It is
-believed that cyanine dyes terminally attached to RNA exhibit
-several states where the dye stacks on its neighboring base much as a
-nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
-
-Recent work by Peker Milas and I on short double-stranded
-RNA [@Milas2013] has provided further evidence for this behavior. In
-this work we coupled single-molecule sensitive FRET measurements with
-molecular dynamics (MD) simulation of the labeled system. By
-extracting relevant geometric quantities from the MD model, we were
-able to construct a Monte Carlo model to generate FRET observations
-from this simulated system. In comparing these observations to
-experiment we were able to test several hypotheses concerning the
-photophysical behavior of the labels and magnitude of the Fӧrster radius.
-
-
-## Droplet tracking
+## Real-time localization and tracking of diffusive droplets
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
@@ -607,8 +544,7 @@ over the course of data acquisition.
  * Different dyes?
 -->
 
-
-## Characterization of droplet pH
+## Characterization and control of pH in droplet
 <!--
  * Measure pH in droplets
 -->
@@ -682,6 +618,78 @@ used. Alternatively, direct measurement of the emission spectrum is
 also possible.
 
 
+## Study of G quadruplex switching dynamics
+
+
+# Prior work
+
+## Characterization of FRET on RNA
+
+<!--
+summary: work with Peker Milas
+-->
+
+Fӧrster resonance energy transfer is widely used to study structural
+transformations of biological macromolecules. While FRET is often used
+for qualitative insight, there
+is increasing interest in applications of a more quantitative 
+nature [@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
+quantitative interpretation of FRET results is fraught with
+difficulties. Correlations between orientational degrees of freedom
+and inter-dye distance are not uncommon [@VanBeek2007], orientational
+diffusion is often less than free [@Schuler2005], and dye photophysics
+can introduce difficult-to-characterize artifacts
+[@Jia2007; @Chung2010; @Levitus1995].
+
+Nucleic acids in particular present their own set of
+challenges. Multiple decay pathways [@Sabanayagam2005] and
+base-specific fluorescence enhancement [@Harvey2009b] confound the
+FRET signal. Moreover, linker dynamics [@Sindbert2011] and geometric
+considerations [@Lilley2000] complicate modeling.
+
+One example of this can be found in nucleic acid studies. It is
+believed that cyanine dyes terminally attached to RNA exhibit
+several states where the dye stacks on its neighboring base much as a
+nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
+
+In recent work on short double-stranded
+RNA we provided further evidence for this behavior [@Milas2013]. In
+this work we coupled single-molecule sensitive FRET measurements with
+molecular dynamics (MD) simulation of the labeled system. By
+extracting relevant geometric quantities from the MD model, I was
+able to construct a Monte Carlo model to generate FRET observations
+from this simulated system. In comparing these observations to
+experiment we were able to test several hypotheses concerning the
+photophysical behavior of the labels and magnitude of the Fӧrster radius.
+
+
+## Characterization of droplet pH
+
+As a first attempt at examining the effect of pH and salt
+concentration on surface potential I have started a set of studies
+using Phase-Analysis Light Scattering (PALS) [@Tscharnuter2001], a
+technique for measuring the electrophoretic mobility of a suspension
+of emulsion droplets. Results thus far have been mixed. Both the
+measured phase signal and the derived mobility are quite small
+compared to samples typically characterized by this method.
+
+The interpretation of electrophoretic experiments can be
+nuanced. There are few accepted standards to calibrate the technique
+and reproducibility is hard to attain [@Delgado2005]. Moreover, recent
+simulations [@Knecht2007] has drawn into question the interpretation
+of electrophoretic measurements as reflecting the surface charge.
+
+While electrophoretic measurements are typically used to characterize
+oil droplets suspended in a aqueous continuous phase, our system is
+inverted (water droplets in oil). This may give rise to a vastly
+different electrostratic environment.
+
+For these reasons, it remains to be seen whether these measurements
+will provide any insight into the chemical environment of our
+emulsions.
+
+TODO: PALS data
+
 ## Study of G quadruplex DNA under droplet confinement
 
 The second prong of this work will use droplet confinement to examine
@@ -731,11 +739,11 @@ background, and spectral sensitivity, and detection of fluorescence
 bursts from sample diffusion, a fluorescence experiment is subject to
 numerous experimental artifacts that must be estimated and corrected
 for quantitatively accurate results. Unfortunately, the lack of
-availability of an open toolchain for analysis of fluorescence data
+an open toolchain for analysis of fluorescence data
 means that groups generally must reimplement these tools as needed.
 
 I have developed a suite of open-source tools for acquisition
-and analysis of fluorescence timestamp data. These tools are used both
+and analysis of fluorescence timestamp data[@Gamari2013]. These tools are used both
 in and outside of our lab and won the Open Source Software Innovation
 competition held by the University of Massachusetts Institute for
 Biology, Biostatistics, and Bioinformatics (ICB3). Interested readers are
@@ -757,13 +765,13 @@ work [@Gamari2013OSSI].
 # Risks
 
 Our droplet tracking system has been demonstrated to reliably track
-particles down to sizes of 500 nm. Our current droplet preparation
-protocol produces 100 nm diameter droplets. While I have started
-optimizing the tracking system for the smaller signal produced
-by these small particles, there is no guarantee that this signal can
-be resolved well enough to produce a stable track.
+particles down to sizes of 500 nm. Our current preparation protocol
+produces droplets approximately 100 nm in radius. While I have started
+optimizing the tracking system for the smaller signal produced by
+these small particles, there is no guarantee that this signal can be
+resolved well enough to produce a stable track.
 
-Moreover, Lee, *et al.* used surface attachment and TIRF microscopy to examine
+Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
 hundreds of specimens simultaneously over the course of tens of minutes. With
 this technique they were able to observe thousands of switching
 events. In contrast, our approach will probe single molecules at a
