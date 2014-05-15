@@ -558,7 +558,7 @@ Likewise, one can perform a similar inference of pH by examining
 fluorescence lifetime. This has the advantage of being more easily
 performed on low-intensity signals, such as that produced by a single
 droplet. It is in this manner that this work will attempt to measure
-the pH distribution in individual droplets. This experiment will
+the pH distribution in an ensemble of droplets. This experiment will
 ultimately seek to use immobilized droplets (either on a surface or
 tracked).
 By filling droplets with
