@@ -44,6 +44,8 @@ interfaces as well as enable later biomolecular applications.
 Finally, I will propose an experimental study of conformational
 switching of a DNA system using the above tools.
 
+TODO: Why is conformational switching important? What is the goal?
+
 
 # Background
 
@@ -52,13 +54,13 @@ Fluorescence spectroscopic methods facilitate experiments capable of
 probing molecular structure, conformation, and dynamics often with
 single-molecule sensitivity.
 
-![A high-level model of fluorescence shown as a Jablonski diagram. The system begins (left box) in the ground state ($\ket{0}$) when it is excited by an incident photon, transitioning to $\ket{\mathrm{excited}}$. The system then undergoes a Stokes decay through a large number of intermediate states, reaching $\ket{\mathrm{fluorescent}}$ where it can decay with production of a photon.\label{fig:fluorescence}](figures/fluorescence)
+![A energy diagram showing the states and transitions involved in fluorescence. The system begins (left box) in the ground state ($\ket{0}$) when it is excited by an incident photon, transitioning to $\ket{\mathrm{excited}}$. The system then undergoes a Stokes decay through a large number of intermediate states, reaching $\ket{\mathrm{fluorescent}}$ where it can decay with production of a photon.\label{fig:fluorescence}](figures/fluorescence)
 
 The physical process responsible for fluorescence is illustrated in
 Figure \ref{fig:fluorescence}. Here the fluorescent molecule, also referred to as a
 fluorophore, begins in its ground state ($\ket{0}$ [^braket]) when it is excited
 by an incident photon of a specific wavelength (known as its *excitation wavelength*).
-The system quickly passes non-radiatively through a large number of
+The system quickly (over the order of picoseconds or faster[@Spry2007]) passes non-radiatively through a large number of
 intermediate states as its local environment rearranges (losing
 energy, known as the Stokes shift) in response to the newly excited
 fluorophore. This Stokes decay ends with the system settling into its excited fluorescent
@@ -79,24 +81,26 @@ means of probing physical systems.
 
 ### Fluorescence correlation spectroscopy
 
-One frequently used fluorescence-based mode of inquiry is
-fluorescence correlation spectroscopy (FCS), where each molecule in an
-ensemble is labeled with a single fluorophore. These molecules are
-then allowed to freely diffuse in solution while a small volume 
-is observed with a confocal microscope[^confocal], shown in Figure
-\ref{fig:confocal}. In this configuration labeled molecules diffusing
+One frequently used fluorescence-based mode of inquiry is fluorescence
+correlation spectroscopy (FCS), where (a fraction of) the molecules in
+an ensemble is labeled with a single fluorophore. These molecules are
+then allowed to freely diffuse in solution while a small volume is
+observed with a confocal microscope, shown in Figure
+\ref{fig:confocal}. In confocal microscopy a set of detectors and an
+excitation laser are all focused on a common volume of solution, known
+as *the observation volume*. The dimensions of this volume are
+typically hundreds of nanometers in the optical plane and microns in
+the optical axis.
+
+In this configuration labeled molecules diffusing
 through the observation volume will be excited and subsequently
 produce fluorescence which is then detected. By examining correlations
 in the detected fluorescence intensity signal, one can infer molecular
 sizes [@Sengupta2003], concentrations, and chemical kinetics
 [@Aragon1976; @Dix2006].
 
-![A typical confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal}](figures/fret-setup)
+![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal}](figures/fret-setup)
 
-[^confocal]: *Confocal microscope* here refers to a microscope where a
-             set of photon-detectors and an excitation laser are focused on a
-             common point. The region enclosing this focal point is
-             known as the *observation volume*.
 
 ### Fluorescence lifetime spectroscopy
 
@@ -106,12 +110,11 @@ excitation (call this $t=0$), any fluorophores in the observation
 volume will be excited. By measuring the photon arrival times $t_i$
 relative to the time of excitation, one can construct the waiting time
 distribution $P(t)$. In the simple case of a fluorophore with one
-decay pathway, this distribution
-is exponential,
+decay pathway, this distribution is exponential,
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
-The excitation pulse width is typically on the order of picoseconds to
+The excitation pulse width is often less than one picosecond to
 ensure a well-defined excitation point. This process is then repeated
-periodically (typically around 80 MHz) to collect sufficient statistics to
+periodically (between $10^4$ and $10^8$ Hz) to collect sufficient statistics to
 infer a distribution over fluorescence lifetime.
 
 ### Fӧrster resonance energy transfer
@@ -149,6 +152,10 @@ electric dipole moments $\hat{μ}ᵢ$,
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}₂) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 As often only the distance $R$ is of interest, the fluorophores are
 typically assumed to be freely rotating which implies $κ² = 2/3$.
+In addition to this geometric factor, $R_0$ also depends upon a
+variety of other "constants" including the index of refraction of the
+solvent, the degree of overlap of the fluorophores' spectra,
+and the quantum yield of the donor.
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A}$ represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
@@ -173,10 +180,11 @@ cannot move appreciably, it can be probed on timescales only bounded
 by the robustness of its fluorophores.
 
 One common technique for molecular immobilization is surface
-attachment. Here the molecule of interest and a fixed surface are
-both chemically modified to be mutually sticky. Some fraction of the
-molecules under study will then adhere to the surface, where they will
-remain translationally confined and can be probed with either confocal
+attachment. Here the molecule of interest is modified to include a
+linker which can stick to a properly functionalized surface. When
+introduced into a volume bounded by a such a surface, some fraction of
+the molecules under study will then stick, where they will remain
+translationally confined and can be probed with either confocal
 or imaging microscopy. This approach poses a variety of challenges: direct
 interaction between the surface and the molecule under study can
 substantially perturb the behavior of the studied
@@ -204,7 +212,14 @@ observation volume due to their larger size, or chemically tethered to
 a surface. Unfortunately, vesicles are known to interact with some
 systems[^vesicle-interaction], form under only a narrow range of chemical conditions
 [@Vafabakhsh2012], and present practical challenges in sample
-preparation. Moreover, this technique suffers from poor sample
+preparation.
+
+Furthermore, while it is often useful to introduce new components into
+the confined solution, this, with few exceptions[@TODO] the contents
+of a vesicle is fixed over its lifetime whereas the ability to modify
+the environment with the TODO.
+
+Finallly, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
 within a vesicle.  Collectively, these considerations preclude use
 vesicle encapsulation for many systems.
@@ -221,7 +236,9 @@ stable for hours. Furthermore, as nearly all sample solution will end up in
 emulsion droplets, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
-of interest largely unperturbed.
+of interest largely unperturbed. Finally, solutions in various
+droplets can be mixed on-demand[@Reiner2006], enabling the study of
+dynamics.
 
 Like vesicles, these emulsions can be either probed in solution, where
 they afford longer observation times due to their size, or
@@ -232,14 +249,14 @@ confinement.
 
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
-The emulsion is formed in perfluorinated oil with an appropriate
-surfactant. Perfluorinated oils are used due to their non-fluorescent,
-inert nature, their viscosity, and the wide range of refractive
+The emulsion is formed in perfluorinated liquids with an appropriate
+surfactant. Perfluorinated liquids are used due to their non-fluorescent,
+inert nature, biocompatiblity, viscosity, and the wide range of refractive
 indices available (which is useful for optical trapping and
 tracking). They are made through shear by means of sonication. While
 a small degree of control over droplet size is available through adjustment of
 surfactant concentration, those produced by the usual protocol are
-generally around 100 nm in diameter. This makes them ideal for
+generally around 200 nm in diameter. This makes them ideal for
 containment of small biological polymers.
 
 There remain numerous open questions surrounding the sort of
@@ -309,8 +326,11 @@ spectroscopy. These attempts are mostly centered around surfactant
 choice and suggest that a fair amount of control can be had over
 internal pH.
 
-[^micelle]: Micelles are small (1-10nm) water droplets in a lipid
-            continuous phase
+TODO: Discuss surface charge with Lori
+
+[^micelle]: Micelles are small (1-10nm) droplets of surfactant in
+    water. Reverse micelles are similarly sized droplets of surfactant
+    TODO
 
 Carrying charge, emulsion droplets feel force under the influence of
 an electric field. As droplets exist in a viscous medium, they also
@@ -344,6 +364,8 @@ different electrostratic environment.
 For these reasons, it remains to be seen whether these measurements
 will provide any insight into the chemical environment of our
 emulsions.
+
+TODO: PALS data
 
 <!--
 It is widely believed that water organizes on hydrophobic interfaces
@@ -536,9 +558,9 @@ can introduce difficult-to-characterize artifacts
 
 Nucleic acids in particular present their own set of
 challenges. Multiple decay pathways [@Sabanayagam2005] and
-base-specific fluorescence enhancement [@Harvey2009b] confound the FRET
-signal. Moreover, linker dynamics [@Sindbert2011] and
-geometric considerations [@Lilley2000] complicate modeling.
+base-specific fluorescence enhancement [@Harvey2009b] confound the
+FRET signal. Moreover, linker dynamics [@Sindbert2011] and geometric
+considerations [@Lilley2000] complicate modeling.
 
 One example of this can be found in nucleic acid studies. It is
 believed that cyanine dyes terminally attached to RNA exhibit
@@ -560,7 +582,7 @@ photophysical behavior of the labels and magnitude of the Fӧrster radius.
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion.
-We have developed a system for tracking droplet motion
+I have developed a system for tracking droplet motion
 in solution inspired by @Desai2007. This system enables study of
 single-molecules over time-scales previously only accessible through
 surface immobilization but without the difficult sample preparation
