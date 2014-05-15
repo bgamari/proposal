@@ -700,6 +700,29 @@ response.
 
 Much of the work described above has been completed. What remains is to TODO
 
+### Risks
+Our droplet tracking system has been demonstrated to reliably track
+particles down to sizes of 500 nm. Our current preparation protocol
+produces droplets approximately 100 nm in radius. While I have started
+optimizing the tracking system for the smaller signal produced by
+these small particles, there is no guarantee that this signal can be
+resolved well enough to produce a stable track.
+
+Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
+hundreds of specimens simultaneously over the course of tens of minutes. With
+this technique they were able to observe thousands of switching
+events. In contrast, our approach will probe single molecules at a
+time. While count rates may be higher, allowing access to faster
+kinetic timescales, it's unclear that it will practical to collect
+event counts comparable to those seen by Lee, especially in crowded
+conditions where quadruplex structures are known to be relatively stable.
+
+If particle tracking is found to be infeasible for this application
+I will fall back on alternative methods for immobilization and
+manipulation of droplets being developed by other members of our
+group. These include production and manipulation of droplets within
+microfluidic devices.
+
 ## Characterization of droplet pH
 
 As a first attempt at examining the effect of pH and salt
@@ -767,29 +790,7 @@ will extend these techniques as necessary. One particular extension of
 interest is the use of active temperature modulation to shift the
 equilibrium of the system.
 
-# Risks
-
-Our droplet tracking system has been demonstrated to reliably track
-particles down to sizes of 500 nm. Our current preparation protocol
-produces droplets approximately 100 nm in radius. While I have started
-optimizing the tracking system for the smaller signal produced by
-these small particles, there is no guarantee that this signal can be
-resolved well enough to produce a stable track.
-
-Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
-hundreds of specimens simultaneously over the course of tens of minutes. With
-this technique they were able to observe thousands of switching
-events. In contrast, our approach will probe single molecules at a
-time. While count rates may be higher, allowing access to faster
-kinetic timescales, it's unclear that it will practical to collect
-event counts comparable to those seen by Lee, especially in crowded
-conditions where quadruplex structures are known to be relatively stable.
-
-If particle tracking is found to be infeasible for this application
-I will fall back on alternative methods for immobilization and
-manipulation of droplets being developed by other members of our
-group. These include manipulation and storage of droplets within
-microfluidic devices.
+### Risks
 
 If the droplet technique proves in its entirety to be unusable, I
 will fall back to examining the osmotic dependence of quadruplex DNA
