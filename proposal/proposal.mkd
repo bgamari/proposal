@@ -52,24 +52,25 @@ itself and demonstrate a methodology for accounting for these.
 ## Outline of Proposal
 Below I will briefly describe the fluorescence spectroscopic
 techniques used in our lab to probe biomolecular systems. Following
-this I will demonstrate the need for robust, flexible single-molecule
-immobilization techniques.
+this I will describe existing approach for molecular immobilization
+and their strengths and weaknesses.
 
 I will then introduce an encapsulation technique developed in our lab
 using attoliter-volume emulsion droplets to confine, isolate, and
-manipulate single-molecules for fluorescence spectoscopy. I will discuss some of the technical
-challenges involved in realizing this technique, particularly in
-characterizing and controlling droplets' chemical environment.
+manipulate single-molecules for fluorescence spectoscopy. I will
+discuss some of the technical challenges involved in realizing this
+technique, particularly in characterizing and controlling droplets'
+chemical environment.
 
 Following this I will introduce the G quadruplex, a conformation
 formed by some DNA sequences which I will use as a model system for
-demonstrating fluorescence studies in droplets.  The quadruplex system
-is a subject of active research as an anti-cancer target and has been
-implicated in a number of regulatory roles.
+demonstrating fluorescence studies droplet-based immobilization.  The
+quadruplex system is a subject of active research as an anti-cancer
+target and has been implicated in a number of regulatory roles. TODO
 
 Next I will describe the goals of the proposed work. These are three-fold,
 
-  1. to develop a apparatus to allow droplets to be localized and
+  1. to develop an apparatus to allow droplets to be localized and
      tracked with sufficient resolution for fluorescence probing for
      minutes at a time. This will enable single-molecule spectroscopy
      on timescales previously only accessible via more restrictive
@@ -82,7 +83,8 @@ Next I will describe the goals of the proposed work. These are three-fold,
   3. To demonstrate use of the droplet technique by measuring
      switching dynamics in a model DNA system, the G quadruplex.
 
-Following this I will discuss my previous work in our lab. This includes,
+Following this I will discuss my previous work in our lab and propose
+specific steps forward. This previous work includes,
 
   1. An open-source data acquisition and analysis toolchain for common
      fluorescence spectroscopy experiments
@@ -94,7 +96,7 @@ Following this I will discuss my previous work in our lab. This includes,
   4. Initial experiments examining the physical characteristics of 
      droplets formed by our technique
 
-I finish with a conclusion 
+I finish with concluding notes.
 
 # Background
 
@@ -106,23 +108,27 @@ single-molecule sensitivity.
 ![A energy diagram showing the states and transitions involved in fluorescence. The system begins (left box) in the ground state ($\ket{0}$) when it is excited by an incident photon, transitioning to $\ket{\mathrm{excited}}$. The system then undergoes a nearly instantaneous Stokes decay through a large number of intermediate states, reaching $\ket{\mathrm{fluorescent}}$ where it can decay with production of a photon (with a typical lifetime of order nanoseconds).\label{fig:fluorescence}](figures/fluorescence)
 
 The physical process responsible for fluorescence is illustrated in
-Figure \ref{fig:fluorescence}. Here the fluorescent molecule, also referred to as a
-fluorophore, begins in its ground state ($\ket{0}$ [^braket]) when it is excited
-by an incident photon of a specific wavelength (known as its *excitation wavelength*).
-The system quickly (over the order of picoseconds or faster[@Spry2007]) passes non-radiatively through a large number of
-intermediate states as its local environment rearranges (losing
-energy, known as the Stokes shift) in response to the newly excited
-fluorophore. This Stokes decay ends with the system settling into its excited fluorescent
-state where it will remain until decaying back to its ground state,
-potentially with the emission of a photon (known as *radiative decay*). The lifetime of this
-fluorescent state is known as the fluorophore's *fluorescence lifetime*
-and is typically of order $10^{-9}$ seconds.
+Figure \ref{fig:fluorescence}. Here the fluorescent molecule, also
+known as a fluorophore, begins in its ground state ($\ket{0}$
+[^braket]) when it is excited by an incident photon of a specific
+wavelength (known as an *excitation wavelength* of the
+fluorophore). The system quickly (over the order $10^{-13}$ seconds or
+faster[@Spry2007]) passes non-radiatively (without the emission of a
+photon) through a large number of intermediate states as its local
+environment rearranges in response to the newly excited
+fluorophore. Over the course of this rearrangement, known as *Stokes
+decay*, the molecule loses energy to its local environment, eventually
+settling into its excited fluorescent state. It will remain here until
+eventuallly decaying back to its ground state, potentially with the
+emission of a photon (known as *radiative decay*). The lifetime of
+this fluorescent state is known as the fluorophore's *fluorescence
+lifetime* and is typically of order $10^{-9}$ seconds.
 
 [^braket]:
     The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
 
-The Stokes shift gives rise to a shift in the wavelength of fluorescence
-light from the excitation light from which it arose. This allows scattered
+The Stokes decay gives rise to a shift in the wavelength of the fluorescence
+phoron relative to the excitation light from which it arose. This allows scattered
 excitation light to be distinguished from fluorescence. Furthermore,
 the spectrum, lifetime, and polarization of a fluorescence process is
 sensitive to the local physical and chemical environment surrounding
@@ -133,16 +139,16 @@ manner.
 
 ### Fluorescence correlation spectroscopy
 
-One frequently used fluorescence-based mode of inquiry is fluorescence
-correlation spectroscopy (FCS), where (a fraction of) the molecules in
-an ensemble is labeled with a single fluorophore. These molecules are
-then allowed to freely diffuse in solution while a small volume is
+One frequently used mode of inquiry is fluorescence
+correlation spectroscopy (FCS). Here a fraction of the molecules in
+an ensemble is labeled with a fluorophore. These molecules are
+then typically allowed to freely diffuse in solution while a small volume is
 observed with a confocal microscope, shown in Figure
 \ref{fig:confocal}. In confocal microscopy a set of detectors and an
-excitation laser are all focused on a common volume of solution, known
-as *the observation volume*. The dimensions of this volume are
-typically hundreds of nanometers in the optical plane and microns in
-the optical axis.
+excitation laser are both focused on a common volume of solution, known
+as the *observation volume*. The dimensions of this volume are
+typically hundreds of nanometers in the optical plane and a few
+microns in the optical axis.
 
 In this configuration labeled molecules diffusing
 through the observation volume will be excited and subsequently
@@ -156,28 +162,32 @@ sizes [@Sengupta2003], concentrations, and chemical kinetics
 
 ### Fluorescence lifetime spectroscopy
 
-To measure the fluorescence lifetime of a fluorophore one illuminates the
-observation volume with an intense but short pulse. At the moment of
-excitation (call this $t=0$), any fluorophores in the observation
-volume will be excited. By measuring the photon arrival times $t_i$
-relative to the time of excitation, one can construct the waiting time
-distribution $P(t)$. In the simple case of a fluorophore with one
-decay pathway, this distribution is exponential,
+As mentioned above, the fluorescence lifetime of a fluorophore can be
+modulated by conditions of the local environment. To measure the
+fluorescence lifetime of a fluorophore one illuminates the
+observation volume with an intense but short pulse (in our case, of
+order $10^-13$ seconds). At the moment of this pulse (call this
+$t=0$), any fluorophores in the observation volume will be excited. By
+measuring the arrival times $t_i$ of photons due to fluorescence
+emission relative to the time of excitation, one can construct the
+waiting time distribution $P(t)$. In the simple case of a fluorophore
+with one decay pathway, this distribution is exponential (e.g. the
+waiting time distribution of a homogenous Poisson process),
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
-The excitation pulse width is often less than one picosecond to
-ensure a well-defined excitation point. This process is then repeated
-periodically (between $10^4$ and $10^8$ Hz) to collect sufficient statistics to
-infer a distribution over fluorescence lifetime.
+As there is rarely enough emissions from a single excitation event to
+infer this distribution, excitations are generally performed
+periodically (between $10^4$ and $10^8$ Hz).
 
 ### Fӧrster resonance energy transfer
 If one places two distinct fluorophores
 in close proximity to one another, under certain conditions they will
-undergo energy transfer. That is when one is excited, fluorescence
+undergo energy transfer [@Forster1960]. That is when one is excited, fluorescence
 will observed from the other. This process, known as Fӧrster transfer,
 requires that the fluorophores' absorption and emission spectra
 overlap and is dependent upon their distance and relative
 orientations. This geometric dependence enables use of this effect for
-studying molecular conformation and dynamics.
+studying molecular conformation, dynamics, and kinetics (e.g. binding
+of two components in an assembly).
 
 Figure \ref{fig:fret} shows the physical processes responsible for
 FRET. The donor fluorophore $D$ starts in its ground state when it is
@@ -186,35 +196,43 @@ non-radiatively) or *donate* the energy it absorbed to a nearby
 *acceptor* fluorophore. If the latter, the acceptor will itself
 eventually decay, possibly with the emission of a photon.
 
-By labeling two points on the molecule of interest
-and examining the probability of energy transfer (*e.g.* fluorescence
+By placing the donor and acceptor on two points of interest on a molecule
+and examining the probability of energy transfer (e.g. fluorescence
 intensities in the donor and acceptor spectral channels), one can
-infer intramolecular distances. This technique
-[@Forster1960; @Dahan1999], known as Fӧrster Resonance Energy Transfer
-(FRET), is widely used to study biomolecular conformation and kinetics
-[@Preus2012; @Dietrich2002].
+infer intramolecular distances. This technique [@Dahan1999], known as
+Fӧrster Resonance Energy Transfer (FRET), is widely used to study
+biomolecular conformation and kinetics [@Preus2012; @Dietrich2002].
 
 The probability of energy transfer, known as the FRET efficiency
-$E$, is related to the inter-fluorophore distance $R$,
+$E$, is related to the inter-fluorophore distance $R$ by the F\"orster
+equation,
 $$ E = P(\mathrm{Energy~Transfer}) = \frac{1}{1 + (R / R₀)⁶} $$
-where $R₀$, known as the Fӧrster radius, is length-scale that
-defines the range of Fӧrster transfer. It is related to a quantity, $κ²$,
+where $R₀$, known as the Fӧrster radius, is a length-scale that
+defines the range of Fӧrster interaction. It is related to a quantity, $κ²$,
 that captures the relative orientation of the two fluorophores'
 electric dipole moments $\hat{μ}ᵢ$,
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}₂) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
-As often only the distance $R$ is of interest, the fluorophores are
-typically assumed to be freely rotating which implies $κ² = 2/3$.
-In addition to this geometric factor, $R_0$ also depends upon a
-variety of other "constants" including the index of refraction of the
-solvent, the degree of overlap of the fluorophores' spectra,
-and the quantum yield of the donor.
+As often only the inter-fluorophore distance $R$ is of interest, the
+fluorophores are often assumed to be freely rotating, implying
+$κ² = 2/3$.  In addition to this geometric factor, $R_0$ also depends
+upon a variety of other "constants" including the index of refraction
+of the solvent, the degree of overlap of the fluorophores' spectra,
+and the quantum yield[^quantum-yield] of the donor.
 
+[^quantum-yield]:
+    The quantum yield of a fluorophore refers to the probability of an
+    excitation yielding a photon. If we let $k_r$ denote the rate of
+    radiative decay and $k_{nr}$ denote the rate of non-radiative
+    decay, the quantum yield $\phi$ is given by
+    $\phi = \frac{k_r}{k_r + k_{nr}}$
+    
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A}$ represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
-While experiments examining species diffusing in solution are easily
-performed [@Dahan1999], such techniques offer only a short
-glimpse of each molecule. With the hydrodynamic radius of many
-biomolecules of interest being on the order of nanometers, these
+These experiments are often performed on species diffusing in solution
+with confocal microscopy.  While such solution experiments are easily
+performed [@Dahan1999], such techniques offer only a short glimpse of
+each molecule. With the hydrodynamic radius of many biomolecules of
+interest being on the order of nanometers, these
 molecules require on the order of hundreds of microseconds to traverse
 the observation volume. This is comparable of the inter-photon arrival
 time of a typical fluorescence experiment, meaning that few photons
