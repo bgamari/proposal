@@ -9,14 +9,44 @@ affil: Department of Physics, University of Massachusetts, Amherst
 
 # Introduction
 
-Fluorescence spectroscopic techniques are widely used in biology and
-biophysics to probe biomolecular systems. While there exist a number
-of techniques for immobilizing single molecules to enable study for long
-durations (*e.g.* minutes to hours), each comes with its own
-limitations. This thesis studies a novel technique for molecular
-immobilization for single-molecule studies, encapsulating molecules in
-aqueous droplets. These tools are then used to measure a model DNA
-system.
+Over the last three decades, fluorescence spectroscopy has developed
+into a unique tool for probing biologically relevant systems. In
+particular, fluorescence correlation spectroscopy (FCS) is now a
+routine measurement enabling biologists access to reaction
+kinetics [@Wu2006; @Heyduk2002; @Allen2006] and sizes of biomolecular
+assemblies [@Pitschke1998]. Likewise, single-molecule Förster
+resonance energy transfer has proved to be useful for a
+variety of biologically relevant measurements ranging from DNA/RNA
+mechanics [@iqbal2008orientation; @Vafabakhsh2012; @Laurence2005; @Wozniak2008]
+to protein conformation [@Wozniak2005] and protein
+function [@Gopich2009; @Sevenich1998]. When used in tandem these two
+techniques can provide unique perspective onto dynamics on molecular
+length-scales and over a wide range of time-scales [@Nettels2008].
+The single-molecule sensitivity fluorescence enables allows resolution
+of rare and short-lived states which are otherwise hidden from view in
+ensemble measurements.
+
+This work will focus on two applications of fluorescence spectroscopy:
+1) inference of kinetic properties of dynamic systems, and 2)
+inference of geometry of static structures.
+
+A major challenge in studying dynamics with single-molecule
+fluorescence spectroscopy is keeping the molecule under study immobile
+with respect to the over the course of the dynamic process. While
+there exist a number of techniques for immobilizing single molecules
+to enable study for long durations (*e.g.* minutes to hours), each
+comes with its own limitations. This thesis studies a novel technique
+for molecular immobilization for single-molecule studies, confining
+molecules in aqueous droplets. This technique complements existing
+immobilization, introducing a new set of trade-offs which we
+explore. I demonstrate the viability of fluorescence studies with this
+technique on a model DNA system, the G quadruplex.
+
+In a second part, we examine the challenges of studying systems with
+faster, less pronounced dynamics. We explore the example of a model
+RNA system, which can be to viewed to first order as a rigid rod, and the
+challenges in using a specific fluorescence spectroscopic technique in
+its traditional role as a "molecular ruler".
 
 ## Outline of Proposal
 Below I will briefly describe the fluorescence spectroscopic
@@ -42,26 +72,27 @@ Next I will describe the goals of the proposed work. These are three-fold,
      minutes at a time. This will enable single-molecule spectroscopy
      on timescales previously only accessible via more restrictive
      immobilization techniques.
-  2. to use the above apparatus to probe the chemical environment of
+  2. To use the above apparatus to probe the chemical environment of
      the droplet interior and control this environment sufficiently to
      enable study of biologically-relevant systems. This work will
      answer basic questions surrounding liquid-liquid interfaces
-     enable the final goal
-  3. to demonstrate use of the droplet technique by measuring
-     switching dynamics in a model DNA system, the G quadruplex
+     enable the final goal.
+  3. To demonstrate use of the droplet technique by measuring
+     switching dynamics in a model DNA system, the G quadruplex.
 
 Following this I will discuss my previous work in our lab. This includes,
 
-  1. an open-source data acquisition and analysis toolchain for common
+  1. An open-source data acquisition and analysis toolchain for common
      fluorescence spectroscopy experiments
-  2. modelling a common fluorescence experiment on a simple RNA
+  2. Modelling a common fluorescence experiment on a simple RNA
      system, using molecular dynamics simulation and Monte Carlo
      modelling to inform a physical model of the system,
-  3. a first version of the droplet tracking apparatus, which will be
+  3. A first version of the droplet tracking apparatus, which will be
      built upon in the present work
-  4. initial experiments examining the physical characteristics of 
+  4. Initial experiments examining the physical characteristics of 
      droplets formed by our technique
 
+I finish with a conclusion 
 
 # Background
 
@@ -669,10 +700,13 @@ also possible.
 
 The second prong of this work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system.
-Given the number of recent papers reexamining various aspects of the
+Of late several authors have uncovered unexpected
+polymorphism in the quadruplex structure.
+
+With the number of recent papers reexamining various aspects of the
 quadruplex's switching behavior
 [@Fujimoto2013; @Koirala2013; @Lim2013; @Long2013; @Boncina2012], it
-seems past due that the single-molecule examinination of dynamics by
+is past due that the single-molecule examinination of dynamics by
 Lee et al. was revisited [TODO]. Of particular interest here is the
 dependence of quadruplex switching dynamics on osmotic pressure which
 represents a void in the current state of the literature.
