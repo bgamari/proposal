@@ -18,35 +18,36 @@ assemblies [@Pitschke1998]. Likewise, single-molecule Förster
 resonance energy transfer has proved to be useful for a
 variety of biologically relevant measurements ranging from DNA/RNA
 mechanics [@iqbal2008orientation; @Vafabakhsh2012; @Laurence2005; @Wozniak2008]
-to protein conformation [@Wozniak2005] and protein
+to protein conformation [@Wozniak2005] and enzyme
 function [@Gopich2009; @Sevenich1998]. When used in tandem these two
-techniques can provide unique perspective onto dynamics on molecular
+techniques can provide a unique perspective onto dynamics on molecular
 length-scales and over a wide range of time-scales [@Nettels2008].
-The single-molecule sensitivity fluorescence enables allows resolution
-of rare and short-lived states which are otherwise hidden from view in
-ensemble measurements.
+The single-molecule sensitivity enabled by fluorescence allows
+resolution of rare and short-lived states which are otherwise hidden
+from view in ensemble measurements.
 
-This work will focus on two applications of fluorescence spectroscopy:
-1) inference of kinetic properties of dynamic systems, and 2)
-inference of geometry of static structures.
+This work will examine tools and techniques for two applications of
+fluorescence spectroscopy: 1) inference of kinetic properties of
+dynamic systems, and 2) inference of geometry of static structures.
 
-A major challenge in studying dynamics with single-molecule
+A major challenge in studying gross switching dynamics with single-molecule
 fluorescence spectroscopy is keeping the molecule under study immobile
-with respect to the over the course of the dynamic process. While
+with respect to the measurement apparatus over the course of the dynamic process. While
 there exist a number of techniques for immobilizing single molecules
-to enable study for long durations (*e.g.* minutes to hours), each
+for long durations (*e.g.* minutes to hours), each
 comes with its own limitations. This thesis studies a novel technique
-for molecular immobilization for single-molecule studies, confining
-molecules in aqueous droplets. This technique complements existing
-immobilization, introducing a new set of trade-offs which we
-explore. I demonstrate the viability of fluorescence studies with this
+for molecular immobilization for single-molecule studies using aqueous
+droplets for confinement.  This technique complements existing
+immobilization methods, introducing a new set of trade-offs which we
+explore. I demonstrate the viability of fluorescence studies using this
 technique on a model DNA system, the G quadruplex.
 
 In a second part, we examine the challenges of studying systems with
 faster, less pronounced dynamics. We explore the example of a model
 RNA system, which can be to viewed to first order as a rigid rod, and the
-challenges in using a specific fluorescence spectroscopic technique in
-its traditional role as a "molecular ruler".
+challenges in using a fluorescence as a "spectroscopic ruler". In
+doing so, we shed light on a variety of artifacts of the measurement
+itself and demonstrate a methodology for accounting for these.
 
 ## Outline of Proposal
 Below I will briefly describe the fluorescence spectroscopic
