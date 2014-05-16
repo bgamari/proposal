@@ -763,7 +763,7 @@ polymorphism in the quadruplex structure.
 There have been a number of recent papers reexamining various aspects of the
 quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], force
 spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
-spectroscopy methods [@Fujimoto2013; @Boncina2013].
+spectroscopy methods [@Fujimoto2013; @Boncina2012].
 Despite the plethora of new measurements on the system, the last
 direct examination of single-molecule folding dynamics with
 fluorescence was @Okamoto2008.
