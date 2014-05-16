@@ -32,7 +32,8 @@ characterizing and controlling droplets' chemical environment.
 
 Following this I will introduce the G quadruplex, a conformation
 formed by some DNA systems which I will use as a model system for
-demonstrating fluorescence studies in droplets. This system is important because...
+demonstrating fluorescence studies in droplets.
+<!-- TODO: Why is this important? -->
 
 Next I will describe the goals of the proposed work. These are three-fold,
 
@@ -679,11 +680,12 @@ This will begin by reproducing the findings of Lee [@Lee2005], using
 droplet immobilization in place of vesicle encapsulation and surface
 attachment.
 
-The interpretation of FRET measurements of dynamic systems is a complex problem. Solutions range from simple signal processes techniques [@], [@Gopich2010], to more sophisticated statistical tools models [@Watkins2005; @Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011]
-
-Identifying dynamics: @Torella2011
-HMM: @Greenfeld2012, VB @Okamoto2012
-wavelet: @Taylor2010
+The interpretation of FRET measurements of dynamic systems is a
+complex problem. Solutions range from simple signal processing
+techniques [@Taylor2010], [@Gopich2010], to more sophisticated
+statistical tools (mostly inference techniques for thidden Markov
+models)
+[@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
 
 TODO
 
@@ -780,7 +782,10 @@ Furthermore, the bandwidth of the feedback loop must be wider and
 detector electronics more sensitive to measure the small detector
 response.
 
-Much of the work described above has been completed. What remains is to be
+Much of the work described above has been completed. What remains is
+to optimize the detector and associated optics for the smaller signal
+amplitude and to devise a calibration procedure which can be completed
+quickly enough to enter feedback without losing the particle to be tracked.
 
 ## Characterization of droplet pH
 
