@@ -66,9 +66,10 @@ Following this I will introduce the G quadruplex, a conformation
 formed by some DNA sequences which I will use as a model system for
 demonstrating fluorescence studies droplet-based immobilization.  The
 quadruplex system is a subject of active research as an anti-cancer
-target and has been implicated in a number of regulatory roles. TODO
+target and has been implicated in a number of regulatory roles.
+<!--TODO -->
 
-Next I will describe the goals of the proposed work. These are three-fold,
+Next I will describe the goals of the proposed work. These are threefold,
 
   1. to develop an apparatus to allow droplets to be localized and
      tracked with sufficient resolution for fluorescence probing for
@@ -96,7 +97,7 @@ specific steps forward. This previous work includes,
   4. Initial experiments examining the physical characteristics of 
      droplets formed by our technique
 
-I finish with concluding notes.
+Finally, I close with some concluding notes.
 
 # Background
 
@@ -232,14 +233,13 @@ These experiments are often performed on species diffusing in solution
 with confocal microscopy.  While such solution experiments are easily
 performed [@Dahan1999], such techniques offer only a short glimpse of
 each molecule. With the hydrodynamic radius of many biomolecules of
-interest being on the order of nanometers, these
-molecules require on the order of hundreds of microseconds to traverse
-the observation volume. This is comparable of the inter-photon arrival
-time of a typical fluorescence experiment, meaning that few photons
-will be captured per molecule. In being able to sense the probed
-molecule for only such short durations, these experiments are
-restrictive in the range of timescales and interactions they can
-examine.
+interest being on the order of nanometers, these molecules require on
+the order of hundreds of microseconds to traverse the observation
+volume. This is comparable of the inter-photon arrival time of a
+typical fluorescence experiment, meaning that few photons will be
+captured per molecule. In being able to sense the probed molecule for
+only such short durations, these experiments are restrictive in the
+range of timescales and interactions they can examine.
 
 ## Single-molecule immobilization
 
@@ -353,7 +353,10 @@ is attached.
 
 In an early study[^droplet-differences] Tang et al. reported no evidence
 of perturbation on short timescales in polarization anisotropy
-measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
+measurements on enhanced green fluorescent protein (EGFP)
+[@Tang2008]. Furthermore, fluorescence images from this same study
+gave no indication of accumulation of fluorophore on the droplet
+interface.
 
 [^droplet-differences]:
       It should be noted that while Tang's droplets were formed without
@@ -363,7 +366,7 @@ measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
       the nature of the droplet's interface and how it interacts with the
       system under study.
 
-<!-- TODO? Mention Jofre? -->
+<!-- TODO? Mention Jofre JPC-B? -->
 
 ## Droplet confinement for fluorescence microscopy
 
@@ -594,21 +597,12 @@ has an important thermodynamic contribution.
 
 # Specific Aims
 
-Below I will discuss the goals of this
-work. I will begin by briefly introducing a set of tools for the
-analysis of FRET and FCS experimental data.  I will then discuss an
-application of these tools to a measurement of a model RNA 16-mer
-system. This will serve to demonstrate the need for robust molecular
-immobilization techniques which I answer with droplet
-immobilization realized through tracking and microfluidics.
-TODO: FIXME
-
-As this technique is still very new, I'll propose a set of experiments
-to characterize the chemical environment within the droplet
-environment. Finally, I will propose a set of measurements on the
-G-quadruplex DNA system. Here I will examine switching dynamics as a
-function of osmotic pressure, demonstrating the wide range of
-timescales accessible to a droplet immobilized fluorescence study.
+The first goal of this work is to develop an apparatus to track
+diffusive, sub-micron sized particles to enable long duration
+single-molecule fluorescence studies. This apparatus will help in
+realizing the second goal of characterizing the chemical environment
+within these droplets. Finally, I will use this confinement strategy
+to probe the switching dynamics of the G quadruplex system.
 
 ## Real-time localization and tracking of diffusive droplets
 
@@ -755,7 +749,7 @@ spectrum is also possible.
 
 ## Study of G quadruplex switching dynamics
 
-The second prong of this work will use droplet confinement to examine
+This prong of the work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system.
 Of late several authors have uncovered unexpected
 polymorphism in the quadruplex structure.
@@ -764,17 +758,19 @@ There have been a number of recent papers reexamining various aspects of the
 quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], force
 spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
 spectroscopy methods [@Fujimoto2013; @Boncina2012].
-Despite the plethora of new measurements on the system, the last
-direct examination of single-molecule folding dynamics with
-fluorescence was @Okamoto2008.
+Despite a number of new insights regarding the conformational
+polymorphism of this system, the last direct examination of
+single-molecule folding dynamics with fluorescence was @Okamoto2008.
 
 Of particular interest here is the dependence of quadruplex switching
 dynamics on osmotic pressure which represents a void in the current
-state of the literature.
+state of the literature. This will be probed by the introduction of
+PEG-200 into the droplet environment, following @Lannan2012.
 
+<!-- TODO -->
 This will begin by reproducing the findings of Lee [@Lee2005], using
 droplet immobilization in place of vesicle encapsulation and surface
-attachment. TODO
+attachment. 
 
 The interpretation of FRET measurements of dynamic systems is a
 complex problem. Solutions range from simple signal processing
@@ -845,13 +841,14 @@ base-specific fluorescence enhancement [@Harvey2009b] confound the
 FRET signal. Moreover, linker dynamics [@Sindbert2011] and geometric
 considerations [@Lilley2000] complicate modeling.
 
-One example of this can be found in nucleic acid studies. It is
-believed that cyanine dyes terminally attached to RNA exhibit
-several states where the dye stacks on its neighboring base much as a
-nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
+One example of these complications can be found in nucleic acid
+studies. It is believed that cyanine dyes terminally attached to RNA
+exhibit several states where the dye stacks on its neighboring base
+much as a nucleic acid base would
+[@ouellet2011orientation; @iqbal2008orientation].
 
 In recent work on a set of short double-stranded
-RNA systems we provided further evidence for this behavior [@Milas2013]. In
+RNA systems we provided further evidence for such stacking behavior [@Milas2013]. In
 this work we coupled single-molecule sensitive FRET measurements with
 molecular dynamics (MD) simulation of the labeled system. By
 extracting relevant geometric quantities from the MD model, I was
@@ -913,43 +910,57 @@ emulsions.
 
 ## Study of G quadruplex DNA under droplet confinement
 
-The second prong of this work will use droplet confinement to examine
+The final piece of this work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle encapsulation and surface
 attachment.
 
-Starting with the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
+Starting with a variant on the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
 TMR}$) [@Ying2003], I will demonstrate a FRET experiment under droplet confinement.
 This experiment will proceed as follows,
 
   1. Demonstrate the stability and switching of the system by solution FRET.
      Here I should observe a bimodal FRET efficiency distribution. The
-     amplitude of these populations should scale with salt
-     concentration (using Mg⁺)
+     amplitude of these populations should scale with K⁺
+     concentration: with more salt the higher FRET peak should be
+     suppressed, as observed by Ying
   2. Repeat this experiment in diffusing droplets. Again, a bimodal
      FRET distribution should be observed with roughly equivalent
      proportions to (1).
   3. Repeat this experiment in droplet immobilization via particle
      tracking. This should allow the dynamics of a single particle to
-     be followed in time. Unfortunately, it will likely be difficult to
-     gather enough switching events with this method to estimate
-     kinetic rates. In this case, proceed to,
-  4. Repeat again with microfluidic droplet manipulation and TIRF microscopy. This
-     technique will enable higher throughput although precludes
-     probing quantities needing confocal microscopy such as
-     fluorescence lifetime.
+     be followed in time. As only one molecule can be tracked at a
+     time, care must be taken to gather enough switching events to
+     estimate meaningful kinetic rates. In this case this experiment
+     may be complemented by a higher throughput approach as is
+     described in (4).
+  4. If (3) is found to be inadequate, repeat again with microfluidic
+     droplet manipulation and TIRF microscopy. This technique will
+     enable higher throughput although precludes probing quantities
+     needing confocal microscopy such as fluorescence lifetime.
+
+In steps 3 or 4, I will examine the ionic conditions probed by
+Lee (K⁺ ranging from 0mM to 100mM) to validate that the
+droplet environment is comparable to free solution. I will then
+perform a similar characterization over a range of PEG
+concentrations, examining for the first time switching dynamics
+between the conformations observed by @Lannan2012 and @Heddi2011 with
+single-molecule resolution.
 
 <!--@Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
 stability of the labeled oligomer.-->
 
-The problem of learning reaction kinetics from FRET experiments has
-been explored by a number of groups
+As pointed out earlier, single-molecule immobilization brings with it
+the ability to resolve the switching dynamics of individual molecules
+over time. The problem of learning reaction kinetics from FRET
+experiments has been explored by a number of groups
 [@Okamoto2012; @Greenfeld2012; @Uphoff2011; @Torella2011; @Kalinin2010; @Bronson2009; @Andrec2003]. I
 will extend these techniques as necessary. One particular extension of
 interest is the use of active temperature modulation to shift the
-equilibrium of the system.
+equilibrium of the system, allowing a greater range of kinetic rates
+to be probed.
 
 # Conclusion
 
