@@ -674,11 +674,12 @@ quadruplex's switching behavior
 [@Fujimoto2013; @Koirala2013; @Lim2013; @Long2013; @Boncina2012], it
 seems past due that the single-molecule examinination of dynamics by
 Lee et al. was revisited [TODO]. Of particular interest here is the
-dependence of quadruplex switching dynamics on osmotic pressure.
+dependence of quadruplex switching dynamics on osmotic pressure which
+represents a void in the current state of the literature.
 
 This will begin by reproducing the findings of Lee [@Lee2005], using
 droplet immobilization in place of vesicle encapsulation and surface
-attachment.
+attachment. This 
 
 The interpretation of FRET measurements of dynamic systems is a
 complex problem. Solutions range from simple signal processing
@@ -696,12 +697,14 @@ will fall back to examining the osmotic dependence of quadruplex DNA
 dynamics, a variable which was omitted from the dynamic studies
 discussed previously.
 
-# Prior work
+
+# Prior and proposed work
 
 I have worked on a number of projects in my time in the physics
 program. While some have been completed, the completion of others are
 proposed as parts of the work described above.  Below I will discuss
-in each case what has been done and what remains.
+in each case what has been done and I propose to do to finish what
+remains.
 
 ## Data analysis tools
 
