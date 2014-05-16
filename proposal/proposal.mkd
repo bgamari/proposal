@@ -3,6 +3,7 @@ title: "Droplet encapsulation of biomolecules for fluorescence spectroscopy: A d
 author: Ben Gamari
 email: bgamari@physics.umass.edu
 affil: Department of Physics, University of Massachusetts, Amherst
+date: 2014-05-21
 ---
 \doublespacing
 \newpage
