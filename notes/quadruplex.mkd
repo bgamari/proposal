@@ -106,7 +106,10 @@
  * Fit to fully-connected three-state kinetic model for hTelo-4 and hTelo-5
  * Resolve triplex and long-loop intermediates on path to quadruplex
  * Measured at 23 Celcius
- 
+
+## [@Long2013]
+
+
 ## Studies on the structure and dynamics of the human telomeric G quadruplex by single-molecule resonance energy transfer [@Ying2003]
 
  * Early FRET paper trying to resolve conflicting NMR (in Na⁺,

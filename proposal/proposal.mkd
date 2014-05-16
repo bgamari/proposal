@@ -61,9 +61,10 @@ challenges involved in realizing this technique, particularly in
 characterizing and controlling droplets' chemical environment.
 
 Following this I will introduce the G quadruplex, a conformation
-formed by some DNA systems which I will use as a model system for
-demonstrating fluorescence studies in droplets.
-<!-- TODO: Why is this important? -->
+formed by some DNA sequences which I will use as a model system for
+demonstrating fluorescence studies in droplets.  The quadruplex system
+is a subject of active research as an anti-cancer target and has been
+implicated in a number of regulatory roles.
 
 Next I will describe the goals of the proposed work. These are three-fold,
 
@@ -703,13 +704,16 @@ the switching dynamics of the G quadruplex system.
 Of late several authors have uncovered unexpected
 polymorphism in the quadruplex structure.
 
-With the number of recent papers reexamining various aspects of the
-quadruplex's switching behavior
-[@Fujimoto2013; @Koirala2013; @Lim2013; @Long2013; @Boncina2012], it
-is past due that the single-molecule examinination of dynamics by
-Lee et al. was revisited [TODO]. Of particular interest here is the
-dependence of quadruplex switching dynamics on osmotic pressure which
-represents a void in the current state of the literature.
+There have been a number of recent papers reexamining various aspects of the
+quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], force
+spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
+spectroscopy methods [@Fujimoto2013; @Boncina2013].
+Despite the plethora of new measurements on the system, the last
+examination of folding dynamics with fluorescence was @Okamoto2008.
+
+Of particular interest here is the dependence of quadruplex switching
+dynamics on osmotic pressure which represents a void in the current
+state of the literature.
 
 This will begin by reproducing the findings of Lee [@Lee2005], using
 droplet immobilization in place of vesicle encapsulation and surface
@@ -718,8 +722,8 @@ attachment. This
 The interpretation of FRET measurements of dynamic systems is a
 complex problem. Solutions range from simple signal processing
 techniques [@Taylor2010], [@Gopich2010], to more sophisticated
-statistical tools (mostly inference techniques for thidden Markov
-models)
+statistical tools (largely various inference techniques for hidden
+Markov models)
 [@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
 
 TODO
