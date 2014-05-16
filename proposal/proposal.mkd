@@ -246,21 +246,30 @@ examine.
 Immobilization of the molecules under study provides a way around this
 limitation, enabling single-molecule sensitive studies with less pronounced
 temporal and ensemble averaging. By ensuring the molecule under study
-cannot move appreciably, it can be probed on timescales only bounded
-by the robustness of its fluorophores.
+cannot move appreciably relative to the size of the observation
+volume, it can be probed on timescales only upper-bounded
+by the robustness of its fluorophores[^lower-bound].
+
+[^lower-bound]:
+    However, the lower end of the range of accessible timescales is
+    still, as always, bounded by the inter-photon time. While
+    increasing the excitation intensity can improve this bound, this
+    often comes at the expense of fluorophore longevity.
 
 One common technique for molecular immobilization is surface
 attachment. Here the molecule of interest is modified to include a
 linker which can stick to a properly functionalized surface (such as a
 silanized[@Jia1999] or streptavidin-treated [@Lee2005] surface). When introduced
 into a volume bounded by a such a surface, some fraction of the
-molecules under study will then stick, where they will remain
-translationally confined and can be probed with either confocal or
-imaging microscopy. This approach poses a variety of challenges:
-direct interaction between the surface and the molecule under study
-can substantially perturb the behavior of the studied
+molecules under study will then stick via their linker, where they
+will remain translationally confined and can be probed with either
+confocal or imaging microscopy. This approach poses a variety of
+challenges: direct interaction between the surface and the molecule
+under study can substantially perturb the behavior of the studied
 system[^Yasuda]. Further, the chemistry required for the modification
-of the surface and molecule can pose a substantial practical barrier.
+of the surface and molecule can pose a substantial practical
+barrier. Finally, the presence of the linker can often sterically
+hinder motion of the molecule.
 
 [^Yasuda]:
     @Yasuda2003 observed that nearly all of the $F_1$ ATPase
@@ -269,31 +278,31 @@ of the surface and molecule can pose a substantial practical barrier.
 
 ![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment. Here we see a bilayer confining a single molecule and tethered to a functionalized glass surface.\label{fig:vesicle}](figures/vesicle)
 
-An alternative to surface immobilization is encapsulation where the
+An alternative to surface immobilization is encapsulation, where the
 molecule of interest is placed in a confining container. One can then
-immobilize or manipulate this vessel and the molecule within.
+immobilize or manipulate this container and the molecule within.
 
 Currently the most convenient means of encapsulating single molecules
 is by lipid membrane as seen in Figure \ref{fig:vesicle}.  This
 structure, known as a *vesicle*, consists of a volume of water,
 typically less than one attoliter, contained within a closed lipid
 bilayer [@Boukobza2001; @Okumus2004].  Once formed, these vesicles can
-either be studied in solution, affording longer dwell times in the
-observation volume due to their larger size, or chemically tethered to
-a surface. Unfortunately, vesicles are known to interact with some
+either be studied in solution, affording longer observations times 
+due to their larger size, or chemically tethered to a
+surface. Unfortunately, vesicles are known to interact with some
 systems[^vesicle-interaction], form under only a narrow range of
 chemical conditions [@Vafabakhsh2012], and present practical
 challenges in sample preparation.
 
-While the ability to introduce new molecules into a container and
-modify its chemical environment are desirable capabilities in an
+Further, while the ability to introduce new molecules into a container
+and modify its chemical environment are desirable capabilities in an
 immobilization scheme, protocols for reliably fusing vesicles come
 with a variety of practical challenges [@Kyoung2013].
 
 Finally, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
-within a vesicle.  Collectively, these considerations preclude use
-vesicle encapsulation for many systems.
+within a vesicle. Collectively, these considerations preclude use
+of vesicle encapsulation for many systems.
 
 [^vesicle-interaction]:
     Many proteins, in particular those that sit on membrane surfaces,
@@ -303,8 +312,8 @@ vesicle encapsulation for many systems.
 Our group has developed a technique for the encapsulation of
 single-molecules in water-in-oil emulsion droplets. The preparation protocol
 requires only minutes to perform and results in emulsions which are
-stable for hours. Furthermore, as nearly all sample solution will end up in 
-emulsion droplets, the technique requires very little sample for a
+stable for hours. Furthermore, as nearly all sample solution will end up in a
+emulsion, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
 of interest largely unperturbed. Finally, solutions in various
@@ -313,22 +322,27 @@ dynamics.
 
 Like vesicles, these emulsions can be either probed in solution, where
 they afford longer observation times due to their size, or
-immobilized.  Immobilization of emulsion droplets can be realized
+immobilize.  Immobilization of emulsion droplets can be realized
 through several means. These include optical trapping [@Reiner2006],
 optical tracking (which will be discussed shortly), and microfluidic
 confinement.
 
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
-The emulsion is formed in perfluorinated liquids with an appropriate
+The emulsion is formed in a perfluorinated liquid with an appropriate
 surfactant. Perfluorinated liquids are used due to their non-fluorescent,
 inert nature, biocompatiblity, viscosity, and the wide range of refractive
 indices available (which is useful for optical trapping and
-tracking). They are made through shear by means of sonication. While
+tracking). The emulsion is formed through shear by means of sonication[^sonication]. While
 a small degree of control over droplet size is available through adjustment of
 surfactant concentration, those produced by the usual protocol are
 generally around 200 nm in diameter. This makes them ideal for
 containment of small biological polymers.
+
+[^sonication]:
+    Sonication refers to the use of a high-intensity, high-frequency
+    acoustic excitation. This induces shear forces in the fluid which
+    breaks droplets into smaller droplets, forming an emulsion.
 
 There remain numerous open questions surrounding the sort of
 perturbation imposed by droplet confinement. Many of the
@@ -337,7 +351,7 @@ polarization anisotropy which is reflective of the rotational
 coherence of a fluorophore and, consequently, the object to which it
 is attached.
 
-In an early study[^droplet-differences] Tang *et al.* reported no evidence
+In an early study[^droplet-differences] Tang et al. reported no evidence
 of perturbation on short timescales in polarization anisotropy
 measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
 
@@ -349,6 +363,8 @@ measurements on enhanced green fluorescent protein (EGFP) [@Tang2008].
       the nature of the droplet's interface and how it interacts with the
       system under study.
 
+<!-- TODO? Mention Jofre? -->
+
 ## Droplet confinement for fluorescence microscopy
 
 One of the challenges of conducting a fluorescence experiment in
@@ -356,14 +372,16 @@ droplet encapsulation is ensuring that the conditions within
 the droplet's volume are well understood. Initial measurements from
 our lab have demonstrated that care is needed in interpreting
 fluorescence experiments in droplet environments, suggesting that the
-pH of the confined volume is substantially different from the bulk.
+pH of the confined volume differs substantially from that of the
+initial bulk solution.
 
-The droplets produced by our technique are typically on the order of
-100 nanometers in radius. It is well-documented that oil-water interfaces like
+It is well-documented that oil-water interfaces like
 these exhibit an electrostatic surface potential in equilibrium
-[@Marinova1996]. Furthermore, ion concentrations are known to be
+[@Marinova1996]. Due to the small size of our droplets, it is likely
+that this potential is felt throughout the droplet
+volume. Furthermore, ion concentrations are known to be
 non-homogeneous near oil-water interfaces
-[@Vazdar2012; @Luo2006]. These two factors greatly complicate
+[@Vazdar2012; @Luo2006]. These two factors may complicate
 interpretation of experiments performed under droplet confinement.
 
 ### Chemical environment within emulsion droplets
@@ -376,13 +394,13 @@ pH [@Zimmermann2001; @Marinova1996; @Stubenrauch2002], leading many to
 infer that this surface charge is due to an accumulation of hydroxide
 ions on the oil-water interface [@Kudin2008].
 
-This surface charge gives rise to an electric potential across the
+The induced surface charge gives rise to an electric potential across the
 interface and, consequently, repulsive interactions between particles
 which stabilize the colloid. It stands to reason that our water-in-oil
 emulsions may exhibit a similar surface behavior.
 
 While the consequences of a non-zero surface potential are not clear,
-it is likely that chemical behavior within the droplet volume is
+it is possible that chemical behavior within the droplet volume is
 affected. It has been observed [@Crans2012; @Hasegawa2001] that pH
 conditions within reverse micelles[^micelle] differ substantially from
 those in bulk solution. Several groups [@Peterson2005; @Marques2014]
@@ -390,7 +408,11 @@ have approached this problem seeking to enable high-fidelity
 measurements of reverse-micelle encapsulated proteins with NMR
 spectroscopy. These attempts are mostly centered around surfactant
 choice and suggest that a fair amount of control can be had over
-internal pH.
+internal pH. That being said, it should be pointed out that these
+structures are far smaller than our droplets and thus interface
+effects (such as those induced by the surfactant) will have a
+substantially great effect on the chemical properties of their inner
+volume.
 
 [^micelle]: Micelles are small (1-10nm) droplets of surfactant in
     water. Reverse micelles are similarly sized droplets of water in
@@ -404,15 +426,19 @@ given (to first order) by,
 $$\vec v = \mu_e \vec E$$
 where $\mu_e$ is known as the electrophoretic mobility. With further
 physical modeling, we can relate this mobility to various physical
-properties of the colloid. Namely, if the effect of electric
-double-layering is ignored one finds the Helmholtz-Smoluchkowski
+properties of the emulsion. Namely, under some simplifying
+assumptions[^assumptions] one finds the Helmholtz-Smoluchkowski
 equation for elecphoretic mobility,
 $$μ_e = \frac{\epsilon_r \epsilon_0 \zeta}{\eta}$$
 where $\eta$ is the dynamic viscosity of the medium, $\epsilon_0$ is
 the permittivity of free space, $\epsilon_r$ is the dielectric
 constant of the medium, and $\zeta$ is the electric potential at a
 known distance from the particle surface (namely the radius of the
-slipping plane, the effective hydrodynamic radius of the particle).
+slipping plane which roughly speaking can be considered to be the
+effective hydrodynamic radius of the particle).
+
+[^assumptions]:
+    Namely ignoring the effect of electric double-layering.
 
 <!--
 It is widely believed that water organizes on hydrophobic interfaces
@@ -434,22 +460,26 @@ the replication machinery of most organisms suffers from the
 shortcoming that bases near the ends of a chromosome are not reliably
 preserved. Without compensating for this behavior, successive
 generations of cells would lack a growing body of genes, eventually
-leading to non-viable cells [@Counter1992]. To counter this, nature
+leading to non-viable offspring [@Counter1992]. To counter this, nature
 has introduced regions of non-coding single-stranded DNA near the ends
 of the genome. In humans this *telomeric* DNA is several hundred bases
 long, much of which is lost during replication, to be replaced later
 in the cell's life-cycle by dedicated enzymes.
 
-Telomeric DNA is characterized by regions rich in guanine. *In vitro*
+Telomeric DNA is characterized by regions rich in guanine[^guanine]. *In vitro*
 regions like these have been shown to form a peculiar structure, the *G
-quadruplex* [@Sen1988].  In these structures bases of a single strand
+quadruplex* [@Sen1988].  In these structures bases along a single strand
 of DNA form pairs, giving rise to a four-way symmetric configuration
 known to block the binding of telomerase [@Zahler1991]. It is believed
 that these structures may serve a regulatory role [@Yu2009].
 
+[^guanine]:
+    Recall that guanine is one of the four nucleic acid bases found in
+    DNA, along with adenine, thymine, and cytosine.
+
 Abnormality in the telomere and associated machinery has been linked
 to a variety of diseases and holds promise as a target for anticancer
-agents [@Neidle2002; @Hurley2002].
+agents [@Neidle2002; @Hurley2002]. 
 
 In addition to telomeric DNA there is a growing body of evidence
 that quadruplexes serve regulatory purposes outside of the
@@ -484,13 +514,13 @@ polyethylene glycol stabilizes the quadruplex.
 @Ying2003 sought to resolve conflicting structures derived from
 previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
 FRET. By labelling opposing ends of a quadruplex-forming sequence with Cyanine 5
-and TMR, the authors resolve end-to-end distance as a proxy for
+and TMR fluorophores, the authors resolve end-to-end distance as a proxy for
 conformational state. Their study reveals two FRET populations with
-signs of heterogeneity suggesting switching dynamic equilibrium. This
+signs of heterogeneity suggesting a dynamic equilibrius. This
 equilibrium is shown to be strongly dependent upon the identity and
 concentration of the ions present. The authors claim that the unfolded
 form of the system should exhibit far lower FRET efficiency than
-either of these peaks, leading them to identify the states as parallel
+either of observed FRET peaks, leading them to identify the states as parallel
 and anti-parallel folded conformations, shown in Figure
 \ref{fig:quadruplex}. The authors further concluded that the parallel
 configuration is better stabilized by K⁺ while the anti-parallel
@@ -502,18 +532,22 @@ revealing a similar polymorphism to that observed by Ying.
 <!-- Lee 2005 -->
 @Lee2005 revisited and refined the approach of Ying, examining a
 similar oligomer ($\mathrm{5'-Cy5-(GGGTA)₃-GGG}$) under surface attachment with
-TIRF[^TIRF]. The authors observed three long-lived FRET states (mean occupancy
-time of tens to hundreds of seconds), which they attributed to two
-distinct folded states (hypothesized to be anti-parallel and parallel
-geometries) and one unfolded state. The authors found that the
-anti-parallel state is favored at high K⁺ concentrations, with lower
-concentrations giving rise to a parallel configuration. In the
-intermediate salt regime, the authors observed switching dynamics
-between short-lived intermediate states.
+TIRF[^TIRF]. Their study was differentiated from Ying in the use
+surface-immobilized molecules to resolve the switching dynamics of
+individual molecules. The authors observed three long-lived FRET
+states (mean occupancy time of tens to hundreds of seconds), which
+they attributed to two distinct folded states (hypothesized to be
+anti-parallel and parallel geometries) and one unfolded state. The
+authors found that the anti-parallel state is favored at high K⁺
+concentrations, with lower concentrations giving rise to a parallel
+configuration. In the intermediate salt regime, the authors observed
+switching dynamics between short-lived intermediate states.
 
 To rule out the possibility of surface artifacts, the authors
 performed an additional experiment in vesicle confinement,
-immobilizing each vesicle by tethering to a stationary lipid bilayer.
+immobilizing each vesicle by tethering to a stationary lipid
+bilayer. They reported no appreciable difference in FRET populations
+from the surface measurements.
 
 <!-- Boncina 2012 -->
 A set of experiments by @Boncina2012 suggested that quadruplex
@@ -540,7 +574,7 @@ folded states. The authors found that triplex states are among the
 intermediates on the folding pathway to the typical quadruplex. The
 authors also examined sequences with five and more TTAGGG repeats,
 finding that they can form a variety of short-lived long-loop
-geometries.
+conformations.
 
 [^force-spectroscopy]:
     Here "handle" particles are attached to the ends of a polymer such that
@@ -560,13 +594,14 @@ has an important thermodynamic contribution.
 
 # Specific Aims
 
-Below I will discuss the on-going and future goals of this
+Below I will discuss the goals of this
 work. I will begin by briefly introducing a set of tools for the
 analysis of FRET and FCS experimental data.  I will then discuss an
-application of these tools on a measurement of a model RNA 16-mer
+application of these tools to a measurement of a model RNA 16-mer
 system. This will serve to demonstrate the need for robust molecular
 immobilization techniques which I answer with droplet
 immobilization realized through tracking and microfluidics.
+TODO: FIXME
 
 As this technique is still very new, I'll propose a set of experiments
 to characterize the chemical environment within the droplet
@@ -575,26 +610,23 @@ G-quadruplex DNA system. Here I will examine switching dynamics as a
 function of osmotic pressure, demonstrating the wide range of
 timescales accessible to a droplet immobilized fluorescence study.
 
-Finally, I will discuss some previous contributions in the form of
-fluorescence data analysis tools and techniques.
-
 ## Real-time localization and tracking of diffusive droplets
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion. The ability to
 localize and track droplets for minutes and longer enables a variety
-of unique measurements.
+of unique measurements with single-molecule resolution.
 
 To realize this goal, we use a technique inspired by @Desai2007. Here
-a probe beam is passed through the sample and its deflction measured
-to infer the position of the droplet centroid with respect to the
-center of the observation volume. To map from detector response to
-particle position a polynomial model is learned from an active
-calibration measurement.
+a probe beam is passed through the sample and its deflection measured
+to infer the position of the droplet with respect to the
+center of the observation volume. To map from the response of the
+detector to particle position a polynomial model is used, learned from
+an active calibration measurement.
 
 ![A simplified view of the particle tracking apparatus. A tracking beam is deflected by a droplet in the observation volume. This deflection is measured by a position sensitive photodiode. This signal in turn feeds a feedback loop which drives a translation stage to follow the diffusive motion of the particle.](figures/tracking)
 
-### Risks
+<!-- Risks -->
 Our droplet tracking system has been demonstrated to reliably track
 particles down to sizes of 500 nm. Our current preparation protocol
 produces droplets approximately 100 nm in radius. While I have started
@@ -627,23 +659,29 @@ microfluidic devices.
  * Measure pH in droplets
 -->
 A central piece of this work will be characterizing the chemical
-conditions of imposed by droplet confinement. In @Milas2014, we
+conditions imposed by droplet confinement. In @Milas2014, we
 examined an RNA oligomer both under droplet confinement and in
 solution. By examining photon count statistics
 [@Chen1999; @Huang2004], we were able to distinguish intensity states
 of the fluorophores. In solution measurements the photon count
 distribution was well-fit by a single-species model while both at low
 pH (pH of 4) and in droplet confinement a three-species model was
-necessary. The similarity between the droplet and low-pH solution
-measurements suggest a strongly perturbed chemical environment within
-the droplet. FRET measurements of this same molecule under similar
-conditions lead to similar conclusions.
+necessary (shown in Figure \ref{fig:pch}). The similarity between the
+droplet and low-pH solution measurements suggest a strongly perturbed
+chemical environment within the droplet. More specifically, it stands
+to reason that the pH differs substantially from the initial solution
+from which the droplets were formed. FRET measurements of this same
+molecule under similar conditions lead to similar conclusions.
 
-![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labelled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos.](figures/rna-pch)
+![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labelled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos. \label{fig:pch}](figures/rna-pch)
 
-Currently others in our lab examining this problem with bulk
+Currently others in our lab are examining this problem with bulk
 spectroscopy. Here, we create a droplet emulsion filled with a pH
-sensitive fluorophore, in this case fluorescein. The pH dependence of
+sensitive fluorophore, in this case fluorescein.
+By examining the emission spectrum of the dye, one can infer
+the pH of the fluorophore's local environment.
+
+The pH dependence of
 fluorescein arises from a change in number of hydrogens coordinating
 with the molecule, as shown in Figure \ref{fig:fluorescein}. Between
 pH 4 and 6 the molecule is largely in its singly ionized form, missing
@@ -651,9 +689,8 @@ one hydrogen. This state has an
 absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
 3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
 which has an absorption around 490 nm and a $τ = 4.1$ ns emission
-decay. By examining the emission spectrum of the dye, one can infer
-the relative proportions of the anionic and dianionic species seen
-above.
+decay. In the measurement described above, the pH is derived from the
+relative intensities of the anionic and dianionic emission peaks.
 
 ![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
 
@@ -661,14 +698,11 @@ Likewise, one can perform a similar inference of pH by examining
 fluorescence lifetime. This has the advantage of being more easily
 performed on low-intensity signals, such as that produced by a single
 droplet. It is in this manner that this work will attempt to measure
-the pH distribution in an ensemble of droplets. This experiment will
-ultimately seek to use immobilized droplets (either on a surface or
-tracked).
-By filling droplets with
-fluorophore such that the mean droplet occupancy is on the order of
-100 molecules (on the order of $\mathrm{μmol/L}$), it should be
-possible to collect enough statistics to infer a mixing distribution over
-pH.
+the pH distribution in an ensemble of droplets. By filling droplets
+with fluorophore such that the mean droplet occupancy is on the order
+of 100 molecules (on the order of $\mathrm{μmol/L}$), it should be
+possible to collect enough statistics to infer a distribution over pH
+for the droplet ensemble.
 
 This experiment will proceed as follows,
 
@@ -681,18 +715,20 @@ This experiment will proceed as follows,
   3. When particle tracking has been stabilized, measure fluorescence
      lifetime in individual tracked droplets to characterize pH distribution
 
-For each droplet in these experiments, I will expect to see a fluorescence
-lifetime distribution that looks like,
-$$P(t) = α λ₁ e^{-t/τ₁} + (1 - α) λ₂ e^{-t/τ₂}$$ 
-Where $α$ is related to the concentration of the anion and dianion
-species shown in Figure \ref{fig:fluorescein} [^concentration]. Given
-that the difference between the fluorescence lifetimes of the relevant
-ionization states ($\tau_1=3.0$ and $\tau_2=4.1$ ns) is so small, a
-first analysis might follow past work by fitting a single-exponential
-to the resulting photon arrival time histogram. The lifetime resulting
-from such a fit will have no direct relation to either of the two
-fluorophore lifetimes, but can be related empirically to pH though the
-calibration experiments performed in step 1 above.
+For each droplet in these experiments, I will expect to see a
+fluorescence lifetime distribution that looks like, $$P(t) = α λ₁
+e^{-t/τ₁} + (1 - α) λ₂ e^{-t/τ₂}$$ Where $\tau_1$ (resp. $\tau_2$)
+denotes lifetime of the anionic (resp. dianionic) species and $α$ is
+related to the species relative concentration [^concentration].
+
+Given that the difference between the fluorescence lifetimes of the
+relevant ionization states ($\tau_1=3.0$ and $\tau_2=4.1$ ns) is so
+small, a first analysis might follow past work by fitting a
+single-exponential to the resulting photon arrival time histogram. The
+lifetime resulting from such a fit will have no direct relation to
+either of the two fluorophore lifetimes, but can be related
+empirically to pH though the calibration experiments performed in step
+1 above.
 
 [^concentration]:
     Note that this ignores contributions from the weakly fluorescent
@@ -712,8 +748,9 @@ of groups [@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994].
 
 If the change in lifetime from fluorescein is found to be too small to
 be resolved, there are a number [@Han2010] of other dyes that could be
-used. Alternatively, direct measurement of the emission spectrum is
-also possible.
+used, particularly with a steeper response in the pH regime of
+interest (3 to 6). Alternatively, direct measurement of the emission
+spectrum is also possible.
 
 
 ## Study of G quadruplex switching dynamics
@@ -728,7 +765,8 @@ quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], fo
 spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
 spectroscopy methods [@Fujimoto2013; @Boncina2013].
 Despite the plethora of new measurements on the system, the last
-examination of folding dynamics with fluorescence was @Okamoto2008.
+direct examination of single-molecule folding dynamics with
+fluorescence was @Okamoto2008.
 
 Of particular interest here is the dependence of quadruplex switching
 dynamics on osmotic pressure which represents a void in the current
@@ -736,7 +774,7 @@ state of the literature.
 
 This will begin by reproducing the findings of Lee [@Lee2005], using
 droplet immobilization in place of vesicle encapsulation and surface
-attachment. This 
+attachment. TODO
 
 The interpretation of FRET measurements of dynamic systems is a
 complex problem. Solutions range from simple signal processing
@@ -744,8 +782,6 @@ techniques [@Taylor2010], [@Gopich2010], to more sophisticated
 statistical tools (largely various inference techniques for hidden
 Markov models)
 [@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
-
-TODO
 
 ### Risks
 
@@ -765,23 +801,25 @@ remains.
 
 ## Data analysis tools
 
-While single-molecule sensitive fluorescence techniques can provide insight
-into a variety of biologically relevant systems, interpretation of
-resulting data can be a non-trivial exercise. Between spectral cross-talk,
-background, and spectral sensitivity, and detection of fluorescence
-bursts from sample diffusion, a fluorescence experiment is subject to
-numerous experimental artifacts that must be estimated and corrected
-for quantitatively accurate results. Unfortunately, the lack of
-an open toolchain for analysis of fluorescence data
-means that groups generally must reimplement these tools as needed.
+While single-molecule sensitive fluorescence techniques can provide
+insight into a variety of biologically relevant systems,
+interpretation of resulting fluorescence trajectories (e.g. photon
+arrival times) can be a non-trivial exercise. Between spectral
+cross-talk, background, and spectral sensitivity, and detection of
+fluorescence bursts from sample diffusion, a fluorescence experiment
+is subject to numerous experimental artifacts that must be estimated
+and corrected for quantitatively accurate results. Unfortunately, the
+lack of an open toolchain for analysis of fluorescence data means that
+groups generally must reimplement these tools as needed.
 
-I have developed a suite of open-source tools for acquisition
-and analysis of fluorescence timestamp data[@Gamari2013]. These tools are used both
-in and outside of our lab and won the Open Source Software Innovation
-competition held by the University of Massachusetts Institute for
-Biology, Biostatistics, and Bioinformatics (ICB3). Interested readers are
+I have developed a suite of open-source tools for acquisition and
+analysis of fluorescence timestamp data[@Gamari2013]. These tools are
+used both in and outside of our lab, including in some of the work
+cited above, and won the Open Source Software Innovation competition
+held by the University of Massachusetts Institute for Biology,
+Biostatistics, and Bioinformatics (ICB3). Interested readers are
 referred to the competition submission for further details on this
-work [@Gamari2013OSSI].
+work [@Gamari2013OSSI] and the paper describing these tools [@Gamari2013].
 
 ## Characterization of FRET on RNA
 
@@ -791,9 +829,9 @@ summary: work with Peker Milas
 
 Fӧrster resonance energy transfer is widely used to study structural
 transformations of biological macromolecules. While FRET is often used
-for qualitative insight, there
-is increasing interest in applications of a more quantitative 
-nature [@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
+for qualitative insight, there is increasing interest in applications
+of a more quantitative nature
+[@Wang2010; @Hoefling2011; @Preus2012; @McCann2010]. The
 quantitative interpretation of FRET results is fraught with
 difficulties. Correlations between orientational degrees of freedom
 and inter-dye distance are not uncommon [@VanBeek2007], orientational
@@ -812,8 +850,8 @@ believed that cyanine dyes terminally attached to RNA exhibit
 several states where the dye stacks on its neighboring base much as a
 nucleic acid base would [@ouellet2011orientation; @iqbal2008orientation].
 
-In recent work on short double-stranded
-RNA we provided further evidence for this behavior [@Milas2013]. In
+In recent work on a set of short double-stranded
+RNA systems we provided further evidence for this behavior [@Milas2013]. In
 this work we coupled single-molecule sensitive FRET measurements with
 molecular dynamics (MD) simulation of the labeled system. By
 extracting relevant geometric quantities from the MD model, I was
@@ -833,14 +871,13 @@ polystyrene bead diffusing in mineral oil is shown in Figure
 ![A representative tracking trajectory of a one micron polystyrene bead diffusing in mineral oil. Notice the long timescale vertical motion of the bead due to buoyant drift.\label{fig:track}](figures/track)
 
 Scaling this technique up to be viable for tracking emulsion droplets
-poses several practical challenges.  While conceptually simply, there
-are several practical challenges in implementing such a system. The
-greatest of these is the process of learning the tracking model, which
-must happen quickly enough that the particle can be considered to be
-stationary (relative to its size) over the course of calibration process.
-Furthermore, the bandwidth of the feedback loop must be wider and
-detector electronics more sensitive to measure the small detector
-response.
+poses several practical challenges. The greatest of these is the
+process of learning the detector response model, which must happen
+quickly enough that the particle can be considered to be stationary
+(relative to its size) over the course of calibration process.
+Furthermore, the bandwidth of the feedback loop must be widened and
+detector electronics made more sensitive to measure the reduced signal
+amplitude due to the smaller particle size.
 
 Much of the work described above has been completed. What remains is
 to optimize the detector and associated optics for the smaller signal
@@ -903,9 +940,9 @@ This experiment will proceed as follows,
      probing quantities needing confocal microscopy such as
      fluorescence lifetime.
 
-@Lee2014 demonstrated that internal fluorescent labels exhibit both
+<!--@Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
-stability of the labeled oligomer.
+stability of the labeled oligomer.-->
 
 The problem of learning reaction kinetics from FRET experiments has
 been explored by a number of groups
