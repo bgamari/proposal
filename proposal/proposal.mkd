@@ -780,13 +780,6 @@ statistical tools (largely various inference techniques for hidden
 Markov models)
 [@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
 
-### Risks
-
-If the droplet technique proves in its entirety to be unusable, I
-will fall back to examining the osmotic dependence of quadruplex DNA
-dynamics, a variable which was omitted from the dynamic studies
-discussed previously.
-
 
 # Prior and proposed work
 
