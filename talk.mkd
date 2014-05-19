@@ -133,3 +133,35 @@ Solid line represents distribution under free-rotation
 ![](figures/fret_processes.svg)
 
  0. The problem
+
+# Resolving single-molecule dynamics
+## Single molecule measurements
+
+ * We often way to resolve individual molecules
+   * Dynamics over long timescales
+   * Rare states
+ 
+ 0. The approach described above has single-molecule sensitivity, but
+    we often want single-molecule resolution
+ 0. That is, to watch an individual molecule
+ 0. For this, we need hold the molecule in place
+ 
+## Existing methods
+
+![](figures/vesicle.svg)
+
+ * Vesicle
+ * Surface attachment
+
+ 0. Vesicle:
+   * Narrow region of conditions where feasible
+   * Very poor sample utilization
+ 0. Surface attachment:
+   * Linker, surface artifacts
+   * Requires functionalization of sample
+
+## A new approach: Droplet immobilization
+
+ * 
+
+## 
