@@ -51,13 +51,6 @@ svgFigure caption fname transform = do
     let figOutName = Path.addExtension figName "pdf"
     figure caption figOutName
 
-process :: FilePath -> FilePath -> (Document -> Document) -> EitherT String IO ()
-process inFile outFile transform = do
-    doc <- liftIO $ Xml.readFile def inFile
-    --let notFound = filter (\l->l `notElem` allLayers doc) showLayers
-    --when (not $ null notFound) $ lift $ putStrLn $ "couldn't find layers: "++show notFound
-    liftIO $ Xml.writeFile def outFile (transform doc)
-
 doTalk :: Talk () -> IO (Either String ())
 doTalk talk = runEitherT $ do
     blks <- evalStateT (execWriterT talk) (TalkState 0)
