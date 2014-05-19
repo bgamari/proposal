@@ -1,0 +1,37 @@
+# Motivation
+
+![`filter: only molecule-label molecule-distance scale-bar](figures/fret.svg "A single-molecule")
+
+# FRET
+
+-   Fӧrster resonance energy transfer
+-   A fluorescence spectroscopy
+-   Provides insight into molecular geometry and kinetics
+
+# FRET
+
+![`filter: ](figures/fret.svg "Seeing a single molecule")
+
+# FRET
+
+![](figures/fret.svg "Seeing a single molecule")
+
+# FRET
+
+![](figures/fret.svg "Seeing a single molecule")
+
+# FRET
+
+![](figures/fret.svg "Seeing a single molecule")
+
+# FRET
+
+![`filter: only donor scale-bar`](figures/fret.svg "Seeing a single molecule")
+
+# FRET
+
+![](figures/fret.svg "Measuring an intramolecular distance")
+
+# FRET
+
+![](figures/fret.svg "Measuring an intramolecular distance")
