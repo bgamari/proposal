@@ -69,16 +69,67 @@
 
 ## FRET
 
-The probability of Fӧrster energy transfer is
+The probability of Fӧrster energy transfer is,
 
- 0. FRET is 
+$$E = \frac{1}{1 + (R / R_0)^6}$$
+
+ 0. Namely, energy transfer efficiency depends upon the distance
+    between the fluorophores $R$ and the Fӧrster constant $R_0$
+ 0. Looking at this, it is tempting to say that FRET can be used as to
+    measure intramolecular distance
+ 0. But, we need to look more carefully
+
+. . .
+
+where,
+
+$$R_0 \propto \frac{\kappa^2 J}{n^4}$$
+
+ * $\kappa$ is related to the dipole moments of the two fluorophores,
+ 
+     $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cdot \hat R_{DA})$$
+
+ 0. $\hat \mu_i$ is the transition dipole moment of fluorophore $i$
+
 # Modelling FRET on an RNA system
 
 ## RNA 16-mer
 
 ![](figures/rna.png)
 
- 0. We examined FRET on an RNA 16-mer
+ 0. We examined FRET on a double-stranded RNA 16-mer, four labelling
+    variations (we'll focus on 5' forward variant here)
+ 0. Being a short nucelic acid oligo, the system itself should be akin to a rigid rod
  0. Terminally labelled with Cy3 and Cy5
 
-## Molecular dynamics
+## Molecular dynamics model
+
+![](figures/timeseries-fwd5-R0_58-0300ns.pdf)
+
+ 0. Built a all-atom molecular dynamics model of each oligomer, including labels
+ 0. Evolved each for 300 nanoseconds
+ 0. Extracted approximations of inter-fluorophore distance $R$ and $\kappa^2$
+ 0. Note that the distribution in $R$ is roughly normal
+
+ 0. In the bottom pane we have plotted the instantaneous FRET efficiency
+ 0. Care must be taken in interpretting this due to the timescale of these dynamics
+ 0. Compared to the donor fluorescence lifetime [TODO: Introduce?] the dynamics in $R$ are fast, 
+
+## Orientation factor
+
+![](figures/kappa-hist-5.svg)
+
+Solid line represents distribution under free-rotation
+
+ 0. Examining the orientation factor distribution over the course of
+    the trajectory, we find that the simulated system diverges
+    substantially from the usual free-rotation assumption
+
+## Interpretting fast dynamics
+
+ 
+## Monte Carlo model for FRET
+
+![](figures/fret_processes.svg)
+
+ 0. The problem
