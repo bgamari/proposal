@@ -1,6 +1,6 @@
 # Motivation
 
-![`filter: only molecule-label molecule-distance scale-bar](figures/fret.svg "A single-molecule")
+![`filter: only molecule-label molecule-distance scale-bar`](figures/fret.svg "A single-molecule")
 
 # FRET
 
@@ -10,7 +10,7 @@
 
 # FRET
 
-![`filter: ](figures/fret.svg "Seeing a single molecule")
+![`filter: last +acceptor`](figures/fret.svg "Seeing a single molecule")
 
 # FRET
 
