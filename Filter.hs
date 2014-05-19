@@ -33,6 +33,7 @@ main = runEitherT $ flip evalStateT def $ do
     >>= return . readJSON def
     >>= walkM walkFilters
     >>= walkM (lift . svgToPdf)
+    >>= return . walk filterNotes
     >>= return . writeJSON def
     >>= liftIO . putStr
 
@@ -85,3 +86,7 @@ svgToPdf (Image contents (fname,alt)) | fname' `hasExtension` "svg" = do
   where fname' = decodeString fname
 svgToPdf inline = return inline
             
+filterNotes :: Block -> Block
+filterNotes (OrderedList (0,_,_) _) = Null
+filterNotes blk = blk            
+    

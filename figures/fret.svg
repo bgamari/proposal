@@ -23,13 +23,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="720.36712"
+     inkscape:cx="484.36712"
      inkscape:cy="387.87868"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer7"
      showgrid="false"
      inkscape:window-width="1918"
-     inkscape:window-height="1173"
+     inkscape:window-height="1053"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
@@ -111,10 +111,11 @@
      inkscape:label="molecule-distance"
      id="layer7"
      inkscape:groupmode="layer"
-     style="display:none"
+     style="display:inline"
      transform="translate(4e-6,1.700115e-5)">
     <g
-       id="g7919">
+       id="g7919"
+       transform="translate(12,0)">
       <path
          style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          d="M 537.75472,313.03209 C 494.72034,267.88241 207.1823,354.20151 207.18228,261.41329"
@@ -130,7 +131,7 @@
     </g>
     <g
        id="g5226"
-       transform="matrix(4.3117343,0,0,4.3117343,-93.923584,-2667.56)">
+       transform="matrix(4.3117343,0,0,4.3117343,-71.923584,-2667.56)">
       <g
          word-spacing="normal"
          letter-spacing="normal"
@@ -153,7 +154,7 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="fluorophore-label"
-     style="display:none"
+     style="display:inline"
      transform="translate(238.61204,1.020069e-5)">
     <text
        transform="translate(-52.98704,-155.3231)"
@@ -345,7 +346,7 @@
        sodipodi:cy="285.21933"
        sodipodi:rx="29.285715"
        sodipodi:ry="62.857143"
-       d="m 99.285715,285.21933 a 29.285715,62.857143 0 1 1 -58.57143,0 29.285715,62.857143 0 1 1 58.57143,0 z"
+       d="m 99.285715,285.21933 c 0,34.71504 -13.111661,62.85714 -29.285715,62.85714 -16.174054,0 -29.285715,-28.1421 -29.285715,-62.85714 0,-34.71504 13.111661,-62.85714 29.285715,-62.85714 16.174054,0 29.285715,28.1421 29.285715,62.85714 z"
        transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,576.565,171.97881)" />
   </g>
   <g
@@ -377,7 +378,7 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="scale-bar"
-     style="display:none"
+     style="display:inline"
      transform="translate(0,6.8004599e-6)">
     <path
        style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"

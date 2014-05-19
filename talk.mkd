@@ -1,54 +1,84 @@
 # Motivation
 
-![`filter: only molecule molecule-label molecule-distance scale-bar`](figures/fret.svg "A single-molecule")
+## Motivation
 
- * we want to probe the shape or interactions of a biomolecular system
- * One powerful approach is to attach fluorescent probe
+![`filter: only molecule molecule-label scale-bar`](figures/fret.svg)
 
-# FRET
+ 0. we want to probe the global shape or interactions supported by a biomolecular system
+ 0. One powerful approach is to attach fluorescent probe
 
- * Fӧrster resonance energy transfer
- * A fluorescence spectroscopy
- * Provides insight into molecular geometry and kinetics
+## Motivation
 
-# FRET
+![`filter: only molecule molecule-distance scale-bar`](figures/fret.svg)
 
-![`filter: only molecule scale-bar acceptor donor fluorophore-label`](figures/fret.svg "Seeing a single molecule")
+ 0. we want to probe the shape or interactions of a biomolecular system
+ 0. One powerful approach is to attach fluorescent probe
 
- * attach a pair of appropriately chosen fluorophores to the molecule of interest
+# Background: FRET
+## FRET
+
+ 0. Fӧrster resonance energy transfer
+ 0. A fluorescence spectroscopy
+ 0. Provides insight into molecular geometry and kinetics
+
+## FRET
+
+![`filter: only molecule scale-bar acceptor donor fluorophore-label`](figures/fret.svg)
+
+ 0. attach a pair of appropriately chosen fluorophores to the molecule of interest
  
-# FRET
+## FRET
 
-![`filter: last -scale-bar donor-exc-photon`](figures/fret.svg "Seeing a single molecule")
+![`filter: last -scale-bar donor-exc-photon -fluorophore-label`](figures/fret.svg)
 
- * illuminate the molecule with appropriate excitation
+ 0. illuminate the molecule with appropriate excitation
 
-# FRET
+## FRET
 
-![`filter: last !donor excited-donor`](figures/fret.svg "Seeing a single molecule")
+![`filter: last !donor excited-donor`](figures/fret.svg)
 
- * this excites the fluorophore
+ 0. this excites the fluorophore
 
-# FRET
+## FRET
 
-![`filter: last donor-em-photon`](figures/fret.svg "Seeing a single molecule")
+![`filter: last donor-em-photon`](figures/fret.svg)
 
- * the excited fluorphore can either decay, potentially with the emission of a photon, ...
+ 0. the excited fluorphore can either decay, potentially with the emission of a photon, ...
 
-# FRET
+## FRET
 
-![`filter: last !donor excited-donor`](figures/fret.svg "Seeing a single molecule")
+![`filter: last !donor excited-donor`](figures/fret.svg)
 
- * or
+ 0. or
 
-# FRET
+## FRET
 
-![`filter: last energy-transfer`](figures/fret.svg "Measuring an intramolecular distance")
+![`filter: last energy-transfer`](figures/fret.svg)
 
- * it the system can undergo Fӧrster energy transfer ...
+ 0. the system can undergo Fӧrster energy transfer ...
  
-# FRET
+## FRET
 
-![`filter: last !acceptor excited-acceptor`](figures/fret.svg "Measuring an intramolecular distance")
+![`filter: last !acceptor excited-acceptor`](figures/fret.svg)
 
- * donating its energy to the acceptor fluorophore
+ 0. donating its energy to the acceptor fluorophore
+
+## FRET
+
+![`filter: last acceptor-em-photon`](figures/fret.svg)
+
+## FRET
+
+The probability of Fӧrster energy transfer is
+
+ 0. FRET is 
+# Modelling FRET on an RNA system
+
+## RNA 16-mer
+
+![](figures/rna.png)
+
+ 0. We examined FRET on an RNA 16-mer
+ 0. Terminally labelled with Cy3 and Cy5
+
+## Molecular dynamics
