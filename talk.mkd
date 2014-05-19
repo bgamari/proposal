@@ -1,37 +1,54 @@
 # Motivation
 
-![`filter: only molecule-label molecule-distance scale-bar`](figures/fret.svg "A single-molecule")
+![`filter: only molecule molecule-label molecule-distance scale-bar`](figures/fret.svg "A single-molecule")
+
+ * we want to probe the shape or interactions of a biomolecular system
+ * One powerful approach is to attach fluorescent probe
 
 # FRET
 
--   Fӧrster resonance energy transfer
--   A fluorescence spectroscopy
--   Provides insight into molecular geometry and kinetics
+ * Fӧrster resonance energy transfer
+ * A fluorescence spectroscopy
+ * Provides insight into molecular geometry and kinetics
 
 # FRET
 
-![`filter: last +acceptor`](figures/fret.svg "Seeing a single molecule")
+![`filter: only molecule scale-bar acceptor donor fluorophore-label`](figures/fret.svg "Seeing a single molecule")
+
+ * attach a pair of appropriately chosen fluorophores to the molecule of interest
+ 
+# FRET
+
+![`filter: last -scale-bar donor-exc-photon`](figures/fret.svg "Seeing a single molecule")
+
+ * illuminate the molecule with appropriate excitation
 
 # FRET
 
-![](figures/fret.svg "Seeing a single molecule")
+![`filter: last !donor excited-donor`](figures/fret.svg "Seeing a single molecule")
+
+ * this excites the fluorophore
 
 # FRET
 
-![](figures/fret.svg "Seeing a single molecule")
+![`filter: last donor-em-photon`](figures/fret.svg "Seeing a single molecule")
+
+ * the excited fluorphore can either decay, potentially with the emission of a photon, ...
 
 # FRET
 
-![](figures/fret.svg "Seeing a single molecule")
+![`filter: last !donor excited-donor`](figures/fret.svg "Seeing a single molecule")
+
+ * or
 
 # FRET
 
-![`filter: only donor scale-bar`](figures/fret.svg "Seeing a single molecule")
+![`filter: last energy-transfer`](figures/fret.svg "Measuring an intramolecular distance")
 
+ * it the system can undergo Fӧrster energy transfer ...
+ 
 # FRET
 
-![](figures/fret.svg "Measuring an intramolecular distance")
+![`filter: last !acceptor excited-acceptor`](figures/fret.svg "Measuring an intramolecular distance")
 
-# FRET
-
-![](figures/fret.svg "Measuring an intramolecular distance")
+ * donating its energy to the acceptor fluorophore

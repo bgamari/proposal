@@ -66,11 +66,13 @@ walkFilters (Image contents (fname,alt)) = do
                               return $ Right $ showOnlyLayers layers'
           "last":layers -> do
             let layers' = map T.pack layers
-                adds = S.fromList $ mapMaybe ("+" `T.stripPrefix`) layers'
-                dels = S.fromList $ mapMaybe ("-" `T.stripPrefix`) layers'
+                adds = S.fromList $ mapMaybe ("+" `T.stripPrefix`) layers'  -- add to visible layers
+                dels = S.fromList $ mapMaybe ("-" `T.stripPrefix`) layers'  -- remove from visible layers
+                hide = S.fromList $ mapMaybe ("!" `T.stripPrefix`) layers'  -- hide for just this frame
+                show = S.fromList $ filter (\x->T.head x `notElem` "+-!") layers'
             visLayersFor fname' %= \xs->xs `S.union` adds `S.difference` dels
             vis <- use $ visLayersFor fname'
-            return $ Right $ showOnlyLayers $ S.toList vis
+            return $ Right $ showOnlyLayers $ S.toList $ vis `S.difference` hide `S.union` show
           x:_ -> lift $ left $ "unknown filter type: "<>x
     findFilterDef x = return $ Left x
 walkFilters inline = return inline
