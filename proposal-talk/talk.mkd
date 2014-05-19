@@ -1,73 +1,81 @@
-# Motivation
+---
+title: Droplet encapsulation of biomolecules for fluorescence spectroscopy
+subtitle: A demonstration examining G-quadruplex folding dynamics
+author: Ben Gamari
+date: 2014-05-19
+---
 
-## Motivation
+# Probing single molecules
+
+### Motivation
 
 ![`filter: only molecule molecule-label scale-bar`](figures/fret.svg)
 
  0. we want to probe the global shape or interactions supported by a biomolecular system
  0. One powerful approach is to attach fluorescent probe
 
-## Motivation
+### Motivation
 
 ![`filter: only molecule molecule-distance scale-bar`](figures/fret.svg)
 
  0. we want to probe the shape or interactions of a biomolecular system
  0. One powerful approach is to attach fluorescent probe
 
-# Background: FRET
+# Background
 ## FRET
+### FRET
 
  0. Fӧrster resonance energy transfer
  0. A fluorescence spectroscopy
  0. Provides insight into molecular geometry and kinetics
 
-## FRET
+### FRET
 
 ![`filter: only molecule scale-bar acceptor donor fluorophore-label`](figures/fret.svg)
 
  0. attach a pair of appropriately chosen fluorophores to the molecule of interest
  
-## FRET
+### FRET
 
 ![`filter: last -scale-bar donor-exc-photon -fluorophore-label`](figures/fret.svg)
 
  0. illuminate the molecule with appropriate excitation
 
-## FRET
+### FRET
 
 ![`filter: last !donor excited-donor`](figures/fret.svg)
 
  0. this excites the fluorophore
 
-## FRET
+### FRET
 
 ![`filter: last donor-em-photon`](figures/fret.svg)
 
  0. the excited fluorphore can either decay, potentially with the emission of a photon, ...
 
-## FRET
+### FRET
 
 ![`filter: last !donor excited-donor`](figures/fret.svg)
 
  0. or
 
-## FRET
+### FRET
 
 ![`filter: last energy-transfer`](figures/fret.svg)
 
  0. the system can undergo Fӧrster energy transfer ...
  
-## FRET
+### FRET
 
 ![`filter: last !acceptor excited-acceptor`](figures/fret.svg)
 
  0. donating its energy to the acceptor fluorophore
 
-## FRET
+### FRET
 
 ![`filter: last acceptor-em-photon`](figures/fret.svg)
 
-## FRET
+### FRET
 
 The probability of Fӧrster energy transfer is,
 
@@ -91,9 +99,9 @@ $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
 
  0. $\hat \mu_i$ is the transition dipole moment of fluorophore $i$
 
-# Modelling FRET on an RNA system
+# Modelling FRET on RNA
 
-## RNA 16-mer
+### RNA 16-mer
 
 ![](figures/rna.png)
 
@@ -102,7 +110,7 @@ $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
  0. Being a short nucelic acid oligo, the system itself should be akin to a rigid rod
  0. Terminally labelled with Cy3 and Cy5
 
-## Molecular dynamics model
+### Molecular dynamics model
 
 ![](figures/timeseries-fwd5-R0_58-0300ns.pdf)
 
@@ -115,7 +123,7 @@ $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
  0. Care must be taken in interpretting this due to the timescale of these dynamics
  0. Compared to the donor fluorescence lifetime [TODO: Introduce?] the dynamics in $R$ are fast, 
 
-## Orientation factor
+### Orientation factor
 
 ![](figures/kappa-hist-5.svg)
 
@@ -125,17 +133,17 @@ Solid line represents distribution under free-rotation
     the trajectory, we find that the simulated system diverges
     substantially from the usual free-rotation assumption
 
-## Interpretting fast dynamics
+### Interpretting fast dynamics
 
  
-## Monte Carlo model for FRET
+### Monte Carlo model for FRET
 
 ![](figures/fret_processes.svg)
 
  0. The problem
 
-# Resolving single-molecule dynamics
-## Single molecule measurements
+# Single-molecule dynamics
+### Single molecule measurements
 
  * We often way to resolve individual molecules
    * Dynamics over long timescales
@@ -146,23 +154,25 @@ Solid line represents distribution under free-rotation
  0. That is, to watch an individual molecule
  0. For this, we need hold the molecule in place
  
-## Existing methods
+## Immobilization
 
+### Vesicle encapsulation
 ![](figures/vesicle.svg)
+
+ 0. Narrow region of conditions where feasible
+ 0. Very poor sample utilization
+
+### Surface attachment
 ![](figures/surface-attachment.svg)
 
- * Vesicle
- * Surface attachment
+ 0. Linker, surface artifacts
+ 0. Requires functionalization of sample
 
- 0. Vesicle:
-   0. Narrow region of conditions where feasible
-   0. Very poor sample utilization
- 0. Surface attachment:
-   0. Linker, surface artifacts
-   0. Requires functionalization of sample
+### A new approach: Droplet immobilization
 
-## A new approach: Droplet immobilization
+![](figures/droplet.svg)
 
- * f
+ 0. hi
 
-## 
+# Droplet chemistry
+
