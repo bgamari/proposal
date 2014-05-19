@@ -149,19 +149,20 @@ Solid line represents distribution under free-rotation
 ## Existing methods
 
 ![](figures/vesicle.svg)
+![](figures/surface-attachment.svg)
 
  * Vesicle
  * Surface attachment
 
  0. Vesicle:
-   * Narrow region of conditions where feasible
-   * Very poor sample utilization
+   0. Narrow region of conditions where feasible
+   0. Very poor sample utilization
  0. Surface attachment:
-   * Linker, surface artifacts
-   * Requires functionalization of sample
+   0. Linker, surface artifacts
+   0. Requires functionalization of sample
 
 ## A new approach: Droplet immobilization
 
- * 
+ * f
 
 ## 
