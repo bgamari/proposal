@@ -141,7 +141,7 @@ Solid line represents distribution under free-rotation
     lifetime, the Foerster equation does not hold in the face of
     dynamics on comparable or longer timescales than the lifetime
  
-$$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
+$$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
  
 ## Modelling FRET
  
@@ -284,7 +284,7 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
  * Measure ensemble pH over variety of buffer conditions
  * Initial analysis can draw from existing solution lifetime techniques
  
- 0. Form droplets of ~10 umol/L fluorescein solution
+ 0. Form droplets of $\approx$10 umol/L fluorescein solution
  0. Expect bimodel
 
 # G-quadruplex dynamics
@@ -294,7 +294,7 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 
  * Eukaryotic chromosomes are terminated by single-stranded run rich in guanines
  * Known as the telomere
- * In humans this is typically $(TTAGGG)_n$
+ * In humans this is typically $(\mathrm{TTAGGG})_n$
 
 ![](../proposal/figures/quadruplex.svg)
 
@@ -331,16 +331,17 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 
 
 # Timeline
-### Timeline
+### Optimistic Timeline
 
  * Droplet tracking: 1 month
  * pH measurements: 4 months
     * Solution measurements: 3 weeks
     * Diffusing droplet measurements: 3 weeks
     * Tracked droplets: 3 weeks
-    * Total analysis: 2 weeks
+    * Total analysis: 3 weeks
  * Solution quadruplex measurements: 1 month
  * Droplet quadruplex measurements: 2 months
+ * Goal: Work finished no later than May 2015
 
 # Conclusion
 ### Conclusion
