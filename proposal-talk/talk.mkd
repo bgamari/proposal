@@ -158,8 +158,8 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 ### Single molecule measurements
 
  * We often want way to resolve individual molecules
-   * Dynamics over long timescales
-   * Rare states
+    * Dynamics over long timescales
+    * Rare states
  
  0. The approach described above has single-molecule sensitivity, but
     we often want single-molecule resolution
@@ -205,11 +205,17 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
     centroid of the scattered beam in the back focal plane of the
     microscope, we can localize a dielectric particle relative to the
     focus of the instrument.
+
+<!--### Calibration
+
+![](figures/rough-cal.svg)
+-->
+
  0. By training a polynomial tracking model and closing the loop with
     a high-speed piezo translation stage, we can follow diffusing
     particles with sufficient precision for confocal interrogation
 
-### Particle tracking
+### Sample trajectory
 
 <!--2011-12-07 #008 -->
 ![](../proposal/figures/track.svg)
@@ -275,25 +281,51 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 
 ### Diffusing droplet measurements
 
- * Measure ensemble pH
+ * Measure ensemble pH over variety of buffer conditions
+ * Initial analysis can draw from existing solution lifetime techniques
+ 
  0. Form droplets of ~10 umol/L fluorescein solution
  0. Expect bimodel
 
-## G-quadruplex dynamics
+# G-quadruplex dynamics
 
-### G quadruplex
+## Telomeric DNA
+### Telomeric DNA
 
- 0. Telomeric DNA is known to be rich in guanines
- 0. Triplets of quanines are known to form quadruplex structures
- 0. 
+ * Eukaryotic chromosomes are terminated by single-stranded run rich in guanines
+ * Known as the telomere
+ * In humans this is typically $(TTAGGG)_n$
 
 ![](../proposal/figures/quadruplex.svg)
+
+ 0. Similar tracts have also recently been found in primers
+ 0. It has been long known that such G-heavy tracts can fold into
+    quadruplex structures
+ 0. 
+
+### Previous work
+
+ * Ying (2003):
+    * Solution FRET
+    * Resolved parallel/anti-parallel conformational species
+ * Lee (2005):
+    * Surface immobilized FRET
+    * Examined conformational dynamics of individual molecules
+    * Suggested existence of intermediate states
+
+ 0. Suggested existence of intermediate states along folding pathway
+
+### Demonstration of droplet confinement
+
+ * Reproduce Ying
 
 ## Analysis tools
 ### Open tools for fluorescence
 
  * Developed open-source hardware for timestamping and instrument control
  * Open-source data analysis toolchain written in Python
+ * Full FRET analysis pipeline
+ * Won ICB3 Open-Source Software Innovation award
 
  0. Hardware enables applications alternating excitation
 
@@ -302,13 +334,13 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 ### Timeline
 
  * Droplet tracking: 1 month
- * pH measurements: 3 months
+ * pH measurements: 4 months
     * Solution measurements: 3 weeks
     * Diffusing droplet measurements: 3 weeks
     * Tracked droplets: 3 weeks
     * Total analysis: 2 weeks
  * Solution quadruplex measurements: 1 month
- * Droplet quadruplex measurements: 3 months
+ * Droplet quadruplex measurements: 2 months
 
 # Conclusion
 ### Conclusion

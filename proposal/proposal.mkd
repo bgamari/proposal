@@ -520,7 +520,7 @@ previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
 FRET. By labelling opposing ends of a quadruplex-forming sequence with Cyanine 5
 and TMR fluorophores, the authors resolve end-to-end distance as a proxy for
 conformational state. Their study reveals two FRET populations with
-signs of heterogeneity suggesting a dynamic equilibrius. This
+signs of heterogeneity suggesting a dynamic equilibrium. This
 equilibrium is shown to be strongly dependent upon the identity and
 concentration of the ions present. The authors claim that the unfolded
 form of the system should exhibit far lower FRET efficiency than
