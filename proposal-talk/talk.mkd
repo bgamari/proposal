@@ -88,14 +88,16 @@ $$E = \frac{1}{1 + (R / R_0)^6}$$
 . . .
 
 where,
-
 $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
+$\kappa$ is related to the dipole moments of the two fluorophores,
+$$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cdot \hat R)$$
 
- * $\kappa$ is related to the dipole moments of the two fluorophores,
- 
-     $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cdot \hat R_{DA})$$
+\centering
+![`filter: only molecule acceptor donor vectors` `filter: scale 0.5`](figures/fret.svg)
 
  0. $\hat \mu_i$ is the transition dipole moment of fluorophore $i$
+ 0. $\kappa$ is often taken to be $2/3$ under an assumption of
+    free-rotation of both fluorophores
 
 
 # Modelling FRET on RNA
@@ -110,7 +112,7 @@ $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
  0. Terminally labelled with Cy3 and Cy5
 
 ## Modelling geometry
-### Molecular dynamics model
+### Modelling dynamics
 
 ![](figures/timeseries-fwd5-R0_58-0300ns.pdf)
 
@@ -139,7 +141,7 @@ Solid line represents distribution under free-rotation
     lifetime, the Foerster equation does not hold in the face of
     dynamics on comparable or longer timescales than the lifetime
  
-$$E = 1 - k_D \int dt \mean{\exp\left( -k_D t - \int_0^t k_ET(t')~dt' \right)} $$
+$$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
  
 ## Modelling FRET
  
@@ -207,9 +209,12 @@ $$E = 1 - k_D \int dt \mean{\exp\left( -k_D t - \int_0^t k_ET(t')~dt' \right)} $
 
 ### Particle tracking
 
+<!--2011-12-07 #008 -->
 ![](../proposal/figures/track.svg)
 
- 0. We can reliably track sub-micron sized particles for minutes on end
+ 0. We can reliably track sub-micron diameter particles for minutes on end
+ 0. Here we see a water droplet in fluorinert oil diffusing for nearly
+    10 minutes
  
 ## Droplet chemistry
 ### Initial indications
@@ -222,7 +227,6 @@ $$E = 1 - k_D \int dt \mean{\exp\left( -k_D t - \int_0^t k_ET(t')~dt' \right)} $
     vs. solution
  0. Here we see a
 
-
 ### Measuring internal pH
 
 ![](../proposal/figures/fluorescein-forms.svg)
@@ -230,11 +234,26 @@ $$E = 1 - k_D \int dt \mean{\exp\left( -k_D t - \int_0^t k_ET(t')~dt' \right)} $
  0. Many fluorophores have pH dependent fluorescence and can be used
     as probes of local pH
  0. Others in our group are using fluorescein as a pH probe for bulk
-    droplets
+    droplets by examining absorption spectrum
+ 0. I will examine the internal pH within individual droplets via
+    fluorescence lifetime spectroscopy
+
+## pH measurement
+### Calibration
+
+ * Calibrate against bulk fluorescein in buffer solution
+ * Examine pHs between 3 and 6 to build empirical model of measurement response
+ * Initial analysis will be a fit against single-exponential lifetime
+   model to determine an effective lifetime
+ * More rigorous generative probabilitistic modelling is also possible
 
 ## G-quadruplex dynamics
 
 ### G quadruplex
+
+ 0. Telomeric DNA is known to be rich in guanines
+ 0. Triplets of quanines are known to form quadruplex structures
+ 0. 
 
 ![](../proposal/figures/quadruplex.svg)
 
