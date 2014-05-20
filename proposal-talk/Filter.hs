@@ -74,6 +74,9 @@ walkFilters (Image contents (fname,alt)) = do
             visLayersFor fname' %= \xs->xs `S.union` adds `S.difference` dels
             vis <- use $ visLayersFor fname'
             return $ Right $ showOnlyLayers $ S.toList $ vis `S.difference` hide `S.union` show
+          "scale":s:_ -> do
+            s' <- lift $ tryRead "Invalid scale factor" s
+            return $ Right $ scale s'
           x:_ -> lift $ left $ "unknown filter type: "<>x
     findFilterDef x = return $ Left x
 walkFilters inline = return inline

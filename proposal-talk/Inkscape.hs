@@ -6,6 +6,7 @@ module Inkscape
     , hideLayers
     , showOnlyLayers
     , highlightLayers
+    , scale
     , runFilter
     ) where
 
@@ -85,6 +86,14 @@ style' = iso to from
     to = M.unions . map splitKeyValue . T.splitOn ";" 
     from = T.intercalate ";" . map (\(k,v)->k<>":"<>v) . M.toList
         
+scale :: Double -> Document -> Document
+scale s doc = doc & root . nodes %~ scaleNodes
+  where
+    scaleNodes :: [Node] -> [Node]
+    scaleNodes nodes =
+      [NodeElement $ Element "g" scaleAttr nodes]
+    scaleAttr = M.singleton "transform" (T.pack $ "scale("++show s++")")
+
 runFilter :: FilePath -> FilePath -> SvgFilter -> EitherT String IO ()
 runFilter inFile outFile transform = do
     doc <- lift $ Xml.readFile def inFile
