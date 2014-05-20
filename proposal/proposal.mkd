@@ -859,7 +859,7 @@ systems. A representative tracking trajectory of a one-micron diameter
 polystyrene bead diffusing in mineral oil is shown in Figure
 \ref{fig:track}.
 
-![A representative tracking trajectory of a sub-micron diameter water droplet diffusing in fluorinert. Notice the long timescale vertical motion of the bead due to buoyant drift.\label{fig:track}](figures/track)
+![A representative tracking trajectory of a sub-micron diameter water droplet diffusing in fluorinert. Notice the long timescale vertical motion of the particle due to buoyant drift.\label{fig:track}](figures/track)
 
 Scaling this technique up to be viable for tracking emulsion droplets
 poses several practical challenges. The greatest of these is the
