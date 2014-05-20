@@ -258,6 +258,8 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
     as probes of local pH
  0. Here we see the ionization states of fluorescein along with their
     spectral properties and pKas
+ 0. On the bottom we see the relative concentrations of these species
+    as a function of pH
  0. Others in our group are using fluorescein as a pH probe for bulk
     droplets by examining absorption spectrum
  0. I will examine the internal pH within individual droplets via
