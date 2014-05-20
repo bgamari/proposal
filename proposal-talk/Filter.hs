@@ -93,3 +93,8 @@ filterNotes :: Block -> Block
 filterNotes (OrderedList (0,_,_) _) = Null
 filterNotes blk = blk            
     
+filterForNotes :: Block -> Block
+filterForNotes blk@(OrderedList (0,_,_) _) = blk
+filterForNotes blk@(Header _ _ _) = blk
+filterForNotes _ = Null
+
