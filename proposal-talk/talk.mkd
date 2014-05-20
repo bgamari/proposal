@@ -219,33 +219,59 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 ## Droplet chemistry
 ### Initial indications
 
+![](figures/droplet-brightness.svg)
+
+ 0. Examining FRET data on RNA 16-mer in droplets, we found that
+    droplet confined ((c) FC-770, (c) FC-40) oligos are substantially
+    brighter than those in pH 7 solution (a)
+ 0. Next we started looking for a cause
+
+### PCH analysis
+
 ![](../proposal/figures/rna-pch.svg)
 
+ 0. Photon counting histogram analysis is a statistical analysis
+    technique that can be used to model multiple brightness species in
+    diffusion
  0. Photon counting histogram analysis of data taken on RNA oligomers
     in droplets revealed qualitative differences in the behavior
     fluorescence intensity of the fluorophores in droplets
     vs. solution
- 0. Here we see a
+ 0. Here we see data and fits examining
+    a. solution pH 7, two-species fit
+    b. solution pH 4, three-species fit
+    c. droplet confined, FC-770, three-species fit
+    d. droplet confined, FC-40, three-species fit
+ 0. This suggests that a third, high-brightness state is introduced at
+    low-pH and that droplet confined environments tend be exhibit such
+    conditions
 
+## Measuring internal pH
 ### Measuring internal pH
-
 ![](../proposal/figures/fluorescein-forms.svg)
 
  0. Many fluorophores have pH dependent fluorescence and can be used
     as probes of local pH
+ 0. Here we see the ionization states of fluorescein along with their
+    spectral properties and pKas
  0. Others in our group are using fluorescein as a pH probe for bulk
     droplets by examining absorption spectrum
  0. I will examine the internal pH within individual droplets via
     fluorescence lifetime spectroscopy
 
-## pH measurement
 ### Calibration
 
  * Calibrate against bulk fluorescein in buffer solution
- * Examine pHs between 3 and 6 to build empirical model of measurement response
+ * Examine pHs between 3 and 8 to build empirical model of measurement response
  * Initial analysis will be a fit against single-exponential lifetime
    model to determine an effective lifetime
  * More rigorous generative probabilitistic modelling is also possible
+
+### Diffusing droplet measurements
+
+ * Measure ensemble pH
+ 0. Form droplets of ~10 umol/L fluorescein solution
+ 0. Expect bimodel
 
 ## G-quadruplex dynamics
 
@@ -256,6 +282,12 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
  0. 
 
 ![](../proposal/figures/quadruplex.svg)
+
+## Analysis tools
+### Open tools for fluorescence
+
+ *
+
 
 # Timeline
 ### Timeline
@@ -268,3 +300,17 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
     * Total analysis: 2 weeks
  * Solution quadruplex measurements: 1 month
  * Droplet quadruplex measurements: 3 months
+
+# Conclusion
+### Conclusion
+
+ * Examine at two applications of FRET:
+    * Quantitative interpretation for static geometry
+    * Dynamics for single-molecule kinetics
+ * Develop tools for interrogating single-molecules:
+    * Data analysis pipeline
+    * Droplet confinement
+    * Particle tracking for droplet-based immobilization
+ * Demonstrate fluorescence measurement under droplet confinement
+    * Probe pH within single emulsion droplets
+    * Demonstrate FRET by measuring G quadruplex DNA switching
