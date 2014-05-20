@@ -24,6 +24,8 @@ import Text.XML.Lens
 import Control.Error
 import Data.Default
 import Data.Default
+import Numeric.Lens       
+import Data.Text.Lens
 
 import qualified Filesystem.Path as Path
 import Filesystem.Path.CurrentOS (FilePath, decodeString, encodeString, toText)
@@ -87,11 +89,16 @@ style' = iso to from
     from = T.intercalate ";" . map (\(k,v)->k<>":"<>v) . M.toList
         
 scale :: Double -> Document -> Document
-scale s doc = doc & root . nodes %~ scaleNodes
+scale s doc = root . nodes %~ scaleNodes
+            $ root . attr "width" . float %~ (/2)
+            $ root . attr "height" . float %~ (/2)
+            $ doc
   where
+    float :: Prism' Text Float
+    float = from packed . prism' show readMay
     scaleNodes :: [Node] -> [Node]
     scaleNodes nodes =
-      [NodeElement $ Element "g" scaleAttr nodes]
+      [NodeElement $ Element "{http://www.w3.org/2000/svg}g" scaleAttr nodes]
     scaleAttr = M.singleton "transform" (T.pack $ "scale("++show s++")")
 
 runFilter :: FilePath -> FilePath -> SvgFilter -> EitherT String IO ()
