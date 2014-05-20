@@ -5,8 +5,8 @@ author: Ben Gamari
 date: 2014-05-19
 ---
 
-# Probing single molecules
-
+# Background
+## Motivation
 ### Motivation
 
 ![`filter: only molecule molecule-label scale-bar`](figures/fret.svg)
@@ -21,18 +21,16 @@ date: 2014-05-19
  0. we want to probe the shape or interactions of a biomolecular system
  0. One powerful approach is to attach fluorescent probe
 
-# Background
-## FRET
-### FRET
 
- 0. Fӧrster resonance energy transfer
- 0. A fluorescence spectroscopy
- 0. Provides insight into molecular geometry and kinetics
+## FRET
 
 ### FRET
 
 ![`filter: only molecule scale-bar acceptor donor fluorophore-label`](figures/fret.svg)
 
+ 0. Fӧrster resonance energy transfer
+ 0. A fluorescence spectroscopy
+ 0. Provides insight into molecular geometry and kinetics
  0. attach a pair of appropriately chosen fluorophores to the molecule of interest
  
 ### FRET
@@ -99,6 +97,7 @@ $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
 
  0. $\hat \mu_i$ is the transition dipole moment of fluorophore $i$
 
+
 # Modelling FRET on RNA
 
 ### RNA 16-mer
@@ -110,6 +109,7 @@ $$R_0 \propto \frac{\kappa^2 J}{n^4}$$
  0. Being a short nucelic acid oligo, the system itself should be akin to a rigid rod
  0. Terminally labelled with Cy3 and Cy5
 
+## Modelling geometry
 ### Molecular dynamics model
 
 ![](figures/timeseries-fwd5-R0_58-0300ns.pdf)
@@ -135,6 +135,7 @@ Solid line represents distribution under free-rotation
 
 ### Interpretting fast dynamics
 
+## Modelling FRET
  
 ### Monte Carlo model for FRET
 
@@ -142,10 +143,11 @@ Solid line represents distribution under free-rotation
 
  0. The problem
 
+
 # Single-molecule dynamics
 ### Single molecule measurements
 
- * We often way to resolve individual molecules
+ * We often want way to resolve individual molecules
    * Dynamics over long timescales
    * Rare states
  
@@ -155,24 +157,85 @@ Solid line represents distribution under free-rotation
  0. For this, we need hold the molecule in place
  
 ## Immobilization
-
 ### Vesicle encapsulation
 ![](figures/vesicle.svg)
 
+ 0. Form membrane around molecule
+ 0. Can then either allow to diffuse or tether to surface
  0. Narrow region of conditions where feasible
  0. Very poor sample utilization
+ 0. Generally little interaction with confined molecule (except for some proteins)
 
 ### Surface attachment
 ![](figures/surface-attachment.svg)
 
  0. Linker, surface artifacts
  0. Requires functionalization of sample
+ 0. Sample perturbed by linker and surface
 
-### A new approach: Droplet immobilization
+### A new approach: Droplet confinement
 
 ![](figures/droplet.svg)
 
- 0. hi
+ 0. Form emulsion from solution of molecule under study and perfluorinated fluids
+     0. Perfluorinated fluids provide a chemically inert medium
+ 0. Easily performed protocol
+ 0. Can be fused, enabling mixing experiments TODO: elaborate
+ 0. Efficient sample usage
+ 0. Droplets can be immobilized via microfluidic manipulation, optical
+    trapping, and optical tracking
 
-# Droplet chemistry
+## Particle tracking
+### Particle tracking
 
+![](../proposal/figures/tracking.svg)
+
+ 0. By passing a tracking beam through the droplet and measuring the
+    centroid of the scattered beam in the back focal plane of the
+    microscope, we can localize a dielectric particle relative to the
+    focus of the instrument.
+ 0. By training a polynomial tracking model and closing the loop with
+    a high-speed piezo translation stage, we can follow diffusing
+    particles with sufficient precision for confocal interrogation
+
+### Particle tracking
+
+![](../proposal/figures/track.svg)
+
+ 0. We can reliably track sub-micron sized particles for minutes on end
+ 
+## Droplet chemistry
+### Initial indications
+
+![](../proposal/figures/rna-pch.svg)
+
+ 0. Photon counting histogram analysis of data taken on RNA oligomers
+    in droplets revealed qualitative differences in the behavior
+    fluorescence intensity of the fluorophores in droplets
+    vs. solution
+ 0. Here we see a
+
+
+### Measuring internal pH
+
+![](../proposal/figures/fluorescein-forms.svg)
+
+ 0. 
+
+## G-quadruplex dynamics
+
+### G quadruplex
+
+![](../proposal/figures/quadruplex.svg)
+
+# Timeline
+### Timeline
+
+ * Droplet tracking: 1 month
+ * pH measurements: 3 months
+    * Solution measurements: 3 weeks
+    * Diffusing droplet measurements: 3 weeks
+    * Tracked droplets: 3 weeks
+    * Total analysis: 2 weeks
+ * Solution quadruplex measurements: 1 month
+ * Droplet quadruplex measurements: 3 months
