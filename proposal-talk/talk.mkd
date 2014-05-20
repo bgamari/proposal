@@ -149,7 +149,9 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 
 ![](figures/fret_processes.svg)
 
- 0. The problem
+ 0. Due to the slow orientational dynamics exhibited by the
+    fluorophores, I used the MD trajectories as into into a Monte
+    Carlo model to predict the observed FRET efficiency histogram
 
 
 # Single-molecule dynamics
@@ -250,6 +252,8 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 ### Measuring internal pH
 ![](../proposal/figures/fluorescein-forms.svg)
 
+![](figures/ph-dependence.svg)
+
  0. Many fluorophores have pH dependent fluorescence and can be used
     as probes of local pH
  0. Here we see the ionization states of fluorescein along with their
@@ -286,7 +290,10 @@ $$E = 1 - k_D \int dt~\mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)}
 ## Analysis tools
 ### Open tools for fluorescence
 
- *
+ * Developed open-source hardware for timestamping and instrument control
+ * Open-source data analysis toolchain written in Python
+
+ 0. Hardware enables applications alternating excitation
 
 
 # Timeline
