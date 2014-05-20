@@ -40,9 +40,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="77.21077"
-     inkscape:cy="10.161715"
+     inkscape:zoom="11.313708"
+     inkscape:cx="125.65225"
+     inkscape:cy="86.058195"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -263,5 +263,26 @@
          y="48.831833"
          x="-821.91351"
          sodipodi:role="line">quartz surface</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3015"
+       d="m -722.27987,15.445339 c -17.63235,7.567841 -24.03977,52.562497 -59.99994,56.801929"
+       style="fill:none;stroke:#000000;stroke-width:1.41716242;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send);display:inline"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       x="-721.91913"
+       y="13.65328"
+       id="text3017"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan3021"
+         sodipodi:role="line"
+         x="-721.91913"
+         y="13.65328">polymer</tspan><tspan
+         sodipodi:role="line"
+         x="-721.91913"
+         y="23.65328"
+         id="tspan3025">linker</tspan></text>
   </g>
 </svg>

@@ -133,8 +133,14 @@ Solid line represents distribution under free-rotation
     the trajectory, we find that the simulated system diverges
     substantially from the usual free-rotation assumption
 
-### Interpretting fast dynamics
+### Interpreting fast dynamics
 
+ 0. Due to averaging over the course of the donor's fluorescence
+    lifetime, the Foerster equation does not hold in the face of
+    dynamics on comparable or longer timescales than the lifetime
+ 
+$$E = 1 - k_D \int dt \mean{\exp\left( -k_D t - \int_0^t k_ET(t')~dt' \right)} $$
+ 
 ## Modelling FRET
  
 ### Monte Carlo model for FRET
@@ -162,6 +168,7 @@ Solid line represents distribution under free-rotation
 
  0. Form membrane around molecule
  0. Can then either allow to diffuse or tether to surface
+ 0. 200nm diameter, narrow size distribution as measured by dynamic light scattering
  0. Narrow region of conditions where feasible
  0. Very poor sample utilization
  0. Generally little interaction with confined molecule (except for some proteins)
@@ -220,7 +227,10 @@ Solid line represents distribution under free-rotation
 
 ![](../proposal/figures/fluorescein-forms.svg)
 
- 0. 
+ 0. Many fluorophores have pH dependent fluorescence and can be used
+    as probes of local pH
+ 0. Others in our group are using fluorescein as a pH probe for bulk
+    droplets
 
 ## G-quadruplex dynamics
 
