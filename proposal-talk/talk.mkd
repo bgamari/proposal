@@ -274,18 +274,22 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
 ### Calibration
 
  * Calibrate against bulk fluorescein in buffer solution
- * Examine pHs between 3 and 8 to build empirical model of measurement response
+ * Underlying lifetime distribution should be bimodal
  * Initial analysis will be a fit against single-exponential lifetime
    model to determine an effective lifetime
+ * Examine pH values between 3 and 8 to build empirical model of measurement response
  * More rigorous generative probabilitistic modelling is also possible
 
-### Diffusing droplet measurements
+### Droplet measurements
 
  * Measure ensemble pH over variety of buffer conditions
- * Initial analysis can draw from existing solution lifetime techniques
+ * Initial analysis can draw from existing solution lifetime
+   techniques (*e.g.* Burst-Integrated Fluorescence Lifetime)
  
- 0. Form droplets of $\approx$10 umol/L fluorescein solution
- 0. Expect bimodel
+ 0. Form droplets of \~10 umol/L fluorescein solution
+ 0. Expect bimodel lifetime distribution
+ 0. 
+ 
 
 # G-quadruplex dynamics
 
@@ -317,7 +321,14 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
 
 ### Demonstration of droplet confinement
 
- * Reproduce Ying
+ 1. Demonstrate solution FRET, reproduce Ying's result
+ 2. Reproduce with diffusing droplets
+ 3. Reproduce with tracked droplets
+ 4. 
+
+ 0. Reproduce Ying's multiple populations
+ 0.
+ 
 
 ## Analysis tools
 ### Open tools for fluorescence

@@ -28,14 +28,25 @@ makeLenses ''FilterState
 instance Default FilterState where
     def = FilterState {_figNum = 0, _visLayers = mempty}
 
-main = runEitherT $ flip evalStateT def $ do
+filterPandoc :: MonadIO m => (Pandoc -> m Pandoc) -> m ()
+filterPandoc filter =
         liftIO getContents
     >>= return . readJSON def
-    >>= walkM walkFilters
-    >>= walkM (lift . svgToPdf)
-    >>= return . walk filterNotes
+    >>= filter
     >>= return . writeJSON def
     >>= liftIO . putStr
+
+main = mainTalk
+
+mainTalk :: IO (Either String ())
+mainTalk =
+    runEitherT $ flip evalStateT def $ filterPandoc $
+      walkM walkFilters
+      >=> walkM (lift . svgToPdf)
+      >=> return . walk filterNotes
+
+mainNotes :: IO ()
+mainNotes = filterPandoc $ return . filterForNotes
 
 mapFileName :: (T.Text -> T.Text) -> FilePath -> FilePath
 mapFileName f fpath = (directory fpath <> fname') `addExtensions` extensions fpath
@@ -92,9 +103,10 @@ svgToPdf inline = return inline
 filterNotes :: Block -> Block
 filterNotes (OrderedList (0,_,_) _) = Null
 filterNotes blk = blk            
-    
-filterForNotes :: Block -> Block
-filterForNotes blk@(OrderedList (0,_,_) _) = blk
-filterForNotes blk@(Header _ _ _) = blk
-filterForNotes _ = Null
 
+filterForNotes :: Pandoc -> Pandoc
+filterForNotes (Pandoc m body) = Pandoc m (filter f body)
+  where
+    f (OrderedList (0,_,_) _) = True
+    f (Header _ _ _) = True
+    f blk = False
