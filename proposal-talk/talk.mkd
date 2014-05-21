@@ -208,8 +208,8 @@ result due to @Gopich2012book,
 
 $$\mean{E} = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
 
- * $k_D = 1/\tau_D = $ Inverse lifetime of donor
- * $k_{ET} = 1/\tau_{ET} = $ TODO
+ * $k_D = 1/\tau_D = $ Donor decay rate
+ * $k_{ET} = 1/\tau_{ET} = $ Rate of Fӧrster transfer
 
 
 # Single-molecule dynamics
