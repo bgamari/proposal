@@ -129,7 +129,9 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
 
 ![](figures/droplet-brightness.svg)
 
- 0. Here we see 
+ 0. Here we see data taken on RNA 16-mer under three sets of
+    environmental conditions
+ 0. Note that bursts in droplets are both more intense and longer
 
 ### Contribution: Open tools for fluorescence spectroscopy
 
@@ -140,7 +142,7 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
 
  0. Hardware enables applications alternating excitation
 
-# Modelling FRET on RNA
+# Modeling FRET on RNA
 
 ### RNA 16-mer
 
@@ -148,10 +150,10 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
 
  0. As mentioned earlier, one application of fluorescence spectroscopy is to resolve
      molecular geometry
- 0. We examined FRET on a double-stranded RNA 16-mer, four labelling
+ 0. We examined FRET on a double-stranded RNA 16-mer, four labeling
     variations (we'll focus on 5' forward variant here)
  0. Being a short nucelic acid oligo, the system itself should be akin to a rigid rod
- 0. Terminally labelled with Cy3 and Cy5
+ 0. Terminally labeled with Cy3 and Cy5
 
 ## Modelling geometry
 ### Modelling dynamics
@@ -185,12 +187,23 @@ Solid line represents distribution under free-rotation
  0. In the bottom pane we have plotted the instantaneous FRET efficiency
  0. Care must be taken in interpretting this due to the timescale of these dynamics
  0. As we see dynamics both faster and slower then the fluorescence lifetime
- 0. Due to averaging over the course of the donor's fluorescence
-    lifetime, observed FRET efficiency distribution will not follow the Foerster equation does not hold in the face of
-    dynamics on comparable or longer timescales than the lifetime
+ 0. Explanation:
+     0. System with FRET eff. fluctuating between 0 and 1 on timescale faster than fluorescence lifetime
+     0. When the donor is excited, it will see many opportunities to
+        decay via Foerster transfer over the course of its
+        fluorescence lifetime
+     0. Therefore observed FRET efficiency will be near 1 despite the mean being far lower
 
-## Modelling FRET
- 
+## Modeling FRET
+### Modeling FRET
+
+ * The FRET efficiency observed in a real experiment would differ from
+   the mean of the tractory seen above
+ * We seek to model this
+
+ 0. The FRET efficiency observed in a real experiment would differ
+    from the mean of the tractory seen above due to dynamics
+
 ### Contribution: Monte Carlo model for FRET
 
 ![](figures/fret_processes.svg)
@@ -214,20 +227,31 @@ $$\mean{E} = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt'
 
 ![](figures/fret-eff-table.svg)
 
+How dynamics are treated strongly affects expected FRET efficiency
+
  0. We find that the presence of fluorophore dynamics strongly affect
     the expected FRET efficiency in all systems studied
 
 # Single-molecule dynamics
-### Single molecule measurements
-
- * We often want way to resolve trajectories showing dynamics of
-   individual molecules
-    * Dynamics over long timescales
+### Proposed work
+ 0. We'll now discuss the work I propose for the remainder of my thesis
  
- 0. Trajectory
- 0. The approach described above has single-molecule sensitivity, but
-    we often want single-molecule resolution
- 0. That is, to watch an individual molecule
+### Single-molecule measurements
+
+ * Many systems have interesting dynamics on timescales longer than millisecond
+ * These are difficult to resolve when one only sees a glimpse of each molecule
+ 
+ 0. For instance, switching behavior exhibited by many enzymes
+ 0. As is typical 
+
+### Diffusive single-molecule measurements
+
+![`filter: only fluorescence background legend beam-callout molecule-callout`](../proposal/figures/apparatus.svg)
+
+ 0. Here an ensemble of the molecule under study is placed in dilute
+    solution such that mean number of molecules in obs. vol. is $\ll 1$
+ 0. We will see a burst of fluorescence when a molecule diffusing into volume
+ 0. Easy to perform but incapable of watching  dynamics of individuals
  0. For this, we need hold the molecule in place
  
 ## Immobilization
@@ -235,11 +259,11 @@ $$\mean{E} = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt'
 
 ![](figures/surface-attachment.svg)
 
- 0. Linker, surface artifacts
+ 0. Easily performed but
  0. Requires functionalization of sample
- 0. Sample perturbed by linker and surface
+ 0. Sample perturbed by linker and inhomogeneous surface
 
-TODO: G-quadruplex squiggle
+<!--TODO: G-quadruplex squiggle-->
 
 ### Vesicle encapsulation
 
@@ -247,31 +271,31 @@ TODO: G-quadruplex squiggle
 
  0. Form membrane around molecule
  0. Can then either allow to diffuse or tether to surface
- 0. 200nm diameter, narrow size distribution as measured by dynamic light scattering
+ 0. While the perturbation on the molecule is minimal,
  0. Narrow region of conditions where feasible
  0. Very poor sample utilization
- 0. Generally little interaction with confined molecule (except for some proteins)
 
 ### A new approach: Droplet confinement
 
 ![](figures/droplet.svg)
 
- 0. Form emulsion from solution of molecule under study and perfluorinated fluids
-     0. Perfluorinated fluids provide a chemically inert medium
- 0. Easily performed protocol
- 0. Can be fused, enabling mixing experiments
-      0. Useful for studies of aggregation, nucleation, and kinetics
+ 0. Form emulsion from solution of molecule under study, a perfluorinated fluid,  and appropriate surfactant
+     0. Perfluorinated fluids provide a chemically inert medium, viscosity, and clear optical properties
+ 0. 200nm diameter, narrow size distribution as measured by dynamic light scattering
  0. Efficient sample usage
- 0. Droplets can be immobilized via microfluidic manipulation, optical
-    trapping, and optical tracking
 
 ### Why droplets confinement?
 
- * Advantages:
-      * Signal to noise
-      * Homogeneous surface
-      * Trajectories
+  * Homogeneous surface
+  * Can be fused, enabling mixing experiments
+  * Easily immobilized
+  * Signal to noise
 
+  0. Homogeneous surface
+  0. Useful for studies of aggregation, nucleation, and kinetics
+  0. Droplets can be immobilized via microfluidic manipulation, optical
+     trapping, and optical tracking, as discussed later
+  0. To demonstrate signal to noise.. next slide
 
 ### Fluorescence in droplets
 
@@ -280,19 +304,19 @@ TODO: G-quadruplex squiggle
  0. Here we see binned photon counts from a typical FRET experiment
  0. The X axis is time
  0. The left panes show 30 seconds of the experiment
- 0. The right panes show a representative burst from each experiment
+ 0. The right panes show a half-second surrounding representative burst
  0. The Y axis shows photon counts, donor count down from the top
  0. RNA 16-mer, (a) in solution (pH 7) and in droplet confinement ((b) FC-770, (c) FC-40)
  0. Droplet confined bursts are substantially brighter than those in solution
-
+ 0. This lends the technique an improved signal-to-noise
+ 
 ### Challenges
 
-Chemical environment
-
-Recent measurements [@Milas2014] suggested that internal pH is lower than expected.
+ * Chemical environment
+      * Recent measurements [@Milas2014] suggest that internal pH is lower than expected.
 
 ## Measuring internal pH
-### Measuring internal pH
+### Proposed work: Measuring internal pH
 ![](../proposal/figures/fluorescein-forms.svg)
 
 ![](figures/ph-dependence.svg)
@@ -304,20 +328,16 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
     spectral properties and pKas
  0. On the bottom we see the relative concentrations of these species
     as a function of pH
- 0. Others in our group are using fluorescein as a pH probe for bulk
-    droplets by examining absorption spectrum
  0. I will examine the internal pH within individual droplets via
     fluorescence lifetime spectroscopy
  0. Other dyes are available if necessary
- 0. Options for controlling internal pH include changes to surfactant and buffer
 
 <!--TODO: Show fluorimeter measurement-->
  
-### Proposed work: pH measurements
+### Proposed work: Measuring internal pH
 
  * Lifetime measurement
- * Examining distribution
- * Measure ensemble pH over variety of buffer conditions
+ * Measure ensemble pH of droplets formed from a variety of buffer conditions
  * Initial analysis can draw from existing solution lifetime
    techniques (*e.g.* Burst-Integrated Fluorescence Lifetime
    [@Eggeling1998])
@@ -326,16 +346,22 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
  0. Form droplets of \~10 umol/L fluorescein solution
  0. Expect bimodel lifetime distribution
  0. Buffers, surfactants
+ 0. My measurement supplement others in the group who are using
+    fluorescein fluorescence as a pH probe in a bulk setting
+ 0. Options for controlling internal pH include changes to surfactant and buffer
 
 
 ## Particle tracking
-### Particle tracking
+### Immobilization: Particle tracking
 
 ![`filter: only tracker background fluorescence`](../proposal/figures/apparatus.svg)
 
 @Desai2007
 
- 0. By passing a tracking beam through the droplet and measuring the
+ 0. When the chemical environment has been sorted, I will turn my
+    focus to finishing the particle tracking apparatus
+ 0. Ongoing effort
+ 0. Build on Desai, passing a tracking beam through the observation volume and measuring the
     centroid of the scattered beam in the back focal plane of the
     microscope, we can localize a dielectric particle relative to the
     focus of the instrument.
@@ -359,11 +385,14 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
 
 ### Proposed work: Tracking
 
+ * Implement more reliable calibration scheme for quickly diffusing systems
+ * Automate to allow for high-throughput data acquisition
+ * Adjust tracking position setpoint optimizing for fluorescence intensity
 
 ## G-quadruplex dynamics
 ### Telomeric DNA
 
- * Eukaryotic chromosomes are terminated by single-stranded run rich in guanines
+ * Eukaryotic chromosomes are terminated by single-stranded run of repeats rich in guanines
  * Known as the telomere
  * In humans this is typically $(\mathrm{TTAGGG})_n$
 
@@ -372,10 +401,10 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
  0. Similar tracts have also recently been found in primers
  0. It has been long known that such G-heavy tracts can fold into
     quadruplex structures
+ 0. Switching
 
 ### Previous work
 
- * @Miyoshi2002: Parallel/antiparallel conformation switch at 40% v/v PEG 200
  * Ying (2003):
     * Solution FRET
     * Resolved parallel/anti-parallel conformational species
@@ -392,11 +421,13 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
 
 ### Proposed work: G quadruplex switching
 
- 1. Demonstrate solution FRET, reproduce Ying's result
+ 1. Reproduce Ying's result in solution FRET
  2. Reproduce with diffusing droplets
  3. Reproduce with tracked droplets
+ 1. @Miyoshi2002: Parallel/antiparallel conformation switch at 40% v/v PEG 200
  4. Measure effect of crowding by introduction of PEG 200 on
     quadruplex stability
+ 4. Sequence: $\mathrm{5'-Cy5-(GGGTTA)_3 GGG - TMR}$
  5. Solution conditions:
       * Tris buffer, pH 7.5
       * PCD/PCA oxygen scavenging
@@ -412,7 +443,7 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
 
  * Stabilize tracking apparatus
      * Automate to allow for high-throughput data acquisition
- * pH characterization of droplets, cFinishontrol
+ * pH characterization of droplets, control
      * pH measurement via fluorescence lifetime
  * G quadruplex measurements
      * Reproduction of Ying diversity
@@ -422,7 +453,7 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
  0. pH takes too long, quadruplex may not be started
 
 # Timeline
-### Optimistic Timeline
+### Timeline
 
  * Droplet tracking: 2 months
  * pH measurements: \~1 month

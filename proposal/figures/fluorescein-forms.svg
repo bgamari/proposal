@@ -82,12 +82,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="290.33662"
+     inkscape:cx="260.53712"
      inkscape:cy="68.022897"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1918"
+     inkscape:window-width="958"
      inkscape:window-height="1053"
      inkscape:window-x="0"
      inkscape:window-y="25"
@@ -1680,7 +1680,7 @@
      id="layer2"
      inkscape:label="highlight"
      transform="translate(0,1.018075)"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <rect
        style="color:#000000;fill:#bceecf;fill-opacity:0.42465754;stroke:none;stroke-width:1.23099995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
