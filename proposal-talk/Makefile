@@ -2,11 +2,8 @@ all : talk.pdf
 
 figures=$(wildcard *.svg)
 
-dist/build/proposal-talk/proposal-talk : Filter.hs Inkscape.hs
-	cabal build
-
-talk.pdf : talk.mkd $(figures:.svg=.pdf) dist/build/proposal-talk/proposal-talk
-	pandoc -H ../header.tex --latex-engine=xelatex -F dist/build/proposal-talk/proposal-talk -t beamer -V theme=Goettingen -V colortheme=default --slide-level=3 --template=template.tex --bibliography=../refs.bib -o $@ $<
+talk.pdf : talk.mkd $(figures:.svg=.pdf)
+	pandoc -H ../header.tex --latex-engine=xelatex -F ../svg-filter/dist/build/svg-filter/svg-filter -t beamer -V theme=Goettingen -V colortheme=default --slide-level=3 --template=template.tex --bibliography=../refs.bib -o $@ $<
 
 %.pdf : %.svg
 	inkscape --export-pdf=$@ $<
