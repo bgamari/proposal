@@ -7,7 +7,17 @@ date: 2014-05-19
     
 
 # Specific aims
-TODO
+### Specific aims
+
+ * Characterize the effect of fluorophore dynamics on a measurement of static molecule geometry
+ * Develop apparatus to track diffusive motion of sub-micron particles
+ * Characterize and control pH of droplets for use in single-molecule
+   confinement
+ * Demonstrate a fluorescence measurement on G quadruplex DNA system
+   under droplet confinement
+
+ 0. Before discussing the specific work necessary to realize these
+    goals I'm going to discuss some background
 
 # Background
 ## Motivation
@@ -37,7 +47,8 @@ TODO
  0. Provides insight into molecular geometry and kinetics
  0. attach a pair of appropriately chosen fluorophores to the molecule of interest
 
-TODO: Add spectar
+TODO: Add spectra
+
 ### FRET
 
 ![`filter: last -scale-bar donor-exc-photon -fluorophore-label`](figures/fret.svg)
@@ -106,12 +117,38 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
     free-rotation of both fluorophores
  0. $J = TODO$
 
+## Experimental realization
+### Experimental realization
+
+![`filter: only fluorescence background legend beam-callout molecule-callout`](../proposal/figures/apparatus.svg)
+
+ 0. experimental realization of such an technique involves a confocal microscope
+ 0. excitation laser tuned to absorption line of donor fluorophore confocal with photon counting detectors
+ 0. molecule in the green observation volume will be excited and emitted photons collected by the detectors
+
+### Typical data
+
+![](figures/droplet-brightness.svg)
+
+ 0. Here we see 
+
+### Contribution: Open tools for fluorescence spectroscopy
+
+ * Developed open-source hardware for timestamping and instrument control
+ * Open-source data analysis toolchain written in Python
+ * Full FRET analysis pipeline
+ * Won ICB3 Open-Source Software Innovation award
+
+ 0. Hardware enables applications alternating excitation
+
 # Modelling FRET on RNA
 
 ### RNA 16-mer
 
 ![](figures/rna.png)
 
+ 0. As mentioned earlier, one application of fluorescence spectroscopy is to resolve
+     molecular geometry
  0. We examined FRET on a double-stranded RNA 16-mer, four labelling
     variations (we'll focus on 5' forward variant here)
  0. Being a short nucelic acid oligo, the system itself should be akin to a rigid rod
@@ -125,14 +162,11 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
 @Milas2013
 
  0. Work done with Peker Milas
- 0. Built a all-atom molecular dynamics model of each oligomer, including labels
+ 0. Built an all-atom molecular dynamics model of each oligomer, including labels
  0. Evolved each for 300 nanoseconds
  0. Extracted approximations of inter-fluorophore distance $R$ and $\kappa^2$
  0. Note that the distribution in $R$ is roughly normal
-
- 0. In the bottom pane we have plotted the instantaneous FRET efficiency
- 0. Care must be taken in interpretting this due to the timescale of these dynamics
- 0. Compared to the donor fluorescence lifetime [TODO: Introduce?] the dynamics in $R$ are fast, 
+ 0. Recall that $\kappa$ is often taken to be 2/3 under an assumption of free rotation
 
 ### Orientation factor
 
@@ -144,20 +178,28 @@ Solid line represents distribution under free-rotation
     the trajectory, we find that the simulated system diverges
     substantially from the usual free-rotation assumption
  0. Due to averaging over the course of the donor's fluorescence
-    lifetime, the Foerster equation does not hold in the face of
+    lifetime, observed FRET efficiency distribution will not follow the Foerster equation does not hold in the face of
     dynamics on comparable or longer timescales than the lifetime
-
-
  
+### Modelling dynamics
+
+![](figures/timeseries-fwd5-R0_58-0300ns.pdf)
+
+ 0. In the bottom pane we have plotted the instantaneous FRET efficiency
+ 0. Care must be taken in interpretting this due to the timescale of these dynamics
+ 0. As we see dynamics both faster and slower then the fluorescence lifetime
+
 ## Modelling FRET
  
-### Monte Carlo model for FRET
+### Contribution: Monte Carlo model for FRET
 
 ![](figures/fret_processes.svg)
 
- 0. Due to the slow orientational dynamics exhibited by the
-    fluorophores, I used the MD trajectories as into into a Monte
-    Carlo model to predict the observed FRET efficiency histogram
+ 0. In order to predict the FRET effiency distribution produced by a
+    FRET study on our simulated system, I built a Monte Carlo model of
+    FRET
+ 0. Note that photophysical effects
+
 
 ### Validation
 
@@ -167,9 +209,8 @@ result due to @Gopich2012book,
 $$\mean{E} = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
 
  * $k_D = 1/\tau_D = $ Inverse lifetime of donor
- * $k_ET = 1/\tau_ET = $ TODO
+ * $k_{ET} = 1/\tau_{ET} = $ TODO
 
-TODO: Paper conclusions
 
 # Single-molecule dynamics
 ### Single molecule measurements
@@ -186,6 +227,7 @@ TODO: Paper conclusions
  
 ## Immobilization
 ### Surface attachment
+
 ![](figures/surface-attachment.svg)
 
  0. Linker, surface artifacts
@@ -195,6 +237,7 @@ TODO: Paper conclusions
 TODO: G-quadruplex squiggle
 
 ### Vesicle encapsulation
+
 ![](figures/vesicle.svg)
 
  0. Form membrane around molecule
@@ -203,7 +246,6 @@ TODO: G-quadruplex squiggle
  0. Narrow region of conditions where feasible
  0. Very poor sample utilization
  0. Generally little interaction with confined molecule (except for some proteins)
- 0. Droplet
 
 ### A new approach: Droplet confinement
 
@@ -212,79 +254,37 @@ TODO: G-quadruplex squiggle
  0. Form emulsion from solution of molecule under study and perfluorinated fluids
      0. Perfluorinated fluids provide a chemically inert medium
  0. Easily performed protocol
- 0. Can be fused, enabling mixing experiments TODO: elaborate
+ 0. Can be fused, enabling mixing experiments
+      0. Useful for studies of aggregation, nucleation, and kinetics
  0. Efficient sample usage
  0. Droplets can be immobilized via microfluidic manipulation, optical
     trapping, and optical tracking
 
-## Particle tracking
-### Particle tracking
+### Why droplets confinement?
 
-![](../proposal/figures/tracking.svg)
-
- 0. By passing a tracking beam through the droplet and measuring the
-    centroid of the scattered beam in the back focal plane of the
-    microscope, we can localize a dielectric particle relative to the
-    focus of the instrument.
-
-@Desai2007
-
- 0. By training a polynomial tracking model and closing the loop with
-    a high-speed piezo translation stage, we can follow diffusing
-    particles with sufficient precision for confocal interrogation
-
-TODO: Tracking slide in appendix
-
-### Sample trajectory
-
-<!--2011-12-07 #008 -->
-![](../proposal/figures/track.svg)
-
-TODO: Fix axes, bigger, units, specific bead, show error signal
-
- 0. We can reliably track sub-micron diameter particles for minutes on end
- 0. Here we see a water droplet in fluorinert oil diffusing for nearly
-    10 minutes
- 
-## Droplet chemistry
-
-### Fluorescence in droplets
-
-![](../proposal/figures/fret-setup.svg)
-
- 0. This is a confocal microscope
-
-### Why droplets?
  * Advantages:
       * Signal to noise
       * Homogeneous surface
       * Trajectories
- * Challenges:
-      * Chemical environment
 
 
 ### Fluorescence in droplets
 
 ![](figures/droplet-brightness.svg)
 
- 0. TODO: Define bursts
- 0. Examining FRET data on RNA 16-mer in droplets, we found that
-    droplet confined ((b) FC-770, (c) FC-40) oligos are substantially
-    brighter than those in pH 7 solution (a)
- 0. Next we started looking for a cause
+ 0. Here we see binned photon counts from a typical FRET experiment
+ 0. The X axis is time
+ 0. The left panes show 30 seconds of the experiment
+ 0. The right panes show a representative burst from each experiment
+ 0. The Y axis shows photon counts, donor count down from the top
+ 0. RNA 16-mer, (a) in solution (pH 7) and in droplet confinement ((b) FC-770, (c) FC-40)
+ 0. Droplet confined bursts are substantially brighter than those in solution
 
-TODO: labels
+### Challenges
 
-### Aims
+Chemical environment
 
- * Finish tracking
- * Characterize and fix pH
- * G-quadruplex
-
- 0. If droplet pH isn't done, move to quadruplex with surface attachment
- 0. pH takes too long, quadruplex may not be started
-
-### Tracking
+Recent measurements [@Milas2014] suggested that internal pH is lower than expected.
 
 ## Measuring internal pH
 ### Measuring internal pH
@@ -292,9 +292,7 @@ TODO: labels
 
 ![](figures/ph-dependence.svg)
 
-TODO: Circle anion and dianion states
-
- 0. Currently working on
+ 0. Currently in progress
  0. Many fluorophores have pH dependent fluorescence and can be used
     as probes of local pH
  0. Here we see the ionization states of fluorescein along with their
@@ -306,48 +304,58 @@ TODO: Circle anion and dianion states
  0. I will examine the internal pH within individual droplets via
     fluorescence lifetime spectroscopy
  0. Other dyes are available if necessary
+ 0. Options for controlling internal pH include changes to surfactant and buffer
 
-TODO: Show fluorimeter measurement
-
- * Surfactant choices, 
-
-# Proposed work
-
-### Proposed work
-
- * Finish tracker
- * pH characterization of individual droplets
- * G quadruplex measurements
-
-## Tracker
+<!--TODO: Show fluorimeter measurement-->
  
-## pH measurement
-
-### pH Calibration
-
-TODO Move
- * Calibrate against bulk fluorescein in buffer solution
- * Underlying lifetime distribution should be bimodal
- * Initial analysis will be a fit against single-exponential lifetime
-   model to determine an effective lifetime
- * Examine pH values between 3 and 8 to build empirical model of measurement response
- * More rigorous generative probabilitistic modelling is also possible
-
-### Droplet measurements
+### Proposed work: pH measurements
 
  * Lifetime measurement
  * Examining distribution
  * Measure ensemble pH over variety of buffer conditions
  * Initial analysis can draw from existing solution lifetime
-   techniques (*e.g.* Burst-Integrated Fluorescence Lifetime)
+   techniques (*e.g.* Burst-Integrated Fluorescence Lifetime
+   [@Eggeling1998])
  
  0. Calibration in bulk buffer
  0. Form droplets of \~10 umol/L fluorescein solution
  0. Expect bimodel lifetime distribution
  0. Buffers, surfactants
 
-## G-quadruplex dynamics
 
+## Particle tracking
+### Particle tracking
+
+![`filter: only tracker background fluorescence`](../proposal/figures/apparatus.svg)
+
+@Desai2007
+
+ 0. By passing a tracking beam through the droplet and measuring the
+    centroid of the scattered beam in the back focal plane of the
+    microscope, we can localize a dielectric particle relative to the
+    focus of the instrument.
+
+ 0. By training a polynomial tracking model and closing the loop with
+    a high-speed piezo translation stage, we can follow diffusing
+    particles with sufficient precision for confocal interrogation
+
+<!--TODO: Tracking slide in appendix-->
+
+### Sample trajectory
+
+<!--2011-12-07 #008 -->
+![](../proposal/figures/track.svg)
+
+<!-- TODO: Fix axes, bigger, units, specific bead, show error signal -->
+
+ 0. We can track sub-micron diameter particles for minutes on end
+ 0. Here we see a water droplet in fluorinert oil diffusing for nearly
+    10 minutes
+
+### Proposed work: Tracking
+
+
+## G-quadruplex dynamics
 ### Telomeric DNA
 
  * Eukaryotic chromosomes are terminated by single-stranded run rich in guanines
@@ -359,10 +367,10 @@ TODO Move
  0. Similar tracts have also recently been found in primers
  0. It has been long known that such G-heavy tracts can fold into
     quadruplex structures
- 0. 
 
 ### Previous work
 
+ * @Miyoshi2002: Parallel/antiparallel conformation switch at 40% v/v PEG 200
  * Ying (2003):
     * Solution FRET
     * Resolved parallel/anti-parallel conformational species
@@ -373,43 +381,49 @@ TODO Move
 
  0. Suggested existence of intermediate states along folding pathway
 
-### Demonstration of droplet confinement
+### Observing single-molecule switching
+
+![](figures/lee-kinetic.png)
+
+### Proposed work: G quadruplex switching
 
  1. Demonstrate solution FRET, reproduce Ying's result
  2. Reproduce with diffusing droplets
  3. Reproduce with tracked droplets
  4. Measure effect of crowding by introduction of PEG 200 on
     quadruplex stability
- 5. Oxygen scavaging
+ 5. Solution conditions:
+      * Tris buffer, pH 7.5
+      * PCD/PCA oxygen scavenging
 
-TODO: Show single-molecule data
-
-Figure showing sequence
+TODO: Figure showing sequence
 
  0. Reproduce Ying's multiple populations
  0.
- 
 
-## Analysis tools
 
-### Open tools for fluorescence
+# Proposed work
+### Review: Proposed work
 
- * Developed open-source hardware for timestamping and instrument control
- * Open-source data analysis toolchain written in Python
- * Full FRET analysis pipeline
- * Won ICB3 Open-Source Software Innovation award
+ * Stabilize tracking apparatus
+     * Automate to allow for high-throughput data acquisition
+ * pH characterization of droplets, cFinishontrol
+     * pH measurement via fluorescence lifetime
+ * G quadruplex measurements
+     * Reproduction of Ying diversity
+     * Examinination of crowding
 
- 0. Hardware enables applications alternating excitation
-
+ 0. If droplet pH isn't done, move to quadruplex with surface attachment
+ 0. pH takes too long, quadruplex may not be started
 
 # Timeline
 ### Optimistic Timeline
 
  * Droplet tracking: 2 months
- * pH measurements: 1 month
+ * pH measurements: \~1 month
     * Solution measurements: 2 weeks
     * Diffusing droplet measurements: 1 weeks
-    * Tracked droplets: 3 weeks TODO?
+    * Tracked droplets: 3 weeks
     * Controlling pH
  * Quadruplex measurements: 4-5 months
     * Solution
@@ -434,11 +448,11 @@ Figure showing sequence
     * Probe pH within single emulsion droplets
     * Demonstrate FRET by measuring G quadruplex DNA switching
 
+### 
+
 
 # Appendix
 ### PCH analysis
-
-TODO: Move to appendix
 
 ![](../proposal/figures/rna-pch.svg)
 
@@ -458,10 +472,19 @@ TODO: Move to appendix
     low-pH and that droplet confined environments tend be exhibit such
     conditions
 
+### Tracked fluorescence
+
+### pH Calibration
+
+ * Calibrate against bulk fluorescein in buffer solution
+ * Underlying lifetime distribution should be bimodal
+ * Initial analysis will be a fit against single-exponential lifetime
+   model to determine an effective lifetime
+ * Examine pH values between 3 and 8 to build empirical model of measurement response
+ * More rigorous generative probabilitistic modelling is also possible
+
 ### pH in tracked droplets
 
 TODO
-
-### Tracked fluorescence
 
 ## Bibliography

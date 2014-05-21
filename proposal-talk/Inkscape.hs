@@ -18,6 +18,7 @@ import Data.Maybe (catMaybes)
 import Data.Monoid ((<>))
 import qualified Data.Map as M
 import Control.Monad.Trans.Class
+import Control.Monad.IO.Class
 
 import qualified Data.Text as T
 import qualified Text.XML as Xml
@@ -79,8 +80,13 @@ showOnlyLayers showLayers doc =
        . filtered match
        . style "display" ?~ "none"
 
-layerOpacity :: Traversal' Layer Opacity
-layerOpacity = style "opacity" . traverse . unpacked . _Show
+layerOpacity :: Lens' Layer Opacity
+layerOpacity = style "opacity" . iso to from
+  where
+    to Nothing  = 1
+    to (Just x) = maybe 1 id $ readMay $ T.unpack x
+    from 1 = Nothing
+    from x = Just $ T.pack $ show x
 
 type StyleAttr = Text
 
@@ -109,9 +115,9 @@ scale s doc = root . nodes %~ scaleNodes
       [NodeElement $ Element "{http://www.w3.org/2000/svg}g" scaleAttr nodes]
     scaleAttr = M.singleton "transform" (T.pack $ "scale("++show s++")")
 
-runFilter :: FilePath -> FilePath -> SvgFilter -> EitherT String IO ()
+runFilter :: MonadIO m => FilePath -> FilePath -> SvgFilter -> EitherT String m ()
 runFilter inFile outFile transform = do
-    doc <- lift $ Xml.readFile def inFile
+    doc <- liftIO $ Xml.readFile def inFile
     --let notFound = filter (\l->l `notElem` allLayers doc) showLayers
     --when (not $ null notFound) $ lift $ putStrLn $ "couldn't find layers: "++show notFound
-    lift $ Xml.writeFile def outFile (transform doc)
+    liftIO $ Xml.writeFile def outFile (transform doc)

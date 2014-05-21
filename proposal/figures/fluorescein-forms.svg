@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.76862"
-   height="138.26764"
+   width="433.21429"
+   height="139.03258"
    id="svg3259"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -20,54 +20,58 @@
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lend"
-       style="overflow:visible;">
+       style="overflow:visible">
       <path
          id="path7383"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lstart"
        style="overflow:visible">
       <path
          id="path7380"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.8) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Mstart"
        style="overflow:visible">
       <path
          id="path7386"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.4) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Mend"
-       style="overflow:visible;">
+       style="overflow:visible">
       <path
          id="path7389"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
   </defs>
   <sodipodi:namedview
@@ -77,11 +81,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="167.87275"
-     inkscape:cy="60.163756"
+     inkscape:zoom="3.959798"
+     inkscape:cx="290.33662"
+     inkscape:cy="68.022897"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1918"
      inkscape:window-height="1053"
@@ -96,27 +100,27 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="0,1"
-       position="103.57143,36.889726"
+       position="103.57143,36.636584"
        id="guide6826" />
     <sodipodi:guide
        orientation="0,1"
-       position="327.5,2.8571429"
+       position="327.5,2.6040005"
        id="guide6840" />
     <sodipodi:guide
        orientation="1,0"
-       position="48.571429,107.96505"
+       position="48.571429,107.71191"
        id="guide6848" />
     <sodipodi:guide
        orientation="1,0"
-       position="159.64286,77.607905"
+       position="159.64286,77.354763"
        id="guide6850" />
     <sodipodi:guide
        orientation="1,0"
-       position="270,60.107905"
+       position="270,59.854763"
        id="guide6852" />
     <sodipodi:guide
        orientation="1,0"
-       position="381.42857,50.107905"
+       position="381.42857,49.854763"
        id="guide6854" />
   </sodipodi:namedview>
   <metadata
@@ -132,10 +136,10 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="structures"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-82.802444,-309.4537)">
+     transform="translate(-82.802444,-308.43563)">
     <g
        id="g6219"
        transform="translate(30.304576,0)">
@@ -418,7 +422,7 @@
         <text
            x="350"
            y="605"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5771">
           <tspan
              id="tspan5773">C</tspan>
@@ -426,7 +430,7 @@
         <text
            x="349"
            y="480"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5775">
           <tspan
              id="tspan5777">O</tspan>
@@ -434,7 +438,7 @@
         <text
            x="572"
            y="483"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5779">
           <tspan
              id="tspan5781">OH</tspan>
@@ -442,7 +446,7 @@
         <text
            x="147"
            y="476"
-           style="font-size:22.50000000000000000px;text-anchor:end;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:end;fill:#000000;font-family:Helvetica"
            id="text5783">
           <tspan
              id="tspan5785">HO</tspan>
@@ -450,7 +454,7 @@
         <text
            x="363"
            y="583"
-           style="font-size:22.50000000000000000px;text-anchor:end;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:end;fill:#000000;font-family:Helvetica"
            id="text5787">
           <tspan
              id="tspan5789">+</tspan>
@@ -458,7 +462,7 @@
         <text
            x="469"
            y="701"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5791">
           <tspan
              id="tspan5793">C</tspan>
@@ -466,7 +470,7 @@
         <text
            x="514"
            y="656"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5795">
           <tspan
              id="tspan5797">OH</tspan>
@@ -474,7 +478,7 @@
         <text
            x="514"
            y="746"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5799">
           <tspan
              id="tspan5801">O</tspan>
@@ -491,7 +495,7 @@
            x="66.749374"
            id="tspan5867"
            sodipodi:role="line">Cation (F<tspan
-   style="font-size:65.00091553000000033%;baseline-shift:super"
+   style="font-size:65.00091553%;baseline-shift:super"
    id="tspan6842">+1</tspan>)</tspan></text>
     </g>
     <g
@@ -776,7 +780,7 @@
         <text
            x="350"
            y="605"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5091">
           <tspan
              id="tspan5093">C</tspan>
@@ -784,7 +788,7 @@
         <text
            x="349"
            y="480"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5095">
           <tspan
              id="tspan5097">O</tspan>
@@ -792,7 +796,7 @@
         <text
            x="572"
            y="483"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5099">
           <tspan
              id="tspan5101">OH</tspan>
@@ -800,7 +804,7 @@
         <text
            x="469"
            y="701"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5103">
           <tspan
              id="tspan5105">C</tspan>
@@ -808,7 +812,7 @@
         <text
            x="514"
            y="656"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5107">
           <tspan
              id="tspan5109">OH</tspan>
@@ -816,7 +820,7 @@
         <text
            x="514"
            y="746"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5111">
           <tspan
              id="tspan5113">O</tspan>
@@ -824,7 +828,7 @@
         <text
            x="147"
            y="476"
-           style="font-size:22.50000000000000000px;text-anchor:end;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:end;fill:#000000;font-family:Helvetica"
            id="text5115">
           <tspan
              id="tspan5117">HO</tspan>
@@ -1124,7 +1128,7 @@
         <text
            x="350"
            y="605"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5427">
           <tspan
              id="tspan5429">C</tspan>
@@ -1132,7 +1136,7 @@
         <text
            x="349"
            y="480"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5431">
           <tspan
              id="tspan5433">O</tspan>
@@ -1140,7 +1144,7 @@
         <text
            x="572"
            y="483"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5435">
           <tspan
              id="tspan5437">OH</tspan>
@@ -1148,7 +1152,7 @@
         <text
            x="469"
            y="701"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5439">
           <tspan
              id="tspan5441">C</tspan>
@@ -1156,7 +1160,7 @@
         <text
            x="514"
            y="746"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text5443">
           <tspan
              id="tspan5445">O</tspan>
@@ -1164,13 +1168,13 @@
         <text
            x="147"
            y="476"
-           style="font-size:22.50000000000000000px;text-anchor:end;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:end;fill:#000000;font-family:Helvetica"
            id="text5447">
           <tspan
              id="tspan5449">O</tspan>
           <tspan
              dy="-10"
-             style="font-size:17.50000000000000000px"
+             style="font-size:17.5px"
              id="tspan5451">-</tspan>
           <tspan
              dy="10"
@@ -1179,13 +1183,13 @@
         <text
            x="528"
            y="656"
-           style="font-size:22.50000000000000000px;text-anchor:end;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:end;fill:#000000;font-family:Helvetica"
            id="text5455">
           <tspan
              id="tspan5457">O</tspan>
           <tspan
              dy="-10"
-             style="font-size:17.50000000000000000px"
+             style="font-size:17.5px"
              id="tspan5459">-</tspan>
           <tspan
              dy="10"
@@ -1203,7 +1207,7 @@
            x="460.86826"
            id="tspan5879"
            sodipodi:role="line">Dianion (F<tspan
-   style="font-size:65.00091553000000033%;baseline-shift:super"
+   style="font-size:65.00091553%;baseline-shift:super"
    id="tspan6846">-2</tspan>)</tspan></text>
     </g>
     <g
@@ -1220,7 +1224,7 @@
            x="335.58609"
            id="tspan5875"
            sodipodi:role="line">Anion (F<tspan
-   style="font-size:65.00091553000000033%;baseline-shift:super"
+   style="font-size:65.00091553%;baseline-shift:super"
    id="tspan6844">-1</tspan>)</tspan></text>
       <g
          transform="matrix(0.2,0,0,0.2,291.90111,239.97447)"
@@ -1501,7 +1505,7 @@
         <text
            x="350"
            y="605"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text6125">
           <tspan
              id="tspan6127">C</tspan>
@@ -1509,7 +1513,7 @@
         <text
            x="349"
            y="480"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text6129">
           <tspan
              id="tspan6131">O</tspan>
@@ -1517,7 +1521,7 @@
         <text
            x="572"
            y="483"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text6133">
           <tspan
              id="tspan6135">OH</tspan>
@@ -1525,7 +1529,7 @@
         <text
            x="469"
            y="701"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text6137">
           <tspan
              id="tspan6139">C</tspan>
@@ -1533,7 +1537,7 @@
         <text
            x="514"
            y="656"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text6141">
           <tspan
              id="tspan6143">OH</tspan>
@@ -1541,7 +1545,7 @@
         <text
            x="514"
            y="746"
-           style="font-size:22.50000000000000000px;text-anchor:start;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:start;fill:#000000;font-family:Helvetica"
            id="text6145">
           <tspan
              id="tspan6147">O</tspan>
@@ -1549,13 +1553,13 @@
         <text
            x="147"
            y="476"
-           style="font-size:22.50000000000000000px;text-anchor:end;fill:#000000;font-family:Helvetica"
+           style="font-size:22.5px;text-anchor:end;fill:#000000;font-family:Helvetica"
            id="text6149">
           <tspan
              id="tspan6151">O</tspan>
           <tspan
              dy="-10"
-             style="font-size:17.50000000000000000px"
+             style="font-size:17.5px"
              id="tspan6153">-</tspan>
           <tspan
              dy="10"
@@ -1565,7 +1569,7 @@
     </g>
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#bdc0d1;fill-opacity:0.28235294000000000;fill-rule:nonzero;stroke:#7d284d;stroke-width:0.89999998000000003;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#bdc0d1;fill-opacity:0.28235294;fill-rule:nonzero;stroke:#7d284d;stroke-width:0.89999998;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path5728"
        sodipodi:cx="48.392857"
        sodipodi:cy="46.870243"
@@ -1581,11 +1585,11 @@
        sodipodi:cy="46.870243"
        sodipodi:cx="48.392857"
        id="path6238"
-       style="color:#000000;fill:#bdc0d1;fill-opacity:0.28235294000000000;fill-rule:nonzero;stroke:#7d284d;stroke-width:0.89999998000000003;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#bdc0d1;fill-opacity:0.28235294;fill-rule:nonzero;stroke:#7d284d;stroke-width:0.89999998;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#bdc0d1;fill-opacity:0.28235294000000000;fill-rule:nonzero;stroke:#7d284d;stroke-width:0.89999998000000003;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#bdc0d1;fill-opacity:0.28235294;fill-rule:nonzero;stroke:#7d284d;stroke-width:0.89999998;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path6240"
        sodipodi:cx="48.392857"
        sodipodi:cy="46.870243"
@@ -1670,5 +1674,23 @@
          sodipodi:role="line"><tspan
    style="font-style:italic;text-align:center;text-anchor:middle;-inkscape-font-specification:STIXGeneral Italic"
    id="tspan6860">ϕ</tspan> = 0.93</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="highlight"
+     transform="translate(0,1.018075)"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="color:#000000;fill:#bceecf;fill-opacity:0.42465754;stroke:none;stroke-width:1.23099995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3262"
+       width="221.60715"
+       height="123.57143"
+       x="211.60715"
+       y="-1.018075"
+       transform="translate(0,-5e-6)"
+       ry="10"
+       rx="10" />
   </g>
 </svg>
