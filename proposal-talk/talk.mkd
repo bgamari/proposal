@@ -49,7 +49,7 @@ date: 2014-05-19
 
 ### FRET
 
-![`filter: last -scale-bar donor-exc-photon -fluorophore-label`](figures/fret.svg)
+![`filter: last -scale-bar donor-exc-photon -fluorophore-label -spectra`](figures/fret.svg)
 
  0. illuminate the molecule with appropriate excitation
 
@@ -103,7 +103,7 @@ $$E = \frac{1}{1 + (R / R_0)^6}$$
 . . .
 
 where,
-$$R_0 \propto \frac{Q_0 \kappa^2 J}{n^4}$$
+$$R_0 \propto \frac{Q_0~\kappa^2~J}{n^4}$$
 $\kappa$ is related to the dipole moments of the two fluorophores,
 $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cdot \hat R)$$
 
@@ -176,9 +176,7 @@ Solid line represents distribution under free-rotation
  0. Examining the orientation factor distribution over the course of
     the trajectory, we find that the simulated system diverges
     substantially from the usual free-rotation assumption
- 0. Due to averaging over the course of the donor's fluorescence
-    lifetime, observed FRET efficiency distribution will not follow the Foerster equation does not hold in the face of
-    dynamics on comparable or longer timescales than the lifetime
+ 0. Looking back at the timeseries, we find that there are several long-lived orientational states
  
 ### Modelling dynamics
 
@@ -187,6 +185,9 @@ Solid line represents distribution under free-rotation
  0. In the bottom pane we have plotted the instantaneous FRET efficiency
  0. Care must be taken in interpretting this due to the timescale of these dynamics
  0. As we see dynamics both faster and slower then the fluorescence lifetime
+ 0. Due to averaging over the course of the donor's fluorescence
+    lifetime, observed FRET efficiency distribution will not follow the Foerster equation does not hold in the face of
+    dynamics on comparable or longer timescales than the lifetime
 
 ## Modelling FRET
  
@@ -199,7 +200,6 @@ Solid line represents distribution under free-rotation
     FRET
  0. Note that photophysical effects
 
-
 ### Validation
 
 Validated resulting FRET efficiency distribution against closed form
@@ -210,6 +210,12 @@ $$\mean{E} = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt'
  * $k_D = 1/\tau_D = $ Donor decay rate
  * $k_{ET} = 1/\tau_{ET} = $ Rate of Fӧrster transfer
 
+### Effect of dynamics
+
+![](figures/fret-eff-table.svg)
+
+ 0. We find that the presence of fluorophore dynamics strongly affect
+    the expected FRET efficiency in all systems studied
 
 # Single-molecule dynamics
 ### Single molecule measurements
