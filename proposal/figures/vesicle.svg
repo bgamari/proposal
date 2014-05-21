@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="54.611816"
-     inkscape:cy="93.694787"
+     inkscape:zoom="20.48"
+     inkscape:cx="105.85193"
+     inkscape:cy="58.799281"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="false"
@@ -106,8 +106,8 @@
        id="rect7981"
        width="199.53426"
        height="151.00378"
-       x="-101.20508"
-       y="623.13708" />
+       x="-101.5957"
+       y="628.41052" />
     <rect
        style="color:#000000;fill:#4b9c50;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.90000009999999975;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8861"
@@ -115,12 +115,88 @@
        height="20.297041"
        x="-101.11916"
        y="773.88153" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect3163"
+       id="use3938"
+       transform="translate(808.57379,-92.579824)"
+       width="744.09448"
+       height="1052.3622" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect3163"
+       id="use3938-3"
+       transform="translate(808.57379,-92.579824)"
+       width="744.09448"
+       height="1052.3622" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:6.16157532;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -10.950738,778.06448 c -2.347266,-35.79581 3.9297363,-48.37826 3.9297363,-48.37826"
-       id="path8863"
+       style="color:#000000;fill:#e5c4a9;fill-opacity:0.96347034;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -25.149363,763.28744 1.99127,0 c -0.0171,2.05345 3.94596,2.05345 3.98256,0 l 1.99127,0 1.99128,0 c 0.032,2.05345 3.98806,2.05345 3.98255,0 l 1.9912804,0 c 0.554,0 1,0.446 1,1 l 0,8.6066 c 0,0.554 -0.446,1 -1,1 l -15.9302104,0 c -0.554,0 -1,-0.446 -1,-1 l 0,-8.6066 c 0,-0.554 0.446,-1 1,-1 z"
+       id="rect3163"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="scccccssssssss" />
+    <path
+       sodipodi:nodetypes="cccsssssssc"
+       inkscape:connector-curvature="0"
+       id="path3993"
+       d="m -16.971884,763.59009 c 1.26606,0.002 0.57991,0 1.56974,0 -0.0313,2.00953 4.06068,1.93093 4.06068,0 l 1.9912795,0 c 0.554,0 1,-0.446 1,-1 l 0,-8.60659 c 0,-0.554 -0.446,-1 -1,-1 l -7.6216995,0 c -0.554,0 -1,0.446 -1,1 l 0,8.60659 c 0,0.554 0.446,1 1,1 z"
+       style="color:#000000;fill:#c77745;fill-opacity:0.96347034;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       style="fill:none;stroke:#208531;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -14.048604,754.2111 c -1.08094,-10.92574 3.10907,-4.42958 7.1504595,-9.83986 2.84931,-3.81443 -7.5694165,-4.61051 -3.048897,-15.94334"
+       id="path3995"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect3163"
+       id="use3237"
+       transform="translate(21.54466,0)"
+       width="199.78125"
+       height="171.04149" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3237"
+       id="use3239"
+       transform="translate(26.516504,0)"
+       width="199.78125"
+       height="171.04149" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3239"
+       id="use3241"
+       transform="translate(23.478155,0)"
+       width="199.78125"
+       height="171.04149" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3241"
+       id="use3243"
+       transform="translate(-99.713104,0)"
+       width="199.78125"
+       height="171.04149" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3243"
+       id="use3245"
+       transform="translate(-32.869417,0)"
+       width="199.78125"
+       height="171.04149" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use3241"
+       id="use3247"
+       transform="translate(29.554854,0)"
+       width="199.78125"
+       height="171.04149" />
   </g>
   <g
      id="layer1"
@@ -1058,7 +1134,7 @@
          sodipodi:role="line">functionalized glass surface</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        x="21.507767"
        y="750.4444"
        id="text8884"
@@ -1067,7 +1143,7 @@
          x="21.507767"
          y="750.4444"
          id="tspan8886"
-         style="font-size:8px;-inkscape-font-specification:Sans;font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%">covalent linker</tspan></text>
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">linker</tspan></text>
     <rect
        style="color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect8890"

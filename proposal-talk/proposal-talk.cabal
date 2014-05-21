@@ -22,5 +22,6 @@ executable proposal-talk
                        pandoc-types >=1.12 && <1.13,
                        pandoc,
                        lens,
-                       process
+                       process,
+                       attoparsec
   default-language:    Haskell2010

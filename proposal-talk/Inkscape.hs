@@ -3,9 +3,11 @@
 module Inkscape
     ( SvgFilter
     , LayerLabel
+    , Opacity
+    , layersLabelled
+    , layerOpacity
     , hideLayers
     , showOnlyLayers
-    , highlightLayers
     , scale
     , runFilter
     ) where
@@ -32,47 +34,53 @@ import Filesystem.Path.CurrentOS (FilePath, decodeString, encodeString, toText)
 
 type SvgFilter = Document -> Document
 type LayerLabel = Text
+type Opacity = Float
+type Layer = Element
 
 inkscape :: Name -> Name
 inkscape = _nameNamespace ?~ "http://www.inkscape.org/namespaces/inkscape"
 
 svg :: Name -> Name
 svg = _nameNamespace ?~ "http://www.w3.org/2000/svg"
- 
-allLayers :: Document -> [LayerLabel]
-allLayers doc = catMaybes $ doc ^.. traverseGroups . attrs . at (inkscape "label")
 
-traverseGroups :: Traversal' Document Element
-traverseGroups =
+layerLabel :: Lens' Layer (Maybe LayerLabel)
+layerLabel = attrs . at (inkscape "label")
+
+allLayers :: Document -> [LayerLabel]
+allLayers doc = catMaybes $ doc ^.. traverseLayers . layerLabel
+
+traverseLayers :: Traversal' Document Layer
+traverseLayers =
     root
     . entire . filtered (views name (== svg "g"))
     . attributeIs (inkscape "groupmode") "layer"
 
+layersLabelled :: LayerLabel -> Traversal' Document Layer
+layersLabelled label = 
+    traverseLayers . filtered match
+  where match el = el ^. layerLabel == Just label
+
 showAllGroups :: Document -> Document
-showAllGroups = traverseGroups . attrs . at "style" .~ Nothing
+showAllGroups = traverseLayers . attrs . at "style" .~ Nothing
 
 hideLayers :: [LayerLabel] -> SvgFilter
 hideLayers layers doc =             
-    let match el = (el ^. attrs . at (inkscape "label")) `elem` map Just layers
+    let match el = (el ^. layerLabel) `elem` map Just layers
     in showAllGroups doc
-       & traverseGroups
+       & traverseLayers
        . filtered match
        . style "display" ?~ "none"
 
 showOnlyLayers :: [LayerLabel] -> SvgFilter
 showOnlyLayers showLayers doc =             
-    let match el = (el ^. attrs . at (inkscape "label")) `notElem` map Just showLayers
+    let match el = (el ^. layerLabel) `notElem` map Just showLayers
     in showAllGroups doc
-       & traverseGroups
+       & traverseLayers
        . filtered match
        . style "display" ?~ "none"
 
-highlightLayers :: Double -> [LayerLabel] -> SvgFilter
-highlightLayers opacity showLayers doc =             
-    let match el = (el ^. attrs . at (inkscape "label")) `notElem` map Just showLayers
-    in doc & traverseGroups
-           . filtered match
-           . style "opacity" ?~ T.pack (show opacity)
+layerOpacity :: Traversal' Layer Opacity
+layerOpacity = style "opacity" . traverse . unpacked . _Show
 
 type StyleAttr = Text
 

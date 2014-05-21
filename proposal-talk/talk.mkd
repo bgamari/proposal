@@ -4,6 +4,10 @@ subtitle: A demonstration examining G-quadruplex folding dynamics
 author: Ben Gamari
 date: 2014-05-19
 ---
+    
+
+# Specific aims
+TODO
 
 # Background
 ## Motivation
@@ -32,7 +36,8 @@ date: 2014-05-19
  0. A fluorescence spectroscopy
  0. Provides insight into molecular geometry and kinetics
  0. attach a pair of appropriately chosen fluorophores to the molecule of interest
- 
+
+TODO: Add spectar
 ### FRET
 
 ![`filter: last -scale-bar donor-exc-photon -fluorophore-label`](figures/fret.svg)
@@ -68,6 +73,7 @@ date: 2014-05-19
 ![`filter: last !acceptor excited-acceptor`](figures/fret.svg)
 
  0. donating its energy to the acceptor fluorophore
+FIX non-radiating
 
 ### FRET
 
@@ -98,7 +104,7 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
  0. $\hat \mu_i$ is the transition dipole moment of fluorophore $i$
  0. $\kappa$ is often taken to be $2/3$ under an assumption of
     free-rotation of both fluorophores
-
+ 0. $J = TODO$
 
 # Modelling FRET on RNA
 
@@ -116,6 +122,9 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
 
 ![](figures/timeseries-fwd5-R0_58-0300ns.pdf)
 
+@Milas2013
+
+ 0. Work done with Peker Milas
  0. Built a all-atom molecular dynamics model of each oligomer, including labels
  0. Evolved each for 300 nanoseconds
  0. Extracted approximations of inter-fluorophore distance $R$ and $\kappa^2$
@@ -134,14 +143,11 @@ Solid line represents distribution under free-rotation
  0. Examining the orientation factor distribution over the course of
     the trajectory, we find that the simulated system diverges
     substantially from the usual free-rotation assumption
-
-### Interpreting fast dynamics
-
  0. Due to averaging over the course of the donor's fluorescence
     lifetime, the Foerster equation does not hold in the face of
     dynamics on comparable or longer timescales than the lifetime
- 
-$$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
+
+
  
 ## Modelling FRET
  
@@ -153,20 +159,41 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
     fluorophores, I used the MD trajectories as into into a Monte
     Carlo model to predict the observed FRET efficiency histogram
 
+### Validation
+
+Validated resulting FRET efficiency distribution against closed form
+result due to @Gopich2012book,
+
+$$\mean{E} = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right)} $$
+
+ * $k_D = 1/\tau_D = $ Inverse lifetime of donor
+ * $k_ET = 1/\tau_ET = $ TODO
+
+TODO: Paper conclusions
 
 # Single-molecule dynamics
 ### Single molecule measurements
 
- * We often want way to resolve individual molecules
+ * We often want way to resolve trajectories showing dynamics of
+   individual molecules
     * Dynamics over long timescales
-    * Rare states
  
+ 0. Trajectory
  0. The approach described above has single-molecule sensitivity, but
     we often want single-molecule resolution
  0. That is, to watch an individual molecule
  0. For this, we need hold the molecule in place
  
 ## Immobilization
+### Surface attachment
+![](figures/surface-attachment.svg)
+
+ 0. Linker, surface artifacts
+ 0. Requires functionalization of sample
+ 0. Sample perturbed by linker and surface
+
+TODO: G-quadruplex squiggle
+
 ### Vesicle encapsulation
 ![](figures/vesicle.svg)
 
@@ -176,13 +203,7 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
  0. Narrow region of conditions where feasible
  0. Very poor sample utilization
  0. Generally little interaction with confined molecule (except for some proteins)
-
-### Surface attachment
-![](figures/surface-attachment.svg)
-
- 0. Linker, surface artifacts
- 0. Requires functionalization of sample
- 0. Sample perturbed by linker and surface
+ 0. Droplet
 
 ### A new approach: Droplet confinement
 
@@ -206,53 +227,64 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
     microscope, we can localize a dielectric particle relative to the
     focus of the instrument.
 
-<!--### Calibration
-
-![](figures/rough-cal.svg)
--->
+@Desai2007
 
  0. By training a polynomial tracking model and closing the loop with
     a high-speed piezo translation stage, we can follow diffusing
     particles with sufficient precision for confocal interrogation
+
+TODO: Tracking slide in appendix
 
 ### Sample trajectory
 
 <!--2011-12-07 #008 -->
 ![](../proposal/figures/track.svg)
 
+TODO: Fix axes, bigger, units, specific bead, show error signal
+
  0. We can reliably track sub-micron diameter particles for minutes on end
  0. Here we see a water droplet in fluorinert oil diffusing for nearly
     10 minutes
  
 ## Droplet chemistry
-### Initial indications
+
+### Fluorescence in droplets
+
+![](../proposal/figures/fret-setup.svg)
+
+ 0. This is a confocal microscope
+
+### Why droplets?
+ * Advantages:
+      * Signal to noise
+      * Homogeneous surface
+      * Trajectories
+ * Challenges:
+      * Chemical environment
+
+
+### Fluorescence in droplets
 
 ![](figures/droplet-brightness.svg)
 
+ 0. TODO: Define bursts
  0. Examining FRET data on RNA 16-mer in droplets, we found that
-    droplet confined ((c) FC-770, (c) FC-40) oligos are substantially
+    droplet confined ((b) FC-770, (c) FC-40) oligos are substantially
     brighter than those in pH 7 solution (a)
  0. Next we started looking for a cause
 
-### PCH analysis
+TODO: labels
 
-![](../proposal/figures/rna-pch.svg)
+### Aims
 
- 0. Photon counting histogram analysis is a statistical analysis
-    technique that can be used to model multiple brightness species in
-    diffusion
- 0. Photon counting histogram analysis of data taken on RNA oligomers
-    in droplets revealed qualitative differences in the behavior
-    fluorescence intensity of the fluorophores in droplets
-    vs. solution
- 0. Here we see data and fits examining
-    a. solution pH 7, two-species fit
-    b. solution pH 4, three-species fit
-    c. droplet confined, FC-770, three-species fit
-    d. droplet confined, FC-40, three-species fit
- 0. This suggests that a third, high-brightness state is introduced at
-    low-pH and that droplet confined environments tend be exhibit such
-    conditions
+ * Finish tracking
+ * Characterize and fix pH
+ * G-quadruplex
+
+ 0. If droplet pH isn't done, move to quadruplex with surface attachment
+ 0. pH takes too long, quadruplex may not be started
+
+### Tracking
 
 ## Measuring internal pH
 ### Measuring internal pH
@@ -260,6 +292,9 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
 
 ![](figures/ph-dependence.svg)
 
+TODO: Circle anion and dianion states
+
+ 0. Currently working on
  0. Many fluorophores have pH dependent fluorescence and can be used
     as probes of local pH
  0. Here we see the ionization states of fluorescein along with their
@@ -270,9 +305,27 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
     droplets by examining absorption spectrum
  0. I will examine the internal pH within individual droplets via
     fluorescence lifetime spectroscopy
+ 0. Other dyes are available if necessary
 
-### Calibration
+TODO: Show fluorimeter measurement
 
+ * Surfactant choices, 
+
+# Proposed work
+
+### Proposed work
+
+ * Finish tracker
+ * pH characterization of individual droplets
+ * G quadruplex measurements
+
+## Tracker
+ 
+## pH measurement
+
+### pH Calibration
+
+TODO Move
  * Calibrate against bulk fluorescein in buffer solution
  * Underlying lifetime distribution should be bimodal
  * Initial analysis will be a fit against single-exponential lifetime
@@ -282,18 +335,19 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
 
 ### Droplet measurements
 
+ * Lifetime measurement
+ * Examining distribution
  * Measure ensemble pH over variety of buffer conditions
  * Initial analysis can draw from existing solution lifetime
    techniques (*e.g.* Burst-Integrated Fluorescence Lifetime)
  
+ 0. Calibration in bulk buffer
  0. Form droplets of \~10 umol/L fluorescein solution
  0. Expect bimodel lifetime distribution
- 0. 
- 
+ 0. Buffers, surfactants
 
-# G-quadruplex dynamics
+## G-quadruplex dynamics
 
-## Telomeric DNA
 ### Telomeric DNA
 
  * Eukaryotic chromosomes are terminated by single-stranded run rich in guanines
@@ -324,13 +378,20 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
  1. Demonstrate solution FRET, reproduce Ying's result
  2. Reproduce with diffusing droplets
  3. Reproduce with tracked droplets
- 4. 
+ 4. Measure effect of crowding by introduction of PEG 200 on
+    quadruplex stability
+ 5. Oxygen scavaging
+
+TODO: Show single-molecule data
+
+Figure showing sequence
 
  0. Reproduce Ying's multiple populations
  0.
  
 
 ## Analysis tools
+
 ### Open tools for fluorescence
 
  * Developed open-source hardware for timestamping and instrument control
@@ -344,16 +405,21 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
 # Timeline
 ### Optimistic Timeline
 
- * Droplet tracking: 1 month
- * pH measurements: 4 months
-    * Solution measurements: 3 weeks
-    * Diffusing droplet measurements: 3 weeks
-    * Tracked droplets: 3 weeks
-    * Total analysis: 3 weeks
- * Solution quadruplex measurements: 1 month
- * Droplet quadruplex measurements: 2 months
+ * Droplet tracking: 2 months
+ * pH measurements: 1 month
+    * Solution measurements: 2 weeks
+    * Diffusing droplet measurements: 1 weeks
+    * Tracked droplets: 3 weeks TODO?
+    * Controlling pH
+ * Quadruplex measurements: 4-5 months
+    * Solution
+    * Droplet
  * Goal: Work finished no later than May 2015
 
+ 0. Working with undergraduate on diffusing droplet measurements
+ 0. Entire group is working on pH measurements, I'm involved
+ 0. Thrust of the work is tracking and quadruplex measurements
+ 
 # Conclusion
 ### Conclusion
 
@@ -367,3 +433,35 @@ $$E = 1 - k_D \int dt ~ \mean{\exp\left( -k_D t - \int_0^t k_{ET}(t')~dt' \right
  * Demonstrate fluorescence measurement under droplet confinement
     * Probe pH within single emulsion droplets
     * Demonstrate FRET by measuring G quadruplex DNA switching
+
+
+# Appendix
+### PCH analysis
+
+TODO: Move to appendix
+
+![](../proposal/figures/rna-pch.svg)
+
+ 0. Photon counting histogram analysis is a statistical analysis
+    technique that can be used to model multiple brightness species in
+    diffusion
+ 0. Photon counting histogram analysis of data taken on RNA oligomers
+    in droplets revealed qualitative differences in the behavior
+    fluorescence intensity of the fluorophores in droplets
+    vs. solution
+ 0. Here we see data and fits examining
+    a. solution pH 7, two-species fit
+    b. solution pH 4, three-species fit
+    c. droplet confined, FC-770, three-species fit
+    d. droplet confined, FC-40, three-species fit
+ 0. This suggests that a third, high-brightness state is introduced at
+    low-pH and that droplet confined environments tend be exhibit such
+    conditions
+
+### pH in tracked droplets
+
+TODO
+
+### Tracked fluorescence
+
+## Bibliography
