@@ -58,7 +58,7 @@ and their strengths and weaknesses.
 
 I will then introduce an encapsulation technique developed in our lab
 using attoliter-volume emulsion droplets to confine, isolate, and
-manipulate single-molecules for fluorescence spectoscopy. I will
+manipulate single-molecules for fluorescence spectroscopy. I will
 discuss some of the technical challenges involved in realizing this
 technique, particularly in characterizing and controlling droplets'
 chemical environment.
@@ -90,9 +90,9 @@ specific steps forward. This previous work includes,
 
   1. An open-source data acquisition and analysis toolchain for common
      fluorescence spectroscopy experiments
-  2. Modelling a common fluorescence experiment on a simple RNA
+  2. Modeling a common fluorescence experiment on a simple RNA
      system, using molecular dynamics simulation and Monte Carlo
-     modelling to inform a physical model of the system,
+     modeling to inform a physical model of the system,
   3. A first version of the droplet tracking apparatus, which will be
      built upon in the present work
   4. Initial experiments examining the physical characteristics of 
@@ -121,7 +121,7 @@ environment rearranges in response to the newly excited
 fluorophore. Over the course of this rearrangement, known as *Stokes
 decay*, the molecule loses energy to its local environment, eventually
 settling into its excited fluorescent state. It will remain here until
-eventuallly decaying back to its ground state, potentially with the
+eventually decaying back to its ground state, potentially with the
 emission of a photon (known as *radiative decay*). The lifetime of
 this fluorescent state is known as the fluorophore's *fluorescence
 lifetime* and is typically of order $10^{-9}$ seconds.
@@ -130,7 +130,7 @@ lifetime* and is typically of order $10^{-9}$ seconds.
     The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
 
 The Stokes decay gives rise to a shift in the wavelength of the fluorescence
-phoron relative to the excitation light from which it arose. This allows scattered
+photon relative to the excitation light from which it arose. This allows scattered
 excitation light to be distinguished from fluorescence. Furthermore,
 the spectrum, lifetime, and polarization of a fluorescence process is
 sensitive to the local physical and chemical environment surrounding
@@ -159,7 +159,7 @@ in the detected fluorescence intensity signal, one can infer molecular
 sizes [@Sengupta2003], concentrations, and chemical kinetics
 [@Aragon1976; @Dix2006].
 
-![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal} `filter: only fluorescence background legend beam-callout molecule-callout`](figures/apparatus.svg)
+![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beamsplitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal} `filter: only fluorescence background legend beam-callout molecule-callout`](figures/apparatus.svg)
 
 
 ### Fluorescence lifetime spectroscopy
@@ -174,7 +174,7 @@ measuring the arrival times $t_i$ of photons due to fluorescence
 emission relative to the time of excitation, one can construct the
 waiting time distribution $P(t)$. In the simple case of a fluorophore
 with one decay pathway, this distribution is exponential (e.g. the
-waiting time distribution of a homogenous Poisson process),
+waiting time distribution of a homogeneous Poisson process),
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
 As there is rarely enough emissions from a single excitation event to
 infer this distribution, excitations are generally performed
@@ -432,7 +432,7 @@ where $\mu_e$ is known as the electrophoretic mobility. With further
 physical modeling, we can relate this mobility to various physical
 properties of the emulsion. Namely, under some simplifying
 assumptions[^assumptions] one finds the Helmholtz-Smoluchkowski
-equation for elecphoretic mobility,
+equation for electrophoretic mobility,
 $$μ_e = \frac{\epsilon_r \epsilon_0 \zeta}{\eta}$$
 where $\eta$ is the dynamic viscosity of the medium, $\epsilon_0$ is
 the permittivity of free space, $\epsilon_r$ is the dielectric
@@ -558,7 +558,7 @@ A set of experiments by @Boncina2012 suggested that quadruplex
 formation is a three-state process. Through calorimetry and circular
 dichroism measurements, Boncina attempts to fit a three-state energetic model
 consisting of folded, unfolded, and a partially unfolded intermediate
-state, in agreement with previous modelling efforts by Lee (although
+state, in agreement with previous modeling efforts by Lee (although
 the short-lived intermediates are not observed).
 
 [^TIRF]:
@@ -584,7 +584,7 @@ conformations.
     Here "handle" particles are attached to the ends of a polymer such that
     they can be manipulated by, *e.g.*, optical trapping. The ends are
     then pulled while the displacement of the handles is monitored,
-    resulting in a force-extension curve which can be interpretted by
+    resulting in a force-extension curve which can be interpreted by
     a variety of means.
 
 <!-- Fujimoto 2013 -->
@@ -668,7 +668,7 @@ to reason that the pH differs substantially from the initial solution
 from which the droplets were formed. FRET measurements of this same
 molecule under similar conditions lead to similar conclusions.
 
-![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labelled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos. \label{fig:pch}](figures/rna-pch)
+![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labeled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos. \label{fig:pch}](figures/rna-pch)
 
 Currently others in our lab are examining this problem with bulk
 spectroscopy. Here, we create a droplet emulsion filled with a pH
