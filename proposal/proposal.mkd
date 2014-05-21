@@ -159,7 +159,7 @@ in the detected fluorescence intensity signal, one can infer molecular
 sizes [@Sengupta2003], concentrations, and chemical kinetics
 [@Aragon1976; @Dix2006].
 
-![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal}](figures/apparatus)
+![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beam splitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal} `filter: only fluorescence background legend beam-callout molecule-callout`](figures/apparatus.svg)
 
 
 ### Fluorescence lifetime spectroscopy
@@ -619,7 +619,7 @@ center of the observation volume. To map from the response of the
 detector to particle position a polynomial model is used, learned from
 an active calibration measurement.
 
-![A simplified view of the particle tracking apparatus. A tracking beam is deflected by a droplet in the observation volume. This deflection is measured by a position sensitive photodiode. This signal in turn feeds a feedback loop which drives a translation stage to follow the diffusive motion of the particle.](figures/apparatus)
+![A simplified view of the particle tracking apparatus. A tracking beam is deflected by a droplet in the observation volume. This deflection is measured by a position sensitive photodiode. This signal in turn feeds a feedback loop which drives a translation stage to follow the diffusive motion of the particle. `filter: only fluorescence tracker background legend`](figures/apparatus.svg)
 
 <!-- Risks -->
 Our droplet tracking system has been demonstrated to reliably track
