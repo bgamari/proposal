@@ -40,14 +40,12 @@ date: 2014-05-19
 
 ### FRET
 
-![`filter: only molecule scale-bar acceptor donor fluorophore-label`](figures/fret.svg)
+![`filter: only molecule scale-bar acceptor donor fluorophore-label spectra`](figures/fret.svg)
 
  0. Fӧrster resonance energy transfer
  0. A fluorescence spectroscopy
  0. Provides insight into molecular geometry and kinetics
  0. attach a pair of appropriately chosen fluorophores to the molecule of interest
-
-TODO: Add spectra
 
 ### FRET
 
@@ -105,7 +103,7 @@ $$E = \frac{1}{1 + (R / R_0)^6}$$
 . . .
 
 where,
-$$R_0 \propto \frac{\kappa^2 J}{n^4}$$
+$$R_0 \propto \frac{Q_0 \kappa^2 J}{n^4}$$
 $\kappa$ is related to the dipole moments of the two fluorophores,
 $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cdot \hat R)$$
 
@@ -115,7 +113,8 @@ $$\kappa = \hat\mu_A \cdot \hat\mu_D - 3 (\hat\mu_D \cdot \hat R) (\hat\mu_A \cd
  0. $\hat \mu_i$ is the transition dipole moment of fluorophore $i$
  0. $\kappa$ is often taken to be $2/3$ under an assumption of
     free-rotation of both fluorophores
- 0. $J = TODO$
+ 0. $Q_0$ is the fluorescence quantum yield of the donor in presence of acceptor
+ 0. $J = \int d\lambda f_D(\lambda) \epsilon_A(\lambda) \lambda^4$
 
 ## Experimental realization
 ### Experimental realization
@@ -396,7 +395,7 @@ Recent measurements [@Milas2014] suggested that internal pH is lower than expect
       * Tris buffer, pH 7.5
       * PCD/PCA oxygen scavenging
 
-TODO: Figure showing sequence
+<!-- TODO: Figure showing sequence -->
 
  0. Reproduce Ying's multiple populations
  0.
