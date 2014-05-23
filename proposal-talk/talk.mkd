@@ -352,7 +352,7 @@ How dynamics are treated strongly affects expected FRET efficiency
 
 
 ## Particle tracking
-### Immobilization: Particle tracking
+### Contribution: Immobilization via particle tracking
 
 ![`filter: only tracker background fluorescence`](../proposal/figures/apparatus.svg)
 
