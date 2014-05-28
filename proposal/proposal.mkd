@@ -8,7 +8,16 @@ date: 2014-05-21
 \doublespacing
 \newpage
 
+# Abstract
+
+We propose a 
+TODO
+
 # Introduction
+
+The goal of this proposal is to develop a technique for isolating,
+tracking, and fluorescently probing single biomolecules over long
+durations.
 
 Over the last three decades, fluorescence spectroscopy has developed
 into a unique tool for probing biologically relevant systems. In
@@ -18,10 +27,10 @@ kinetics [@Wu2006; @Heyduk2002; @Allen2006] and sizes of biomolecular
 assemblies [@Pitschke1998]. Likewise, single-molecule Förster
 resonance energy transfer has proved to be useful for a
 variety of biologically relevant measurements ranging from DNA/RNA
-mechanics [@iqbal2008orientation; @Vafabakhsh2012; @Laurence2005; @Wozniak2008]
+mechanics [@iqbal2008orientation; @Vafabakhsh2012; @Laurence2005; @Wozniak2008; @Lee2008; @Ying2005]
 to protein conformation [@Wozniak2005] and enzyme
 function [@Gopich2009; @Sevenich1998]. When used in tandem these two
-techniques can provide a unique perspective onto dynamics on molecular
+techniques can provide a unique perspective into dynamics on molecular
 length-scales and over a wide range of time-scales [@Nettels2008].
 The single-molecule sensitivity enabled by fluorescence allows
 resolution of rare and short-lived states which are otherwise hidden
@@ -31,7 +40,7 @@ This work will examine tools and techniques for two applications of
 fluorescence spectroscopy: 1) inference of kinetic properties of
 dynamic systems, and 2) inference of geometry of static structures.
 
-A major challenge in studying gross switching dynamics with single-molecule
+A major challenge in studying global switching dynamics with single-molecule
 fluorescence spectroscopy is keeping the molecule under study immobile
 with respect to the measurement apparatus over the course of the dynamic process. While
 there exist a number of techniques for immobilizing single molecules
@@ -77,12 +86,7 @@ Next I will describe the goals of the proposed work. These are threefold,
      minutes at a time. This will enable single-molecule spectroscopy
      on timescales previously only accessible via more restrictive
      immobilization techniques.
-  2. To use the above apparatus to probe the chemical environment of
-     the droplet interior and control this environment sufficiently to
-     enable study of biologically-relevant systems. This work will
-     answer basic questions surrounding liquid-liquid interfaces
-     enable the final goal.
-  3. To demonstrate use of the droplet technique by measuring
+  2. To demonstrate use of the droplet technique by measuring
      switching dynamics in a model DNA system, the G quadruplex.
 
 Following this I will discuss my previous work in our lab and propose
@@ -92,13 +96,100 @@ specific steps forward. This previous work includes,
      fluorescence spectroscopy experiments
   2. Modeling a common fluorescence experiment on a simple RNA
      system, using molecular dynamics simulation and Monte Carlo
-     modeling to inform a physical model of the system,
+     modeling to inform a physical model of the system and the
+     fluorescence measurement by which it is measured,
   3. A first version of the droplet tracking apparatus, which will be
      built upon in the present work
   4. Initial experiments examining the physical characteristics of 
      droplets formed by our technique
 
 Finally, I close with some concluding notes.
+
+# Specific Aims
+
+The first goal of this work is to develop an apparatus to track
+diffusive, sub-micron sized particles to enable long duration
+single-molecule fluorescence studies. This apparatus will help in
+realizing the second goal of characterizing the chemical environment
+within these droplets. Finally, I will use this confinement strategy
+to probe the switching dynamics of the G quadruplex system.
+
+## Real-time localization and tracking of diffusive droplets
+
+As our droplets are much larger than the molecules they contain it is
+possible to optically measure their diffusive motion. The ability to
+localize and track droplets for minutes and longer enables a variety
+of unique measurements with single-molecule resolution.
+
+To realize this goal, we use a technique inspired by @Desai2007. Here
+a probe beam is passed through the sample and its deflection measured
+to infer the position of the droplet with respect to the
+center of the observation volume. To map from the response of the
+detector to particle position a polynomial model is used, learned from
+an active calibration measurement.
+
+![A simplified view of the particle tracking apparatus. A tracking beam is deflected by a droplet in the observation volume. This deflection is measured by a position sensitive photodiode. This signal in turn feeds a feedback loop which drives a translation stage to follow the diffusive motion of the particle. `filter: only fluorescence tracker background legend`](figures/apparatus.svg)
+
+<!-- Risks -->
+Our droplet tracking system has been demonstrated to reliably track
+particles down to sizes of 500 nm. Our current preparation protocol
+produces droplets approximately 100 nm in radius. While I have started
+optimizing the tracking system for the smaller signal produced by
+these small particles, there is no guarantee that this signal can be
+resolved well enough to produce a stable track.
+
+If signal strength is found to be a problem, I will examine options
+for increasing droplet size. Options include changing surfactant
+concentration and identity, as well as formation of droplets within a
+microfluidic device.
+
+Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
+hundreds of specimens simultaneously over the course of tens of minutes. With
+this technique they were able to observe thousands of switching
+events. In contrast, our approach will probe single molecules at a
+time. While count rates may be higher, allowing access to faster
+kinetic timescales, it's unclear that it will practical to collect
+event counts comparable to those seen by Lee, especially in crowded
+conditions where quadruplex structures are known to be relatively stable.
+
+If particle tracking is found to be infeasible for this application
+I will fall back on alternative methods for immobilization and
+manipulation of droplets being developed by other members of our
+group. These include production and manipulation of droplets within
+microfluidic devices.
+
+## Study of G quadruplex switching dynamics
+
+This prong of the work will use droplet confinement to examine
+the switching dynamics of the G quadruplex system.
+Of late several authors have uncovered unexpected
+polymorphism in the quadruplex structure.
+
+There have been a number of recent papers reexamining various aspects of the
+quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], force
+spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
+spectroscopy methods [@Fujimoto2013; @Boncina2012].
+Despite a number of new insights regarding the conformational
+polymorphism of this system, the last direct examination of
+single-molecule folding dynamics with fluorescence was @Okamoto2008.
+
+Of particular interest here is the dependence of quadruplex switching
+dynamics on osmotic pressure which represents a void in the current
+state of the literature. This will be probed by the introduction of
+PEG-200 into the droplet environment, following @Lannan2012.
+
+<!-- TODO -->
+This will begin by reproducing the findings of Lee [@Lee2005], using
+droplet immobilization in place of vesicle encapsulation and surface
+attachment. 
+
+The interpretation of FRET measurements of dynamic systems is a
+complex problem. Solutions range from simple signal processing
+techniques [@Taylor2010], [@Gopich2010], to more sophisticated
+statistical tools (largely various inference techniques for hidden
+Markov models)
+[@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
+
 
 # Background
 
@@ -115,7 +206,7 @@ known as a fluorophore, begins in its ground state ($\ket{0}$
 [^braket]) when it is excited by an incident photon of a specific
 wavelength (known as an *excitation wavelength* of the
 fluorophore). The system quickly (over the order $10^{-13}$ seconds or
-faster[@Spry2007]) passes non-radiatively (without the emission of a
+faster [@Spry2007]) passes non-radiatively (without the emission of a
 photon) through a large number of intermediate states as its local
 environment rearranges in response to the newly excited
 fluorophore. Over the course of this rearrangement, known as *Stokes
@@ -159,7 +250,7 @@ in the detected fluorescence intensity signal, one can infer molecular
 sizes [@Sengupta2003], concentrations, and chemical kinetics
 [@Aragon1976; @Dix2006].
 
-![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another beamsplitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal} `filter: only fluorescence background legend beam-callout molecule-callout`](figures/apparatus.svg)
+![A simplified schematic of a confocal fluorescence spectroscopy apparatus. Here a laser provides an excitation to illuminate an observation volume. Resulting fluorescence is separated from the excitation beam by a dichroic beamsplitter. Usually two fluorescence channels are further separated by another dichroic beamsplitter downstream, where they are sent to two photon counting detectors.\label{fig:confocal} `filter: only fluorescence background legend beam-callout molecule-callout`](figures/apparatus.svg)
 
 
 ### Fluorescence lifetime spectroscopy
@@ -227,7 +318,30 @@ and the quantum yield[^quantum-yield] of the donor.
     radiative decay and $k_{nr}$ denote the rate of non-radiative
     decay, the quantum yield $\phi$ is given by
     $\phi = \frac{k_r}{k_r + k_{nr}}$
-    
+
+It should be note that the F\"orster equation itself makes a number of assumptions. 
+Among these is that a dipole-dipole term is dominant in the
+interaction between the two fluorophores. @MunozLosa2009 examines this
+assumption, computing the transition densities for seven selected
+fluorophores (this is done via several computational quantum chemistry
+methods in each case to compensate for the approximations made by
+each). The authors then construct configurations consisting of pairs
+of fluorophores characterized by separation distance and relative
+orientation. For each configuration, the authors compute the
+interaction energy and compare this to the energy an ideal dipole
+approximation.
+
+The authors found that for rotationally free fluorophores the relative
+error in interaction potential is less than three percent at a
+distance of three nanometers. However, the dipole approximation
+performs substantially worse in the case of rotationally constrained
+fluorophores. Here relative errors of ten percent were found at
+distances as large as five nanometers. The authors conclude that due
+to the difficulty in determining which short-ranged interactions may
+contribution in a given system, practitioners of FRET have few options
+for managing these errors beyond the computational quantum chemical
+treatment that they apply.
+
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A}$ represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
 These experiments are often performed on species diffusing in solution
@@ -387,6 +501,105 @@ volume. Furthermore, ion concentrations are known to be
 non-homogeneous near oil-water interfaces
 [@Vazdar2012; @Luo2006]. These two factors may complicate
 interpretation of experiments performed under droplet confinement.
+
+### Formerly specific aim: Characterization and control of pH in droplets
+<!--
+ * Measure pH in droplets
+-->
+A central piece of this work will be characterizing the chemical
+conditions imposed by droplet confinement. In @Milas2014, we
+examined an RNA oligomer both under droplet confinement and in
+solution. By examining photon count statistics
+[@Chen1999; @Huang2004], we were able to distinguish intensity states
+of the fluorophores. In solution measurements the photon count
+distribution was well-fit by a single-species model while both at low
+pH (pH of 4) and in droplet confinement a three-species model was
+necessary (shown in Figure \ref{fig:pch}). The similarity between the
+droplet and low-pH solution measurements suggest a strongly perturbed
+chemical environment within the droplet. More specifically, it stands
+to reason that the pH differs substantially from the initial solution
+from which the droplets were formed. FRET measurements of this same
+molecule under similar conditions lead to similar conclusions.
+
+![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labeled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos. \label{fig:pch}](figures/rna-pch)
+
+Currently others in our lab are examining this problem with bulk
+spectroscopy. Here, we create a droplet emulsion filled with a pH
+sensitive fluorophore, in this case fluorescein.
+By examining the emission spectrum of the dye, one can infer
+the pH of the fluorophore's local environment.
+
+The pH dependence of
+fluorescein arises from a change in number of hydrogens coordinating
+with the molecule, as shown in Figure \ref{fig:fluorescein}. Between
+pH 4 and 6 the molecule is largely in its singly ionized form, missing
+one hydrogen. This state has an
+absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
+3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
+which has an absorption around 490 nm and a $τ = 4.1$ ns emission
+decay. In the measurement described above, the pH is derived from the
+relative intensities of the anionic and dianionic emission peaks.
+
+![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
+
+Likewise, one can perform a similar inference of pH by examining
+fluorescence lifetime. This has the advantage of being more easily
+performed on low-intensity signals, such as that produced by a single
+droplet. It is in this manner that this work will attempt to measure
+the pH distribution in an ensemble of droplets. By filling droplets
+with fluorophore such that the mean droplet occupancy is on the order
+of 100 molecules (on the order of $\mathrm{μmol/L}$), it should be
+possible to collect enough statistics to infer a distribution over pH
+for the droplet ensemble.
+
+This experiment will proceed as follows,
+
+  1. To calibrate the measurement, measure fluorescence lifetime of
+     fluorescein diffusing in solution under a range of pHs (ranging
+     from 3 to 8). This will allow me to build a empirical model of
+     the pH dependence of fluorescence lifetime.
+  2. To the begin droplet effort, measure fluorescence lifetime with
+     droplets diffusing in solution
+  3. When particle tracking has been stabilized, measure fluorescence
+     lifetime in individual tracked droplets to characterize pH distribution
+
+For each droplet in these experiments, I will expect to see a
+fluorescence lifetime distribution that looks like, $$P(t) = α λ₁
+e^{-t/τ₁} + (1 - α) λ₂ e^{-t/τ₂}$$ Where $\tau_1$ (resp. $\tau_2$)
+denotes lifetime of the anionic (resp. dianionic) species and $α$ is
+related to the species relative concentration [^concentration].
+
+Given that the difference between the fluorescence lifetimes of the
+relevant ionization states ($\tau_1=3.0$ and $\tau_2=4.1$ ns) is so
+small, a first analysis might follow past work by fitting a
+single-exponential to the resulting photon arrival time histogram. The
+lifetime resulting from such a fit will have no direct relation to
+either of the two fluorophore lifetimes, but can be related
+empirically to pH though the calibration experiments performed in step
+1 above.
+
+[^concentration]:
+    Note that this ignores contributions from the weakly fluorescent
+    cationic and neutral species, as well as decay from these states
+    through the anionic state. These contributions can be added to
+    this model if necessary.
+
+A more principled approach would directly learn a mixing distribution over $\alpha$
+from the photon arrival time observations. Such an approach
+is shown in the form of a graphical probabilistic model in Figure
+\ref{fig:lifetime-model}.
+
+In addition to this simple model, the task of learning a mixture of
+exponential lifetimes (characterized by $α$ and $λᵢ$ above) from
+photon arrival time observations has been treated before by a number
+of groups [@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994].
+
+If the change in lifetime from fluorescein is found to be too small to
+be resolved, there are a number [@Han2010] of other dyes that could be
+used, particularly with a steeper response in the pH regime of
+interest (3 to 6). Alternatively, direct measurement of the emission
+spectrum is also possible.
+
 
 ### Chemical environment within emulsion droplets
 The properties of oil-in-water emulsions and their interfaces have
@@ -594,191 +807,6 @@ that the loop region (the TTA sequence punctuating the G tracts) also
 has an important thermodynamic contribution. 
 
 <!-- Heddi 2011 -->
-
-
-# Specific Aims
-
-The first goal of this work is to develop an apparatus to track
-diffusive, sub-micron sized particles to enable long duration
-single-molecule fluorescence studies. This apparatus will help in
-realizing the second goal of characterizing the chemical environment
-within these droplets. Finally, I will use this confinement strategy
-to probe the switching dynamics of the G quadruplex system.
-
-## Real-time localization and tracking of diffusive droplets
-
-As our droplets are much larger than the molecules they contain it is
-possible to optically measure their diffusive motion. The ability to
-localize and track droplets for minutes and longer enables a variety
-of unique measurements with single-molecule resolution.
-
-To realize this goal, we use a technique inspired by @Desai2007. Here
-a probe beam is passed through the sample and its deflection measured
-to infer the position of the droplet with respect to the
-center of the observation volume. To map from the response of the
-detector to particle position a polynomial model is used, learned from
-an active calibration measurement.
-
-![A simplified view of the particle tracking apparatus. A tracking beam is deflected by a droplet in the observation volume. This deflection is measured by a position sensitive photodiode. This signal in turn feeds a feedback loop which drives a translation stage to follow the diffusive motion of the particle. `filter: only fluorescence tracker background legend`](figures/apparatus.svg)
-
-<!-- Risks -->
-Our droplet tracking system has been demonstrated to reliably track
-particles down to sizes of 500 nm. Our current preparation protocol
-produces droplets approximately 100 nm in radius. While I have started
-optimizing the tracking system for the smaller signal produced by
-these small particles, there is no guarantee that this signal can be
-resolved well enough to produce a stable track.
-
-If signal strength is found to be a problem, I will examine options
-for increasing droplet size. Options include changing surfactant
-concentration and identity, as well as formation of droplets within a
-microfluidic device.
-
-Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
-hundreds of specimens simultaneously over the course of tens of minutes. With
-this technique they were able to observe thousands of switching
-events. In contrast, our approach will probe single molecules at a
-time. While count rates may be higher, allowing access to faster
-kinetic timescales, it's unclear that it will practical to collect
-event counts comparable to those seen by Lee, especially in crowded
-conditions where quadruplex structures are known to be relatively stable.
-
-If particle tracking is found to be infeasible for this application
-I will fall back on alternative methods for immobilization and
-manipulation of droplets being developed by other members of our
-group. These include production and manipulation of droplets within
-microfluidic devices.
-
-## Characterization and control of pH in droplets
-<!--
- * Measure pH in droplets
--->
-A central piece of this work will be characterizing the chemical
-conditions imposed by droplet confinement. In @Milas2014, we
-examined an RNA oligomer both under droplet confinement and in
-solution. By examining photon count statistics
-[@Chen1999; @Huang2004], we were able to distinguish intensity states
-of the fluorophores. In solution measurements the photon count
-distribution was well-fit by a single-species model while both at low
-pH (pH of 4) and in droplet confinement a three-species model was
-necessary (shown in Figure \ref{fig:pch}). The similarity between the
-droplet and low-pH solution measurements suggest a strongly perturbed
-chemical environment within the droplet. More specifically, it stands
-to reason that the pH differs substantially from the initial solution
-from which the droplets were formed. FRET measurements of this same
-molecule under similar conditions lead to similar conclusions.
-
-![Histograms showing the number of photon counts in 200 $μ$s bins from experiments on a singly-labeled RNA oligomer. The solid lines are fits to theoretical models[@Huang2004]. The top two panes show histograms from free-diffusion experiments in (a) pH 7 (two-species fit) and (b) pH 4 (three-species fit) aqueous solution. The bottom two panes show histograms from the same oligomer confined to droplets formed in (c) FC-770 (three-species fit) and (d) FC-40 (three-species fit) perfluorinated liquids. Figure due to Kieran Ramos. \label{fig:pch}](figures/rna-pch)
-
-Currently others in our lab are examining this problem with bulk
-spectroscopy. Here, we create a droplet emulsion filled with a pH
-sensitive fluorophore, in this case fluorescein.
-By examining the emission spectrum of the dye, one can infer
-the pH of the fluorophore's local environment.
-
-The pH dependence of
-fluorescein arises from a change in number of hydrogens coordinating
-with the molecule, as shown in Figure \ref{fig:fluorescein}. Between
-pH 4 and 6 the molecule is largely in its singly ionized form, missing
-one hydrogen. This state has an
-absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
-3$ ns. Above pH 6, the molecule is mostly in its doubly ionized state
-which has an absorption around 490 nm and a $τ = 4.1$ ns emission
-decay. In the measurement described above, the pH is derived from the
-relative intensities of the anionic and dianionic emission peaks.
-
-![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
-
-Likewise, one can perform a similar inference of pH by examining
-fluorescence lifetime. This has the advantage of being more easily
-performed on low-intensity signals, such as that produced by a single
-droplet. It is in this manner that this work will attempt to measure
-the pH distribution in an ensemble of droplets. By filling droplets
-with fluorophore such that the mean droplet occupancy is on the order
-of 100 molecules (on the order of $\mathrm{μmol/L}$), it should be
-possible to collect enough statistics to infer a distribution over pH
-for the droplet ensemble.
-
-This experiment will proceed as follows,
-
-  1. To calibrate the measurement, measure fluorescence lifetime of
-     fluorescein diffusing in solution under a range of pHs (ranging
-     from 3 to 8). This will allow me to build a empirical model of
-     the pH dependence of fluorescence lifetime.
-  2. To the begin droplet effort, measure fluorescence lifetime with
-     droplets diffusing in solution
-  3. When particle tracking has been stabilized, measure fluorescence
-     lifetime in individual tracked droplets to characterize pH distribution
-
-For each droplet in these experiments, I will expect to see a
-fluorescence lifetime distribution that looks like, $$P(t) = α λ₁
-e^{-t/τ₁} + (1 - α) λ₂ e^{-t/τ₂}$$ Where $\tau_1$ (resp. $\tau_2$)
-denotes lifetime of the anionic (resp. dianionic) species and $α$ is
-related to the species relative concentration [^concentration].
-
-Given that the difference between the fluorescence lifetimes of the
-relevant ionization states ($\tau_1=3.0$ and $\tau_2=4.1$ ns) is so
-small, a first analysis might follow past work by fitting a
-single-exponential to the resulting photon arrival time histogram. The
-lifetime resulting from such a fit will have no direct relation to
-either of the two fluorophore lifetimes, but can be related
-empirically to pH though the calibration experiments performed in step
-1 above.
-
-[^concentration]:
-    Note that this ignores contributions from the weakly fluorescent
-    cationic and neutral species, as well as decay from these states
-    through the anionic state. These contributions can be added to
-    this model if necessary.
-
-A more principled approach would directly learn a mixing distribution over $\alpha$
-from the photon arrival time observations. Such an approach
-is shown in the form of a graphical probabilistic model in Figure
-\ref{fig:lifetime-model}.
-
-In addition to this simple model, the task of learning a mixture of
-exponential lifetimes (characterized by $α$ and $λᵢ$ above) from
-photon arrival time observations has been treated before by a number
-of groups [@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994].
-
-If the change in lifetime from fluorescein is found to be too small to
-be resolved, there are a number [@Han2010] of other dyes that could be
-used, particularly with a steeper response in the pH regime of
-interest (3 to 6). Alternatively, direct measurement of the emission
-spectrum is also possible.
-
-
-## Study of G quadruplex switching dynamics
-
-This prong of the work will use droplet confinement to examine
-the switching dynamics of the G quadruplex system.
-Of late several authors have uncovered unexpected
-polymorphism in the quadruplex structure.
-
-There have been a number of recent papers reexamining various aspects of the
-quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], force
-spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
-spectroscopy methods [@Fujimoto2013; @Boncina2012].
-Despite a number of new insights regarding the conformational
-polymorphism of this system, the last direct examination of
-single-molecule folding dynamics with fluorescence was @Okamoto2008.
-
-Of particular interest here is the dependence of quadruplex switching
-dynamics on osmotic pressure which represents a void in the current
-state of the literature. This will be probed by the introduction of
-PEG-200 into the droplet environment, following @Lannan2012.
-
-<!-- TODO -->
-This will begin by reproducing the findings of Lee [@Lee2005], using
-droplet immobilization in place of vesicle encapsulation and surface
-attachment. 
-
-The interpretation of FRET measurements of dynamic systems is a
-complex problem. Solutions range from simple signal processing
-techniques [@Taylor2010], [@Gopich2010], to more sophisticated
-statistical tools (largely various inference techniques for hidden
-Markov models)
-[@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
 
 
 # Prior and proposed work
