@@ -1,5 +1,5 @@
 ---
-title: "Droplet encapsulation of biomolecules for fluorescence spectroscopy: A demonstration examining G-quadruplex folding dynamics"
+title: "Droplet confinement of biomolecules for fluorescence spectroscopy: A demonstration examining G-quadruplex folding dynamics"
 author: Ben Gamari
 email: bgamari@physics.umass.edu
 affil: Department of Physics, University of Massachusetts, Amherst
@@ -31,7 +31,7 @@ mechanics [@iqbal2008orientation; @Vafabakhsh2012; @Laurence2005; @Wozniak2008; 
 to protein conformation [@Wozniak2005] and enzyme
 function [@Gopich2009; @Sevenich1998]. When used in tandem these two
 techniques can provide a unique perspective into dynamics on molecular
-length-scales and over a wide range of time-scales [@Nettels2008].
+length scales and over a wide range of time-scales [@Nettels2008].
 The single-molecule sensitivity enabled by fluorescence allows
 resolution of rare and short-lived states which are otherwise hidden
 from view in ensemble measurements.
@@ -65,7 +65,7 @@ techniques used in our lab to probe biomolecular systems. Following
 this I will describe existing approach for molecular immobilization
 and their strengths and weaknesses.
 
-I will then introduce an encapsulation technique developed in our lab
+I will then introduce an confinement technique developed in our lab
 using attoliter-volume emulsion droplets to confine, isolate, and
 manipulate single-molecules for fluorescence spectroscopy. I will
 discuss some of the technical challenges involved in realizing this
@@ -180,7 +180,7 @@ PEG-200 into the droplet environment, following @Lannan2012.
 
 <!-- TODO -->
 This will begin by reproducing the findings of Lee [@Lee2005], using
-droplet immobilization in place of vesicle encapsulation and surface
+droplet immobilization in place of vesicle confinement and surface
 attachment. 
 
 The interpretation of FRET measurements of dynamic systems is a
@@ -267,18 +267,19 @@ waiting time distribution $P(t)$. In the simple case of a fluorophore
 with one decay pathway, this distribution is exponential (e.g. the
 waiting time distribution of a homogeneous Poisson process),
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
-As there is rarely enough emissions from a single excitation event to
-infer this distribution, excitations are generally performed
-periodically (between $10^4$ and $10^8$ Hz).
+The system is probed with a pulse periodically (between $10^4$ and
+$10^8$ Hz) to collect enough statistics to infer the distribution $P(t
+\vert \tau)$.
 
 ### Fӧrster resonance energy transfer
 If one places two distinct fluorophores
 in close proximity to one another, under certain conditions they will
 undergo energy transfer [@Forster1960]. That is when one is excited, fluorescence
 will observed from the other. This process, known as Fӧrster transfer,
-requires that the fluorophores' absorption and emission spectra
-overlap and is dependent upon their distance and relative
-orientations. This geometric dependence enables use of this effect for
+requires that the donor fluorophore's absorption spectrum overlaps
+with absorption spectrum of the acceptor.  The rate of energy transfer
+is dependent upon the distance and relative orientations of the two
+fluorophores. This geometric dependence enables use of this effect for
 studying molecular conformation, dynamics, and kinetics (e.g. binding
 of two components in an assembly).
 
@@ -297,18 +298,18 @@ Fӧrster Resonance Energy Transfer (FRET), is widely used to study
 biomolecular conformation and kinetics [@Preus2012; @Dietrich2002].
 
 The probability of energy transfer, known as the FRET efficiency
-$E$, is related to the inter-fluorophore distance $R$ by the F\"orster
+$E$, is related to the inter-fluorophore distance $R$ by the Fӧrster
 equation,
 $$ E = P(\mathrm{Energy~Transfer}) = \frac{1}{1 + (R / R₀)⁶} $$
-where $R₀$, known as the Fӧrster radius, is a length-scale that
+where $R₀$, known as the Fӧrster radius, is a length scale that
 defines the range of Fӧrster interaction. It is related to a quantity, $κ²$,
 that captures the relative orientation of the two fluorophores'
 electric dipole moments $\hat{μ}ᵢ$,
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}₂) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 As often only the inter-fluorophore distance $R$ is of interest, the
 fluorophores are often assumed to be freely rotating, implying
-$κ² = 2/3$.  In addition to this geometric factor, $R_0$ also depends
-upon a variety of other "constants" including the index of refraction
+$\mean{κ²} = 2/3$.  In addition to this geometric factor, $R_0$ also depends
+upon a variety of other factors including the index of refraction
 of the solvent, the degree of overlap of the fluorophores' spectra,
 and the quantum yield[^quantum-yield] of the donor.
 
@@ -319,7 +320,7 @@ and the quantum yield[^quantum-yield] of the donor.
     decay, the quantum yield $\phi$ is given by
     $\phi = \frac{k_r}{k_r + k_{nr}}$
 
-It should be note that the F\"orster equation itself makes a number of assumptions. 
+It should be note that the Fӧrster equation itself makes a number of assumptions. 
 Among these is that a dipole-dipole term is dominant in the
 interaction between the two fluorophores. @MunozLosa2009 examines this
 assumption, computing the transition densities for seven selected
@@ -344,14 +345,14 @@ treatment that they apply.
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A}$ represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
-These experiments are often performed on species diffusing in solution
+FRET measurements are often performed on species diffusing in solution
 with confocal microscopy.  While such solution experiments are easily
 performed [@Dahan1999], such techniques offer only a short glimpse of
 each molecule. With the hydrodynamic radius of many biomolecules of
 interest being on the order of nanometers, these molecules require on
 the order of hundreds of microseconds to traverse the observation
-volume. This is comparable of the inter-photon arrival time of a
-typical fluorescence experiment, meaning that few photons will be
+volume. This is comparable to the inter-photon arrival time of a
+typical single-molecule fluorescence experiment, meaning that few photons will be
 captured per molecule. In being able to sense the probed molecule for
 only such short durations, these experiments are restrictive in the
 range of timescales and interactions they can examine.
@@ -391,13 +392,13 @@ hinder motion of the molecule.
     molecules under study showed no activity when bound to a
     glass surface
 
-![Vesicles can be used to encapsulate molecules in a single molecule fluorescence experiment. Here we see a bilayer confining a single molecule and tethered to a functionalized glass surface.\label{fig:vesicle}](figures/vesicle)
+![Vesicles can be used to confine molecules in a single molecule fluorescence experiment. Here we see a bilayer confining a single molecule and tethered to a functionalized glass surface.\label{fig:vesicle}](figures/vesicle)
 
-An alternative to surface immobilization is encapsulation, where the
+An alternative to surface immobilization is confinement, where the
 molecule of interest is placed in a confining container. One can then
 immobilize or manipulate this container and the molecule within.
 
-Currently the most convenient means of encapsulating single molecules
+Currently the most convenient means of confining single molecules
 is by lipid membrane as seen in Figure \ref{fig:vesicle}.  This
 structure, known as a *vesicle*, consists of a volume of water,
 typically less than one attoliter, contained within a closed lipid
@@ -417,14 +418,14 @@ with a variety of practical challenges [@Kyoung2013].
 Finally, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
 within a vesicle. Collectively, these considerations preclude use
-of vesicle encapsulation for many systems.
+of vesicle confinement for many systems.
 
 [^vesicle-interaction]:
     Many proteins, in particular those that sit on membrane surfaces,
     interact strongly with vesicle interfaces.
 
 ### Droplet confinement
-Our group has developed a technique for the encapsulation of
+Our group has developed a technique for the confinement of
 single-molecules in water-in-oil emulsion droplets. The preparation protocol
 requires only minutes to perform and results in emulsions which are
 stable for hours. Furthermore, as nearly all sample solution will end up in a
@@ -437,7 +438,7 @@ dynamics.
 
 Like vesicles, these emulsions can be either probed in solution, where
 they afford longer observation times due to their size, or
-immobilize.  Immobilization of emulsion droplets can be realized
+immobilized.  Immobilization of emulsion droplets can be realized
 through several means. These include optical trapping [@Reiner2006],
 optical tracking (which will be discussed shortly), and microfluidic
 confinement.
@@ -486,7 +487,7 @@ interface.
 ## Droplet confinement for fluorescence microscopy
 
 One of the challenges of conducting a fluorescence experiment in
-droplet encapsulation is ensuring that the conditions within
+droplet confinement is ensuring that the conditions within
 the droplet's volume are well understood. Initial measurements from
 our lab have demonstrated that care is needed in interpreting
 fluorescence experiments in droplet environments, suggesting that the
@@ -622,7 +623,7 @@ affected. It has been observed [@Crans2012; @Hasegawa2001] that pH
 conditions within reverse micelles[^micelle] differ substantially from
 those in bulk solution. Several groups [@Peterson2005; @Marques2014]
 have approached this problem seeking to enable high-fidelity
-measurements of reverse-micelle encapsulated proteins with NMR
+measurements of reverse-micelle confined proteins with NMR
 spectroscopy. These attempts are mostly centered around surfactant
 choice and suggest that a fair amount of control can be had over
 internal pH. That being said, it should be pointed out that these
@@ -935,7 +936,7 @@ emulsions.
 The final piece of this work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
-immobilization in place of vesicle encapsulation and surface
+immobilization in place of vesicle confinement and surface
 attachment.
 
 Starting with a variant on the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
