@@ -114,7 +114,7 @@ realizing the second goal of characterizing the chemical environment
 within these droplets. Finally, I will use this confinement strategy
 to probe the switching dynamics of the G quadruplex system.
 
-## Real-time localization and tracking of diffusive droplets
+## Real-time localization and tracking of diffusing droplets
 
 As our droplets are much larger than the molecules they contain it is
 possible to optically measure their diffusive motion. The ability to
@@ -352,19 +352,18 @@ each molecule. With the hydrodynamic radius of many biomolecules of
 interest being on the order of nanometers, these molecules require on
 the order of hundreds of microseconds to traverse the observation
 volume. This is comparable to the inter-photon arrival time of a
-typical single-molecule fluorescence experiment, meaning that few photons will be
-captured per molecule. In being able to sense the probed molecule for
-only such short durations, these experiments are restrictive in the
-range of timescales and interactions they can examine.
+typical single-molecule fluorescence experiment, meaning that few
+photons will be captured per molecule. In being able to sense the
+probed molecule for only such short durations, these experiments are
+restrictive in the range of timescales and interactions they can
+examine.
 
 ## Single-molecule immobilization
 
-Immobilization of the molecules under study provides a way around this
-limitation, enabling single-molecule sensitive studies with less pronounced
-temporal and ensemble averaging. By ensuring the molecule under study
-cannot move appreciably relative to the size of the observation
-volume, it can be probed on timescales only upper-bounded
-by the robustness of its fluorophores[^lower-bound].
+Confining the molecule to a region small relative to the observation
+volume over the timescale of the measurement. This allows the molecule
+to be probed over timescales only upper-bounded by the robustness of
+its fluorophores[^lower-bound].
 
 [^lower-bound]:
     However, the lower end of the range of accessible timescales is
@@ -381,8 +380,8 @@ molecules under study will then stick via their linker, where they
 will remain translationally confined and can be probed with either
 confocal or imaging microscopy. This approach poses a variety of
 challenges: direct interaction between the surface and the molecule
-under study can substantially perturb the behavior of the studied
-system[^Yasuda]. Further, the chemistry required for the modification
+under study can substantially perturb the behavior of the molecule under
+study[^Yasuda]. Further, the chemistry required for the modification
 of the surface and molecule can pose a substantial practical
 barrier. Finally, the presence of the linker can often sterically
 hinder motion of the molecule.
@@ -408,12 +407,12 @@ due to their larger size, or chemically tethered to a
 surface. Unfortunately, vesicles are known to interact with some
 systems[^vesicle-interaction], form under only a narrow range of
 chemical conditions [@Vafabakhsh2012], and present practical
-challenges in sample preparation.
+challenges in sample preparation. TODO
 
 Further, while the ability to introduce new molecules into a container
 and modify its chemical environment are desirable capabilities in an
 immobilization scheme, protocols for reliably fusing vesicles come
-with a variety of practical challenges [@Kyoung2013].
+with a variety of practical challenges [@Kyoung2013]. TODO
 
 Finally, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
@@ -428,13 +427,13 @@ of vesicle confinement for many systems.
 Our group has developed a technique for the confinement of
 single-molecules in water-in-oil emulsion droplets. The preparation protocol
 requires only minutes to perform and results in emulsions which are
-stable for hours. Furthermore, as nearly all sample solution will end up in a
-emulsion, the technique requires very little sample for a
+stable for hours. Furthermore, as nearly all sample solution will end
+up in a droplet, the technique requires very little sample for a
 single-molecule sensitive experiment. Initial indications [@Tang2008]
 suggest that the presence of the droplet interface leaves the system
 of interest largely unperturbed. Finally, solutions in various
-droplets can be mixed on-demand[@Tang2009; @Reiner2006], enabling the study of
-dynamics.
+droplets can be mixed on-demand [@Tang2009; @Reiner2006], enabling the
+study of dynamics.
 
 Like vesicles, these emulsions can be either probed in solution, where
 they afford longer observation times due to their size, or
@@ -475,12 +474,12 @@ gave no indication of accumulation of fluorophore on the droplet
 interface.
 
 [^droplet-differences]:
-      It should be noted that while Tang's droplets were formed without
-      surfactant by way of mechanical injection, our recent measurements
-      have used more stable droplets formed by shear and a
-      surfactant. This difference in surfactant may strongly affect
-      the nature of the droplet's interface and how it interacts with the
-      system under study.
+      It should be noted that while Tang's droplets were formed by way
+      of mechanical injection, our recent measurements have used
+      emulsions formed by shear and a different surfactant. This
+      difference in surfactant may strongly affect the nature of the
+      droplet's interface and how it interacts with the system under
+      study.
 
 <!-- TODO? Mention Jofre JPC-B? -->
 
@@ -705,8 +704,7 @@ telomere [@Johnson2008].  Recently structures resembling the G
 quadruplex have been reportedly found in primers in the human
 genome [@Huppert2007; @Biffi2013].
 
-Of particular interest in this work (especially the secondary work
-introduced in Section \ref{risks}) is the various conformations
+Of particular interest in this work is the various conformations
 supported by the quadruplex motif, the conditions under which these
 structures form, and the mechanisms responsible for their
 stability. Below I will discuss some previous inquiries along these
