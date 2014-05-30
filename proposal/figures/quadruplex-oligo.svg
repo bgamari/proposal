@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="680.82892"
+   height="177.97816"
    id="svg3614"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -20,15 +20,16 @@
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Mend"
-       style="overflow:visible;">
+       style="overflow:visible">
       <path
          id="path4173"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
@@ -214,8 +215,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="102.05326"
-     inkscape:cy="809.33359"
+     inkscape:cx="210.56077"
+     inkscape:cy="195.63662"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -227,17 +228,27 @@
      inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:object-nodes="true">
+     inkscape:object-nodes="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid4020" />
+       id="grid4020"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="85.650369px"
+       originy="-699.41125px" />
     <sodipodi:guide
        orientation="0,1"
-       position="133.92857,784.28571"
+       position="219.57894,84.874455"
        id="guide4042" />
     <sodipodi:guide
        orientation="0,1"
-       position="228.21428,813.57142"
+       position="313.86465,114.16017"
        id="guide4044" />
   </sodipodi:namedview>
   <metadata
@@ -255,9 +266,10 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(85.650369,-174.97276)">
     <rect
-       style="color:#000000;fill:#5ed5c0;fill-opacity:0.66210046;fill-rule:evenodd;stroke:none;stroke-width:0.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#5ed5bd;fill-opacity:0.66210043;fill-rule:evenodd;stroke:none;stroke-width:0.50000000000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4018-2"
        width="382.14282"
        height="29.285715"
@@ -411,7 +423,7 @@
        id="g4102">
       <rect
          ry="2"
-         style="color:#000000;fill:#5ed575;fill-opacity:0.6627451;fill-rule:evenodd;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:#5fbe04;fill-opacity:0.66274512;fill-rule:evenodd;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect4104"
          width="15.206673"
          height="41.951969"

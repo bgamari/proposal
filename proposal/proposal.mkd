@@ -890,12 +890,22 @@ This experiment will proceed as follows,
 ![The quadruplex used by Lee and proposed for study in this work.](figures/quadruplex-oligo.svg)
 
 In steps 3 or 4, I will examine the ionic conditions probed by
-Lee (K⁺ ranging from 0mM to 100mM) to validate that the
+Lee (K⁺ ranging from 0mM to 200mM) to validate that the
 droplet environment is comparable to free solution. I will then
 perform a similar characterization over a range of PEG
 concentrations, examining for the first time switching dynamics
 between the conformations observed by @Lannan2012 and @Heddi2011 with
-single-molecule resolution.
+single-molecule resolution. To cover the range of osmotic conditions
+studied by Lannan, I will examine concentrations ranging from 0 to 40%
+w/v.
+
+The experiments will take place in droplets prepared from
+single-molecule concentration oligomer solution buffered to pH 7.5
+with Tris-HCl buffer. The PCA/PCD oxygen scavenging system (10nM PCA
+with 100nM PCD) will be used to improve photostability of the
+fluorophores [@Aitken2008]. Finally, methylviologen and ascorbic acid
+will be used to oxidize/reduce fluorophores out of their dark triplet
+state [@Vogelsang2008; @Cordes2009], reducing fluorescent blinking
 
 <!--@Lee2014 demonstrated that internal fluorescent labels exhibit both
 improved photostability and a smaller effect on the thermodynamic
