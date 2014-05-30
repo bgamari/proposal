@@ -10,8 +10,18 @@ date: 2014-05-21
 
 # Abstract
 
-We propose a 
-TODO
+I propose a study of G-quadruplex DNA using Fӧrster resonance energy
+transfer demonstrating a novel confinement technique using emulsion
+droplets.  This technique enables fluorescence spectroscopic studies
+of dynamics of biologically relevant systems which would be
+inconvenient or impossible with existing tools.
+While existing confinement techniques either require intensive sample
+preparation or impose a strong perturbation on the system under study,
+droplet emulsions are easily prepared and initial indications show
+minimal effect on molecular function. Furthermore, the technique
+requires little sample to single molecule sensitive experiment, in
+contrast to existing methods.
+
 
 # Introduction
 
