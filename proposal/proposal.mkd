@@ -27,7 +27,8 @@ contrast to existing methods.
 
 The goal of this proposal is to develop a technique for isolating,
 tracking, and fluorescently probing single biomolecules over long
-durations.
+durations. This goal is realized through use of emulsion droplets for
+confinement of fluorescently labelled single molecules.
 
 Over the last three decades, fluorescence spectroscopy has developed
 into a unique tool for probing biologically relevant systems. In
@@ -118,16 +119,14 @@ Finally, I close by summarizing the contributions of the work.
 # Specific Aims
 
 The goal of this work is to fluorescently probe a biologically
-relevant single-molecule system over the course of seconds. This will enable 
+relevant single-molecule system, a DNA oligomer capable of forming a
+G-quadruplex structure, over the course of seconds. This will enable a
+study of switching dynamics between quadruplex forms.
 
-The first goal of this work is to develop an apparatus to track
-diffusive, sub-micron sized particles to enable long duration
-single-molecule fluorescence studies. This apparatus will help in
-realizing the second goal of characterizing the chemical environment
-within these droplets.
-
-The ability to follow and probe molecules confined by single droplets will enable 
-to probe the switching dynamics of the G quadruplex system.
+To realize this goal we develop an apparatus to track diffusive,
+sub-micron sized particles to enable long duration single-molecule
+fluorescence studies. This apparatus will help in realizing the second
+goal of characterizing the chemical environment within these droplets.
 
 ## Real-time localization and tracking of diffusing droplets
 
@@ -887,6 +886,8 @@ This experiment will proceed as follows,
      droplet manipulation and TIRF microscopy. This technique will
      enable higher throughput although precludes probing quantities
      needing confocal microscopy such as fluorescence lifetime.
+
+![The quadruplex used by Lee and proposed for study in this work.](figures/quadruplex-oligo.svg)
 
 In steps 3 or 4, I will examine the ionic conditions probed by
 Lee (K⁺ ranging from 0mM to 100mM) to validate that the
