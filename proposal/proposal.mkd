@@ -872,7 +872,7 @@ equilibrium of the system, allowing a greater range of kinetic rates
 to be probed.
 
 The oligomer chosen by Lee has several nice properties: The
-interfluorophore distance in this case is large enough (>6 nanometers)
+interfluorophore distance in this case is large enough
 that the ideal dipole approximation should hold even in the face of
 non-isotropic fluorophore motion. Furthermore, the
 non-quadruplex-forming tail can be easily functionalized for surface
