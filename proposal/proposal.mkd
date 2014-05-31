@@ -19,8 +19,10 @@ While existing confinement techniques either require intensive sample
 preparation or impose a strong perturbation on the system under study,
 droplet emulsions are easily prepared and initial indications show
 minimal effect on molecular function. Furthermore, the technique
-requires little sample to single molecule sensitive experiment, in
-contrast to existing methods.
+requires little sample for a single molecule sensitive experiment in
+contrast to existing methods. The proposed study seeks to examine the
+dynamic switching behavior between quadruplex forms as a function of
+osmotic pressure through crowding.
 
 
 # Introduction
@@ -159,26 +161,25 @@ kinetic timescales, it's unclear that it will practical to collect
 event counts comparable to those seen by Lee, especially in crowded
 conditions where quadruplex structures are known to be relatively stable.
 
-If particle tracking is found to be infeasible for this application
-I will fall back on alternative methods for immobilization and
-manipulation of droplets being developed by other members of our
-group. These include production and manipulation of droplets within
-microfluidic devices.
-
 ## Study of G quadruplex switching dynamics
+The G quadruplex is a DNA system which has been implicated in a number
+of regulatory roles [@Zahler1991; @Yu2009] and is of particular
+interest as an anti-cancer target [@Neidle2002; @Hurley2002]. This
+system is an excellent target for fluorescent inquiry as it has
+structural switching dynamics over a wide range of timescales.  The
+main focus of this work will use droplet confinement to examine the
+switching dynamics of the G quadruplex system.  Of late several
+authors have uncovered unexpected polymorphism in the quadruplex
+structure.
 
-The main focus of this work will use droplet confinement to examine
-the switching dynamics of the G quadruplex system.
-Of late several authors have uncovered unexpected
-polymorphism in the quadruplex structure.
-
-There have been a number of recent papers reexamining various aspects of the
-quadruplex's geometry and kinetic behavior with NMR [@Lim2013; @Musetti2013], force
-spectroscopy [@Koirala2013; @Long2013], and a variety of bulk
-spectroscopy methods [@Fujimoto2013; @Boncina2012].
-Despite a number of new insights regarding the conformational
-polymorphism of this system, the last direct examination of
-single-molecule folding dynamics with fluorescence was @Okamoto2008.
+There have been a number of recent papers reexamining various aspects
+of the quadruplex's geometry and kinetic behavior with NMR
+[@Lim2013; @Musetti2013], force spectroscopy
+[@Koirala2013; @Long2013], and a variety of bulk spectroscopy methods
+[@Fujimoto2013; @Boncina2012].  Despite a number of new insights
+regarding the conformational polymorphism of this system, the last
+direct examination of single-molecule folding dynamics with
+fluorescence was @Okamoto2008.
 
 Of particular interest here is the dependence of quadruplex switching
 dynamics on osmotic pressure which represents a void in the current
@@ -268,7 +269,8 @@ waiting time distribution of a homogeneous Poisson process),
 $$P(t \vert \tau) = \tau^{-1} e^{-t / \tau}$$
 The system is probed with a pulse periodically (between $10^4$ and
 $10^8$ Hz) to collect enough statistics to infer the distribution $P(t
-\vert \tau)$.
+\vert \tau)$. From this distribution the lifetime $\tau$ can be
+inferred by a number of methods [@Barber2010; @Fu2013; @Eggeling1998].
 
 ### Fӧrster resonance energy transfer
 If one places two distinct fluorophores
@@ -882,8 +884,7 @@ be too low-throughput for measurement of kinetic rates.
 I have worked on a number of projects in my time in the physics
 program. While some have been completed, the completion of others are
 proposed as parts of the work described above.  Below I will discuss
-in each case what has been done and I propose to do to finish that which
-remains.
+a few of these projects.
 
 ## Data analysis tools
 
