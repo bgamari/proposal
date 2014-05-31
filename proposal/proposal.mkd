@@ -80,8 +80,8 @@ Following this I will introduce the G quadruplex, a conformation
 formed by some DNA sequences which I will use as a model system for
 demonstrating fluorescence studies droplet-based immobilization.  The
 quadruplex system is a subject of active research as an anti-cancer
-target and has been implicated in a number of regulatory roles.
-<!--TODO -->
+target and has been implicated in a number of regulatory roles
+[@Yu2009].
 
 Next I will describe the goals of the proposed work. These are twofold,
 
@@ -214,7 +214,7 @@ lifetime* and is typically of order $10^{-9}$ seconds.
 
 This lifetime is often denoted by the symbol $\tau$ and can be
 alternatively expressed as a kinetic rate $k$ with units of
-$\frac{1}{[time]}$.
+$[time]^{-1}$.
 
 [^braket]:
     The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
@@ -378,17 +378,17 @@ its fluorophores[^lower-bound].
 One common technique for molecular immobilization is surface
 attachment. Here the molecule of interest is modified to include a
 linker which can stick to a properly functionalized surface (such as a
-silanized[@Jia1999] or streptavidin-treated [@Lee2005] surface). When introduced
-into a volume bounded by a such a surface, some fraction of the
-molecules under study will then stick via their linker, where they
+silanized[@Jia1999] or streptavidin-treated [@Lee2005] surface). When
+introduced into a volume bounded by a such a surface, some fraction of
+the molecules under study will then stick via their linker, where they
 will remain translationally confined and can be probed with either
 confocal or imaging microscopy. This approach poses a variety of
 challenges: direct interaction between the surface and the molecule
-under study can substantially perturb the behavior of the molecule under
-study[^Yasuda]. Further, the chemistry required for the modification
-of the surface and molecule can pose a substantial practical
-barrier. Finally, the presence of the linker can often sterically
-hinder motion of the molecule.
+under study can substantially perturb the behavior of the molecule
+under study[^Yasuda]. Further, the chemistry required for the
+modification of the surface and molecule can pose a substantial
+practical barrier. Finally, the presence of the linker can often
+sterically hinder motion of the molecule.
 
 [^Yasuda]:
     @Yasuda2003 observed that nearly all of the $F_1$ ATPase
@@ -777,7 +777,11 @@ the beam focus $\vec r_0$ (for axis $\hat e_i$),
 $$\braket{\vec r - \vec r_0 \vert \hat e_i} = \braket{\vec v \vert \bar A_2 \vert \vec v} + \vec A_1 \ket{\vec v} + (\vec A_0)_i $$
 
 The model is learned on a raster scan of a candidate particle through
-least-squares fitting computed by singular value decomposition.
+least-squares fitting computed by singular value decomposition. For
+adequate resolution, this raster scan needs to cover a small
+neighborhood surrounding a particle. For this reason, a more coarse
+scan (covering tens of microns) is first performed to identify the
+rough location of the particle's center.
 
 This system has been demonstrated on a variety of model
 systems. A representative tracking trajectory of a one-micron diameter
@@ -814,7 +818,7 @@ improve photostability [@Lee2014].
 
 ![The quadruplex used by Lee and proposed for study in this work.\label{fig:quadruplex-oligo}](figures/quadruplex-oligo.svg)
 
-Starting with a variant on the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
+Starting with a variant on the construct used by Lee ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
 TMR}$) [@Ying2003], I will demonstrate a FRET experiment under droplet confinement.
 This experiment will proceed as follows,
 
@@ -863,6 +867,15 @@ will extend these techniques as necessary. One particular extension of
 interest is the use of active temperature modulation to shift the
 equilibrium of the system, allowing a greater range of kinetic rates
 to be probed.
+
+The oligomer chosen by Lee has several nice properties: The
+interfluorophore distance in this case is large enough (>6 nanometers)
+that the ideal dipole approximation should hold even in the face of
+non-isotropic fluorophore motion. Furthermore, the
+non-quadruplex-forming tail can be easily functionalized for surface
+attachment, as may be neccessary if droplet immobilization is found to
+be too low-throughput for measurement of kinetic rates.
+
 
 # Prior work
 
