@@ -24,17 +24,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.5899697"
-     inkscape:cx="74.063935"
-     inkscape:cy="91.865546"
+     inkscape:zoom="7.905411"
+     inkscape:cx="123.56187"
+     inkscape:cy="68.137913"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="true"
      inkscape:window-width="1918"
-     inkscape:window-height="1053"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-height="1078"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -93,14 +93,38 @@
      id="defs5755">
     <pattern
        inkscape:collect="always"
-       xlink:href="#pattern7522"
-       id="pattern7752"
-       patternTransform="matrix(0,-0.16094847,2.665434,0,100.09984,177.36387)" />
+       xlink:href="#pattern5428"
+       id="pattern5477"
+       patternTransform="matrix(0,-0.15055948,1.3525312,0,205.63618,265.65439)" />
     <pattern
        inkscape:collect="always"
-       xlink:href="#Strips1_1"
-       id="pattern7522"
-       patternTransform="matrix(0,-0.16094847,2.665434,0,0,0)" />
+       xlink:href="#Strips1_2"
+       id="pattern5412"
+       patternTransform="matrix(0,-0.15055948,1.3525312,0,219.41085,265.65439)" />
+    <pattern
+       inkscape:stockid="Stripes 1:2"
+       id="Strips1_2"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="1"
+       width="3"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect4683"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
+         style="fill:black;stroke:none" />
+    </pattern>
+    <linearGradient
+       id="linearGradient5404"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#5ed5bd;stop-opacity:1;"
+         offset="0"
+         id="stop5406" />
+    </linearGradient>
     <linearGradient
        id="linearGradient7504"
        osb:paint="solid">
@@ -109,22 +133,6 @@
          offset="0"
          id="stop7506" />
     </linearGradient>
-    <pattern
-       inkscape:stockid="Stripes 1:1"
-       id="Strips1_1"
-       patternTransform="translate(0,0) scale(10,10)"
-       height="1"
-       width="2"
-       patternUnits="userSpaceOnUse"
-       inkscape:collect="always">
-      <rect
-         id="rect6718"
-         height="2"
-         width="1"
-         y="-0.5"
-         x="0"
-         style="fill:black;stroke:none" />
-    </pattern>
     <linearGradient
        id="linearGradient7435"
        osb:paint="solid">
@@ -349,6 +357,58 @@
          x="0"
          style="fill:black;stroke:none" />
     </pattern>
+    <pattern
+       patternTransform="matrix(0,-0.15055948,1.3525312,0,20.65937,5.5837418)"
+       id="pattern5428"
+       xlink:href="#pattern5412-6"
+       inkscape:collect="always" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_2-4"
+       id="pattern5412-6"
+       patternTransform="matrix(0,-0.15055948,1.3525312,0,219.41085,265.65439)" />
+    <pattern
+       inkscape:stockid="Stripes 1:2"
+       id="Strips1_2-4"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="1"
+       width="3"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect4683-5"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
+         style="fill:black;stroke:none" />
+    </pattern>
+    <pattern
+       patternTransform="matrix(0,-0.15055948,1.3525312,0,205.63618,265.65439)"
+       id="pattern5428-6"
+       xlink:href="#pattern5412-9"
+       inkscape:collect="always" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_2-47"
+       id="pattern5412-9"
+       patternTransform="matrix(0,-0.15055948,1.3525312,0,219.41085,265.65439)" />
+    <pattern
+       inkscape:stockid="Stripes 1:2"
+       id="Strips1_2-47"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="1"
+       width="3"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect4683-6"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
+         style="fill:black;stroke:none" />
+    </pattern>
   </defs>
   <metadata
      id="metadata5758">
@@ -378,12 +438,13 @@
          y="249.44511"
          ry="4.5" />
       <rect
-         style="color:#000000;fill:url(#pattern7752);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         style="color:#000000;fill:url(#pattern5412);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          id="rect5669"
          width="18.78791"
          height="13.41689"
          x="198.75148"
-         y="260.07065" />
+         y="260.07065"
+         ry="0" />
       <path
          inkscape:connector-curvature="0"
          id="path5769"
@@ -595,19 +656,20 @@
          d="m 184.97681,273.48755 18.78791,0"
          id="path5273"
          inkscape:connector-curvature="0" />
+      <rect
+         style="color:#000000;fill:url(#pattern5477);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5669-9"
+         width="18.78791"
+         height="13.41689"
+         x="184.97681"
+         y="260.07065"
+         ry="0" />
       <path
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:url(#Arrow1Mend-2-9)"
          d="m 194.37076,260.07066 0,13.41689"
          id="path5279-6"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
-      <rect
-         style="color:#000000;fill:url(#pattern8709);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect5669-2"
-         width="18.78791"
-         height="13.41689"
-         x="184.97681"
-         y="260.44565" />
       <path
          d="m 90,162.36218 c 0,2.76143 -2.238576,5 -5,5 -2.761424,0 -5,-2.23857 -5,-5 0,-2.76142 2.238576,-5 5,-5 2.761424,0 5,2.23858 5,5 z"
          sodipodi:ry="5"
@@ -647,19 +709,20 @@
          d="m 184.97681,273.48755 18.78791,0"
          style="fill:none;stroke:#000000;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:nodetypes="cc" />
+      <rect
+         style="color:#000000;fill:url(#pattern5428-6);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5669-5"
+         width="18.78791"
+         height="13.41689"
+         x="184.97681"
+         y="260.07065"
+         ry="0" />
       <path
          style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:url(#Arrow1Mend-2-9)"
          d="m 194.37076,273.48755 0,42.75515"
          id="path5279-67"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cc" />
-      <rect
-         style="color:#000000;fill:url(#pattern8709-0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect5669-4"
-         width="18.78791"
-         height="13.41689"
-         x="184.97682"
-         y="260.07065" />
       <path
          transform="matrix(0.62626368,0,0,0.67494577,141.13835,163.90188)"
          sodipodi:type="arc"

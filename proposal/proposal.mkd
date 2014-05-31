@@ -63,13 +63,6 @@ immobilization methods, introducing a new set of trade-offs which we
 explore. I demonstrate the viability of fluorescence studies using this
 technique on a model DNA system, the G quadruplex.
 
-In a second part, we examine the challenges of studying systems with
-faster, less pronounced dynamics. We explore the example of a model
-RNA system, which can be to viewed to first order as a rigid rod, and the
-challenges in using a fluorescence as a "spectroscopic ruler". In
-doing so, we shed light on a variety of artifacts of the measurement
-itself and demonstrate a methodology for accounting for these.
-
 ## Outline of Proposal
 Below I will briefly describe the fluorescence spectroscopic
 techniques used in our lab to probe biomolecular systems. Following
@@ -231,6 +224,10 @@ emission of a photon (known as *radiative decay*). The lifetime of
 this fluorescent state is known as the fluorophore's *fluorescence
 lifetime* and is typically of order $10^{-9}$ seconds.
 
+This lifetime is often denoted by the symbol $\tau$ and can be
+alternatively expressed as a kinetic rate $k$ with units of
+$\frac{1}{[time]}$.
+
 [^braket]:
     The $\ket{i}$ notation here denotes denotes the state $i$ of a system.
 
@@ -311,10 +308,9 @@ infer intramolecular distances. This technique [@Dahan1999], known as
 Fӧrster Resonance Energy Transfer (FRET), is widely used to study
 biomolecular conformation and kinetics [@Preus2012; @Dietrich2002].
 
-The probability of energy transfer, known as the FRET efficiency
-$E$, is related to the inter-fluorophore distance $R$ by the Fӧrster
-equation,
-$$ E = P(\mathrm{Energy~Transfer}) = \frac{1}{1 + (R / R₀)⁶} $$
+The rate of energy transfer, $k_{ET}$ is related to the
+inter-fluorophore distance $R$,
+$$ k_{ET} = τ_D^{-1} \left(\frac{R₀}{R}\right)^6 $$
 where $R₀$, known as the Fӧrster radius, is a length scale that
 defines the range of Fӧrster interaction. It is related to a quantity, $κ²$,
 that captures the relative orientation of the two fluorophores'
@@ -322,10 +318,16 @@ electric dipole moments $\hat{μ}ᵢ$,
 $$ R₀⁶ ∝ κ² = [ (\hat{μ}₁ · \hat{μ}₂) - 3 (\hat{μ}₁ · \hat{R}) (\hat{μ}₂ · \hat{R}) ]² $$
 As often only the inter-fluorophore distance $R$ is of interest, the
 fluorophores are often assumed to be freely rotating, implying
-$\mean{κ²} = 2/3$.  In addition to this geometric factor, $R_0$ also depends
-upon a variety of other factors including the index of refraction
-of the solvent, the degree of overlap of the fluorophores' spectra,
-and the quantum yield[^quantum-yield] of the donor.
+$\mean{κ²} = 2/3$.  In addition to this geometric factor, $R_0$ also
+depends upon a variety of other factors including the index of
+refraction of the solvent, the degree of overlap of the fluorophores'
+spectra, and the quantum yield[^quantum-yield] of the donor.
+
+If we compare this to the rate of donor decay $k_D$, we
+find the probability of observing an acceptor photon given a donor
+excitation,
+$$ E = \frac{k_{ET}}{k_D + k_{ET}} = \frac{1}{1 + (R / R₀)⁶} $$
+This quantity is known as the *FRET efficiency*.
 
 [^quantum-yield]:
     The quantum yield of a fluorophore refers to the probability of an
@@ -334,7 +336,7 @@ and the quantum yield[^quantum-yield] of the donor.
     decay, the quantum yield $\phi$ is given by
     $\phi = \frac{k_r}{k_r + k_{nr}}$
 
-It should be note that the Fӧrster equation itself makes a number of assumptions. 
+It should be note that this analysis makes a number of assumptions. 
 Among these is that a dipole-dipole term is dominant in the
 interaction between the two fluorophores. @MunozLosa2009 examines this
 assumption, computing the transition densities for seven selected
@@ -832,8 +834,25 @@ has an important thermodynamic contribution.
 
 ## Particle tracking
 
-I have developed a prototype system for tracking droplet motion
-in solution. This system has been demonstrated on a variety of model
+I have developed a prototype system for tracking droplet motion in
+solution.  The tracking signal is measured with a position-sensitive
+photodiode and is a sampled by a eight-channel data acquisition board
+which I developed. These samples are used as input into a tracking
+model, and the resulting position error signal is filtered and used to
+drive a piezo translation stage through a digital-to-analog converter,
+also on the data acquisition board. The data acquisition board is
+capable of sampling a 0 to 5V signal at up to 200 kHz with 16-bit
+resolution.
+
+The tracking model is tuned for a near-linear detector response as is
+seen in the boxed region of Figure \ref{bead-rough}. Here we use a
+second-order polynomial model $(\bar A_2, \vec A_1, \vec A_0)$ to map
+an observed detector signal $\vec x$ into a particle position $\vec r$
+relative to the beam focus $\vec r_0$,
+
+$$\vec r - \vec r_0 = \braket{\vec r \vert \bar A \vert \vec r} + \vec A_1 \ket{\vec r} + \vec A_0$$
+
+This system has been demonstrated on a variety of model
 systems. A representative tracking trajectory of a one-micron diameter
 polystyrene bead diffusing in mineral oil is shown in Figure
 \ref{fig:track}.
@@ -861,7 +880,12 @@ The final piece of this work will use droplet confinement to examine
 the switching dynamics of the G quadruplex system. This will begin by
 reproducing the findings of Lee [@Lee2005], using droplet
 immobilization in place of vesicle confinement and surface
-attachment.
+attachment. The sequence of the system is shown in Figure
+\ref{fig:oligo}. The labelling strategy is designed such that the
+donor fluorophore is internally labelled which has been shown to
+improve photostability [@Lee2014].
+
+![The quadruplex used by Lee and proposed for study in this work.](figures/quadruplex-oligo.svg)
 
 Starting with a variant on the construct used by Ying ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
 TMR}$) [@Ying2003], I will demonstrate a FRET experiment under droplet confinement.
@@ -881,13 +905,12 @@ This experiment will proceed as follows,
      time, care must be taken to gather enough switching events to
      estimate meaningful kinetic rates. In this case this experiment
      may be complemented by a higher throughput approach as is
-     described in (4).
-  4. If (3) is found to be inadequate, repeat again with microfluidic
-     droplet manipulation and TIRF microscopy. This technique will
-     enable higher throughput although precludes probing quantities
-     needing confocal microscopy such as fluorescence lifetime.
-
-![The quadruplex used by Lee and proposed for study in this work.](figures/quadruplex-oligo.svg)
+     described in (4). FRET can be measured either ratiometrically or
+     via fluorescence lifetime.
+  4. If (3) is found to be inadequate, repeat again with surface
+     attachment and TIRF microscopy. This technique will enable higher
+     throughput although precludes probing quantities needing confocal
+     microscopy such as fluorescence lifetime.
 
 In steps 3 or 4, I will examine the ionic conditions probed by
 Lee (K⁺ ranging from 0mM to 200mM) to validate that the
@@ -907,10 +930,6 @@ fluorophores [@Aitken2008]. Finally, methylviologen and ascorbic acid
 will be used to oxidize/reduce fluorophores out of their dark triplet
 state [@Vogelsang2008; @Cordes2009], reducing fluorescent blinking
 
-<!--@Lee2014 demonstrated that internal fluorescent labels exhibit both
-improved photostability and a smaller effect on the thermodynamic
-stability of the labeled oligomer.-->
-
 As pointed out previously, single-molecule immobilization brings with it
 the ability to resolve the switching dynamics of individual molecules
 over time. The problem of learning reaction kinetics from FRET
@@ -926,7 +945,7 @@ to be probed.
 I have worked on a number of projects in my time in the physics
 program. While some have been completed, the completion of others are
 proposed as parts of the work described above.  Below I will discuss
-in each case what has been done and I propose to do to finish what
+in each case what has been done and I propose to do to finish that which
 remains.
 
 ## Data analysis tools
@@ -943,13 +962,14 @@ lack of an open toolchain for analysis of fluorescence data means that
 groups generally must reimplement these tools as needed.
 
 I have developed a suite of open-source tools for acquisition and
-analysis of fluorescence timestamp data[@Gamari2013]. These tools are
+analysis of fluorescence timestamp data [@Gamari2013]. These tools are
 used both in and outside of our lab, including in some of the work
 cited above, and won the Open Source Software Innovation competition
 held by the University of Massachusetts Institute for Biology,
 Biostatistics, and Bioinformatics (ICB3). Interested readers are
 referred to the competition submission for further details on this
-work [@Gamari2013OSSI] and the paper describing these tools [@Gamari2013].
+work [@Gamari2013OSSI] and the paper describing these tools
+[@Gamari2013].
 
 ## Characterization of FRET on RNA
 
