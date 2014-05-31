@@ -139,7 +139,7 @@ an active calibration measurement.
 
 <!-- Risks -->
 Our droplet tracking system has been demonstrated to reliably track
-particles down to sizes of 500 nm. Our current preparation protocol
+particles down to diameters of 500 nm. Our current preparation protocol
 produces droplets approximately 100 nm in radius. While I have started
 optimizing the tracking system for the smaller signal produced by
 these small particles, there is no guarantee that this signal can be
@@ -336,7 +336,7 @@ This quantity is known as the *FRET efficiency*.
     decay, the quantum yield $\phi$ is given by
     $\phi = \frac{k_r}{k_r + k_{nr}}$
 
-It should be note that this analysis makes a number of assumptions. 
+It should be noted that this analysis makes a number of assumptions. 
 Among these is that a dipole-dipole term is dominant in the
 interaction between the two fluorophores. @MunozLosa2009 examines this
 assumption, computing the transition densities for seven selected
@@ -461,14 +461,15 @@ confinement.
 ![Attoliter droplets can be used to efficiently contain single-molecule solutions. These droplets can then either be allowed to freely diffuse or manipulated in a microfluidic device.](figures/droplet-microfluidic)
 
 The emulsion is formed in a perfluorinated liquid with an appropriate
-surfactant. Perfluorinated liquids are used due to their non-fluorescent,
-inert nature, biocompatiblity, viscosity, and the wide range of refractive
-indices available (which is useful for optical trapping and
-tracking). The emulsion is formed through shear by means of sonication[^sonication]. While
-a small degree of control over droplet size is available through adjustment of
-surfactant concentration, those produced by the usual protocol are
-generally around 200 nm in diameter. This makes them ideal for
-containment of small biological polymers.
+surfactant. Perfluorinated liquids are used due to their
+non-fluorescent, inert nature, biocompatiblity, viscosity, and the
+wide range of refractive indices available (which is useful for
+optical trapping and tracking). The emulsion is formed through shear
+by means of sonication[^sonication]. While a small degree of control
+over droplet size is available through adjustment of surfactant
+concentration, those produced by the usual protocol are generally
+around 200 nm in diameter. This makes them ideal for containment of
+small biological polymers.
 
 [^sonication]:
     Sonication refers to the use of a high-intensity, high-frequency
@@ -747,7 +748,7 @@ previous NMR [@Wang1993] and X-ray [@Parkinson2002] experiments using solution
 FRET. By labelling opposing ends of a quadruplex-forming sequence with Cyanine 5
 and TMR fluorophores, the authors resolve end-to-end distance as a proxy for
 conformational state. Their study reveals two FRET populations with
-signs of heterogeneity suggesting a dynamic equilibrium. This
+signs of dynamic equilibrium. This
 equilibrium is shown to be strongly dependent upon the identity and
 concentration of the ions present. The authors claim that the unfolded
 form of the system should exhibit far lower FRET efficiency than
@@ -765,7 +766,7 @@ revealing a similar polymorphism to that observed by Ying.
 similar oligomer ($\mathrm{5'-Cy5-(GGGTA)₃-GGG}$ with an end span for
 hybridization with another TMR-labelled single-stranded oligomer)
 under surface attachment with
-TIRF[^TIRF]. Their study was differentiated from Ying in the use
+total internal reflection microscopy[^TIRF]. Their study was differentiated from Ying in the use
 surface-immobilized molecules to resolve the switching dynamics of
 individual molecules.
 
@@ -845,12 +846,15 @@ capable of sampling a 0 to 5V signal at up to 200 kHz with 16-bit
 resolution.
 
 The tracking model is tuned for a near-linear detector response as is
-seen in the boxed region of Figure \ref{bead-rough}. Here we use a
-second-order polynomial model $(\bar A_2, \vec A_1, \vec A_0)$ to map
-an observed detector signal $\vec x$ into a particle position $\vec r$
-relative to the beam focus $\vec r_0$,
+seen near in the small displacement limit. Here we use a second-order
+polynomial model $(\bar A_2, \vec A_1, \vec A_0)$ to map an observed
+detector signal $\vec x$ into a particle position $\vec r$ relative to
+the beam focus $\vec r_0$,
 
-$$\vec r - \vec r_0 = \braket{\vec r \vert \bar A \vert \vec r} + \vec A_1 \ket{\vec r} + \vec A_0$$
+$$\vec r - \vec r_0 = \braket{\vec r \vert \bar A_2 \vert \vec r} + \vec A_1 \ket{\vec r} + \vec A_0$$
+
+The model is learned on a raster scan of a candidate particle through
+least-squares fitting computed by singular value decomposition.
 
 This system has been demonstrated on a variety of model
 systems. A representative tracking trajectory of a one-micron diameter
