@@ -155,8 +155,8 @@ microfluidic device.
 Moreover, @Lee2005 used surface attachment and TIRF microscopy to examine
 hundreds of specimens simultaneously over the course of tens of minutes. With
 this technique they were able to observe thousands of switching
-events. In contrast, our approach will probe single molecules at a
-time. While count rates may be higher, allowing access to faster
+events. In contrast, our approach will probe molecules one at a
+time. While time resolution may be higher, allowing access to faster
 kinetic timescales, it's unclear that it will practical to collect
 event counts comparable to those seen by Lee, especially in crowded
 conditions where quadruplex structures are known to be relatively stable.
@@ -351,7 +351,7 @@ treatment that they apply.
 
 ![Schematic representation of the processes involved in Fӧrster Resonance Energy Transfer (FRET). Each of the boxes represents a state of the system. The notation $\ket{D^* A}$ represents the state where the donor is excited and the acceptor is in the ground state. $k_A$, $k_{FRET}$, $k_D$, and $k_{exc}$ all represent transition rates between these states.\label{fig:fret}](figures/fret_processes)
 
-FRET measurements are often performed on species diffusing in solution
+FRET measurements are often performed on molecular species diffusing in solution
 with confocal microscopy.  While such solution experiments are easily
 performed [@Dahan1999], such techniques offer only a short glimpse of
 each molecule. With the hydrodynamic radius of many biomolecules of
@@ -576,7 +576,7 @@ In @Milas2014, we examined an RNA oligomer both under droplet
 confinement and in solution. By examining photon count statistics
 [@Chen1999; @Huang2004], we were able to distinguish intensity states
 of the fluorophores. In solution measurements the photon count
-distribution was well-fit by a single-species model while both at low
+distribution was well-fit by a two-species model while both at low
 pH (pH of 4) and in droplet confinement a three-species model was
 necessary. The similarity between the droplet and low-pH solution
 measurements suggest a strongly perturbed chemical environment within
@@ -820,9 +820,10 @@ improve photostability [@Lee2014].
 
 ![The quadruplex used by Lee and proposed for study in this work.\label{fig:quadruplex-oligo}](figures/quadruplex-oligo.svg)
 
-Starting with a variant on the construct used by Lee ($\mathrm{5'-Cy5-(GGGTTA)_3 GGG -
-TMR}$) [@Ying2003], I will demonstrate a FRET experiment under droplet confinement.
-This experiment will proceed as follows,
+Starting with a variant of the construct used by Lee
+($\mathrm{5'-Cy5-(GGGTTA)_3 GGG - TMR}$) [@Lee2005], I will
+demonstrate a FRET experiment under droplet confinement.  This
+experiment will proceed as follows,
 
   1. Demonstrate the stability and switching of the system by solution FRET.
      Here I should observe a bimodal FRET efficiency distribution. The
