@@ -190,13 +190,6 @@ This will begin by reproducing the findings of Lee [@Lee2005], using
 droplet immobilization in place of vesicle confinement and surface
 attachment. 
 
-The interpretation of FRET measurements of dynamic systems is a
-complex problem. Solutions range from simple signal processing
-techniques [@Taylor2010], [@Gopich2010], to more sophisticated
-statistical tools (largely various inference techniques for hidden
-Markov models)
-[@Schroeder2003; @Bronson2009; @VanDeMeent2013; @McKinney2006; @Uphoff2011; @Greenfeld2012; @Okamoto2012].
-
 
 # Background
 
