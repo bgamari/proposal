@@ -409,14 +409,14 @@ bilayer [@Boukobza2001; @Okumus2004].  Once formed, these vesicles can
 either be studied in solution, affording longer observations times 
 due to their larger size, or chemically tethered to a
 surface. Unfortunately, vesicles are known to interact with some
-systems[^vesicle-interaction], form under only a narrow range of
-chemical conditions [@Vafabakhsh2012], and present practical
-challenges in sample preparation. TODO
+systems[^vesicle-interaction] and form under only a narrow range of
+chemical conditions [@Vafabakhsh2012].
 
 Further, while the ability to introduce new molecules into a container
 and modify its chemical environment are desirable capabilities in an
 immobilization scheme, protocols for reliably fusing vesicles come
-with a variety of practical challenges [@Kyoung2013]. TODO
+with a variety of practical challenges (e.g. requiring flowing in of
+various components to assist fusion [@Kyoung2013]).
 
 Finally, this technique suffers from poor sample
 utilization as only a small fraction of the sample volume ends up
@@ -507,101 +507,6 @@ non-homogeneous near oil-water interfaces
 [@Vazdar2012; @Luo2006]. These two factors may complicate
 interpretation of experiments performed under droplet confinement.
 
-### Droplet pH
-
-In @Milas2014, we
-examined an RNA oligomer both under droplet confinement and in
-solution. By examining photon count statistics
-[@Chen1999; @Huang2004], we were able to distinguish intensity states
-of the fluorophores. In solution measurements the photon count
-distribution was well-fit by a single-species model while both at low
-pH (pH of 4) and in droplet confinement a three-species model was
-necessary. The similarity between the
-droplet and low-pH solution measurements suggest a strongly perturbed
-chemical environment within the droplet. More specifically, it stands
-to reason that the pH differs substantially from the initial solution
-from which the droplets were formed. FRET measurements of this same
-molecule under similar conditions lead to similar conclusions.
-
-Currently our lab is examining this problem with bulk
-spectroscopy. Here, we create a droplet emulsion filled with a pH
-sensitive fluorophore, in this case fluorescein.  By examining the
-emission spectrum of the dye, one can infer the pH of the
-fluorophore's local environment.
-
-The pH dependence of
-fluorescein arises from a change in number of hydrogens coordinating
-with the molecule, as shown in Figure \ref{fig:fluorescein}. Between
-pH 4 and 6 the molecule is largely in its singly ionized form, missing
-one hydrogen. This state has an
-absorption around $λ=472$ nm and a fluorescence lifetime of $τ =
-3$ ns. Above pH 6.4, the molecule is mostly in its doubly ionized state
-which has an absorption around 490 nm and a $τ = 4.1$ ns emission
-decay. In the measurement described above, the pH is derived from the
-relative intensities of the anionic and dianionic emission peaks.
-
-![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
-
-Likewise, one can perform a similar inference of pH by examining
-fluorescence lifetime. This has the advantage of being more easily
-performed on low-intensity signals, such as that produced by a single
-droplet. It is in this manner that this work will attempt to measure
-the pH distribution in an ensemble of droplets. By filling droplets
-with fluorophore such that the mean droplet occupancy is on the order
-of 100 molecules (on the order of $\mathrm{μmol/L}$), it should be
-possible to collect enough statistics to infer a distribution over pH
-for the droplet ensemble.
-
-This experiment will proceed as follows,
-
-  1. To calibrate the measurement, measure fluorescence lifetime of
-     fluorescein diffusing in solution under a range of pHs (ranging
-     from 3 to 8). This will allow me to build a empirical model of
-     the pH dependence of fluorescence lifetime.
-  2. To the begin droplet effort, measure fluorescence lifetime with
-     droplets diffusing in solution
-  3. When particle tracking has been stabilized, measure fluorescence
-     lifetime in individual tracked droplets to characterize pH distribution
-
-For each droplet in these experiments, I will expect to see a
-fluorescence lifetime distribution that looks like, $$P(t) = α λ₁
-e^{-t/τ₁} + (1 - α) λ₂ e^{-t/τ₂}$$ Where $\tau_1$ (resp. $\tau_2$)
-denotes lifetime of the anionic (resp. dianionic) species and $α$ is
-related to the species relative concentration [^concentration].
-
-TODO
-Given that the difference between the fluorescence lifetimes of the
-relevant ionization states ($\tau_1=3.0$ and $\tau_2=4.1$ ns) is so
-small, a first analysis might follow past work by fitting a
-single-exponential to the resulting photon arrival time histogram. The
-lifetime resulting from such a fit will have no direct relation to
-either of the two fluorophore lifetimes, but can be related
-empirically to pH though the calibration experiments performed in step
-1 above.
-
-[^concentration]:
-    Note that this ignores contributions from the weakly fluorescent
-    cationic and neutral species, as well as decay from these states
-    through the anionic state. These contributions can be added to
-    this model if necessary.
-
-A more principled approach would directly learn a mixing distribution over $\alpha$
-from the photon arrival time observations. Such an approach
-is shown in the form of a graphical probabilistic model in Figure
-\ref{fig:lifetime-model}.
-
-In addition to this simple model, the task of learning a mixture of
-exponential lifetimes (characterized by $α$ and $λᵢ$ above) from
-photon arrival time observations has been treated before by a number
-of groups [@Barber2010; @Eggeling1998; @Edel2007; @Tellinghuisen1994].
-
-If the change in lifetime from fluorescein is found to be too small to
-be resolved, there are a number [@Han2010] of other dyes that could be
-used, particularly with a steeper response in the pH regime of
-interest (3 to 6). Alternatively, direct measurement of the emission
-spectrum is also possible.
-
-
 ### Chemical environment within emulsion droplets
 The properties of oil-in-water emulsions and their interfaces have
 been widely studied in a number of communities. Vibrational
@@ -662,6 +567,39 @@ effective hydrodynamic radius of the particle).
 It is widely believed that water organizes on hydrophobic interfaces
 such as the outside surface of an oil-in-water droplet [@Vacha2008].
 -->
+
+### Droplet pH
+
+In @Milas2014, we examined an RNA oligomer both under droplet
+confinement and in solution. By examining photon count statistics
+[@Chen1999; @Huang2004], we were able to distinguish intensity states
+of the fluorophores. In solution measurements the photon count
+distribution was well-fit by a single-species model while both at low
+pH (pH of 4) and in droplet confinement a three-species model was
+necessary. The similarity between the droplet and low-pH solution
+measurements suggest a strongly perturbed chemical environment within
+the droplet. More specifically, it stands to reason that the pH
+differs substantially from the initial solution from which the
+droplets were formed. FRET measurements of this same molecule under
+similar conditions lead to similar conclusions.
+
+Currently our lab is examining this problem with bulk
+spectroscopy. Here, we create a droplet emulsion filled with a pH
+sensitive fluorophore, in this case fluorescein.  By examining the
+emission spectrum of the dye, one can infer the pH of the
+fluorophore's local environment.
+
+The pH dependence of fluorescein arises from a change in number of
+hydrogens coordinating with the molecule, as shown in Figure
+\ref{fig:fluorescein}. Between pH 4 and 6 the molecule is largely in
+its singly ionized form, missing one hydrogen. This state has an
+absorption around $λ=472$ nm and a fluorescence lifetime of $τ = 3$
+ns. Above pH 6.4, the molecule is mostly in its doubly ionized state
+which has an absorption around 490 nm and a $τ = 4.1$ ns emission
+decay. In the measurement described above, the pH is derived from the
+relative intensities of the anionic and dianionic emission peaks.
+
+![A selection of the ionization states of fluorescein along with their pKₐ, fluorescence lifetime ($τ$), and fluorescence quantum yield ($φ$). Differences in formal charge are circled in red. Quantities due to @Sjoback1995.\label{fig:fluorescein}](figures/fluorescein-forms)
 
 ## Quadruplex DNA
 
@@ -822,13 +760,13 @@ has an important thermodynamic contribution.
 
 I have developed a prototype system for tracking droplet motion in
 solution.  The tracking signal is measured with a position-sensitive
-photodiode and is a sampled by a eight-channel data acquisition board
-which I developed. These samples are used as input into a tracking
-model, and the resulting position error signal is filtered and used to
-drive a piezo translation stage through a digital-to-analog converter,
-also on the data acquisition board. The data acquisition board is
-capable of sampling a 0 to 5V signal at up to 200 kHz with 16-bit
-resolution.
+photodiode and is a sampled by a eight-channel analog-to-digital
+converter on data acquisition board which I developed. These samples
+are used as input into a tracking model, and the resulting position
+error signal is filtered and used to drive a piezo translation stage
+through a digital-to-analog converter, also located on the data
+acquisition board. The data acquisition board is capable of sampling a
+0 to 5V signal at up to 200 kHz with 16-bit resolution.
 
 The tracking model is tuned for a near-linear detector response as is
 seen near in the small displacement limit. Here we use a second-order
