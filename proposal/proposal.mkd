@@ -950,6 +950,13 @@ from this simulated system. In comparing these observations to
 experiment I was able to test several hypotheses concerning the
 photophysical behavior of the labels and magnitude of the Fӧrster radius.
 
+![FRET efficiency in various timescale limits for each of the four labelling strategies examined. Here we see the mean inter-fluorophore distance $R$, the mean orientation factor $\kappa^2$, and the FRET efficiency as computed by several methods. The middle four columns show the FRET efficiency as computed in closed form assuming that orientational and distance dynamics and faster/slower than the fluorescence lifetime. Finally, the last two columns show the FRET efficiency as computed by Monte Carlo simulation using two values of the donor quantum yield.\label{table:fret}](../proposal-talk/figures/fret-eff-table.svg)
+
+By modelling FRET in this way, we were able to characterize the effect
+of averaging over the course of fluorophores' fluorescence
+lifetime. Further, we were able to compare the various approximations
+that are typically made in accounting for dye dynamics. This
+comparison can be found in \ref{table:fret}.
 
 ## Characterization of droplet pH
 
