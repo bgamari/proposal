@@ -776,7 +776,7 @@ polynomial model $(\bar A_2, \vec A_1, \vec A_0)$ to map an observed
 detector signal $\vec v$ into a particle position $\vec r$ relative to
 the beam focus $\vec r_0$ (for axis $\hat e_i$),
 
-$$\braket{\vec r - \vec r_0 \vert \hat e_i} = \braket{\vec v \vert \bar A_2 \vert \vec v} + \vec A_1 \ket{\vec v} + (\vec A_0)_i $$
+$$\braket{\vec r - \vec r_0 \vert \hat e_i} = \braket{\vec v \vert \bar A_2 \vert \vec v} + \braket{\vec A_1 \vert \vec v} + \braket{\vec e_i \vert \vec A_0} $$
 
 The model is learned on a raster scan of a candidate particle through
 least-squares fitting computed by singular value decomposition. For
