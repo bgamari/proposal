@@ -821,7 +821,7 @@ improve photostability [@Lee2014].
 ![The quadruplex used by Lee and proposed for study in this work.\label{fig:quadruplex-oligo}](figures/quadruplex-oligo.svg)
 
 Starting with a variant of the construct used by Lee
-($\mathrm{5'-Cy5-(GGGTTA)_3 GGG - TMR}$) [@Lee2005], I will
+($\mathrm{5'-Cy5-(GGGTTA)_3 GGG - ...}$) [@Lee2005], I will
 demonstrate a FRET experiment under droplet confinement.  This
 experiment will proceed as follows,
 
